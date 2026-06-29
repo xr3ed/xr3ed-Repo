@@ -47,14 +47,24 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           
-          # Add all files to stage to check status
+          # Get list of changed plugins before staging
+          changed_plugins=$(git status --porcelain | awk '{print $2}' | cut -d'/' -f1 | grep -v -E "^\." | grep -v -E "^(sync_extensions\.py|phisher_plugins\.txt|build\.gradle\.kts|settings\.gradle\.kts|gradle\.properties|gradlew|gradlew\.bat|repo\.json|README\.md)$" | sort -u | tr '\n' ',' | sed 's/,$//')
+          
           git add -A
           
           if [ -n "$(git status --porcelain)" ]; then
             echo "Changes detected in source files."
-            git commit -m "Auto-sync: Update extensions from source repositories"
+            
+            if [ -n "$changed_plugins" ]; then
+              commit_msg="Auto-sync: Update plugins ($changed_plugins)"
+            else
+              commit_msg="Auto-sync: Update core repository configuration"
+            fi
+            
+            git commit -m "$commit_msg"
             git push origin main
             echo "changed=true" >> $GITHUB_OUTPUT
+            echo "plugins=$changed_plugins" >> $GITHUB_OUTPUT
           else
             echo "No source changes detected."
             echo "changed=false" >> $GITHUB_OUTPUT
@@ -139,5 +149,13 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add -A
-          git commit -m "Auto-build: Update plugins and plugins.json ($GITHUB_SHA)" || exit 0
+          
+          plugins_list="${{ steps.source-changes.outputs.plugins }}"
+          if [ -n "$plugins_list" ]; then
+            commit_msg="Auto-build: Update plugins ($plugins_list) ($GITHUB_SHA)"
+          else
+            commit_msg="Auto-build: Update plugins ($GITHUB_SHA)"
+          fi
+          
+          git commit -m "$commit_msg" || exit 0
           git push
