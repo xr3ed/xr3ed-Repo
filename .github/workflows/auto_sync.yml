@@ -66,6 +66,7 @@ jobs:
         with:
           distribution: adopt
           java-version: 21
+          cache: 'gradle'
 
       - name: Setup Android SDK
         if: steps.source-changes.outputs.changed == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
