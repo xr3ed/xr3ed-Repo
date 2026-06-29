@@ -57,12 +57,27 @@ def main():
         shutil.rmtree(gradle_folder)
     shutil.copytree(os.path.join(miro_dir, "gradle"), gradle_folder)
     
-    # Update build.gradle.kts repository fallback URL
+    # Update build.gradle.kts repository fallback URL and namespace dynamic check
     build_gradle_path = os.path.join(repo_root, "build.gradle.kts")
     if os.path.exists(build_gradle_path):
         with open(build_gradle_path, 'r', encoding='utf-8') as f:
             content = f.read()
+        
+        # Replace default setRepo fallback URL
         content = content.replace("https://github.com/duro92/ExtCloud", "https://github.com/xr3ed/xr3ed-Repo")
+        
+        # Replace hardcoded namespace with dynamic namespace check
+        old_namespace = 'namespace = "com.sad25kag"'
+        new_namespace = """val phisherPluginsFile = project.rootProject.file("phisher_plugins.txt")
+        val isPhisher = if (phisherPluginsFile.exists()) {
+            phisherPluginsFile.readLines().contains(project.name)
+        } else {
+            false
+        }
+        namespace = if (isPhisher) "com.phisher98" else "com.sad25kag" """
+        
+        content = content.replace(old_namespace, new_namespace)
+        
         with open(build_gradle_path, 'w', encoding='utf-8') as f:
             f.write(content)
 
@@ -90,6 +105,7 @@ def main():
         print(f"Copied Miro plugin: {p}")
         
     # 7. Copy Phisher plugins (Backup if conflict)
+    phisher_copied = []
     for p in phisher_plugins:
         src = os.path.join(phisher_dir, p)
         if p in miro_plugins:
@@ -97,6 +113,7 @@ def main():
             dst_name = f"{p}Backup"
             dst = os.path.join(repo_root, dst_name)
             shutil.copytree(src, dst)
+            phisher_copied.append(dst_name)
             print(f"Conflict: Copied Phisher plugin {p} as {dst_name}")
             
             # Modify Kotlin files to append [Backup] to MainAPI names
@@ -104,7 +121,13 @@ def main():
         else:
             dst = os.path.join(repo_root, p)
             shutil.copytree(src, dst)
+            phisher_copied.append(p)
             print(f"Copied Phisher plugin (no conflict): {p}")
+
+    # Write phisher_plugins.txt
+    with open(os.path.join(repo_root, "phisher_plugins.txt"), "w", encoding="utf-8") as f:
+        f.write("\n".join(phisher_copied))
+    print("Generated phisher_plugins.txt")
 
     # 8. Generate settings.gradle.kts
     # We dynamically include all folders with build.gradle.kts except ignored ones
