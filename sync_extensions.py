@@ -57,7 +57,7 @@ def main():
         shutil.rmtree(gradle_folder)
     shutil.copytree(os.path.join(miro_dir, "gradle"), gradle_folder)
     
-    # Update build.gradle.kts repository fallback URL and namespace dynamic check
+    # Update build.gradle.kts repository fallback URL, namespace dynamic check, and opt-in compiler option
     build_gradle_path = os.path.join(repo_root, "build.gradle.kts")
     if os.path.exists(build_gradle_path):
         with open(build_gradle_path, 'r', encoding='utf-8') as f:
@@ -77,6 +77,21 @@ def main():
         namespace = if (isPhisher) "com.phisher98" else "com.sad25kag" """
         
         content = content.replace(old_namespace, new_namespace)
+        
+        # Add optIn compiler options to bypass prerelease API compile check globally
+        old_compiler_args = """                freeCompilerArgs.addAll(
+                    "-Xno-call-assertions",
+                    "-Xno-param-assertions",
+                    "-Xno-receiver-assertions"
+                )"""
+        new_compiler_args = """                freeCompilerArgs.addAll(
+                    "-Xno-call-assertions",
+                    "-Xno-param-assertions",
+                    "-Xno-receiver-assertions"
+                )
+                optIn.add("com.lagradost.cloudstream3.Prerelease")"""
+        
+        content = content.replace(old_compiler_args, new_compiler_args)
         
         with open(build_gradle_path, 'w', encoding='utf-8') as f:
             f.write(content)

@@ -158,6 +158,7 @@ subprojects {
                     "-Xno-param-assertions",
                     "-Xno-receiver-assertions"
                 )
+                optIn.add("com.lagradost.cloudstream3.Prerelease")
             }
         }
     }
