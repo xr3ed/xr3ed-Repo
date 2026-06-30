@@ -270,7 +270,7 @@ class Alqanime : MainAPI() {
             this.score = Score.from10(scoreText?.toFloatOrNull())
 
             addMalId(tracker?.malId)
-            addAniListId(tracker?.aniId?.toString()?.toIntOrNull())
+            addAniListId(tracker?.aniId?.toIntOrNull())
         }
     }
 
@@ -402,7 +402,7 @@ class Alqanime : MainAPI() {
             .map { it.value.cleanEscaped() }
             .forEach { candidates.add(it) }
 
-        Regex("""(?i)(?:href|url)\s*[:=]\s*["']([^"']+)["']""")
+        Regex("""(?i)(?:href|url)\s*[:=]\s*["']([^"'] *download[^"']*mediafire[^"']*)["']""")
             .findAll(html)
             .mapNotNull { it.groupValues.getOrNull(1)?.cleanEscaped() }
             .forEach { fixUrlNull(it)?.let(candidates::add) }
