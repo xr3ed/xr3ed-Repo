@@ -72,21 +72,21 @@
     },
     {
         "iconUrl": "https://cloudstream.zvlz.my.id/icon/alqanime.png",
-        "fileHash": "sha256-7b6110578776a72f48a0f24e7500033ecf916e248c728b6f52a3ac5e2f3a70ef",
+        "fileHash": "sha256-29b0f8c51c4b4357fe8d62691074756d3d010a6ef2dae5dd478372b61dbb7e2d",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "fileSize": 73666,
+        "fileSize": 74677,
         "status": 1,
         "language": "id",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "tvTypes": [
             "AnimeMovie",
             "OVA",
             "Anime"
         ],
-        "version": 25,
+        "version": 27,
         "internalName": "Alqanime",
         "description": "Nonton & Download Anime Subtitle Indonesia",
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Alqanime.cs3",
