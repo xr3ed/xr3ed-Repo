@@ -56,7 +56,7 @@ SuperStream
 StremioX
 AniDb
 DoraBash
-UltimaBackup
+Ultima
 Anichi
 Tamilblasters
 StreamPlayBackup
