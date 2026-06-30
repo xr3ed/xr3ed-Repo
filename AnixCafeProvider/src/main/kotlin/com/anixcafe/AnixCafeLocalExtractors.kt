@@ -6,6 +6,7 @@ import com.lagradost.cloudstream3.ErrorLoadingException
 import com.lagradost.cloudstream3.SubtitleFile
 import com.lagradost.cloudstream3.USER_AGENT
 import com.lagradost.cloudstream3.app
+import com.lagradost.cloudstream3.newSubtitleFile
 import com.lagradost.cloudstream3.utils.ExtractorApi
 import com.lagradost.cloudstream3.utils.ExtractorLink
 import com.lagradost.cloudstream3.utils.INFER_TYPE
@@ -116,7 +117,7 @@ open class AnixCafeDailymotion : ExtractorApi() {
             emitSubtitles(json, subtitleCallback)
             extractQualityUrls(json)
         } else {
-            Regex(""""url"\s*:\s*"([^"]+)"""")
+            Regex(""""url"s*:s*"([^"]+)"""")
                 .findAll(response)
                 .map { it.groupValues[1].replace("\\/", "/") }
                 .filter { it.contains(".m3u8", true) }
@@ -154,7 +155,7 @@ open class AnixCafeDailymotion : ExtractorApi() {
         return urls.toList()
     }
 
-    private fun emitSubtitles(json: JSONObject, subtitleCallback: (SubtitleFile) -> Unit) {
+    private suspend fun emitSubtitles(json: JSONObject, subtitleCallback: (SubtitleFile) -> Unit) {
         val subtitles = json.optJSONObject("subtitles")
         subtitles?.keys()?.forEach { lang ->
             val value = subtitles.opt(lang)
@@ -171,11 +172,11 @@ open class AnixCafeDailymotion : ExtractorApi() {
                 if (urls != null) {
                     for (urlIndex in 0 until urls.length()) {
                         val subUrl = urls.optString(urlIndex).trim()
-                        if (subUrl.isNotBlank()) subtitleCallback(SubtitleFile(url = subUrl, lang = label))
+                        if (subUrl.isNotBlank()) subtitleCallback(newSubtitleFile(lang = label, url = subUrl))
                     }
                 } else {
                     val subUrl = item.optString("url").trim()
-                    if (subUrl.isNotBlank()) subtitleCallback(SubtitleFile(url = subUrl, lang = label))
+                    if (subUrl.isNotBlank()) subtitleCallback(newSubtitleFile(lang = label, url = subUrl))
                 }
             }
         }
@@ -192,7 +193,7 @@ open class AnixCafeDailymotion : ExtractorApi() {
         val decoded = runCatching { URLDecoder.decode(url, "UTF-8") }.getOrDefault(url)
         return listOf(
             Regex("""(?i)[?&]video=([A-Za-z0-9]+)"""),
-            Regex("""(?i)/video/([A-Za-z0-9]+)\.json"""),
+            Regex("""(?i)/video/([A-Za-z0-9]+).json"""),
             Regex("""(?i)/video/([A-Za-z0-9]+)"""),
         ).firstNotNullOfOrNull { regex -> regex.find(decoded)?.groupValues?.getOrNull(1) }
             ?.takeIf { it.matches(videoIdRegex) }
@@ -228,13 +229,13 @@ open class AnixCafeDailymotion : ExtractorApi() {
 }
 
 class AnixCafeOkRuSSL : AnixCafeOdnoklassniki() {
-    override var name = "OK.ru"
-    override var mainUrl = "https://ok.ru"
+    override val name = "OK.ru"
+    override val mainUrl = "https://ok.ru"
 }
 
 class AnixCafeOkRuHTTP : AnixCafeOdnoklassniki() {
-    override var name = "OK.ru"
-    override var mainUrl = "http://ok.ru"
+    override val name = "OK.ru"
+    override val mainUrl = "http://ok.ru"
 }
 
 open class AnixCafeOdnoklassniki : ExtractorApi() {
@@ -307,7 +308,7 @@ open class AnixCafeOdnoklassniki : ExtractorApi() {
             return
         }
 
-        val videosStr = Regex(""""videos"\s*:\s*(\[[^\]]*])""")
+        val videosStr = Regex(""""videos"s*:s*([[^]]*])""")
             .find(videoReq)
             ?.groupValues
             ?.getOrNull(1)
@@ -352,7 +353,7 @@ open class AnixCafeOdnoklassniki : ExtractorApi() {
     }
 
     private fun extractOkRuField(raw: String, field: String): String? {
-        return Regex(""""$field"\s*:\s*"([^"]+)""")
+        return Regex(""""$field"s*:s*"([^"]+)""")
             .find(raw)
             ?.groupValues
             ?.getOrNull(1)
@@ -384,8 +385,8 @@ open class AnixCafeOdnoklassniki : ExtractorApi() {
 
     private fun String.cleanOkRuPayload(): String {
         return this
-            .replace("\\&quot;", "\"")
-            .replace("&quot;", "\"")
+            .replace("\\&quot;", """)
+            .replace("&quot;", """)
             .replace("\\u0026", "&")
             .replace("\\u003d", "=")
             .replace("\\u003D", "=")
