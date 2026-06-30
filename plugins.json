@@ -72,10 +72,10 @@
     },
     {
         "iconUrl": "https://cloudstream.zvlz.my.id/icon/alqanime.png",
-        "fileHash": "sha256-006e29c3b195a23529d40c3c437afcd55e9342d82fafd5a597537001f73dc236",
+        "fileHash": "sha256-c9abeaf872daab027637bea45dcb65c1580b5a1ec3beff745b13b3c1131d56e9",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "fileSize": 74631,
+        "fileSize": 74664,
         "status": 1,
         "language": "id",
         "authors": [
@@ -86,7 +86,7 @@
             "OVA",
             "Anime"
         ],
-        "version": 30,
+        "version": 28,
         "internalName": "Alqanime",
         "description": "Nonton & Download Anime Subtitle Indonesia",
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Alqanime.cs3",
@@ -343,10 +343,10 @@
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=https://anime-indo.lol&sz=%size%",
-        "fileHash": "sha256-9b8628520288e9bb062e1368dcd8dafc133486e792daca20b5e01f2f47f48236",
+        "fileHash": "sha256-ce856b3728c07880aab745d829303035090216f80aaba7d704be5c50d95a20f6",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "fileSize": 66014,
+        "fileSize": 66338,
         "status": 1,
         "language": "id",
         "authors": [
@@ -358,7 +358,7 @@
             "Anime",
             "Movie"
         ],
-        "version": 22,
+        "version": 23,
         "internalName": "AnimeIndo",
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeIndo.cs3",
         "name": "AnimeIndo"
@@ -504,10 +504,10 @@
     },
     {
         "iconUrl": "https://aghanim.xyz/wp-content/themes/animesail/assets/images/ico.png",
-        "fileHash": "sha256-eec9b9dbf9e52adfd411eff342413a8ddfd6b3c05631f8657670bb08d4396eef",
+        "fileHash": "sha256-40761ef44f3696ebcf0f21f73bc6a889432398f7466a3ae29bd385a79456a641",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "fileSize": 46087,
+        "fileSize": 46094,
         "status": 1,
         "language": "id",
         "authors": [
@@ -519,7 +519,7 @@
             "Anime",
             "OVA"
         ],
-        "version": 7,
+        "version": 9,
         "internalName": "AnimeSailProvider",
         "description": "AnimeSail \u2014 Streaming Anime, Donghua Subtitle Indonesia (Improved WIP)",
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeSailProvider.cs3",
