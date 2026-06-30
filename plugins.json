@@ -460,10 +460,10 @@
     },
     {
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/animepahe.png",
-        "fileHash": "sha256-0a320790e4953b28d4464e6e9fb7b5d90446e1414295af7a1b1bf90ea13fdd59",
+        "fileHash": "sha256-f05dac8c3cca3b4af29e47e2818550da6c8fa6685a3665db09081d65c0cc73d0",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "fileSize": 73826,
+        "fileSize": 74699,
         "status": 1,
         "language": "en",
         "authors": [
@@ -474,7 +474,7 @@
             "Anime",
             "OVA"
         ],
-        "version": 26,
+        "version": 27,
         "internalName": "AnimePahe",
         "description": "Animes (SUB/DUB)",
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimePahe.cs3",
@@ -1037,10 +1037,10 @@
     {
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Coflix.png",
         "jarFileSize": 126761,
-        "fileHash": "sha256-c58256936462b9637681c604654b425e01bdbbbbf3ab072f106f8f89792af399",
+        "fileHash": "sha256-260f6878fbf7bc90d56a4a3651aa19e448950a3f019f3e1a2ee011c174fbf415",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "fileSize": 29316,
+        "fileSize": 29310,
         "status": 1,
         "language": "fr",
         "authors": [
@@ -1050,13 +1050,13 @@
             "Movie",
             "TvSeries"
         ],
-        "version": 14,
+        "version": 15,
         "internalName": "Coflix",
         "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Coflix.jar",
         "description": "Movies,Series and Anime French Extension ",
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Coflix.cs3",
         "name": "Coflix",
-        "jarHash": "sha256-15191cb81a4b0e0660c2a55260e8d60a300d26da845ae2bbd55fe3595a914c14"
+        "jarHash": "sha256-95cd27dd6cea0d55ef1ff6ddb184b2ee93692cd3591879dc382215ef81d28532"
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=www.dailymotion.com&sz=%size%",
