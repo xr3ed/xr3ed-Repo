@@ -1,5 +1,6 @@
 package com.sad25kag.drakorkita
 
+import com.lagradost.cloudstream3.newSubtitleFile
 import com.lagradost.cloudstream3.SubtitleFile
 import com.lagradost.cloudstream3.app
 import com.lagradost.cloudstream3.utils.ExtractorLink
@@ -92,7 +93,7 @@ object DrakorKitaResolver {
         return candidates.filter { it.isNotBlank() }.distinct()
     }
 
-    fun extractSubtitles(document: Document, mainUrl: String): List<SubtitleFile> {
+    suspend fun extractSubtitles(document: Document, mainUrl: String): List<SubtitleFile> {
         return document.select("track[src], a[href$=.srt], a[href$=.vtt]").mapNotNull { element ->
             val url = normalizeUrl(element.attr("src").ifBlank { element.attr("href") }, mainUrl)
             if (url.isBlank()) return@mapNotNull null
