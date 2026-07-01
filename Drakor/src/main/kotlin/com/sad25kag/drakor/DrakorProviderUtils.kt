@@ -318,7 +318,7 @@ fun getFDoviesQuality(str: String): String {
 fun getLanguageNameFromCode(code: String?): String? {
     return code?.split("_")?.first()?.let { langCode ->
         try {
-            Locale.forLanguageTag(langCode).displayLanguage.replaceFirstChar {
+            Locale(langCode).displayLanguage.replaceFirstChar {
                 if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString()
             }
         } catch (e: Exception) {

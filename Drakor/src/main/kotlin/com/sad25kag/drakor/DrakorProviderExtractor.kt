@@ -126,10 +126,10 @@ object DrakorProviderExtractor : DrakorProvider() {
 
 
     private data class IdlixAesPayload(
-        @param:JsonProperty("ct") val ct: String? = null,
-        @param:JsonProperty("iv") val iv: String? = null,
-        @param:JsonProperty("s") val salt: String? = null,
-        @param:JsonProperty("m") val metrix: String? = null,
+        @JsonProperty("ct") val ct: String? = null,
+        @JsonProperty("iv") val iv: String? = null,
+        @JsonProperty("s") val salt: String? = null,
+        @JsonProperty("m") val metrix: String? = null,
     )
 
     private fun decryptIdlixAes(data: String, password: String): String? {
@@ -400,12 +400,12 @@ object DrakorProviderExtractor : DrakorProvider() {
         }
     }
 
-    private data class KisskhMedia(@param:JsonProperty("id") val id: Int?, @param:JsonProperty("title") val title: String?)
-    private data class KisskhDetail(@param:JsonProperty("episodes") val episodes: ArrayList<KisskhEpisode>?)
-    private data class KisskhEpisode(@param:JsonProperty("id") val id: Int?, @param:JsonProperty("number") val number: Double?)
-    private data class KisskhKey(@param:JsonProperty("key") val key: String?)
-    private data class KisskhSources(@param:JsonProperty("Video") val video: String?, @param:JsonProperty("ThirdParty") val thirdParty: String?)
-    private data class KisskhSubtitle(@param:JsonProperty("src") val src: String?, @param:JsonProperty("label") val label: String?)
+    private data class KisskhMedia(@JsonProperty("id") val id: Int?, @JsonProperty("title") val title: String?)
+    private data class KisskhDetail(@JsonProperty("episodes") val episodes: ArrayList<KisskhEpisode>?)
+    private data class KisskhEpisode(@JsonProperty("id") val id: Int?, @JsonProperty("number") val number: Double?)
+    private data class KisskhKey(@JsonProperty("key") val key: String?)
+    private data class KisskhSources(@JsonProperty("Video") val video: String?, @JsonProperty("ThirdParty") val thirdParty: String?)
+    private data class KisskhSubtitle(@JsonProperty("src") val src: String?, @JsonProperty("label") val label: String?)
 
     suspend fun invokeMoviebox(
         title: String,
@@ -1167,7 +1167,7 @@ object DrakorProviderExtractor : DrakorProvider() {
         tryParseDrakorJson<ArrayList<VidrockSubtitle>>(res)?.map { subtitle ->
             subtitleCallback.invoke(
                 newSubtitleFile(
-                    subtitle.label?.replace(Regex("\\d"), "")?.replace(Regex("\\s+Hi"), "").trim()
+                    subtitle.label?.replace(Regex("\\d"), "")?.replace(Regex("\\s+Hi"), "")?.trim()
                         ?: return@map,
                     subtitle.file ?: return@map,
                 )

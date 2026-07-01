@@ -18,7 +18,7 @@ buildscript {
     val androidGradlePluginVersion = project
         .findProperty("android.gradle.plugin.version")
         ?.toString()
-        ?: "8.7.3"
+        ?: "9.1.0"
 
     repositories {
         google()
@@ -96,7 +96,7 @@ fun Project.android(
 subprojects {
 
     apply(plugin = "com.android.library")
-    apply(plugin = "kotlin-android")
+    //apply(plugin = "kotlin-android")
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
     cloudstream {
