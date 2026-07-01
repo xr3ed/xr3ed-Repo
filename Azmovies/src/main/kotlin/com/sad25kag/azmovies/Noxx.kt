@@ -359,6 +359,7 @@ class Noxx : MainAPI() {
         val subtitleUrl = url.substringAfter("c1_file=", "").substringBefore("&").urlDecode()
         if (subtitleUrl.isBlank() || !subtitleUrl.contains(".vtt", true)) return null
         val label = url.substringAfter("c1_label=", "English").substringBefore("&").urlDecode()
+        @Suppress("DEPRECATION")
         return SubtitleFile(label.ifBlank { "English" }, subtitleUrl)
     }
 
@@ -418,15 +419,15 @@ class Noxx : MainAPI() {
 private data class NoxxBrowseResponse(
     val success: Boolean? = null,
     val series: List<NoxxSeries>? = null,
-    @JsonProperty("hasMore")
+    @field:JsonProperty("hasMore")
     val hasMore: Boolean? = null,
 )
 
 private data class NoxxSeries(
     val slug: String? = null,
     val title: String? = null,
-    @JsonProperty("poster_path")
+    @field:JsonProperty("poster_path")
     val posterPath: String? = null,
-    @JsonProperty("first_air_date")
+    @field:JsonProperty("first_air_date")
     val firstAirDate: String? = null,
 )
