@@ -121,16 +121,18 @@ def main():
         sys.exit(1)
 
     # 8. Copy all successful CS3 files to builds_dir
-    #    First remove old CS3 files so git always sees a clean diff
+    #    First remove ONLY the CS3 files that will be replaced by fresh builds.
+    #    We deliberately do NOT remove CS3 files for failed plugins (e.g. Ultima.cs3)
+    #    so that the merge step (step 10) can still read and hash them.
     os.makedirs(builds_dir, exist_ok=True)
-    for old_cs3 in glob.glob(os.path.join(builds_dir, "*.cs3")):
-        os.remove(old_cs3)
-        print(f"Removed old: {os.path.basename(old_cs3)}")
-
     for plugin, cs3_path in successful_cs3.items():
         dest = os.path.join(builds_dir, os.path.basename(cs3_path))
+        # Remove old version first (forces git to see a diff even if bytes are identical)
+        if os.path.exists(dest):
+            os.remove(dest)
         shutil.copy2(cs3_path, dest)
         print(f"Copied: {os.path.basename(cs3_path)}")
+
 
     # 9. Update fileSize and fileHash in new_plugins to match the ACTUAL files in builds_dir
     #    (Gradle sometimes encodes a relative URL hash; recalculate from the actual file)
