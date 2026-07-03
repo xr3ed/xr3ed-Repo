@@ -194,10 +194,40 @@ class MovieBoxProvider : MainAPI() {
         return "$timestamp|2|$signatureB64"
     }
 
-    override val mainPage = mainPageOf(
-        "home" to "Home",
-        "trending" to "Most Trending",
-    )
+    override val mainPage by lazy {
+        val staticFallback = mainPageOf(
+            "home_featured" to "Featured",
+            "trending"      to "Most Trending",
+        )
+        runCatching {
+            kotlinx.coroutines.runBlocking(kotlinx.coroutines.Dispatchers.IO) {
+                val url = "$apiUrl/wefeed-h5api-bff/home?host=$apiHostParam"
+                val response = app.get(url, headers = apiHeaders())
+                val mapper = jacksonObjectMapper()
+                val operatingList = mapper.readTree(response.text)["data"]
+                    ?.get("operatingList")
+                    ?: return@runBlocking null
+
+                val sections = mutableListOf<com.lagradost.cloudstream3.MainPageData>()
+
+                operatingList.forEach { op ->
+                    when (op["type"]?.asText()?.uppercase()) {
+                        "BANNER" -> {
+                            val hasItems = op["banner"]?.get("items")?.size() ?: 0
+                            if (hasItems > 0) sections += mainPageOf("home_featured" to "Featured")
+                        }
+                        "SUBJECTS_MOVIE" -> {
+                            val title = op["title"]?.asText()?.takeIf { it.isNotBlank() }
+                                ?: return@forEach
+                            sections += mainPageOf("home_section:$title" to title)
+                        }
+                    }
+                }
+                sections += mainPageOf("trending" to "Most Trending")
+                sections.takeIf { it.size > 1 }
+            }
+        }.getOrNull() ?: staticFallback
+    }
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         val mapper = jacksonObjectMapper()
@@ -242,12 +272,37 @@ class MovieBoxProvider : MainAPI() {
             return root["data"]?.get("operatingList")
         }
 
-        return when (request.data) {
-            "home" -> {
+        return when {
+            request.data == "home_featured" -> {
                 if (page != 1) return newHomePageResponse(emptyList())
-
                 val operatingList = fetchHomeOperatingList() ?: return newHomePageResponse(emptyList())
+                val items = operatingList.firstOrNull { op ->
+                    op["type"]?.asText()?.equals("BANNER", ignoreCase = true) == true
+                }?.get("banner")?.get("items")
+                    ?.takeIf { it.isArray && it.size() > 0 }
+                    ?: return newHomePageResponse(emptyList())
+                val results = toSearchResponses(items).take(15)
+                newHomePageResponse(HomePageList("Featured", results))
+            }
 
+            request.data.startsWith("home_section:") -> {
+                if (page != 1) return newHomePageResponse(emptyList())
+                val sectionTitle = request.data.removePrefix("home_section:")
+                val operatingList = fetchHomeOperatingList() ?: return newHomePageResponse(emptyList())
+                val op = operatingList.firstOrNull { node ->
+                    node["type"]?.asText()?.equals("SUBJECTS_MOVIE", ignoreCase = true) == true &&
+                    node["title"]?.asText() == sectionTitle
+                } ?: return newHomePageResponse(emptyList())
+                val subjects = op["subjects"]?.takeIf { it.isArray && it.size() > 0 }
+                    ?: return newHomePageResponse(emptyList())
+                val results = toSearchResponses(subjects)
+                newHomePageResponse(HomePageList(sectionTitle, results))
+            }
+
+            // Legacy "home" key — kept for backward compatibility
+            request.data == "home" -> {
+                if (page != 1) return newHomePageResponse(emptyList())
+                val operatingList = fetchHomeOperatingList() ?: return newHomePageResponse(emptyList())
                 val featured = operatingList.firstOrNull { op ->
                     op["type"]?.asText()?.equals("BANNER", ignoreCase = true) == true
                 }?.get("banner")?.get("items")
@@ -256,7 +311,6 @@ class MovieBoxProvider : MainAPI() {
                         val results = toSearchResponses(items).take(15)
                         if (results.isEmpty()) null else HomePageList("Featured", results)
                     }
-
                 val sections = operatingList.mapNotNull { op ->
                     if (op["type"]?.asText()?.equals("SUBJECTS_MOVIE", ignoreCase = true) != true) return@mapNotNull null
                     val title = op["title"]?.asText()?.takeIf { it.isNotBlank() } ?: return@mapNotNull null
@@ -266,16 +320,10 @@ class MovieBoxProvider : MainAPI() {
                     if (results.isEmpty()) return@mapNotNull null
                     HomePageList(title, results)
                 }
-
-                val lists = buildList {
-                    if (featured != null) add(featured)
-                    addAll(sections)
-                }
-
-                newHomePageResponse(lists)
+                newHomePageResponse(buildList { if (featured != null) add(featured); addAll(sections) })
             }
 
-            "trending" -> {
+            request.data == "trending" -> {
                 val apiPage = (page - 1).coerceAtLeast(0)
                 val url = "$apiUrl/wefeed-h5api-bff/subject/trending?page=$apiPage&perPage=20"
                 val response = app.get(url, headers = apiHeaders())
@@ -284,7 +332,6 @@ class MovieBoxProvider : MainAPI() {
                 val items = data["subjectList"] ?: return newHomePageResponse(emptyList())
                 val pager = data["pager"]
                 val hasNext = pager?.get("hasMore")?.asBoolean() == true
-
                 val results = toSearchResponses(items)
                 newHomePageResponse(HomePageList(request.name, results), hasNext = hasNext)
             }

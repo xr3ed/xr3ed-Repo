@@ -44,7 +44,7 @@ Topcartoons
 Fibwatch
 LayarKacaProviderBackup
 Animenosub
-ShowBoxBackup
+ShowBox
 Anizone
 Kickassanime
 IdlixProviderBackup

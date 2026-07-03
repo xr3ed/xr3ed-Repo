@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.konan.properties.Properties
 
 // use an integer for version numbers
-version = 2
+version = 6
 
 android {
     buildFeatures {
@@ -23,7 +23,7 @@ android {
 
 dependencies {
     // FIXME remove this when crossplatform is fully supported
-    val cloudstream = configurations.getByName("cloudstream")
+    val cloudstream by configurations
     implementation("com.google.android.material:material:1.13.0")
     implementation("androidx.leanback:leanback:1.2.0")
     cloudstream("com.lagradost:cloudstream3:pre-release")
@@ -35,7 +35,7 @@ cloudstream {
     description = "ShowBox (Retrieve the cookie using Login with Google to properly utilize ShowBox."
 
     // description = "Lorem Ipsum"
-    authors = listOf("sad25kag")
+    authors = listOf("Phisher98")
 
     /**
      * Status int as the following:
@@ -44,7 +44,7 @@ cloudstream {
      * 2: Slow
      * 3: Beta only
      * */
-    status = 0 // will be 3 if unspecified
+    status = 1 // will be 3 if unspecified
     tvTypes = listOf(
         "AsianDrama",
         "Anime",
