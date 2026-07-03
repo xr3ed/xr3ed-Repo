@@ -132,9 +132,6 @@ jobs:
           cd src
           chmod +x gradlew
           
-          # Clean builds folder to avoid stale built files
-          rm -f $GITHUB_WORKSPACE/builds/*.cs3 || true
-          
           # Build all plugins in parallel; --continue ensures one failure won't stop others
           ./gradlew make makePluginsJson --continue || true
           
@@ -158,4 +155,5 @@ jobs:
           fi
           
           git commit -m "$commit_msg" || exit 0
-          git push
+          git pull --rebase origin builds || true
+          git push origin builds
