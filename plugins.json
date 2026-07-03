@@ -2891,6 +2891,28 @@
         "fileHash": "sha256-49564162b955d1988d22d04ea763448e5408058432ba0918a556092b1e361dd2"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Pusatfilm.cs3",
+        "status": 3,
+        "version": 8,
+        "name": "Pusatfilm",
+        "internalName": "Pusatfilm",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "PusatFilm - Streaming Movie and TV Series",
+        "fileSize": 40400,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie",
+            "Anime"
+        ],
+        "apiVersion": 1,
+        "fileHash": "sha256-ac53a9fbabc4987647c3fa4bda6faac4ae07c63a57471961e38509108c8edf92"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/QuickIPTV.cs3",
         "status": 1,
         "version": 6,
@@ -3130,6 +3152,26 @@
         "iconUrl": "https://github.com/duro92/ExtCloud/blob/main/SoraStream/Icon.png",
         "apiVersion": 1,
         "fileHash": "sha256-ef68c1b3e075b6ff1097ed0cdeac94a50a7815c8e7a4f06f44fc43313f76940c"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/SpankBang.cs3",
+        "status": 3,
+        "version": 6,
+        "name": "SpankBang",
+        "internalName": "SpankBang",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "SpankBang adult video provider using direct HLS and MP4 stream_data extraction from spankbang.party.",
+        "fileSize": 21107,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "en",
+        "tvTypes": [
+            "NSFW"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=spankbang.party&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-98ad4d7cdc7f07238d9caae2458c93095626733002a863f783c3ba21c2715cd2"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StreamPlay.cs3",
