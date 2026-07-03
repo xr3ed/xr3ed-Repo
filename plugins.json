@@ -2616,6 +2616,27 @@
         "fileHash": "sha256-9fe4383f103d4da794b86a875255059640e4cd8b221124990ba0eb15dccb77a1"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Noxx.cs3",
+        "status": 3,
+        "version": 9,
+        "name": "Noxx",
+        "internalName": "Noxx",
+        "authors": [
+            "BetbetMiro"
+        ],
+        "description": "Noxx",
+        "fileSize": 50180,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://noxx.to&size=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-3c42c673532f45dd5b58674b3759409f770aac6c52768b45827d9130c4ff32a3"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/OHLI24.cs3",
         "status": 1,
         "version": 4,
