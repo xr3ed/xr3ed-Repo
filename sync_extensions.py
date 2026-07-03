@@ -36,7 +36,7 @@ def main():
 
     # 3. Clean up existing plugin folders in repo root
     # A plugin folder has build.gradle.kts and is not a known/ignored folder
-    ignored_folders = {".git", ".github", ".vscode", "gradle", "temp_repos", "buildSrc", "Miro-Temp", "Phisher-Temp"}
+    ignored_folders = {".git", ".github", ".vscode", "gradle", "temp_repos", "buildSrc", "Miro-Temp", "Phisher-Temp", "_patches"}
     for item in os.listdir(repo_root):
         item_path = os.path.join(repo_root, item)
         if os.path.isdir(item_path) and item not in ignored_folders:
@@ -144,6 +144,9 @@ def main():
         f.write("\n".join(phisher_copied))
     print("Generated phisher_plugins.txt")
 
+    # 9. Apply local patches on top of upstream-copied plugins
+    apply_patches(repo_root)
+
     # 8. Generate settings.gradle.kts
     # We dynamically include all folders with build.gradle.kts except ignored ones
     settings_content = """rootProject.name = "xr3ed"
@@ -163,6 +166,56 @@ fun File.eachDir(block: (File) -> Unit) {
     with open(os.path.join(repo_root, "settings.gradle.kts"), "w", encoding="utf-8") as f:
         f.write(settings_content)
     print("Generated settings.gradle.kts")
+
+def apply_patches(repo_root):
+    """
+    Apply local patches from the _patches/ folder on top of upstream-copied plugins.
+
+    Struktur _patches/:
+        _patches/
+            PluginName/               <- nama HARUS sama dengan folder plugin di repo
+                src/
+                    main/
+                        kotlin/
+                            .../FixedFile.kt  <- file yang menimpa versi upstream
+                build.gradle.kts      <- bisa juga patch build file
+
+    Setiap file di _patches/PluginName/ akan menyalin & menimpa file
+    yang sama di repo_root/PluginName/ dengan path relatif yang sama.
+    Folder _patches/ sendiri TIDAK dihapus oleh proses cleanup.
+    """
+    patches_dir = os.path.join(repo_root, "_patches")
+    if not os.path.exists(patches_dir):
+        print("[PATCH] No _patches/ folder found, skipping patch step.")
+        return
+
+    patched_count = 0
+    for plugin_name in sorted(os.listdir(patches_dir)):
+        plugin_patch_dir = os.path.join(patches_dir, plugin_name)
+        if not os.path.isdir(plugin_patch_dir):
+            continue
+
+        plugin_dst_dir = os.path.join(repo_root, plugin_name)
+        if not os.path.exists(plugin_dst_dir):
+            print(f"[PATCH] WARNING: Target plugin '{plugin_name}' not found in repo, skipping.")
+            continue
+
+        for root, dirs, files in os.walk(plugin_patch_dir):
+            rel_root = os.path.relpath(root, plugin_patch_dir)
+            for file in files:
+                src_file = os.path.join(root, file)
+                dst_file = os.path.join(plugin_dst_dir, rel_root, file)
+                os.makedirs(os.path.dirname(dst_file), exist_ok=True)
+                shutil.copy2(src_file, dst_file)
+                rel_display = os.path.join(rel_root, file).replace("\\", "/").lstrip("./")
+                print(f"[PATCH] {plugin_name}/{rel_display}")
+                patched_count += 1
+
+    if patched_count == 0:
+        print("[PATCH] _patches/ exists but no files were applied.")
+    else:
+        print(f"[PATCH] Done — {patched_count} file(s) patched.")
+
 
 def modify_kotlin_files(plugin_dir):
     # Regex to find override var/val name = "..."
