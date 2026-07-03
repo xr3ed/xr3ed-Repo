@@ -33,7 +33,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-type: '3.x'
+          python-version: '3.x'
 
       - name: Run sync script
         run: |
@@ -132,12 +132,12 @@ jobs:
           cd src
           chmod +x gradlew
           
-          # Run custom build python script to compile, disable failed plugins dynamically and merge plugins.json index
-          python build_plugins.py
-          
-          # Copy all built .cs3 files and plugins.json to builds repository directory
-          cp **/build/*.cs3 $GITHUB_WORKSPACE/builds/ || true
-          cp build/plugins.json $GITHUB_WORKSPACE/builds/ || true
+          # Run custom build python script:
+          # - Compiles all plugins (gradlew make --continue)
+          # - Disables failed plugins, runs makePluginsJson for successful ones
+          # - Copies all CS3 files and writes final plugins.json directly to builds_dir
+          # - Merges old entries for failed plugins back into plugins.json
+          python build_plugins.py $GITHUB_WORKSPACE/builds
           
       - name: Push builds
         if: steps.source-changes.outputs.changed == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
