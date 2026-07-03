@@ -3634,5 +3634,28 @@
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
         "apiVersion": 1,
         "fileHash": "sha256-c60a24b53b4edc0ed2433882ac2073db2e8875cbd005a5af11ee1f2b216ce83b"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/UltimaBackup.cs3",
+        "status": 2,
+        "version": 26,
+        "name": "UltimaBackup",
+        "internalName": "UltimaBackup",
+        "authors": [
+            "Phisher98"
+        ],
+        "description": "The ultimate All-in-One home screen (Backup version)",
+        "fileSize": 305706,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "en",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "AsianDrama"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
+        "apiVersion": 1,
+        "fileHash": "sha256-e77fea993b2335c20ecb1febad91c6b794a053321e2adaf21295b0290dc52f69"
     }
 ]
