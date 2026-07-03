@@ -79,19 +79,15 @@ def main():
         content = content.replace(old_namespace, new_namespace)
         
         # Add optIn compiler options to bypass prerelease API compile check globally
-        old_compiler_args = """                freeCompilerArgs.addAll(
-                    "-Xno-call-assertions",
-                    "-Xno-param-assertions",
-                    "-Xno-receiver-assertions"
-                )"""
-        new_compiler_args = """                freeCompilerArgs.addAll(
-                    "-Xno-call-assertions",
-                    "-Xno-param-assertions",
-                    "-Xno-receiver-assertions"
-                )
-                optIn.add("com.lagradost.cloudstream3.Prerelease")"""
-        
-        content = content.replace(old_compiler_args, new_compiler_args)
+        # Use regex to match freeCompilerArgs block flexibly (handles trailing commas, whitespace changes)
+        import re
+        if 'optIn.add("com.lagradost.cloudstream3.Prerelease")' not in content:
+            pattern = r'(freeCompilerArgs\.addAll\([^)]*\))'
+            match = re.search(pattern, content, re.DOTALL)
+            if match:
+                original = match.group(0)
+                replacement = original + '\n                optIn.add("com.lagradost.cloudstream3.Prerelease")'
+                content = content.replace(original, replacement, 1)
         
         with open(build_gradle_path, 'w', encoding='utf-8') as f:
             f.write(content)
