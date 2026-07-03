@@ -145,32 +145,30 @@ def main():
         else:
             print(f"WARNING: {p['internalName']}.cs3 not found in builds_dir after copy!")
 
-    # 10. Merge old entries for failed plugins back in
-    for plugin in failed_plugins:
-        # Find matching old entry (by internalName OR name)
-        old_entry = None
-        for p in old_plugins:
-            if p.get("internalName") == plugin or p.get("name") == plugin:
-                old_entry = p
-                break
-
-        if not old_entry:
-            print(f"No old entry found for failed plugin: {plugin} â€” skipping.")
+    # 10. Merge old entries for failed, renamed, or backup plugins back in
+    #     We scan all old entries. If they are not in the new plugins map and
+    #     their CS3 file exists in builds_dir, we keep them and refresh their hash.
+    for old_entry in old_plugins:
+        internal_name = old_entry.get("internalName")
+        name = old_entry.get("name")
+        if not internal_name:
             continue
 
-        # Refresh size/hash if the CS3 still exists in builds_dir
-        cs3_dest = os.path.join(builds_dir, f"{old_entry['internalName']}.cs3")
-        if os.path.exists(cs3_dest):
-            old_entry["fileSize"] = os.path.getsize(cs3_dest)
-            old_entry["fileHash"] = f"sha256-{get_sha256(cs3_dest)}"
-            print(f"Refreshed hash for failed plugin kept from old builds: {plugin}")
-        else:
-            print(f"WARNING: CS3 for failed plugin '{plugin}' not found in builds_dir â€” entry kept with old hash.")
+        if internal_name not in new_plugins_map:
+            # Check if the CS3 file exists in builds_dir
+            cs3_dest = os.path.join(builds_dir, f"{internal_name}.cs3")
+            if not os.path.exists(cs3_dest) and name:
+                cs3_dest = os.path.join(builds_dir, f"{name}.cs3")
 
-        if old_entry["internalName"] not in new_plugins_map:
-            new_plugins.append(old_entry)
-            new_plugins_map[old_entry["internalName"]] = old_entry
-            print(f"Merged old entry: {plugin}")
+            if os.path.exists(cs3_dest):
+                old_entry["fileSize"] = os.path.getsize(cs3_dest)
+                old_entry["fileHash"] = f"sha256-{get_sha256(cs3_dest)}"
+                new_plugins.append(old_entry)
+                new_plugins_map[internal_name] = old_entry
+                print(f"Merged old entry (preserved): {internal_name} (size={old_entry['fileSize']})")
+            else:
+                print(f"Discarded old entry (no CS3 file found): {internal_name}")
+
 
     # 11. Write final plugins.json to builds_dir directly
     final_plugins_json = os.path.join(builds_dir, "plugins.json")
