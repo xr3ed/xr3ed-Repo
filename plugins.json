@@ -1219,7 +1219,7 @@
             "sad25kag"
         ],
         "description": "Dubbindo — status terbatas: provider masih dapat memuat sebagian link, tetapi banyak konten di website sumber sedang processing/mati, poster kosong, atau media tidak dapat diputar.",
-        "fileSize": 35569,
+        "fileSize": 35566,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1231,7 +1231,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=www.dubbindo.site&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-1434ec3f28368004b69e0ad3162ecef246e484c8453e1c8fd7b1e4bfac2567ae"
+        "fileHash": "sha256-d522da93a5b35fc4f038cc08238485b8e988b1fa20d3de80690301a7bd15e0fa"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DudeFilms.cs3",
