@@ -3611,5 +3611,51 @@
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://zoronime.online&size=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-cc77befd080d7d460294babe44891518ae3cb91cdb90264b7e4805397bf4659c"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Ultima.cs3",
+        "status": 2,
+        "version": 26,
+        "name": "Ultima",
+        "internalName": "Ultima",
+        "authors": [
+            "Phisher98"
+        ],
+        "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
+        "fileSize": 302769,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "en",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "AsianDrama"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
+        "apiVersion": 1,
+        "fileHash": "sha256-c60a24b53b4edc0ed2433882ac2073db2e8875cbd005a5af11ee1f2b216ce83b"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/UltimaBackup.cs3",
+        "status": 2,
+        "version": 26,
+        "name": "UltimaBackup",
+        "internalName": "UltimaBackup",
+        "authors": [
+            "Phisher98"
+        ],
+        "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
+        "fileSize": 305706,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "en",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime",
+            "AsianDrama"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
+        "apiVersion": 1,
+        "fileHash": "sha256-e77fea993b2335c20ecb1febad91c6b794a053321e2adaf21295b0290dc52f69"
     }
 ]
