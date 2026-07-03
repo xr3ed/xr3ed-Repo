@@ -1,4 +1,5 @@
-import os
+﻿import os
+# Last triggered: 2026-07-03 19:14:19 UTC
 import sys
 import shutil
 import subprocess
@@ -147,7 +148,7 @@ def main():
                 break
 
         if not old_entry:
-            print(f"No old entry found for failed plugin: {plugin} — skipping.")
+            print(f"No old entry found for failed plugin: {plugin} â€” skipping.")
             continue
 
         # Refresh size/hash if the CS3 still exists in builds_dir
@@ -157,7 +158,7 @@ def main():
             old_entry["fileHash"] = f"sha256-{get_sha256(cs3_dest)}"
             print(f"Refreshed hash for failed plugin kept from old builds: {plugin}")
         else:
-            print(f"WARNING: CS3 for failed plugin '{plugin}' not found in builds_dir — entry kept with old hash.")
+            print(f"WARNING: CS3 for failed plugin '{plugin}' not found in builds_dir â€” entry kept with old hash.")
 
         if old_entry["internalName"] not in new_plugins_map:
             new_plugins.append(old_entry)
