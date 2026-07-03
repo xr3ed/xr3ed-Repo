@@ -89,6 +89,7 @@ subprojects {
                     "-Xno-receiver-assertions",
                     
                 )
+                optIn.add("com.lagradost.cloudstream3.Prerelease")
             }
         }
     }
