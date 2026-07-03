@@ -135,44 +135,8 @@ jobs:
           # Clean builds folder to avoid stale built files
           rm -f $GITHUB_WORKSPACE/builds/*.cs3 || true
           
-          # Build each plugin individually so one failure doesn't block all others
-          failed_plugins=""
-          success_count=0
-          fail_count=0
-          
-          for plugin_dir in */; do
-            plugin_name="${plugin_dir%/}"
-            # Skip non-plugin directories
-            if [ ! -f "$plugin_dir/build.gradle.kts" ]; then
-              continue
-            fi
-            # Skip known non-plugin folders
-            case "$plugin_name" in
-              .git|.github|.vscode|gradle|temp_repos|buildSrc|_patches) continue ;;
-            esac
-            
-            echo "::group::Building $plugin_name"
-            if ./gradlew ":${plugin_name}:make" 2>&1; then
-              echo "✅ $plugin_name built successfully"
-              success_count=$((success_count + 1))
-            else
-              echo "::warning::❌ $plugin_name failed to build, skipping..."
-              failed_plugins="$failed_plugins $plugin_name"
-              fail_count=$((fail_count + 1))
-            fi
-            echo "::endgroup::"
-          done
-          
-          echo ""
-          echo "========================================="
-          echo "Build Summary: $success_count succeeded, $fail_count failed"
-          if [ -n "$failed_plugins" ]; then
-            echo "Failed plugins:$failed_plugins"
-          fi
-          echo "========================================="
-          
-          # Generate plugins.json from successfully built plugins
-          ./gradlew makePluginsJson || true
+          # Build all plugins in parallel; --continue ensures one failure won't stop others
+          ./gradlew make makePluginsJson --continue || true
           
           # Copy all built .cs3 files and plugins.json to builds repository directory
           cp **/build/*.cs3 $GITHUB_WORKSPACE/builds/ || true
