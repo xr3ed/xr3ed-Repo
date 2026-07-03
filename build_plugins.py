@@ -1,4 +1,4 @@
-﻿import os
+import os
 # Last triggered: 2026-07-03 19:14:19 UTC
 import sys
 import shutil
@@ -121,7 +121,12 @@ def main():
         sys.exit(1)
 
     # 8. Copy all successful CS3 files to builds_dir
+    #    First remove old CS3 files so git always sees a clean diff
     os.makedirs(builds_dir, exist_ok=True)
+    for old_cs3 in glob.glob(os.path.join(builds_dir, "*.cs3")):
+        os.remove(old_cs3)
+        print(f"Removed old: {os.path.basename(old_cs3)}")
+
     for plugin, cs3_path in successful_cs3.items():
         dest = os.path.join(builds_dir, os.path.basename(cs3_path))
         shutil.copy2(cs3_path, dest)

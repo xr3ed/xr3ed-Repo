@@ -154,6 +154,6 @@ jobs:
             commit_msg="Auto-build: Update plugins ($GITHUB_SHA)"
           fi
           
-          git commit -m "$commit_msg" || exit 0
+          git commit -m "$commit_msg" || true
           git pull --rebase origin builds || true
           git push origin builds
