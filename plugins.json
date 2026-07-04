@@ -3181,7 +3181,7 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StreamPlayBackup.cs3",
         "status": 1,
-        "version": 652,
+        "version": 653,
         "name": "StreamPlayBackup",
         "internalName": "StreamPlayBackup",
         "authors": [
@@ -3189,7 +3189,7 @@
             "Hexated"
         ],
         "description": "#1 best extention based on MultiAPI",
-        "fileSize": 930347,
+        "fileSize": 930346,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3202,7 +3202,7 @@
         ],
         "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
         "apiVersion": 1,
-        "fileHash": "sha256-18bc5f79f10da0b12c8b37ae20e15d701cffaf1fbe1deca62c2b5850788ddc45"
+        "fileHash": "sha256-aaf86c148a23c0ac4d2231bb24379b47abac7dfe94e3bb06bc7f6ff21825dbfe"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StremioAddon.cs3",
@@ -3466,7 +3466,7 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/TorraStream.cs3",
         "status": 1,
-        "version": 89,
+        "version": 90,
         "name": "TorraStream",
         "internalName": "TorraStream",
         "authors": [
@@ -3485,7 +3485,7 @@
         ],
         "iconUrl": "https://torrentio.strem.fun/images/logo_v1.png",
         "apiVersion": 1,
-        "fileHash": "sha256-9d7036a6b4caed0a78e371b2bce992320830041efd5ec236ba03f2eef2756cb5"
+        "fileHash": "sha256-3152122687e24e2525a2c003c950fd812bb8cd59af77ed167a4f4261b031449b"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/UHDmoviesProvider.cs3",
