@@ -3509,6 +3509,26 @@
         "fileHash": "sha256-4188fb307439bafb698cbe674f864832c1b4f66bacd1bcbfa7803abc8de80e94"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Ultima.cs3",
+        "status": 2,
+        "version": 55,
+        "name": "Ultima",
+        "internalName": "Ultima",
+        "authors": [
+            "RowdyRushya,Phisher98"
+        ],
+        "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
+        "fileSize": 222005,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "en",
+        "tvTypes": [
+            "All"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
+        "apiVersion": 1,
+        "fileHash": "sha256-abfafa8b4e5f433e254f40027532531fe8b6462866f4c23a31f2475472825e88"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/WatchWrestling.cs3",
         "status": 1,
         "version": 27,
@@ -3674,29 +3694,6 @@
         "iconUrl": "https://www.google.com/s2/favicons?domain=spankbang.party&sz=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-98ad4d7cdc7f07238d9caae2458c93095626733002a863f783c3ba21c2715cd2"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Ultima.cs3",
-        "status": 2,
-        "version": 26,
-        "name": "Ultima",
-        "internalName": "Ultima",
-        "authors": [
-            "Phisher98"
-        ],
-        "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
-        "fileSize": 302769,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "en",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "Anime",
-            "AsianDrama"
-        ],
-        "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
-        "apiVersion": 1,
-        "fileHash": "sha256-c60a24b53b4edc0ed2433882ac2073db2e8875cbd005a5af11ee1f2b216ce83b"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/UltimaBackup.cs3",
