@@ -3189,7 +3189,7 @@
             "Hexated"
         ],
         "description": "#1 best extention based on MultiAPI",
-        "fileSize": 930346,
+        "fileSize": 930349,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3202,7 +3202,7 @@
         ],
         "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
         "apiVersion": 1,
-        "fileHash": "sha256-aaf86c148a23c0ac4d2231bb24379b47abac7dfe94e3bb06bc7f6ff21825dbfe"
+        "fileHash": "sha256-deefae3d025c2e6cad828d444623bd383100b53669ee2c25491b8abd0a04cd6b"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StremioAddon.cs3",
@@ -3466,7 +3466,7 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/TorraStream.cs3",
         "status": 1,
-        "version": 90,
+        "version": 91,
         "name": "TorraStream",
         "internalName": "TorraStream",
         "authors": [
@@ -3485,7 +3485,7 @@
         ],
         "iconUrl": "https://torrentio.strem.fun/images/logo_v1.png",
         "apiVersion": 1,
-        "fileHash": "sha256-3152122687e24e2525a2c003c950fd812bb8cd59af77ed167a4f4261b031449b"
+        "fileHash": "sha256-cd7f2b2a329dc5e847f2e5d16346be27102d9bb19e454d695036e19d2027d9c4"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/UHDmoviesProvider.cs3",
