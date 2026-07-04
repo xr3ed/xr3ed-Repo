@@ -22,7 +22,7 @@ import com.lagradost.cloudstream3.utils.AppUtils
 import com.phisher98.UltimaUtils.SectionInfo
 
 class Ultima(val plugin: UltimaPlugin) : MainAPI() {
-    override var name = "Ultima"
+    override var name = "🏠HomePage"
     override var supportedTypes = setOf(TvType.Movie, TvType.TvSeries, TvType.Anime)
     override var lang = "en"
     override val hasMainPage = true

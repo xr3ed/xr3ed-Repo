@@ -100,7 +100,7 @@ object UltimaStorageManager {
         val providers = UltimaUtils.getAllProviders()
         return synchronized(providers) {
             val cachedExtensions = getKey<Array<ExtensionInfo>>("ULTIMA_EXTENSIONS_LIST")
-            val filtered = providers.filter { it.name != "Ultima" }
+            val filtered = providers.filter { it.name != "Ultima" && it.name != "🏠HomePage" && it.name != "🏠HomePage [Backup]" }
 
             filtered.map { provider ->
                 val existing = cachedExtensions?.find { it.name == provider.name }
