@@ -143,6 +143,9 @@ def main():
     # 9. Apply local patches on top of upstream-copied plugins
     apply_patches(repo_root)
 
+    # Rename Ultima display name to 🏠HomePage
+    rename_ultima_to_homepage(repo_root)
+
     # 8. Generate settings.gradle.kts
     # We dynamically include all folders with build.gradle.kts except ignored ones
     settings_content = """rootProject.name = "xr3ed"
@@ -232,6 +235,47 @@ def modify_kotlin_files(plugin_dir):
                         print(f"Modified provider name in: {file_path} ({count} replacements)")
                 except Exception as e:
                     print(f"Error modifying file {file_path}: {e}")
+
+def rename_ultima_to_homepage(repo_root):
+    # Find Ultima plugin directory
+    for item in ["Ultima", "UltimaBackup"]:
+        ultima_dir = os.path.join(repo_root, item)
+        if not os.path.exists(ultima_dir):
+            continue
+        
+        # 1. Modify Ultima.kt
+        ultima_kt = os.path.join(ultima_dir, "src", "main", "kotlin", "com", "phisher98", "Ultima.kt")
+        if os.path.exists(ultima_kt):
+            try:
+                with open(ultima_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                
+                code = code.replace('override var name = "Ultima"', 'override var name = "🏠HomePage"')
+                code = code.replace('override var name = "Ultima [Backup]"', 'override var name = "🏠HomePage [Backup]"')
+                
+                with open(ultima_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/Ultima.kt to Homepage")
+            except Exception as e:
+                print(f"Error renaming name in {item}/Ultima.kt: {e}")
+            
+        # 2. Modify StorageManager.kt
+        storage_mgr = os.path.join(ultima_dir, "src", "main", "kotlin", "com", "phisher98", "Utils", "StorageManager.kt")
+        if os.path.exists(storage_mgr):
+            try:
+                with open(storage_mgr, "r", encoding="utf-8") as f:
+                    code = f.read()
+                
+                code = code.replace(
+                    'val filtered = providers.filter { it.name != "Ultima" }',
+                    'val filtered = providers.filter { it.name != "Ultima" && it.name != "🏠HomePage" && it.name != "🏠HomePage [Backup]" }'
+                )
+                
+                with open(storage_mgr, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated filter in {item}/StorageManager.kt")
+            except Exception as e:
+                print(f"Error renaming filter in {item}/StorageManager.kt: {e}")
 
 if __name__ == "__main__":
     main()
