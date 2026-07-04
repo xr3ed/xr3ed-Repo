@@ -60,7 +60,7 @@ data class AppSettingsSyncCreds(
     @param:JsonProperty("restoreDownloads") var restoreDownloads: Boolean = true,
     @param:JsonProperty("restoreGeneral") var restoreGeneral: Boolean = true
 ) {
-    val defaultUrl = "https://cloudstream-ultima-sync-default-rtdb.firebaseio.com/"
+    val defaultUrl = "https://xr3ed-cloud-sync-default-rtdb.asia-southeast1.firebasedatabase.app/"
 
     val activeUrl: String
         get() {
