@@ -3518,7 +3518,7 @@
             "RowdyRushya,Phisher98"
         ],
         "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
-        "fileSize": 222027,
+        "fileSize": 222005,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3526,7 +3526,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
         "apiVersion": 1,
-        "fileHash": "sha256-7d02fd7f8cdd9d0dd49c300b8ac8b40c26b44519d87b766bbfbcfa65163cd96b"
+        "fileHash": "sha256-abfafa8b4e5f433e254f40027532531fe8b6462866f4c23a31f2475472825e88"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/WatchWrestling.cs3",
