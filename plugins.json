@@ -66,13 +66,13 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Anichi.cs3",
         "status": 1,
-        "version": 17,
+        "version": 18,
         "name": "Anichi",
         "internalName": "Anichi",
         "authors": [
             "Hexated,Phisher98"
         ],
-        "fileSize": 111933,
+        "fileSize": 110960,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -82,7 +82,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Allanime.png",
         "apiVersion": 1,
-        "fileHash": "sha256-b4bd2a354f472b84e332d931cd830046fba4c7940408b63b23fa4ae4320782ba"
+        "fileHash": "sha256-d68491feaa443bf0693f14363e6598a5a828a68169f8aabe25b819311a50099b"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnichinMoe.cs3",
@@ -109,14 +109,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AniDb.cs3",
         "status": 1,
-        "version": 3,
+        "version": 5,
         "name": "AniDb",
         "internalName": "AniDb",
         "authors": [
             "Phisher98"
         ],
         "description": "Animes",
-        "fileSize": 28967,
+        "fileSize": 48301,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -126,7 +126,7 @@
         ],
         "iconUrl": "https://anidb.app/images/fav-512.png",
         "apiVersion": 1,
-        "fileHash": "sha256-a8edd6cdb0c37b81e495b4a4e71bfbc6528b99d8cda20031c93777215eb2eb06"
+        "fileHash": "sha256-148f3c3e4eb981631913e84bec02d27d853210cff8e18732e0f2fcaf28f995da"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Anikage.cs3",
@@ -3154,26 +3154,6 @@
         "fileHash": "sha256-ef68c1b3e075b6ff1097ed0cdeac94a50a7815c8e7a4f06f44fc43313f76940c"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/SpankBang.cs3",
-        "status": 3,
-        "version": 6,
-        "name": "SpankBang",
-        "internalName": "SpankBang",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "SpankBang adult video provider using direct HLS and MP4 stream_data extraction from spankbang.party.",
-        "fileSize": 21107,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "en",
-        "tvTypes": [
-            "NSFW"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=spankbang.party&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-98ad4d7cdc7f07238d9caae2458c93095626733002a863f783c3ba21c2715cd2"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StreamPlay.cs3",
         "status": 1,
         "version": 2,
@@ -3201,7 +3181,7 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StreamPlayBackup.cs3",
         "status": 1,
-        "version": 651,
+        "version": 652,
         "name": "StreamPlayBackup",
         "internalName": "StreamPlayBackup",
         "authors": [
@@ -3222,7 +3202,7 @@
         ],
         "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
         "apiVersion": 1,
-        "fileHash": "sha256-b1108bb3c3a8efd400d10c42923b11f272b748168ac9faf89988d5dda1bee861"
+        "fileHash": "sha256-18bc5f79f10da0b12c8b37ae20e15d701cffaf1fbe1deca62c2b5850788ddc45"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StremioAddon.cs3",
@@ -3486,14 +3466,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/TorraStream.cs3",
         "status": 1,
-        "version": 88,
+        "version": 89,
         "name": "TorraStream",
         "internalName": "TorraStream",
         "authors": [
             "Phisher98"
         ],
         "description": "#1 Best Extension – MultiAPI-Based with 4K Torrent Support (Debian) Use Extension Settings",
-        "fileSize": 188059,
+        "fileSize": 188033,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3505,7 +3485,7 @@
         ],
         "iconUrl": "https://torrentio.strem.fun/images/logo_v1.png",
         "apiVersion": 1,
-        "fileHash": "sha256-49d723bbeed658636605bfcd4eca1ce99b4cdb6401b4d864aa32f14b796d45da"
+        "fileHash": "sha256-9d7036a6b4caed0a78e371b2bce992320830041efd5ec236ba03f2eef2756cb5"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/UHDmoviesProvider.cs3",
@@ -3674,6 +3654,26 @@
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://zoronime.online&size=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-cc77befd080d7d460294babe44891518ae3cb91cdb90264b7e4805397bf4659c"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/SpankBang.cs3",
+        "status": 3,
+        "version": 6,
+        "name": "SpankBang",
+        "internalName": "SpankBang",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "SpankBang adult video provider using direct HLS and MP4 stream_data extraction from spankbang.party.",
+        "fileSize": 21107,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "en",
+        "tvTypes": [
+            "NSFW"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=spankbang.party&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-98ad4d7cdc7f07238d9caae2458c93095626733002a863f783c3ba21c2715cd2"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Ultima.cs3",
