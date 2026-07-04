@@ -72,7 +72,7 @@
         "authors": [
             "Hexated,Phisher98"
         ],
-        "fileSize": 110960,
+        "fileSize": 110959,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -82,7 +82,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Allanime.png",
         "apiVersion": 1,
-        "fileHash": "sha256-d68491feaa443bf0693f14363e6598a5a828a68169f8aabe25b819311a50099b"
+        "fileHash": "sha256-3f7b0c884c56a69310d89504a5a6b108db42b118630ba254fafbdcad63544685"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnichinMoe.cs3",
@@ -116,7 +116,7 @@
             "Phisher98"
         ],
         "description": "Animes",
-        "fileSize": 48301,
+        "fileSize": 48299,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -126,7 +126,7 @@
         ],
         "iconUrl": "https://anidb.app/images/fav-512.png",
         "apiVersion": 1,
-        "fileHash": "sha256-148f3c3e4eb981631913e84bec02d27d853210cff8e18732e0f2fcaf28f995da"
+        "fileHash": "sha256-f66240cc02cea2acff1f0361484eb6144e8143750c60942fc93d97a8890f0676"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Anikage.cs3",
@@ -158,7 +158,7 @@
         "authors": [
             "sad25kag"
         ],
-        "fileSize": 51474,
+        "fileSize": 51480,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -168,7 +168,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://v1.animasu.work&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-65e226053736adcd7f858dcb34dc70496285c6ab65930f8028db5efe391bd58b"
+        "fileHash": "sha256-ac5175b6493dda97183d7edfd30b816c01135b11caf9725e85a947686b8730de"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Animeav1.cs3",
@@ -418,7 +418,7 @@
             "Cloudburst,Lorem Ipsum,Phisher98"
         ],
         "description": "Animes (SUB/DUB)",
-        "fileSize": 71243,
+        "fileSize": 71231,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -428,7 +428,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/animepahe.png",
         "apiVersion": 1,
-        "fileHash": "sha256-bca411e48d5edfa525499d773e58cdbb2dabb5bba7c27c86b654dc595754b984"
+        "fileHash": "sha256-591e5d7906e9a424196f2dd2a845f4e68188dcc265a7e213628281c97e5e9c0b"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimePlay.cs3",
@@ -463,7 +463,7 @@
             "Grok Assisted"
         ],
         "description": "AnimeSail — Streaming Anime, Donghua Subtitle Indonesia (Improved WIP)",
-        "fileSize": 46159,
+        "fileSize": 46164,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -473,7 +473,7 @@
         ],
         "iconUrl": "https://aghanim.xyz/wp-content/themes/animesail/assets/images/ico.png",
         "apiVersion": 1,
-        "fileHash": "sha256-e85f0284aa884e997f411d6f621ea750ddfc3abcd241038f46c13f25c5aa8af4"
+        "fileHash": "sha256-7d77128a398a6915e581c68362a045dab89f44def6dcb1d0bca79ce59e0ef330"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Animesalt.cs3",
@@ -594,7 +594,7 @@
             "Phisher98,Hexated"
         ],
         "description": "Include: Serienstream (Login Required under Extension Settings)",
-        "fileSize": 48076,
+        "fileSize": 48092,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "de",
         "tvTypes": [
@@ -604,7 +604,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=aniworld.to&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-c25aac31da06301180dba223a23bead7ed4176d09a7ac4aebc51b7f8645bca2f"
+        "fileHash": "sha256-35f5ed18a6adb4aaf93ecf26456fd4f2c45aebe7b5bba1e30c3f649f3c33b579"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnixCafeProvider.cs3",
@@ -638,7 +638,7 @@
             "ycngmn"
         ],
         "description": "Anizone.to streams latest anime content in multiple language.",
-        "fileSize": 18199,
+        "fileSize": 18193,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -646,7 +646,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/ycngmn/CuxPlug/refs/heads/main/icons/anizone.png",
         "apiVersion": 1,
-        "fileHash": "sha256-db90ed049848383db7c24305231845fb2612ba78c2e5425d61f5d22622ea14c7"
+        "fileHash": "sha256-d9686d5ad2bd366c75c672af92e23556a46527a1155a5d0d7481ec78a00f6c6f"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnizoneProvider.cs3",
@@ -743,7 +743,7 @@
             "Phisher98"
         ],
         "description": "BanglaPlex",
-        "fileSize": 21155,
+        "fileSize": 21159,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "bn",
         "tvTypes": [
@@ -752,7 +752,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=banglaplex.click&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-cf7320a6885772011e0a744f7dd8730392f9d68b3e837d9512129b9d2c47ede7"
+        "fileHash": "sha256-bd50a69005e738bc08cfdc30c00936aa8692c067b2ef7a12083601b0709a21ae"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
@@ -806,7 +806,7 @@
             "Phisher98"
         ],
         "description": "Bangla/Hindi Movies/Series",
-        "fileSize": 68596,
+        "fileSize": 68594,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "bn",
         "tvTypes": [
@@ -816,7 +816,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/cinefreak.png",
         "apiVersion": 1,
-        "fileHash": "sha256-41e88634d88e52386464ea5fea4a905541b14b820ab454725181494b43a55419"
+        "fileHash": "sha256-625a71312619ca63c148eb21f7a81e5b8944e85e135527f5453e666687a258fe"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Cinemacity.cs3",
@@ -849,7 +849,7 @@
             "BetbetMiro"
         ],
         "description": "CineMax21 — Streaming Movie and TV Series",
-        "fileSize": 238470,
+        "fileSize": 241631,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -859,7 +859,7 @@
         ],
         "iconUrl": "https://klikxxi.me/wp-content/uploads/2024/02/cropped-site-icon.png",
         "apiVersion": 1,
-        "fileHash": "sha256-acf2d22d8d8e9a2a4e25f5bf5626bde4374a05d0333927567601a4fc6ae4c776"
+        "fileHash": "sha256-86483a9d7177c336ded03f0ecb4bae1410c7e0b8a0e5da69602b693f66643963"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CloudPlay.cs3",
@@ -891,7 +891,7 @@
             "Phisher98"
         ],
         "description": "Movies,Series and Anime French Extension ",
-        "fileSize": 28950,
+        "fileSize": 29282,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "fr",
         "tvTypes": [
@@ -900,7 +900,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Coflix.png",
         "apiVersion": 1,
-        "fileHash": "sha256-6fe4ff16dae7242bcb7256a3d1e206d5c163c9be128904da6f417fc376b083c5"
+        "fileHash": "sha256-619c6acfb2d1fca72b3dbe194baa1183a24df14cf3d6a42691da4276b503a4ca"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DailymotionProvider.cs3",
@@ -912,7 +912,7 @@
             "sad25kag"
         ],
         "description": "Dailymotion public video catalog with source-backed homepage, search, detail, and internal HLS playback resolver.",
-        "fileSize": 35380,
+        "fileSize": 36514,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "tvTypes": [
             "Movie",
@@ -925,7 +925,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=www.dailymotion.com&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-8596a7a04ff4a96412ede08e9bc34f27b5f495b80165d7566e473eb3606a0513"
+        "fileHash": "sha256-120acdc74e0413904e7b8afdd3d819d01f4a29cddceebca3617a5ca18e78610f"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Desicinemas.cs3",
@@ -958,7 +958,7 @@
             "sad25kag"
         ],
         "description": "DonghuaFilm - Nonton Donghua Gratis Sub Indonesia.",
-        "fileSize": 52822,
+        "fileSize": 52825,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -968,7 +968,7 @@
         ],
         "iconUrl": "https://donghuafilm.com/favicon.ico",
         "apiVersion": 1,
-        "fileHash": "sha256-3779d5d721b27ca650b4720b0304a28813616b72387ae79bdd9cb39927413615"
+        "fileHash": "sha256-8eae1f02db4d526458d6b178b1eedc918754eafba9e940aeceaab505da9fa3ad"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaID.cs3",
@@ -1167,28 +1167,6 @@
         "fileHash": "sha256-f69271a1801116a7d997d4a77f0cc96bdfe4d04f86b418599af8ff8ac5cf4b16"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DramaIdProvider.cs3",
-        "status": 1,
-        "version": 15,
-        "name": "DramaIdProvider",
-        "internalName": "DramaIdProvider",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "DramaID - drama Asia subtitle Indonesia.",
-        "fileSize": 69523,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
-        ],
-        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://drama-id.com&size=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-5d64b5ba02b45208a3ee49285aa995c3aa2032a85a6a70c774ba8e16abb6780e"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DubbindoProvider.cs3",
         "status": 1,
         "version": 6,
@@ -1222,7 +1200,7 @@
             "Phisher98"
         ],
         "description": "Watch Movies & TvSeries (Multi-Lang)",
-        "fileSize": 69055,
+        "fileSize": 69053,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "hi",
         "tvTypes": [
@@ -1231,7 +1209,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/dudefilms.png",
         "apiVersion": 1,
-        "fileHash": "sha256-a1d1d45e68c54d0629c7094d21f7170a1b5d9ac8997d7d3d45994648448e7955"
+        "fileHash": "sha256-507dc27929a11093e12c1a9755f62a9042d211117cbcc061fb7399b8c154fa38"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DuniaFilm21.cs3",
@@ -1308,7 +1286,7 @@
         "authors": [
             "Phisher98"
         ],
-        "fileSize": 40256,
+        "fileSize": 40257,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "hi",
         "tvTypes": [
@@ -1317,7 +1295,7 @@
         ],
         "iconUrl": "https://f.pondit.xyz/fibwatch-logo.png",
         "apiVersion": 1,
-        "fileHash": "sha256-f484ab3c9b8c249a70fd001011b0f6b8a19e1776cf977807c38f879bc4aaefa9"
+        "fileHash": "sha256-14b3571ccb5f2d8aeb9452b41a8b4bfa2b74b03d5543f42040cb52b23a1e6e96"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Film21.cs3",
@@ -1437,7 +1415,7 @@
             "Phisher98"
         ],
         "description": "4K Movies Extension by HDHUB4U",
-        "fileSize": 65328,
+        "fileSize": 65332,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -1446,7 +1424,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/4KHDHUB-Bright-Logo.png",
         "apiVersion": 1,
-        "fileHash": "sha256-7584bc072d965912c7ead15ad29bd07766e1bd076789344da1ad5b59507d20ee"
+        "fileHash": "sha256-af269f545d4bb268d076fc6c2d3efac8f6a8dcdae2780d9b0c4b28470d79b0c7"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FreeReels.cs3",
@@ -1458,7 +1436,7 @@
             "sad25kag"
         ],
         "description": "FreeReels / DramaWave short drama provider",
-        "fileSize": 36401,
+        "fileSize": 36394,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1468,7 +1446,7 @@
         ],
         "iconUrl": "https://free-reels.com/free-reels.png",
         "apiVersion": 1,
-        "fileHash": "sha256-7b8a2c7a9d062d411c00bf9e71ed5461172648289c5626a2980d4dc32932cfff"
+        "fileHash": "sha256-979bc585e5fad6040ab7fa981b137ad97144defeb2157cef8280762d87f70d99"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Gomunime.cs3",
@@ -1545,7 +1523,7 @@
         "authors": [
             "Phisher98"
         ],
-        "fileSize": 78799,
+        "fileSize": 78805,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "hi",
         "tvTypes": [
@@ -1555,7 +1533,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/HDHUB.png",
         "apiVersion": 1,
-        "fileHash": "sha256-72a4fa68964a55634a8cbf53aa99bde0381c7c63f9295f3e2d186757510ff25a"
+        "fileHash": "sha256-89d6006cdd82273183dfbcab63469233e439150c005ced7ec5af18ac9d68b2df"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/HidoriStreamProvider.cs3",
@@ -1598,7 +1576,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/hindmoviez.png",
         "apiVersion": 1,
-        "fileHash": "sha256-2518e8c30ecd97d45c3ea53468f6466ded9b647c796e1c7c9a0eb6f8cd8f24a6"
+        "fileHash": "sha256-73d1aa08ba55cc49f34d5e90f439790d3fb3095c39b7e1ae291212a9732182e8"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/IdlixProvider.cs3",
@@ -1655,7 +1633,7 @@
             "sad25kag"
         ],
         "description": "Watch movies, classic TV, animation, and public-domain video from the Internet Archive",
-        "fileSize": 40704,
+        "fileSize": 41690,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "tvTypes": [
             "Movie",
@@ -1665,7 +1643,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=archive.org&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-54ba2635c2912bd34e4aedddee381d718d4d6cbc1d0ab6ac10492cffab733d86"
+        "fileHash": "sha256-cc175cbfaf19a57244bb9674cdea9beca0cae5d81b651cdd8910762bc18fe351"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/IPTV.cs3",
@@ -1730,7 +1708,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/jellyfin.png",
         "apiVersion": 1,
-        "fileHash": "sha256-100c3e578ae195ae83c9c3c33941b87e765be7510f2e94a845e349bcfd7f80d7"
+        "fileHash": "sha256-14995209e59f7337e4dced799b0f0c81b27cbae79586f3b6dc8e1123a4765a27"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/JuraganFilm.cs3",
@@ -1742,7 +1720,7 @@
             "sad25kag"
         ],
         "description": "JuraganFilm provider for tv45.juragan.film with HTML catalog parsing, search, detail metadata, episode parsing, direct MP4/HLS links, subtitles, and extractor fallback support.",
-        "fileSize": 60009,
+        "fileSize": 60421,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1753,7 +1731,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=tv45.juragan.film&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-ce3afa0e407dc97c85901abe2462905b2f78ddc2ad479be5d1f2c4380a0369c2"
+        "fileHash": "sha256-16e1b37a94b625e22623df044aab0a24d4e19d8b91815b2c4dd505541ba916fb"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Kawanfilm.cs3",
@@ -1897,7 +1875,7 @@
             "sad25kag"
         ],
         "description": "Watch drama online in high quality. Free download high quality drama. Various formats from 240p to 720p HD (or even 1080p). Feel Free To Watch!",
-        "fileSize": 34107,
+        "fileSize": 34554,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1905,7 +1883,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://kisskh.buzz/&size=256",
         "apiVersion": 1,
-        "fileHash": "sha256-42264f26ad1158855fda768bacc5167cdbbb153db6234a33b7e1667badb6ea19"
+        "fileHash": "sha256-5adb73fb9d466d8425a96239568209233e8f10579eb2e04d1403592ae580de22"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/KisskhProvider.cs3",
@@ -1981,7 +1959,7 @@
             "sad25kag"
         ],
         "description": "Kuronime — Streaming Anime Subtitle Indonesia",
-        "fileSize": 39465,
+        "fileSize": 39462,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1991,7 +1969,7 @@
         ],
         "iconUrl": "https://play-lh.googleusercontent.com/EFMkS1T-8txjLFIl9QxjcTRLa7a7Muv08C04b7ongYgodoY_b2T3GpxzGAQEx-eitfQ=w256",
         "apiVersion": 1,
-        "fileHash": "sha256-07c9398ba00fbfae6234faa193009761c7b1d2fcbb130286cc058947ff383bba"
+        "fileHash": "sha256-3dd02365736fe45b72cdce98bd165129c97c71f0b29df8135c675bfcd784d98b"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Latanime.cs3",
@@ -2153,7 +2131,7 @@
             "Phisher98"
         ],
         "description": "Movies,Series and Anime German Extension ",
-        "fileSize": 19617,
+        "fileSize": 20051,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "de",
         "tvTypes": [
@@ -2161,7 +2139,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Megakino.jpg",
         "apiVersion": 1,
-        "fileHash": "sha256-6c7f46c1afbb6b5356d53f6a72ad29a3c166cefddcada5d070e5e4258d28d08a"
+        "fileHash": "sha256-2d1fd9fef654631b4bb7c7e41b34d74fc24311f741232eb680d011ec67004289"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/MovieBlast.cs3",
@@ -2194,7 +2172,7 @@
             "sad25kag"
         ],
         "description": "Multi Language Movies and Series Provider",
-        "fileSize": 45769,
+        "fileSize": 45773,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -2203,7 +2181,7 @@
         ],
         "iconUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/raw/refs/heads/master/MovieBoxProvider/icon.png",
         "apiVersion": 1,
-        "fileHash": "sha256-ed7f35e9f2ec7bb7c39400257f0d0c78e35a55af16699344ac78fc57519752b1"
+        "fileHash": "sha256-073ecd30fff2413e6ef4e9c53063fc633e02429916459d0b11753bfd9bc6d494"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/MovieBoxProviderBackup.cs3",
@@ -2267,7 +2245,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/refs/heads/master/Movierulzhd/faviconV2.png",
         "apiVersion": 1,
-        "fileHash": "sha256-d48ccf848abea1dda8035d6cd34be61cb7efabbcacbb5c25d56ff2db735b0b95"
+        "fileHash": "sha256-a0e251482402514afb272e59536b8c7de3f3596f013f098730c0646b4126a8a0"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Movies4u.cs3",
@@ -2279,7 +2257,7 @@
             "Phisher98"
         ],
         "description": "Movies4u",
-        "fileSize": 73493,
+        "fileSize": 73499,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "hi",
         "tvTypes": [
@@ -2288,7 +2266,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/movies4u.png",
         "apiVersion": 1,
-        "fileHash": "sha256-b72c57fe2eda86960c1521a9f38eace9a6b41890df7d2c4a68c28fd0038c48cc"
+        "fileHash": "sha256-647dd88abbcc6cf2b172c4b82f6895cc562ed04f2af392ecf06059a343d223b2"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/MPlayerProvider.cs3",
@@ -2322,7 +2300,7 @@
             "Phisher98"
         ],
         "description": "Indian Multi-language HD Provider",
-        "fileSize": 46040,
+        "fileSize": 46043,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "hi",
         "tvTypes": [
@@ -2332,7 +2310,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/LikDev-256/likdev256-tamil-providers/master/MultiMoviesProvider/icon.png",
         "apiVersion": 1,
-        "fileHash": "sha256-a596ec0e3f52bf6eafc60e5c70eaff6f13e21e6721b4ce73ada6050327db5b47"
+        "fileHash": "sha256-58ddc62029e36638e415cb7fa4a3ef593f34ebbb793c55385b4691d37bf52389"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NanimeIndo.cs3",
@@ -2429,7 +2407,7 @@
         "authors": [
             "sad25kag"
         ],
-        "fileSize": 26793,
+        "fileSize": 26789,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -2439,7 +2417,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=nimegami.id&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-f511a5d605255fc296587d2a40be5ec1d127a8dbc144bded92c49f51f5d2ab8c"
+        "fileHash": "sha256-f03b32440ba096504503d0af3e715bf7358198cf345517ecf1197f0bbdfc470b"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NimeIndo.cs3",
@@ -2687,7 +2665,7 @@
         "authors": [
             "sad25kag"
         ],
-        "fileSize": 30471,
+        "fileSize": 30469,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -2697,7 +2675,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://anime.oploverz.ac&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-19588e713d753fa2f3d680b7b227ba94514f27ed6d9381e7fb2b3280823b20aa"
+        "fileHash": "sha256-dc69751b10a6c8100bc7888682755b54d853b98a444dee1b23ee98cab2f5f704"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Oppadrama.cs3",
@@ -2731,7 +2709,7 @@
             "sad25kag"
         ],
         "description": "Otakudesu provider with source-backed homepage categories and genre rows from the current Otakudesu site.",
-        "fileSize": 27889,
+        "fileSize": 27885,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -2741,7 +2719,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=otakudesu.blog&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-d78b6b71f0ece9cd1cbf91df2235c513f5d70dca706a12177f2b97c5a5e6d4ea"
+        "fileHash": "sha256-15fd2b6a132edf0122c18283b3d1fc5991581c01f3a5282203269bbfa0f42518"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Pencurimovie.cs3",
@@ -2838,7 +2816,7 @@
             "Phisher98,Duro92"
         ],
         "description": "PMSM (Pencuri Movie Sub Malay)",
-        "fileSize": 25297,
+        "fileSize": 25293,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -2847,7 +2825,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ww192.pencurimoviesubmalay.motorcycles&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-daef431f4c0fbf2de10114ecb3bb26b53101e14bfab6a9f7d06cdc69d122dde6"
+        "fileHash": "sha256-35c782b179e577e57e56f67aab3adc7463ba88c40cd194aa7c18bfa91e427bd8"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/PublicSportsIPTV.cs3",
@@ -2964,7 +2942,7 @@
             "Phisher98"
         ],
         "description": "Ringz App",
-        "fileSize": 32155,
+        "fileSize": 32154,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "hi",
         "tvTypes": [
@@ -2974,7 +2952,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ringz.png",
         "apiVersion": 1,
-        "fileHash": "sha256-f63a2ad697d3a29732e5d2b70dc0b3d5e3330bebb2a66edb717a49e192856998"
+        "fileHash": "sha256-98078c2651fe0fd66d4f3e04c2f585d86b8c446c1696b47d93759bca4f80bad7"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/SaikoNime.cs3",
@@ -3073,7 +3051,7 @@
             "Phisher98"
         ],
         "description": "ShowBox (Retrieve the cookie using Login with Google to properly utilize ShowBox.",
-        "fileSize": 110290,
+        "fileSize": 110311,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3084,7 +3062,7 @@
         ],
         "iconUrl": "https://miro.medium.com/v2/1*DyU8bmnyyEiJbFROEXO2VA.png",
         "apiVersion": 1,
-        "fileHash": "sha256-74934d66715189e70be850b5dd40fbfca4104e46d6d19d8b2c6a587890ad802b"
+        "fileHash": "sha256-823c427938ac865c2b72df558d8eeda9c75d11ef76094e2d8eedcf64fa2d1967"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/SontolFilmProvider.cs3",
@@ -3142,7 +3120,7 @@
             "sad25kag"
         ],
         "description": "#1 best extention based on MultiAPI",
-        "fileSize": 929651,
+        "fileSize": 929799,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -3155,7 +3133,7 @@
         ],
         "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
         "apiVersion": 1,
-        "fileHash": "sha256-d39011f6eef039a3312140e51e441b895064423101a9e0b36ea0fd76307c56ae"
+        "fileHash": "sha256-a7cad93f2bc398b4f50d15e7833a11b7cb950c5608b4e6699f446f9e9087fb68"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StreamPlayBackup.cs3",
@@ -3168,7 +3146,7 @@
             "Hexated"
         ],
         "description": "#1 best extention based on MultiAPI",
-        "fileSize": 930349,
+        "fileSize": 930444,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3181,7 +3159,7 @@
         ],
         "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
         "apiVersion": 1,
-        "fileHash": "sha256-deefae3d025c2e6cad828d444623bd383100b53669ee2c25491b8abd0a04cd6b"
+        "fileHash": "sha256-5c7fb935cb0b1e1e04f1cf21561fb071178ff6fa7baf1f9a75888e8bccb13f6d"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StremioAddon.cs3",
@@ -3193,7 +3171,7 @@
             "Hexated,phisher98,erynith"
         ],
         "description": "[!] Requires Setup \n- Allows you to use any Stremio addon by pasting their manifest.json url",
-        "fileSize": 68468,
+        "fileSize": 68492,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3203,7 +3181,7 @@
         ],
         "iconUrl": "https://files.catbox.moe/ol63rm.png",
         "apiVersion": 1,
-        "fileHash": "sha256-65893e7f9409770f1c8dcafa40e47c7482f077cdb3ed56b8b23b7c78ff964c90"
+        "fileHash": "sha256-e7acffc1e6534fb8bf8bcf3db563f72ffb241c3e40c5d081990004cc95eaa600"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StremioX.cs3",
@@ -3215,7 +3193,7 @@
             "Hexated,phisher98"
         ],
         "description": "[!] Requires Setup \n- StremioX allows you to use stream addons \n- StremioC allows you to use catalog addons",
-        "fileSize": 163128,
+        "fileSize": 163120,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3224,7 +3202,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/hexated/cloudstream-extensions-hexated/master/StremioX/icon.png",
         "apiVersion": 1,
-        "fileHash": "sha256-91c2425d103daf16c075609f5419a556b2a641bbc820c25b46cab3708f641f1b"
+        "fileHash": "sha256-41010335f752122e6a334bfcec86baf66d631eb11605dd656777afe882001c2c"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/SuperStream.cs3",
@@ -3236,7 +3214,7 @@
             "Phisher98"
         ],
         "description": "SuperStream (Retrieve the cookie using Login with Google to properly utilize SuperStream.",
-        "fileSize": 124379,
+        "fileSize": 124394,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3249,7 +3227,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.showbox.media/&size=256",
         "apiVersion": 1,
-        "fileHash": "sha256-bc49b3d758c0b7bd816e4955e4816484986575a233e732bcc989ff4b322ccf5f"
+        "fileHash": "sha256-c56e8faffc27eec64f751c616128086dcab4ecb9dea9a2f04cd7c3724ff265d4"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Tamilblasters.cs3",
@@ -3261,7 +3239,7 @@
             "rockhero1234,phisher98"
         ],
         "description": "Movies & Series",
-        "fileSize": 20125,
+        "fileSize": 20128,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "ta",
         "tvTypes": [
@@ -3270,7 +3248,7 @@
         ],
         "iconUrl": "https://i.postimg.cc/FRwFFtyT/logo.png",
         "apiVersion": 1,
-        "fileHash": "sha256-5e52cca839164fc6597a6738a4bc7a5be038857045d6051b6b0a22364e2a60ce"
+        "fileHash": "sha256-eb938b78a7f9e48197e8ae6b10daa97e76ba8112e397a6acd2d248432fac9ed5"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Terbit21.cs3",
@@ -3369,7 +3347,7 @@
             "Phisher98"
         ],
         "description": "ToonStream Multi Language",
-        "fileSize": 30882,
+        "fileSize": 30877,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "hi",
         "tvTypes": [
@@ -3379,7 +3357,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/toonstream.png",
         "apiVersion": 1,
-        "fileHash": "sha256-9aac5db282c35a535bd7a15aac99502be9655116ebdee39d7ff9ef3db71fa55f"
+        "fileHash": "sha256-7b06cd8feaddd442e48189fa643c2f738abddc8915383d5864468906f63761d5"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ToonTales.cs3",
@@ -3452,7 +3430,7 @@
             "Phisher98"
         ],
         "description": "#1 Best Extension – MultiAPI-Based with 4K Torrent Support (Debian) Use Extension Settings",
-        "fileSize": 188033,
+        "fileSize": 188048,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3464,7 +3442,7 @@
         ],
         "iconUrl": "https://torrentio.strem.fun/images/logo_v1.png",
         "apiVersion": 1,
-        "fileHash": "sha256-cd7f2b2a329dc5e847f2e5d16346be27102d9bb19e454d695036e19d2027d9c4"
+        "fileHash": "sha256-0938c52907e7821de5c631daf9ae818cc220cbf18e66c1da4c8c104906611f08"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/UHDmoviesProvider.cs3",
@@ -3476,7 +3454,7 @@
             "Phisher98"
         ],
         "description": "Indian Multi-language 4K Provider",
-        "fileSize": 51210,
+        "fileSize": 51211,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3485,7 +3463,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/LikDev-256/likdev256-tamil-providers/master/UHDmoviesProvider/icon.png",
         "apiVersion": 1,
-        "fileHash": "sha256-4188fb307439bafb698cbe674f864832c1b4f66bacd1bcbfa7803abc8de80e94"
+        "fileHash": "sha256-9bcbbe2d286b6a85d9c85cbb91332858406e6e3ee8a0087ed2ec1f12d87e3b6a"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Ultima.cs3",
@@ -3497,7 +3475,7 @@
             "RowdyRushya,Phisher98"
         ],
         "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
-        "fileSize": 222078,
+        "fileSize": 224671,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -3505,7 +3483,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
         "apiVersion": 1,
-        "fileHash": "sha256-74a08ffada9b827d8d7e049a3a935f559f39b59aca75616df04c5cb12c810782"
+        "fileHash": "sha256-5b4ff46dc10ae754b50d188178bccde287645ccc73eed712cebea24ec7c24f32"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/WatchWrestling.cs3",
@@ -3620,7 +3598,7 @@
         "authors": [
             "Phisher98"
         ],
-        "fileSize": 64009,
+        "fileSize": 64011,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "hi",
         "tvTypes": [
@@ -3630,7 +3608,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/zing.jpg",
         "apiVersion": 1,
-        "fileHash": "sha256-08af9e92b966137cfe02233f6409794b2f6c5214805257540be7551aca76f2e2"
+        "fileHash": "sha256-d9cc9d68c5f2cf4ebdade90f8535439585c2f25a5c2d9dc8428942f9fa4ad507"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ZoronimeProvider.cs3",
@@ -3653,6 +3631,28 @@
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://zoronime.online&size=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-cc77befd080d7d460294babe44891518ae3cb91cdb90264b7e4805397bf4659c"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DramaIdProvider.cs3",
+        "status": 1,
+        "version": 15,
+        "name": "DramaIdProvider",
+        "internalName": "DramaIdProvider",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "DramaID - drama Asia subtitle Indonesia.",
+        "fileSize": 69523,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://drama-id.com&size=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-5d64b5ba02b45208a3ee49285aa995c3aa2032a85a6a70c774ba8e16abb6780e"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CNCVerse.cs3",
