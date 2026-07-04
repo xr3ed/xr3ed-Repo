@@ -631,14 +631,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Anizone.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "Anizone",
         "internalName": "Anizone",
         "authors": [
             "ycngmn"
         ],
         "description": "Anizone.to streams latest anime content in multiple language.",
-        "fileSize": 17250,
+        "fileSize": 18199,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -646,7 +646,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/ycngmn/CuxPlug/refs/heads/main/icons/anizone.png",
         "apiVersion": 1,
-        "fileHash": "sha256-98ab4972e94b3e2af507048ea7e013ab3b689bdfb9a587aa6837b06549473c53"
+        "fileHash": "sha256-db90ed049848383db7c24305231845fb2612ba78c2e5425d61f5d22622ea14c7"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnizoneProvider.cs3",
@@ -880,27 +880,6 @@
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/cloudplay.jpg",
         "apiVersion": 1,
         "fileHash": "sha256-a5cc42e59766f9b53264e8838d85bf86a3d34360979c657926dd0b4308d820b5"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CNCVerse.cs3",
-        "status": 1,
-        "version": 61,
-        "name": "CNCVerse",
-        "internalName": "CNCVerse",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Netflix, PrimeVideo, Disney+ Hotstar Contents in Multiple Languages",
-        "fileSize": 64831,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Movie",
-            "TvSeries"
-        ],
-        "iconUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/raw/refs/heads/master/CNC%20Verse/icon.png",
-        "apiVersion": 1,
-        "fileHash": "sha256-020e4b137c509a80bde71e789e6603ec02fa874a1d456255653d01defd148f08"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Coflix.cs3",
@@ -3674,6 +3653,27 @@
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://zoronime.online&size=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-cc77befd080d7d460294babe44891518ae3cb91cdb90264b7e4805397bf4659c"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CNCVerse.cs3",
+        "status": 1,
+        "version": 61,
+        "name": "CNCVerse",
+        "internalName": "CNCVerse",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Netflix, PrimeVideo, Disney+ Hotstar Contents in Multiple Languages",
+        "fileSize": 64831,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/raw/refs/heads/master/CNC%20Verse/icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-020e4b137c509a80bde71e789e6603ec02fa874a1d456255653d01defd148f08"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/SpankBang.cs3",
