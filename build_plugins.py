@@ -122,21 +122,39 @@ def main():
         sys.exit(1)
 
     # 8. Copy all successful CS3 files to builds_dir
-    #    First remove ONLY the CS3 files that will be replaced by fresh builds.
-    #    We deliberately do NOT remove CS3 files for failed plugins (e.g. Ultima.cs3)
-    #    so that the merge step (step 10) can still read and hash them.
     os.makedirs(builds_dir, exist_ok=True)
     for plugin, cs3_path in successful_cs3.items():
         dest = os.path.join(builds_dir, os.path.basename(cs3_path))
-        # Remove old version first (forces git to see a diff even if bytes are identical)
         if os.path.exists(dest):
             os.remove(dest)
         shutil.copy2(cs3_path, dest)
         print(f"Copied: {os.path.basename(cs3_path)}")
 
+    # 8b. Copy Phisher precompiled CS3 files from temp_repos/Phisher to builds_dir
+    phisher_temp_dir = os.path.join(repo_root, "temp_repos", "Phisher")
+    phisher_entries = []
+    if os.path.exists(phisher_temp_dir):
+        print("\n=== Copying Phisher precompiled plugins ===")
+        for fname in os.listdir(phisher_temp_dir):
+            if fname.endswith(".cs3"):
+                src_cs3 = os.path.join(phisher_temp_dir, fname)
+                dst_cs3 = os.path.join(builds_dir, fname)
+                if os.path.exists(dst_cs3):
+                    os.remove(dst_cs3)
+                shutil.copy2(src_cs3, dst_cs3)
+                print(f"Copied Phisher precompiled: {fname}")
+                
+        # Load Phisher's plugins.json
+        phisher_json_path = os.path.join(phisher_temp_dir, "plugins.json")
+        if os.path.exists(phisher_json_path):
+            try:
+                with open(phisher_json_path, 'r', encoding='utf-8') as f:
+                    phisher_entries = json.load(f)
+                print(f"Loaded {len(phisher_entries)} entries from Phisher plugins.json")
+            except Exception as e:
+                print(f"Error loading Phisher plugins.json: {e}")
 
     # 9. Update fileSize and fileHash in new_plugins to match the ACTUAL files in builds_dir
-    #    (Gradle sometimes encodes a relative URL hash; recalculate from the actual file)
     new_plugins_map = {p["internalName"]: p for p in new_plugins}
     for p in new_plugins:
         cs3_dest = os.path.join(builds_dir, f"{p['internalName']}.cs3")
@@ -146,9 +164,23 @@ def main():
         else:
             print(f"WARNING: {p['internalName']}.cs3 not found in builds_dir after copy!")
 
-    # 10. Merge old entries for failed, renamed, or backup plugins back in
-    #     We scan all old entries. If they are not in the new plugins map and
-    #     their CS3 file exists in builds_dir, we keep them and refresh their hash.
+    # 10. Merge Phisher precompiled entries
+    for entry in phisher_entries:
+        internal_name = entry.get("internalName")
+        if not internal_name:
+            continue
+        
+        cs3_dest = os.path.join(builds_dir, f"{internal_name}.cs3")
+        if os.path.exists(cs3_dest):
+            entry["fileSize"] = os.path.getsize(cs3_dest)
+            entry["fileHash"] = f"sha256-{get_sha256(cs3_dest)}"
+            
+            if internal_name not in new_plugins_map:
+                new_plugins.append(entry)
+                new_plugins_map[internal_name] = entry
+                print(f"Merged Phisher entry: {internal_name}")
+
+    # 10b. Merge old entries for failed, renamed, or backup plugins back in
     for old_entry in old_plugins:
         internal_name = old_entry.get("internalName")
         name = old_entry.get("name")
@@ -156,7 +188,6 @@ def main():
             continue
 
         if internal_name not in new_plugins_map:
-            # Check if the CS3 file exists in builds_dir
             cs3_dest = os.path.join(builds_dir, f"{internal_name}.cs3")
             if not os.path.exists(cs3_dest) and name:
                 cs3_dest = os.path.join(builds_dir, f"{name}.cs3")
@@ -169,7 +200,6 @@ def main():
                 print(f"Merged old entry (preserved): {internal_name} (size={old_entry['fileSize']})")
             else:
                 print(f"Discarded old entry (no CS3 file found): {internal_name}")
-
 
     # 11. Write final plugins.json to builds_dir directly
     final_plugins_json = os.path.join(builds_dir, "plugins.json")

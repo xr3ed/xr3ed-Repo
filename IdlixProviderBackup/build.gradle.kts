@@ -1,13 +1,9 @@
-// use an integer for version numbers
-version = 14
-
+version = 49
 
 cloudstream {
     language = "id"
-    // All of these properties are optional, you can safely remove them
-
-    // description = "Lorem Ipsum"
-     authors = listOf("Phisher98")
+    authors = listOf("sad25kag")
+    description = "Idlix provider with active-domain API routing, detail URL normalization, provider session lifecycle, and session redeem playback flow."
 
     /**
      * Status int as the following:
@@ -15,14 +11,16 @@ cloudstream {
      * 1: Ok
      * 2: Slow
      * 3: Beta only
-     * */
-    status = 1 // will be 3 if unspecified
+     */
+    status = 1
+
     tvTypes = listOf(
-        "TvSeries",
         "Movie",
+        "TvSeries",
         "Anime",
-        "AsianDrama",
+        "AsianDrama"
     )
+
     isCrossPlatform = false
-    iconUrl = "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/idlix.png"
+    iconUrl = "https://www.google.com/s2/favicons?domain=z2.idlixku.com&sz=%size%"
 }

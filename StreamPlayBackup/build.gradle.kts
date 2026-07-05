@@ -1,8 +1,9 @@
 @file:Suppress("UnstableApiUsage")
 
 import org.jetbrains.kotlin.konan.properties.Properties
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-version = 651
+version = 2
 
 android {
     buildFeatures {
@@ -36,16 +37,22 @@ android {
     }
 }
 
+tasks.withType<KotlinCompile>().configureEach {
+    compilerOptions {
+        optIn.add("com.lagradost.cloudstream3.Prerelease")
+    }
+}
+
 dependencies {
     implementation("com.google.android.material:material:1.14.0")
 }
 
 cloudstream {
-    language = "en"
+    language = "id"
     // All of these properties are optional, you can safely remove them
 
      description = "#1 best extention based on MultiAPI"
-     authors = listOf("Phisher98", "Hexated")
+     authors = listOf("sad25kag")
 
     /**
      * Status int as the following:
@@ -73,7 +80,7 @@ cloudstream {
 
 dependencies {
     // FIXME remove this when crossplatform is fully supported
-    val cloudstream by configurations
+    val cloudstream = configurations.getByName("cloudstream")
     implementation("com.google.android.material:material:1.14.0")
     implementation("androidx.browser:browser:1.10.0")
     cloudstream("com.lagradost:cloudstream3:pre-release")
