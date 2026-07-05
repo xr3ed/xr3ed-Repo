@@ -66,6 +66,9 @@ def main():
         # Replace default setRepo fallback URL
         content = content.replace("https://github.com/duro92/ExtCloud", "https://github.com/xr3ed/xr3ed-Repo")
         
+        # Replace the plugin group ID with the correct Jitpack coordinates
+        content = content.replace("com.github.recloudstream:gradle", "com.github.recloudstream.gradle:gradle")
+        
         # Replace hardcoded namespace with dynamic namespace check
         old_namespace = 'namespace = "com.sad25kag"'
         new_namespace = """val phisherPluginsFile = project.rootProject.file("phisher_plugins.txt")
@@ -91,6 +94,23 @@ def main():
         
         with open(build_gradle_path, 'w', encoding='utf-8') as f:
             f.write(content)
+
+    # Update gradle.properties with the correct plugin version that packages resources correctly
+    gradle_properties_path = os.path.join(repo_root, "gradle.properties")
+    if os.path.exists(gradle_properties_path):
+        with open(gradle_properties_path, 'r', encoding='utf-8') as f:
+            prop_content = f.read()
+        
+        # Replace the plugin version with the working commit hash 32895aedb6
+        import re
+        prop_content = re.sub(
+            r'cloudstream\.gradle\.plugin\.version\s*=\s*\S+',
+            'cloudstream.gradle.plugin.version=32895aedb6',
+            prop_content
+        )
+        
+        with open(gradle_properties_path, 'w', encoding='utf-8') as f:
+            f.write(prop_content)
 
     # 5. List plugins
     def get_plugins(src_dir):

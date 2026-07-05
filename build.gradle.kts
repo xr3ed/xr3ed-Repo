@@ -27,7 +27,7 @@ buildscript {
 
     dependencies {
         classpath("com.android.tools.build:gradle:$androidGradlePluginVersion")
-        classpath("com.github.recloudstream:gradle:$cloudstreamGradlePluginVersion")
+        classpath("com.github.recloudstream.gradle:gradle:$cloudstreamGradlePluginVersion")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
     }
 }
