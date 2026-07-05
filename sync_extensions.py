@@ -34,6 +34,24 @@ def safe_rmtree(path):
             subprocess.run(['rm', '-rf', path])
 
 def main():
+    try:
+        _main()
+    except Exception as e:
+        import traceback
+        tb = traceback.format_exc()
+        print("CRITICAL ERROR IN SYNC SCRIPT:")
+        print(tb)
+        with open("sync_error.txt", "w", encoding="utf-8") as f:
+            f.write(tb)
+        run_cmd(["git", "config", "--local", "user.email", "actions@github.com"])
+        run_cmd(["git", "config", "--local", "user.name", "GitHub Actions"])
+        run_cmd(["git", "add", "sync_error.txt"])
+        run_cmd(["git", "commit", "-m", "Log sync error [skip ci]"])
+        run_cmd(["git", "push", "origin", "main"])
+        import sys
+        sys.exit(1)
+
+def _main():
     repo_root = os.path.dirname(os.path.abspath(__file__))
     temp_dir = os.path.join(repo_root, "temp_repos")
     
