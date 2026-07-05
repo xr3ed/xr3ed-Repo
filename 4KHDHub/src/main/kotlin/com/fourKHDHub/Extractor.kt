@@ -34,7 +34,7 @@ class Hubstreamdad : Hblinks() {
 
 open class Hblinks : ExtractorApi() {
 
-    override val name = "Hblinks [Backup]"
+    override val name = "Hblinks"
     override val mainUrl = "https://hblinks.*"
     override val requiresReferer = true
 
@@ -82,7 +82,7 @@ open class Hblinks : ExtractorApi() {
 
 class Hubcdnn : ExtractorApi() {
 
-    override val name = "Hubcdn [Backup]"
+    override val name = "Hubcdn"
     override val mainUrl = "https://hubcdn.*"
     override val requiresReferer = true
 
@@ -137,7 +137,7 @@ class PixelDrainDev : PixelDrain(){
 }
 
 class Hubdrive : ExtractorApi() {
-    override val name = "Hubdrive [Backup]"
+    override val name = "Hubdrive"
     override val mainUrl = "https://hubdrive.space"
     override val requiresReferer = false
 
@@ -156,7 +156,7 @@ class Hubdrive : ExtractorApi() {
 
 class HubCloud : ExtractorApi() {
 
-    override val name = "Hub-Cloud [Backup]"
+    override val name = "Hub-Cloud"
     override var mainUrl: String = runBlocking {
         FourKHDHubProvider.getDomains()?.hubcloud ?: "https://hubcloud.foo"
     }
@@ -406,7 +406,7 @@ class HubCloud : ExtractorApi() {
 }
 
 class HUBCDN : ExtractorApi() {
-    override val name = "HUBCDN [Backup]"
+    override val name = "HUBCDN"
     override val mainUrl = "https://hubcdn.*"
     override val requiresReferer = false
 
