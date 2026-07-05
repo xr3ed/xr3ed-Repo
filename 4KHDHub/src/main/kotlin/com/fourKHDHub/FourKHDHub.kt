@@ -50,7 +50,6 @@ class FourKHDHub : MainAPI() {
         "category/imdb" to "Top IMDb",
     )
 
-    // Fungsi ekstensi ini ditambahkan agar Jsoup Element bisa di-convert menjadi SearchResponse
     private fun Element.toSearchResult(): SearchResponse? {
         val href = this.attr("href")
         if (href.isBlank()) return null
@@ -83,37 +82,50 @@ class FourKHDHub : MainAPI() {
         return newHomePageResponse(request.name, results, true)
     }
 
-    override suspend fun search(query: String): List<SearchResponse> {
-        val results = mutableListOf<SearchResponse>()
-        val encodedQuery = java.net.URLEncoder.encode(query, "UTF-8")
-        var page = 1
-        val maxPages = 10
+override suspend fun search(query: String): List<SearchResponse> {
+    val results = mutableListOf<SearchResponse>()
 
-        while (page <= maxPages) {
-            val url = if (page == 1) {
-                "$mainUrl/?s=$encodedQuery"
-            } else {
-                "$mainUrl/?s=$encodedQuery/page/$page"
-            }
+    val encodedQuery = java.net.URLEncoder.encode(query, "UTF-8")
 
-            val document = try {
-                app.get(url).document
-            } catch (e: Exception) {
-                Log.e("Search", "error page=$page url=$url")
-                break
-            }
+    var page = 1
+    val maxPages = 20
 
-            val items = document.select("div.card-grid a")
-                .mapNotNull { it.toSearchResult() }
+    val seen = HashSet<String>()
 
-            if (items.isEmpty()) break
+    while (page <= maxPages) {
 
-            results.addAll(items)
-            page++
+        val url = if (page == 1) {
+            "$mainUrl/?s=$encodedQuery"
+        } else {
+            "$mainUrl/page/$page/?s=$encodedQuery"
         }
 
-        return results.distinctBy { it.url }
+        val document = try {
+            app.get(url).document
+        } catch (e: Exception) {
+            Log.e("Search", "error page=$page url=$url")
+            break
+        }
+
+        val items = document.select("div.card-grid a")
+            .mapNotNull { it.toSearchResult() }
+
+        if (items.isEmpty()) break
+
+        for (item in items) {
+            val key = item.url
+
+            if (key !in seen) {
+                seen.add(key)
+                results.add(item)
+            }
+        }
+
+        page++
     }
+
+    return results
+}
 
     @RequiresApi(Build.VERSION_CODES.N)
     override suspend fun load(url: String): LoadResponse {
