@@ -316,7 +316,8 @@ class CloudPlay : MainAPI() {
             val jsonResponse = parseJson<Map<String, Any>>(responseString)
             @Suppress("UNCHECKED_CAST")
             val keys = jsonResponse["keys"] as? List<Map<String, String>> ?: return ""
-            keys.firstOrNull { it["kid"] == kid }?.get("k") ?: ""
+            val firstKey = keys.firstOrNull() ?: return ""
+            firstKey["k"] ?: ""
         } catch (_: Exception) {
             ""
         }
@@ -354,17 +355,8 @@ class CloudPlay : MainAPI() {
                     INFER_TYPE,
                     if (kidStr.isNotEmpty() && keyStr.isNotEmpty()) CLEARKEY_UUID else UUID.fromString("edef8ba9-79d6-4ace-a3c8-27dcd51d21ed")
                 ) {
-                    val headersMap = mutableMapOf<String, String>()
                     if (channel.headers != null) {
-                        headersMap.putAll(channel.headers)
-                    }
-                    if (!channel.user_agent.isNullOrEmpty()) {
-                        headersMap["User-Agent"] = channel.user_agent
-                    } else {
-                        headersMap["User-Agent"] = base64Decode("aHR0cHM6Ly90Lm1lL2Nsb3VkcGx5IHx8IEBjbG91ZHBsYXk=")
-                    }
-                    if (headersMap.isNotEmpty()) {
-                        this.headers = headersMap
+                        this.headers = channel.headers
                     }
                     if (kidStr.isNotEmpty() && keyStr.isNotEmpty()) {
                         this.kid = kidStr
@@ -383,17 +375,8 @@ class CloudPlay : MainAPI() {
                     channel.m3u8_url,
                     if (isTs) ExtractorLinkType.VIDEO else ExtractorLinkType.M3U8
                 ) {
-                    val headersMap = mutableMapOf<String, String>()
                     if (channel.headers != null) {
-                        headersMap.putAll(channel.headers)
-                    }
-                    if (!channel.user_agent.isNullOrEmpty()) {
-                        headersMap["User-Agent"] = channel.user_agent
-                    } else {
-                        headersMap["User-Agent"] = base64Decode("aHR0cHM6Ly90Lm1lL2Nsb3VkcGx5IHx8IEBjbG91ZHBsYXk=")
-                    }
-                    if (headersMap.isNotEmpty()) {
-                        this.headers = headersMap
+                        this.headers = channel.headers
                     }
                     channel.headers?.amap { (key, value) ->
                         if (key.equals("referer", ignoreCase = true)) {
@@ -408,7 +391,7 @@ class CloudPlay : MainAPI() {
     }
 
     private fun decryptPayload(payloadBase64: String, ivBase64: String, tagBase64: String): String {
-        val kString = base64Decode("amlvdHZwbHVz")
+        val kString = base64Decode("amlvdHZwbHVz") // jiotvplus
         val digest = MessageDigest.getInstance("SHA-256")
         val keyHash = digest.digest(kString.toByteArray(Charsets.UTF_8))
 

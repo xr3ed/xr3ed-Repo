@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.konan.properties.Properties
 
 // use an integer for version numbers
-version = 18
+version = 16
 
 android {
     buildFeatures {
@@ -16,10 +16,6 @@ android {
         buildConfigField("String", "ANICHI_ENDPOINT", "\"${properties.getProperty("ANICHI_ENDPOINT")}\"")
         buildConfigField("String", "ANICHI_APP", "\"${properties.getProperty("ANICHI_APP")}\"")
     }
-}
-dependencies {
-    implementation("com.google.android.material:material:1.14.0")
-    implementation("androidx.appcompat:appcompat:1.7.1")
 }
 
 cloudstream {
@@ -44,5 +40,5 @@ cloudstream {
     )
     iconUrl = "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Allanime.png"
 
-    isCrossPlatform = false
+    isCrossPlatform = true
 }

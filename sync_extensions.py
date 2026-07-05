@@ -2,6 +2,7 @@ import os
 import shutil
 import re
 import subprocess
+import stat
 
 def run_cmd(args, cwd=None):
     print(f"Running command: {' '.join(args)} in {cwd or '.'}")
@@ -9,6 +10,28 @@ def run_cmd(args, cwd=None):
     if result.returncode != 0:
         print(f"Error: {result.stderr}")
     return result
+
+def safe_rmtree(path):
+    if not os.path.exists(path):
+        return
+    for root, dirs, files in os.walk(path):
+        for momo in files:
+            try:
+                os.chmod(os.path.join(root, momo), stat.S_IWRITE)
+            except Exception:
+                pass
+        for momo in dirs:
+            try:
+                os.chmod(os.path.join(root, momo), stat.S_IWRITE)
+            except Exception:
+                pass
+    try:
+        shutil.rmtree(path)
+    except Exception:
+        if os.name == 'nt':
+            subprocess.run(['cmd', '/c', 'rmdir', '/s', '/q', path])
+        else:
+            subprocess.run(['rm', '-rf', path])
 
 def main():
     repo_root = os.path.dirname(os.path.abspath(__file__))
@@ -21,100 +44,53 @@ def main():
     phisher_dir = os.path.join(temp_dir, "Phisher")
     
     # 1. Clone or pull Miro (master branch)
+    miro_success = False
     if not os.path.exists(miro_dir):
-        run_cmd(["git", "clone", "-b", "master", "https://github.com/sad25kag/BetbetMiro-Extension.git", "Miro"], cwd=temp_dir)
+        res = run_cmd(["git", "clone", "-b", "master", "https://github.com/sad25kag/BetbetMiro-Extension.git", "Miro"], cwd=temp_dir)
+        if res.returncode == 0:
+            miro_success = True
     else:
-        run_cmd(["git", "checkout", "master"], cwd=miro_dir)
-        run_cmd(["git", "pull"], cwd=miro_dir)
-        
+        res = run_cmd(["git", "checkout", "master"], cwd=miro_dir)
+        if res.returncode == 0:
+            res_pull = run_cmd(["git", "pull"], cwd=miro_dir)
+            if res_pull.returncode == 0:
+                miro_success = True
+
     # 2. Clone or pull Phisher (master branch)
+    phisher_success = False
     if not os.path.exists(phisher_dir):
-        run_cmd(["git", "clone", "-b", "master", "https://github.com/phisher98/cloudstream-extensions-phisher.git", "Phisher"], cwd=temp_dir)
+        res = run_cmd(["git", "clone", "-b", "master", "https://github.com/phisher98/cloudstream-extensions-phisher.git", "Phisher"], cwd=temp_dir)
+        if res.returncode == 0:
+            phisher_success = True
+        else:
+            print("Warning: Original Phisher repository clone failed. Trying fallback fork...")
+            if os.path.exists(phisher_dir):
+                safe_rmtree(phisher_dir)
+            res = run_cmd(["git", "clone", "-b", "master", "https://github.com/trigco/cloudstream-extensions-phisher.git", "Phisher"], cwd=temp_dir)
+            if res.returncode == 0:
+                phisher_success = True
     else:
-        run_cmd(["git", "checkout", "master"], cwd=phisher_dir)
-        run_cmd(["git", "pull"], cwd=phisher_dir)
+        res = run_cmd(["git", "checkout", "master"], cwd=phisher_dir)
+        if res.returncode == 0:
+            res_pull = run_cmd(["git", "pull"], cwd=phisher_dir)
+            if res_pull.returncode == 0:
+                phisher_success = True
+        
+        if not phisher_success:
+            print("Warning: Failed to pull Phisher upstream. Attempting to re-clone from fallback fork...")
+            if os.path.exists(phisher_dir):
+                safe_rmtree(phisher_dir)
+            res = run_cmd(["git", "clone", "-b", "master", "https://github.com/trigco/cloudstream-extensions-phisher.git", "Phisher"], cwd=temp_dir)
+            if res.returncode == 0:
+                phisher_success = True
 
-    # 3. Clean up existing plugin folders in repo root
-    # A plugin folder has build.gradle.kts and is not a known/ignored folder
     ignored_folders = {".git", ".github", ".vscode", "gradle", "temp_repos", "buildSrc", "Miro-Temp", "Phisher-Temp", "_patches"}
-    for item in os.listdir(repo_root):
-        item_path = os.path.join(repo_root, item)
-        if os.path.isdir(item_path) and item not in ignored_folders:
-            if os.path.exists(os.path.join(item_path, "build.gradle.kts")):
-                print(f"Cleaning up old plugin folder: {item}")
-                shutil.rmtree(item_path)
 
-    # 4. Copy gradle files from Miro (it has the most updated setup)
-    gradle_files = ["build.gradle.kts", "gradle.properties", "gradlew", "gradlew.bat"]
-    for f in gradle_files:
-        src = os.path.join(miro_dir, f)
-        if os.path.exists(src):
-            shutil.copy2(src, os.path.join(repo_root, f))
-            
-    # Copy gradle folder
-    gradle_folder = os.path.join(repo_root, "gradle")
-    if os.path.exists(gradle_folder):
-        shutil.rmtree(gradle_folder)
-    shutil.copytree(os.path.join(miro_dir, "gradle"), gradle_folder)
-    
-    # Update build.gradle.kts repository fallback URL, namespace dynamic check, and opt-in compiler option
-    build_gradle_path = os.path.join(repo_root, "build.gradle.kts")
-    if os.path.exists(build_gradle_path):
-        with open(build_gradle_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        # Replace default setRepo fallback URL
-        content = content.replace("https://github.com/duro92/ExtCloud", "https://github.com/xr3ed/xr3ed-Repo")
-        
-        # Replace the plugin group ID with the correct Jitpack coordinates
-        content = content.replace("com.github.recloudstream:gradle", "com.github.recloudstream.gradle:gradle")
-        
-        # Replace hardcoded namespace with dynamic namespace check
-        old_namespace = 'namespace = "com.sad25kag"'
-        new_namespace = """val phisherPluginsFile = project.rootProject.file("phisher_plugins.txt")
-        val isPhisher = if (phisherPluginsFile.exists()) {
-            phisherPluginsFile.readLines().contains(project.name)
-        } else {
-            false
-        }
-        namespace = if (isPhisher) "com.phisher98" else "com.sad25kag" """
-        
-        content = content.replace(old_namespace, new_namespace)
-        
-        # Add optIn compiler options to bypass prerelease API compile check globally
-        # Use regex to match freeCompilerArgs block flexibly (handles trailing commas, whitespace changes)
-        import re
-        if 'optIn.add("com.lagradost.cloudstream3.Prerelease")' not in content:
-            pattern = r'(freeCompilerArgs\.addAll\([^)]*\))'
-            match = re.search(pattern, content, re.DOTALL)
-            if match:
-                original = match.group(0)
-                replacement = original + '\n                optIn.add("com.lagradost.cloudstream3.Prerelease")'
-                content = content.replace(original, replacement, 1)
-        
-        with open(build_gradle_path, 'w', encoding='utf-8') as f:
-            f.write(content)
-
-    # Update gradle.properties with the correct plugin version that packages resources correctly
-    gradle_properties_path = os.path.join(repo_root, "gradle.properties")
-    if os.path.exists(gradle_properties_path):
-        with open(gradle_properties_path, 'r', encoding='utf-8') as f:
-            prop_content = f.read()
-        
-        # Replace the plugin version with the working commit hash 32895aedb6
-        import re
-        prop_content = re.sub(
-            r'cloudstream\.gradle\.plugin\.version\s*=\s*\S+',
-            'cloudstream.gradle.plugin.version=32895aedb6',
-            prop_content
-        )
-        
-        with open(gradle_properties_path, 'w', encoding='utf-8') as f:
-            f.write(prop_content)
-
-    # 5. List plugins
+    # Define get_plugins
     def get_plugins(src_dir):
         plugins = []
+        if not os.path.exists(src_dir):
+            return plugins
         for item in os.listdir(src_dir):
             item_path = os.path.join(src_dir, item)
             if os.path.isdir(item_path) and item not in ignored_folders:
@@ -122,42 +98,127 @@ def main():
                     plugins.append(item)
         return plugins
 
-    miro_plugins = get_plugins(miro_dir)
-    phisher_plugins = get_plugins(phisher_dir)
-    
-    print(f"Miro plugins: {len(miro_plugins)}")
-    print(f"Phisher plugins: {len(phisher_plugins)}")
-    
+    # Get plugins lists
+    miro_plugins = get_plugins(miro_dir) if miro_success else []
+    phisher_plugins = get_plugins(phisher_dir) if phisher_success else []
+
+    print(f"Miro plugins found: {len(miro_plugins)}")
+    print(f"Phisher plugins found: {len(phisher_plugins)}")
+
+    # 3. Clean up existing plugin folders in repo root (ONLY those we are going to overwrite/copy)
+    plugins_to_overwrite = set(miro_plugins)
+    for p in phisher_plugins:
+        if p in miro_plugins:
+            plugins_to_overwrite.add(f"{p}Backup")
+        else:
+            plugins_to_overwrite.add(p)
+
+    for item in os.listdir(repo_root):
+        item_path = os.path.join(repo_root, item)
+        if os.path.isdir(item_path) and item in plugins_to_overwrite:
+            print(f"Cleaning up old plugin folder to overwrite: {item}")
+            safe_rmtree(item_path)
+
+    # 4. Copy gradle files from Miro (only if Miro was successfully updated)
+    if miro_success:
+        gradle_files = ["build.gradle.kts", "gradle.properties", "gradlew", "gradlew.bat"]
+        for f in gradle_files:
+            src = os.path.join(miro_dir, f)
+            if os.path.exists(src):
+                shutil.copy2(src, os.path.join(repo_root, f))
+                
+        # Copy gradle folder
+        gradle_folder = os.path.join(repo_root, "gradle")
+        if os.path.exists(gradle_folder):
+            safe_rmtree(gradle_folder)
+        shutil.copytree(os.path.join(miro_dir, "gradle"), gradle_folder)
+        
+        # Update build.gradle.kts repository fallback URL, namespace dynamic check, and opt-in compiler option
+        build_gradle_path = os.path.join(repo_root, "build.gradle.kts")
+        if os.path.exists(build_gradle_path):
+            with open(build_gradle_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Replace default setRepo fallback URL
+            content = content.replace("https://github.com/duro92/ExtCloud", "https://github.com/xr3ed/xr3ed-Repo")
+            
+            # Replace the plugin group ID with the correct Jitpack coordinates
+            content = content.replace("com.github.recloudstream:gradle", "com.github.recloudstream.gradle:gradle")
+            
+            # Replace hardcoded namespace with dynamic namespace check
+            old_namespace = 'namespace = "com.sad25kag"'
+            new_namespace = """val phisherPluginsFile = project.rootProject.file("phisher_plugins.txt")
+            val isPhisher = if (phisherPluginsFile.exists()) {
+                phisherPluginsFile.readLines().contains(project.name)
+            } else {
+                false
+            }
+            namespace = if (isPhisher) "com.phisher98" else "com.sad25kag" """
+            
+            content = content.replace(old_namespace, new_namespace)
+            
+            # Add optIn compiler options to bypass prerelease API compile check globally
+            import re
+            if 'optIn.add("com.lagradost.cloudstream3.Prerelease")' not in content:
+                pattern = r'(freeCompilerArgs\.addAll\([^)]*\))'
+                match = re.search(pattern, content, re.DOTALL)
+                if match:
+                    original = match.group(0)
+                    replacement = original + '\n                optIn.add("com.lagradost.cloudstream3.Prerelease")'
+                    content = content.replace(original, replacement, 1)
+            
+            with open(build_gradle_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+
+        # Update gradle.properties with the correct plugin version that packages resources correctly
+        gradle_properties_path = os.path.join(repo_root, "gradle.properties")
+        if os.path.exists(gradle_properties_path):
+            with open(gradle_properties_path, 'r', encoding='utf-8') as f:
+                prop_content = f.read()
+            
+            # Replace the plugin version with the working commit hash 32895aedb6
+            import re
+            prop_content = re.sub(
+                r'cloudstream\.gradle\.plugin\.version\s*=\s*\S+',
+                'cloudstream.gradle.plugin.version=32895aedb6',
+                prop_content
+            )
+            
+            with open(gradle_properties_path, 'w', encoding='utf-8') as f:
+                f.write(prop_content)
+
     # 6. Copy Miro plugins (Primary)
-    for p in miro_plugins:
-        src = os.path.join(miro_dir, p)
-        dst = os.path.join(repo_root, p)
-        shutil.copytree(src, dst)
-        print(f"Copied Miro plugin: {p}")
+    if miro_success:
+        for p in miro_plugins:
+            src = os.path.join(miro_dir, p)
+            dst = os.path.join(repo_root, p)
+            shutil.copytree(src, dst)
+            print(f"Copied Miro plugin: {p}")
         
     # 7. Copy Phisher plugins (Backup if conflict)
     phisher_copied = []
-    for p in phisher_plugins:
-        src = os.path.join(phisher_dir, p)
-        if p in miro_plugins:
-            # Conflict! Rename Phisher to Backup
-            dst_name = f"{p}Backup"
-            dst = os.path.join(repo_root, dst_name)
-            shutil.copytree(src, dst)
-            phisher_copied.append(dst_name)
-            print(f"Conflict: Copied Phisher plugin {p} as {dst_name}")
-            
-            # Modify Kotlin files to append [Backup] to MainAPI names
-            modify_kotlin_files(dst)
-        else:
-            dst = os.path.join(repo_root, p)
-            shutil.copytree(src, dst)
-            phisher_copied.append(p)
-            print(f"Copied Phisher plugin (no conflict): {p}")
+    if phisher_success:
+        for p in phisher_plugins:
+            src = os.path.join(phisher_dir, p)
+            if p in miro_plugins:
+                # Conflict! Rename Phisher to Backup
+                dst_name = f"{p}Backup"
+                dst = os.path.join(repo_root, dst_name)
+                shutil.copytree(src, dst)
+                phisher_copied.append(dst_name)
+                print(f"Conflict: Copied Phisher plugin {p} as {dst_name}")
+                
+                # Modify Kotlin files to append [Backup] to MainAPI names
+                modify_kotlin_files(dst)
+            else:
+                dst = os.path.join(repo_root, p)
+                shutil.copytree(src, dst)
+                phisher_copied.append(p)
+                print(f"Copied Phisher plugin (no conflict): {p}")
 
-    # Write phisher_plugins.txt
-    with open(os.path.join(repo_root, "phisher_plugins.txt"), "w", encoding="utf-8") as f:
-        f.write("\n".join(phisher_copied))
+        # Write phisher_plugins.txt
+        with open(os.path.join(repo_root, "phisher_plugins.txt"), "w", encoding="utf-8") as f:
+            f.write("\n".join(phisher_copied))
     print("Generated phisher_plugins.txt")
 
     # 9. Apply local patches on top of upstream-copied plugins

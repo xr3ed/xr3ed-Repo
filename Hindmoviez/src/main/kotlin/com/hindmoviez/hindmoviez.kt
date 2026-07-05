@@ -32,7 +32,6 @@ import com.lagradost.cloudstream3.utils.newExtractorLink
 import kotlinx.coroutines.runBlocking
 import org.json.JSONObject
 import org.jsoup.nodes.Element
-import java.net.URLDecoder
 
 
 class Hindmoviez : MainAPI() {
@@ -204,10 +203,7 @@ class Hindmoviez : MainAPI() {
                         val href = anchor.absUrl("href")
                         if (href.isBlank()) return@mapNotNull null
                         val baseurl=href.substringBefore("/?id=")
-                        val rawId = URLDecoder.decode(
-                            href.substringAfter("id=").replace("+", "%2B"),
-                            "UTF-8"
-                        )
+                        val rawId = href.substringAfter("id=")
                         signHShare(rawId,baseurl)
                     }
             }
@@ -264,10 +260,7 @@ class Hindmoviez : MainAPI() {
                         .takeIf { it.isNotBlank() } ?: return@episodeLoop
 
                     val baseurl=href.substringBefore("/?id=")
-                    val rawId = URLDecoder.decode(
-                        href.substringAfter("id=").replace("+", "%2B"),
-                        "UTF-8"
-                    )
+                    val rawId = href.substringAfter("id=")
 
                     val epUrl = signHShare(rawId, baseurl)
                         .takeIf { it.isNotBlank() }
@@ -364,9 +357,9 @@ class Hindmoviez : MainAPI() {
         }.flatten()
 
         allRequests.amap { (btnUrl, extractedSpecs, fileSize) ->
-            if (btnUrl.contains("gdshine")) {
+            if (btnUrl.contains("gdshine"))
+            {
                 loadExtractor(btnUrl,"$extractedSpecs[$fileSize]",subtitleCallback,callback)
-                return@amap
             }
             try {
                 val doc = app.get(btnUrl, timeout = 10000L).document

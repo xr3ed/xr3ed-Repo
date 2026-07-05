@@ -1,15 +1,6 @@
 // use an integer for version numbers
-version = 5
+version = 3
 
-android {
-    buildFeatures {
-        buildConfig = true
-    }
-}
-
-dependencies {
-    implementation("com.google.android.material:material:1.14.0")
-}
 
 cloudstream {
     // All of these properties are optional, you can safely remove them
@@ -28,6 +19,5 @@ cloudstream {
     tvTypes = listOf("Anime", "AnimeMovie", "OVA")
     language = "en"
     iconUrl = "https://anidb.app/images/fav-512.png"
-    isCrossPlatform = false
-    requiresResources = true
+    isCrossPlatform = true
 }

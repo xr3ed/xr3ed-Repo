@@ -15,7 +15,6 @@ class Movies4uProvider: BasePlugin() {
         registerExtractorAPI(Gofile())
         registerExtractorAPI(M4ulinks())
         registerExtractorAPI(Shikshakdaak())
-        registerExtractorAPI(VCloud())
     }
 
     companion object {

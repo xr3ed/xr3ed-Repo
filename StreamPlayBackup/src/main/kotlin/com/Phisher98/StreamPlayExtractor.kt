@@ -5,7 +5,6 @@ import com.google.gson.Gson
 import com.google.gson.JsonObject
 import com.lagradost.api.Log
 import com.lagradost.cloudstream3.APIHolder.capitalize
-import com.lagradost.cloudstream3.Prerelease
 import com.lagradost.cloudstream3.SubtitleFile
 import com.lagradost.cloudstream3.TvType
 import com.lagradost.cloudstream3.USER_AGENT
@@ -203,7 +202,6 @@ object StreamPlayExtractor : StreamPlay() {
         invokeWpmovies("ZShow", url, subtitleCallback, callback, encrypt = true)
     }
 
-    @OptIn(Prerelease::class)
     private suspend fun invokeWpmovies(
         name: String? = null,
         url: String? = null,
@@ -2811,8 +2809,10 @@ object StreamPlayExtractor : StreamPlay() {
 
             val serverResponse = safeGet(jsonfile, headers = headers, referer = "$allmovielandAPI/")
             if (serverResponse.code != 200) return@runCatching
+            val serverJson = serverResponse.text.replace(Regex(""",\s*/"""), "")
+            val cleanedJson = serverJson.replace(Regex(",\\s*\\[\\s*]"), "")
 
-            val servers = serverResponse.parsedSafe<ArrayList<AllMovielandServer>>()?.let { list ->
+            val servers = tryParseJson<ArrayList<AllMovielandServer>>(cleanedJson)?.let { list ->
                 if (season == null) {
                     list.mapNotNull { it.file?.let { file -> file to it.title.orEmpty() } }
                 } else {
@@ -3659,59 +3659,6 @@ object StreamPlayExtractor : StreamPlay() {
     }
 
     val deviceId = generateDeviceId()
-
-    private fun decodeJwtExpiry(token: String): Long {
-        return try {
-            val payload = token.split(".").getOrNull(1) ?: return 0L
-            val padded = payload.replace("-", "+").replace("_", "/")
-                .let { it + "=".repeat((4 - it.length % 4) % 4) }
-            val json = android.util.Base64.decode(padded, android.util.Base64.DEFAULT)
-                .toString(Charsets.UTF_8)
-            org.json.JSONObject(json).getLong("exp")
-        } catch (_: Exception) { 0L }
-    }
-
-    private fun isTokenValid(token: String?): Boolean {
-        if (token.isNullOrBlank()) return false
-        val exp = decodeJwtExpiry(token)
-        return exp > System.currentTimeMillis() / 1000 + 3600
-    }
-    
-    private var movieboxBearerToken: String? = null
-    
-    private suspend fun getMovieBoxToken(): String {
-        if (isTokenValid(movieboxBearerToken)) return movieboxBearerToken!!
-        
-        val url = "$movieBox/wefeed-mobile-bff/tab/ranking-list?tabId=0&categoryType=4516404531735022304&page=1&perPage=1"
-        val xClientToken = generateXClientToken()
-        val xTrSignature = generateXTrSignature("GET", "application/json", "application/json", url)
-        
-        val headers = mapOf(
-            "user-agent" to "com.community.oneroom/50020088 (Linux; U; Android 13; en_US; Subsystem for Android(TM); Build/TQ3A.230901.001; Cronet/145.0.7582.0)",
-            "accept" to "application/json",
-            "content-type" to "application/json",
-            "x-client-token" to xClientToken,
-            "x-tr-signature" to xTrSignature,
-            "x-client-info" to """{"package_name":"com.community.oneroom","version_name":"3.0.13.0325.03","version_code":50020088,"os":"android","os_version":"13","install_ch":"ps","device_id":"$deviceId","install_store":"ps","gaid":"1b2212c1-dadf-43c3-a0c8-bd6ce48ae22d","brand":"Windows","model":"Subsystem for Android(TM)","system_language":"en","net":"NETWORK_WIFI","region":"US","timezone":"Asia/Calcutta","sp_code":""}""",
-            "x-client-status" to "0"
-        )
-        
-        try {
-            val response = app.get(url, headers = headers)
-            val xUser = response.headers["x-user"]
-            if (!xUser.isNullOrBlank()) {
-                val token = streamPlayExtractorMapper.readTree(xUser)["token"]?.asText()
-                if (token != null) {
-                    movieboxBearerToken = token
-                    return token
-                }
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-        return ""
-    }
-
     suspend fun invokeMovieBox(
         title: String?,
         season: Int? = 0,
@@ -3721,7 +3668,6 @@ object StreamPlayExtractor : StreamPlay() {
     ): Boolean {
         try {
             if (title.isNullOrBlank()) return false
-            val token = getMovieBoxToken()
 
             val url = "$movieBox/wefeed-mobile-bff/subject-api/search/v2"
             val jsonBody = """{"page":1,"perPage":10,"keyword":"$title"}"""
@@ -3736,8 +3682,7 @@ object StreamPlayExtractor : StreamPlay() {
                 "x-client-token" to xClientToken,
                 "x-tr-signature" to xTrSignature,
                 "x-client-info" to """{"package_name":"com.community.oneroom","version_name":"3.0.13.0325.03","version_code":50020088,"os":"android","os_version":"13","install_ch":"ps","device_id":"$deviceId","install_store":"ps","gaid":"1b2212c1-dadf-43c3-a0c8-bd6ce48ae22d","brand":"Windows","model":"Subsystem for Android(TM)","system_language":"en","net":"NETWORK_WIFI","region":"US","timezone":"Asia/Calcutta","sp_code":"","X-Play-Mode":"1","X-Idle-Data":"1","X-Family-Mode":"0","X-Content-Mode":"0"}""".trimIndent(),
-                "x-client-status" to "0",
-                "Authorization" to "Bearer $token"
+                "x-client-status" to "0"
             )
 
             val requestBody = jsonBody.toRequestBody("application/json".toMediaType())
@@ -3776,23 +3721,17 @@ object StreamPlayExtractor : StreamPlay() {
                     )
                     val subjectHeaders = headers + mapOf(
                         "x-client-token" to subjectXToken,
-                        "x-tr-signature" to subjectXSign,
-                        "Authorization" to "Bearer $token"
+                        "x-tr-signature" to subjectXSign
                     )
                     val subjectRes = safeGet(subjectUrl, headers = subjectHeaders)
 
                     val xUserHeader = subjectRes.headers["x-user"]
 
-                    // Use x-user token if present, otherwise fall back to the initial token
-                    var authtoken: String = token
+                    var authtoken: String? = null
 
                     if (!xUserHeader.isNullOrBlank()) {
                         val xUserJson = mapper.readTree(xUserHeader)
-                        val newToken = xUserJson["token"]?.asText()?.takeIf { it.isNotBlank() }
-                        if (newToken != null && isTokenValid(newToken)) {
-                            authtoken = newToken
-                            movieboxBearerToken = newToken
-                        }
+                        authtoken = xUserJson["token"]?.asText()
                     }
 
                     if (subjectRes.code != 200) return@safeAmap
@@ -3829,11 +3768,7 @@ object StreamPlayExtractor : StreamPlay() {
                             "application/json",
                             playUrl
                         )
-                        val playHeaders = headers + mapOf(
-                            "x-client-token" to token,
-                            "x-tr-signature" to sign,
-                            "Authorization" to "Bearer $authtoken"
-                        )
+                        val playHeaders = headers + mapOf("x-client-token" to token, "x-tr-signature" to sign)
 
                         val playRes = safeGet(playUrl, headers = playHeaders)
                         if (playRes.code != 200) continue
@@ -3957,8 +3892,7 @@ object StreamPlayExtractor : StreamPlay() {
                                     "X-Client-Info" to """{"package_name":"com.community.mbox.in","version_name":"3.0.03.0529.03","version_code":50020042,"os":"android","os_version":"16","device_id":"da2b99c821e6ea023e4be55b54d5f7d8","install_store":"ps","gaid":"d7578036d13336cc","brand":"google","model":"sdk_gphone64_x86_64","system_language":"en","net":"NETWORK_WIFI","sp_code":""}""",
                                     "X-Client-Status" to "0",
                                     "x-client-token" to subToken,
-                                    "x-tr-signature" to subSign,
-                                    "Authorization" to "Bearer $authtoken"
+                                    "x-tr-signature" to subSign
                                 )
 
                                 val subRes = safeGet(subLink, headers = subHeaders)
@@ -4552,10 +4486,7 @@ object StreamPlayExtractor : StreamPlay() {
                         ?.takeIf { it.isNotBlank() }
                         ?.let { href ->
                             val baseurl=href.substringBefore("/?id=")
-                            val rawId = URLDecoder.decode(
-                            href.substringAfter("id=").replace("+", "%2B"),
-                            "UTF-8"
-                            )
+                            val rawId = href.substringAfter("id=")
                             hindmoviezsignHShare(rawId, baseurl)
                         }
                         ?: return@safeAmap
@@ -4581,10 +4512,7 @@ object StreamPlayExtractor : StreamPlay() {
                         ?.takeIf { it.isNotBlank() }
                         ?.let { href ->
                             val baseurl = href.substringBefore("/?id=")
-                            val rawId = URLDecoder.decode(
-                                href.substringAfter("id=").replace("+", "%2B"),
-                                "UTF-8"
-                            )
+                            val rawId = href.substringAfter("id=")
                             hindmoviezsignHShare(rawId, baseurl)
                         }
                         ?: return@safeAmap

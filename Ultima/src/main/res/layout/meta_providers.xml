@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingStart="?android:attr/listPreferredItemPaddingStart"
         android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
@@ -17,15 +17,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
-                android:text="Extension Settings"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Meta Providers"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -38,9 +38,10 @@
                     android:id="@+id/save"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#FFF"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
                     android:padding="5dp"
-                    android:contentDescription="Save changes" />
+                    android:focusable="true" />
 
             </LinearLayout>
 
@@ -48,7 +49,7 @@
 
         <ImageView
             android:src="@android:drawable/divider_horizontal_dark"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
             android:paddingLeft="2dp"
@@ -56,45 +57,48 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp" />
 
-        <!-- Cloudflare Bypass Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Meta Services"
+            android:textSize="18sp" />
+
         <LinearLayout
+            android:id="@+id/meta_providers_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingBottom="10dp">
+        </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="6dp"
-                android:text="Cloudflare Protection"
-                android:textSize="17sp"
-                android:textStyle="bold" />
+        <ImageView
+            android:src="@android:drawable/divider_horizontal_dark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="10dp"
-                android:textSize="13sp"
-                android:text="If AniDB shows a &#34;Just a moment&#34; screen, tap below to open a WebView and solve the challenge. Cookies will be saved automatically." />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Media Sources"
+            android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/cf_bypass_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Bypass Cloudflare"
-                android:textSize="14sp"
-                android:padding="12dp" />
-
-            <Button
-                android:id="@+id/cf_clear_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Clear CF Cookies"
-                android:textSize="14sp"
-                android:padding="12dp" />
-
+        <LinearLayout
+            android:id="@+id/media_providers_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
         </LinearLayout>
 
     </LinearLayout>

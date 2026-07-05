@@ -62,12 +62,12 @@ subprojects {
 
     android {
         val phisherPluginsFile = project.rootProject.file("phisher_plugins.txt")
-        val isPhisher = if (phisherPluginsFile.exists()) {
-            phisherPluginsFile.readLines().contains(project.name)
-        } else {
-            false
-        }
-        namespace = if (isPhisher) "com.phisher98" else "com.sad25kag" 
+            val isPhisher = if (phisherPluginsFile.exists()) {
+                phisherPluginsFile.readLines().contains(project.name)
+            } else {
+                false
+            }
+            namespace = if (isPhisher) "com.phisher98" else "com.sad25kag" 
         compileSdk = androidCompileSdkVersion
 
         defaultConfig {

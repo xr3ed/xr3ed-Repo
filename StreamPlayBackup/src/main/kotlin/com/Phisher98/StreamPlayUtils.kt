@@ -43,6 +43,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
 import kotlinx.coroutines.withTimeout
+import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.Interceptor
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -64,6 +65,7 @@ import java.security.MessageDigest
 import java.security.SecureRandom
 import java.text.SimpleDateFormat
 import java.util.Arrays
+import java.util.Base64
 import java.util.Calendar
 import java.util.Date
 import java.util.Locale
@@ -122,6 +124,10 @@ suspend fun bypassHrefli(url: String): String? {
     return fixUrl(path, getBaseUrl(driveUrl))
 }
 
+
+suspend fun String.haveDub(referer: String): Boolean {
+    return app.get(this, referer = referer).text.contains("TYPE=AUDIO")
+}
 
 suspend fun convertTmdbToAnimeId(
     title: String?,
@@ -1887,6 +1893,7 @@ suspend inline fun <A, B> Iterable<A>.safeAmap(
     }
 }
 
+
 val HindmoviezSECRET = base64Decode("NWU5NjA4NWM1NmUwZjU0ZWRhNjU3NzkwYWM1OGQxOWIyNzE0NzljNTA0MzY3ZmM5ZTZhNmMzM2YxZjgyNGU2Yg==")
 
 fun hindmoviezbase64Url(input: String): String {
@@ -1909,7 +1916,7 @@ fun hindmoviezsignHShare(rawId: String, domain: String): String {
     val t = System.currentTimeMillis() / 1000
     val encoded = hindmoviezbase64Url(rawId)
     val s = hindmoviezhmacSha256(HindmoviezSECRET, "$encoded|$t")
-    return "$domain/r.php?d=${java.net.URLEncoder.encode(encoded, "UTF-8")}&t=$t&s=$s"
+    return "$domain/r.php?d=${URLEncoder.encode(encoded, "UTF-8")}&t=$t&s=$s"
 }
 
 //Cinemacity
@@ -2060,11 +2067,92 @@ fun moviesdrivebase64Decode(input: String): String {
                 }
             }
 
-        val decoded = base64DecodeArray(normalized)
+        val decoded = Base64.getDecoder().decode(normalized)
         String(decoded, StandardCharsets.UTF_8)
 
     } catch (_: Exception) {
         ""
+    }
+}
+
+suspend fun getMoviesDriveMoviesStreamUrls(inputUrl: String): List<String> {
+    return try {
+        val uri = URI(inputUrl)
+        val params = uri.rawQuery
+            ?.split("&")
+            ?.mapNotNull {
+                val i = it.indexOf("=")
+                if (i == -1) null else it.substring(0, i) to it.substring(i + 1)
+            }
+            ?.toMap() ?: return emptyList()
+
+        val encodedQ = params["q"] ?: return emptyList()
+        val fromAc = params["from_ac"] ?: return emptyList()
+        val decodedQuery = moviesdrivebase64Decode(encodedQ)
+
+        val baseurl = getBaseUrl(inputUrl)
+        val apiUrl = "$baseurl/drive/search-recover.php".toHttpUrl()
+            .newBuilder()
+            .addQueryParameter("api", "search")
+            .addQueryParameter("q", decodedQuery)
+            .addQueryParameter("page", "1")
+            .addQueryParameter("from_ac", fromAc)
+            .build()
+            .toString()
+
+        val responseText = app.get(apiUrl).text
+        val json = JSONObject(responseText)
+        val hits = json.getJSONArray("hits")
+
+        (0 until hits.length())
+            .mapNotNull { i ->
+                hits.getJSONObject(i).optString("url").takeIf { it.isNotBlank() }
+            }.distinct()
+
+    } catch (_: Exception) {
+        listOf(inputUrl)
+    }
+}
+
+suspend fun getMoviesDriveSeriesStreamUrls(inputUrl: String): List<Pair<String, String>> {
+    return try {
+        val uri = URI(inputUrl)
+        val params = uri.rawQuery
+            ?.split("&")
+            ?.mapNotNull {
+                val i = it.indexOf("=")
+                if (i == -1) null else it.substring(0, i) to it.substring(i + 1)
+            }
+            ?.toMap() ?: return emptyList()
+
+        val encodedQ = params["q"] ?: return emptyList()
+        val fromAc = params["from_ac"] ?: return emptyList()
+        val decodedQuery = moviesdrivebase64Decode(encodedQ)
+
+        val baseurl = getBaseUrl(inputUrl)
+        val apiUrl = "$baseurl/drive/search-recover.php".toHttpUrl()
+            .newBuilder()
+            .addQueryParameter("api", "search")
+            .addQueryParameter("q", decodedQuery)
+            .addQueryParameter("page", "1")
+            .addQueryParameter("from_ac", fromAc)
+            .build()
+            .toString()
+
+        val responseText = app.get(apiUrl).text
+        val json = JSONObject(responseText)
+        val hits = json.getJSONArray("hits")
+
+        (0 until hits.length())
+            .mapNotNull { i ->
+                val obj = hits.getJSONObject(i)
+                val fileName = obj.optString("file_name")
+                val url = obj.optString("url")
+                if (url.isBlank()) null else fileName to url
+            }.distinctBy { it.second }
+
+    } catch (_: Exception) {
+        emptyList()
     }
 }
 

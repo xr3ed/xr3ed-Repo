@@ -33,15 +33,7 @@ import com.lagradost.cloudstream3.utils.loadExtractor
 import com.lagradost.cloudstream3.utils.newExtractorLink
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.suspendCancellableCoroutine
-import kotlinx.coroutines.withContext
-import kotlin.coroutines.resume
 import okhttp3.RequestBody.Companion.toRequestBody
-import okhttp3.MediaType.Companion.toMediaTypeOrNull
-import androidx.appcompat.app.AppCompatActivity
-import com.lagradost.cloudstream3.CommonActivity
-import com.lagradost.cloudstream3.app
 import java.net.URI
 import java.nio.charset.StandardCharsets
 import javax.crypto.Cipher
@@ -49,34 +41,6 @@ import javax.crypto.spec.GCMParameterSpec
 import javax.crypto.spec.SecretKeySpec
 
 object AnichiExtractors : Anichi() {
-
-    /**
-     * Opens [AnichiTurnstileDialog] which loads [url] (the episode page) in a WebView,
-     * intercepts the site's POST to api.allanime.day, and returns the raw API response body
-     * (containing `tobeparsed` or `sourceUrls`), or null on timeout / user dismissal.
-     */
-    suspend fun showTurnstileDialogAndWait(url: String): String? =
-        withContext(Dispatchers.Main) {
-            suspendCancellableCoroutine { cont ->
-                val activity = CommonActivity.activity as? AppCompatActivity
-                if (activity == null || activity.isFinishing || activity.isDestroyed) {
-                    cont.resume(null)
-                    return@suspendCancellableCoroutine
-                }
-                var resumed = false
-                fun safeResume(responseBody: String?) {
-                    if (!resumed) { resumed = true; cont.resume(responseBody) }
-                }
-                val dialog = AnichiTurnstileDialog(
-                    targetUrl = url,
-                    onFinished = { responseBody -> safeResume(responseBody) }
-                )
-                cont.invokeOnCancellation {
-                    activity.runOnUiThread { runCatching { dialog.dismissAllowingStateLoss() } }
-                }
-                dialog.show(activity.supportFragmentManager, "anichi_turnstile")
-            }
-        }
 
     suspend fun invokeInternalSources(
         hash: String,
@@ -88,23 +52,7 @@ object AnichiExtractors : Anichi() {
         val fullApiUrl = """$apiUrl?variables={"showId":"$hash","translationType":"$dubStatus","episodeString":"$episode"}&extensions={"persistedQuery":{"version":1,"sha256Hash":"$serverHash"}}"""
 
         val responseText = try {
-            val response = app.get(fullApiUrl, headers = headers)
-            val responseBody = response.text
-            val needsCaptcha = response.code == 403
-                || response.code == 503
-                || !responseBody.trim().startsWith("{")
-                || responseBody.contains("NEED_CAPTCHA")
-
-            if (needsCaptcha) {
-                Log.d("Anichi", "NEED_CAPTCHA – opening episode WebView to intercept API response…")
-                // Load the exact episode page so the site's own JS solves Turnstile + POSTs to the API
-                val episodePageUrl = "https://allmanga.to/bangumi/$hash/p-$episode-$dubStatus"
-                val interceptedResponse = showTurnstileDialogAndWait(episodePageUrl)
-                // interceptedResponse is the raw API JSON body captured from the site's fetch
-                interceptedResponse ?: return@coroutineScope
-            } else {
-                responseBody
-            }
+            app.get(fullApiUrl, headers = headers).text
         } catch (e: Exception) {
             e.printStackTrace()
             return@coroutineScope
