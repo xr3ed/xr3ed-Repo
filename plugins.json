@@ -431,7 +431,7 @@
             "sad25kag"
         ],
         "description": "AyoNonton provider — evidence-based categories and HAR-aligned t21.press 540.php playback resolver",
-        "fileSize": 51108,
+        "fileSize": 51103,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -440,7 +440,7 @@
         ],
         "iconUrl": "https://ayononton.live/wp-content/themes/muvipro/images/favicon/96x96.png",
         "apiVersion": 1,
-        "fileHash": "sha256-0a259c608cbca716b462ece9983258d0ec3c69cfded36d906ce182bead98bfb3"
+        "fileHash": "sha256-75299c3b95c541166b1550bfb9934f04c04dd0491540e18d93cd48426cd12a31"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BilibiliProvider.cs3",
@@ -474,7 +474,7 @@
             "sad25kag"
         ],
         "description": "Bangla/Hindi Movies/Series",
-        "fileSize": 68618,
+        "fileSize": 68612,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -484,10 +484,10 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/cinefreak.png",
         "apiVersion": 1,
-        "fileHash": "sha256-5992696279adfaa03e7fa4aeae4a08e29c37ce2963f37808c0af9330d95f440f",
-        "jarFileSize": 315174,
+        "fileHash": "sha256-bc0019ca07688cefe1916cc72537139784e6346e066670dcfb070edf1689090e",
+        "jarFileSize": 315183,
         "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CinefreakBackup.jar",
-        "jarHash": "sha256-69c69010b858e61590c6bec9d6aca18d15b753700a397df8565432fd3285e48d"
+        "jarHash": "sha256-3f9f5834993a70e14e40ffcd63cb8451307338e828aaf4e5196329edb3e3be11"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Cinemax21Provider.cs3",
@@ -1200,7 +1200,7 @@
             "sad25kag"
         ],
         "description": "Watch drama online in high quality. Free download high quality drama. Various formats from 240p to 720p HD (or even 1080p). Feel Free To Watch!",
-        "fileSize": 34554,
+        "fileSize": 34563,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1208,7 +1208,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://kisskh.buzz/&size=256",
         "apiVersion": 1,
-        "fileHash": "sha256-5adb73fb9d466d8425a96239568209233e8f10579eb2e04d1403592ae580de22"
+        "fileHash": "sha256-e8f467e932f951b2b90876fe31ca3a6ad6ee8e5ffa6d62fc6f13213f6d1f7817"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Klikxxi.cs3",
@@ -1240,7 +1240,7 @@
         "authors": [
             "sad25kag"
         ],
-        "fileSize": 33928,
+        "fileSize": 33933,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1250,7 +1250,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=kuramanime.com&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-3a44cb5b05ea9ab16591cceb7166de3b504ac9fbbed99f06307f09dcc273bc45"
+        "fileHash": "sha256-bd66bde5a60541ea6931c18f2e587d915402841b7fdc323a04974ad50e9562df"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/KuronimeProvider.cs3",
@@ -1500,7 +1500,7 @@
             "sad25kag"
         ],
         "description": "NontonAnimeID — Streaming Anime Subtitle Indonesia",
-        "fileSize": 41785,
+        "fileSize": 41773,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1510,7 +1510,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://s11.nontonanimeid.boats&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-352925fc0af8640639736ed45645df80f2a911a56303d51234df342e281430c9"
+        "fileHash": "sha256-a7fec66309c817c408384e223739c9d5c267260d02dcd9df2081d5e5ba55f03c"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NontonDrakor.cs3",
@@ -1831,7 +1831,7 @@
             "sad25kag"
         ],
         "description": "#1 best extention based on MultiAPI",
-        "fileSize": 958438,
+        "fileSize": 958448,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1844,7 +1844,7 @@
         ],
         "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
         "apiVersion": 1,
-        "fileHash": "sha256-ae2749b8c5e083af3e5a55b89288318f4c98a87493c0dfa5c626e6613d79133d"
+        "fileHash": "sha256-051091ac0fd11a9707aa831dc9d7a27402a1bb9e4c7779e4c25ca7cbe1d412a2"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Terbit21.cs3",
@@ -1927,7 +1927,7 @@
             "RowdyRushya,Phisher98"
         ],
         "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
-        "fileSize": 247426,
+        "fileSize": 247418,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "en",
         "tvTypes": [
@@ -1935,7 +1935,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
         "apiVersion": 1,
-        "fileHash": "sha256-76ad0547919b9be030d099b829ea9e7924c6102ce317bdb3146c9e1971947ffc"
+        "fileHash": "sha256-2dbf6d8403fc195c363947203b3ad77d30408cd27e68c1e6790f830b402af36c"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/YLNime.cs3",
