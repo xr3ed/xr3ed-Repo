@@ -1,0 +1,149 @@
+
+Welcome to Gradle 9.6.1!
+
+Here are the highlights of this release:
+ - Improved Configuration Cache hit rates
+ - Additional CLI rendering options
+ - Important project hierarchy lookup deprecations
+
+For more details see https://docs.gradle.org/9.6.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :Ultima:preBuild UP-TO-DATE
+> Task :Ultima:preDebugBuild UP-TO-DATE
+> Task :Ultima:generateDebugBuildConfig
+> Task :Ultima:generateDebugResources
+> Task :Ultima:packageDebugResources
+> Task :Ultima:processDebugNavigationResources
+> Task :Ultima:processDebugManifest
+> Task :Ultima:parseDebugLocalResources
+> Task :Ultima:generateDebugRFile
+
+> Task :Ultima:compileResources
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/delete_icon.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/edit_icon.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/ic_eye.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/outline.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/save_icon.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/triangle.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/app_settings_sync.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/app_settings_sync_creds.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/configure_extensions.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/configure_watch_sync.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_extension_item.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_media_provider_item.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_item.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_reorder_item.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/reorder.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/settings.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/watch_sync_creds.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/watch_sync_device.xml: note: compiling XML.
+note: including /usr/local/lib/android/sdk/platforms/android-36/android.jar.
+note: linking package 'com.phisher98' using package ID 7f.
+note: merging archive /tmp/res11069414313236619823.zip.
+note: merging 'layout/watch_sync_device' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/watch_sync_device.xml.
+note: merging 'layout/list_media_provider_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_media_provider_item.xml.
+note: merging 'layout/list_section_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_item.xml.
+note: merging 'drawable/delete_icon' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/delete_icon.xml.
+note: merging 'drawable/ic_eye' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/ic_eye.xml.
+note: merging 'layout/watch_sync_creds' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/watch_sync_creds.xml.
+note: merging 'layout/list_section_reorder_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_reorder_item.xml.
+note: merging 'layout/app_settings_sync' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/app_settings_sync.xml.
+note: merging 'drawable/triangle' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/triangle.xml.
+note: merging 'layout/configure_extensions' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/configure_extensions.xml.
+note: merging 'layout/configure_watch_sync' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/configure_watch_sync.xml.
+note: merging 'drawable/edit_icon' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/edit_icon.xml.
+note: merging 'drawable/save_icon' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/save_icon.xml.
+note: merging 'layout/list_extension_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_extension_item.xml.
+note: merging 'layout/settings' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/settings.xml.
+note: merging 'layout/reorder' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/reorder.xml.
+note: merging 'drawable/outline' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/outline.xml.
+note: merging 'layout/app_settings_sync_creds' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/app_settings_sync_creds.xml.
+note: enabling pre-O feature split ID rewriting.
+note: collapsing resource versions for minimum SDK 21.
+note: Running VersionCollapser with minSdk = 21.
+AndroidManifest.xml: note: writing to archive (keep_raw_values=false).
+note: writing AndroidManifest.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/delete_icon.xml (com.phisher98:drawable/delete_icon).
+res/drawable/delete_icon.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/delete_icon.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/edit_icon.xml (com.phisher98:drawable/edit_icon).
+res/drawable/edit_icon.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/edit_icon.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/ic_eye.xml (com.phisher98:drawable/ic_eye).
+res/drawable/ic_eye.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/ic_eye.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/outline.xml (com.phisher98:drawable/outline).
+res/drawable/outline.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/outline.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/save_icon.xml (com.phisher98:drawable/save_icon).
+res/drawable/save_icon.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/save_icon.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/triangle.xml (com.phisher98:drawable/triangle).
+res/drawable/triangle.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/triangle.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/app_settings_sync.xml (com.phisher98:layout/app_settings_sync).
+res/layout/app_settings_sync.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/app_settings_sync.xml to archive.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/app_settings_sync.xml: note: auto-versioning resource from config '' -> 'v22'.
+res/layout-v22/app_settings_sync.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout-v22/app_settings_sync.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/app_settings_sync_creds.xml (com.phisher98:layout/app_settings_sync_creds).
+res/layout/app_settings_sync_creds.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/app_settings_sync_creds.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/configure_extensions.xml (com.phisher98:layout/configure_extensions).
+res/layout/configure_extensions.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/configure_extensions.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/configure_watch_sync.xml (com.phisher98:layout/configure_watch_sync).
+res/layout/configure_watch_sync.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/configure_watch_sync.xml to archive.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/configure_watch_sync.xml: note: auto-versioning resource from config '' -> 'v22'.
+res/layout-v22/configure_watch_sync.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout-v22/configure_watch_sync.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_extension_item.xml (com.phisher98:layout/list_extension_item).
+res/layout/list_extension_item.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/list_extension_item.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_media_provider_item.xml (com.phisher98:layout/list_media_provider_item).
+res/layout/list_media_provider_item.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/list_media_provider_item.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_item.xml (com.phisher98:layout/list_section_item).
+res/layout/list_section_item.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/list_section_item.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_reorder_item.xml (com.phisher98:layout/list_section_reorder_item).
+res/layout/list_section_reorder_item.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/list_section_reorder_item.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/reorder.xml (com.phisher98:layout/reorder).
+res/layout/reorder.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/reorder.xml to archive.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/reorder.xml: note: auto-versioning resource from config '' -> 'v22'.
+res/layout-v22/reorder.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout-v22/reorder.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/settings.xml (com.phisher98:layout/settings).
+res/layout/settings.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/settings.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/watch_sync_creds.xml (com.phisher98:layout/watch_sync_creds).
+res/layout/watch_sync_creds.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/watch_sync_creds.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/watch_sync_device.xml (com.phisher98:layout/watch_sync_device).
+res/layout/watch_sync_device.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/watch_sync_device.xml to archive.
+note: writing resources.arsc to archive.
+
+> Task :Ultima:compileDebugKotlin
+
+> Task :Ultima:compileDex
+Compiled dex to /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/build/intermediates/classes.dex
+
+> Task :Ultima:make
+Made Cloudstream package at /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/build/Ultima.cs3
+
+[Incubating] Problems report is available at: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 45s
+11 actionable tasks: 11 executed
