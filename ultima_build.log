@@ -15,21 +15,141 @@ Starting a Gradle Daemon (subsequent builds will be faster)
 > Configure project :Alqanime
 Fetching JAR: cloudstream.jar
 
+> Configure project :UltimaBackup
+w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/build.gradle.kts:9:24: 'fun <T : Any> NamedDomainObjectCollection<T>.provideDelegate(thisRef: Any?, property: KProperty<*>): NamedDomainObjectProvider<T>' is deprecated. Use 'val element = getByName(name)' instead. See the Gradle 9.6 upgrading guide.
+w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/build.gradle.kts:9:24: 'fun <T : Any, reified U : T> NamedDomainObjectProvider<out T>.getValue(thisRef: Any?, property: KProperty<*>): U' is deprecated. Use 'val value = provider.get()' instead. See the Gradle 9.6 upgrading guide.
+
+> Task :UltimaBackup:preBuild UP-TO-DATE
+> Task :UltimaBackup:preDebugBuild UP-TO-DATE
+> Task :UltimaBackup:generateDebugBuildConfig
+> Task :UltimaBackup:generateDebugResources
+> Task :UltimaBackup:packageDebugResources
+> Task :UltimaBackup:processDebugNavigationResources
+> Task :UltimaBackup:processDebugManifest
+> Task :UltimaBackup:parseDebugLocalResources
+
+> Task :UltimaBackup:compileResources
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/delete_icon.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/edit_icon.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/ic_eye.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/outline.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/save_icon.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/triangle.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/app_settings_sync.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/app_settings_sync_creds.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/configure_extensions.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/configure_watch_sync.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_extension_item.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_media_provider_item.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_section_item.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_section_reorder_item.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/reorder.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/settings.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_creds.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml: note: compiling XML.
+note: including /usr/local/lib/android/sdk/platforms/android-36/android.jar.
+note: linking package 'com.sad25kag' using package ID 7f.
+note: merging archive /tmp/res18084124612359527644.zip.
+note: merging 'layout/watch_sync_device' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml.
+note: merging 'layout/list_media_provider_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_media_provider_item.xml.
+note: merging 'layout/list_section_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_section_item.xml.
+note: merging 'drawable/delete_icon' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/delete_icon.xml.
+note: merging 'drawable/ic_eye' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/ic_eye.xml.
+note: merging 'layout/watch_sync_creds' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_creds.xml.
+note: merging 'layout/list_section_reorder_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_section_reorder_item.xml.
+note: merging 'layout/app_settings_sync' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/app_settings_sync.xml.
+note: merging 'drawable/triangle' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/triangle.xml.
+note: merging 'layout/configure_extensions' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/configure_extensions.xml.
+note: merging 'layout/configure_watch_sync' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/configure_watch_sync.xml.
+note: merging 'drawable/edit_icon' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/edit_icon.xml.
+note: merging 'drawable/save_icon' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/save_icon.xml.
+note: merging 'layout/list_extension_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_extension_item.xml.
+note: merging 'layout/settings' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/settings.xml.
+note: merging 'layout/reorder' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/reorder.xml.
+note: merging 'drawable/outline' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/outline.xml.
+note: merging 'layout/app_settings_sync_creds' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/app_settings_sync_creds.xml.
+note: enabling pre-O feature split ID rewriting.
+note: collapsing resource versions for minimum SDK 21.
+note: Running VersionCollapser with minSdk = 21.
+AndroidManifest.xml: note: writing to archive (keep_raw_values=false).
+note: writing AndroidManifest.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/delete_icon.xml (com.sad25kag:drawable/delete_icon).
+res/drawable/delete_icon.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/delete_icon.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/edit_icon.xml (com.sad25kag:drawable/edit_icon).
+res/drawable/edit_icon.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/edit_icon.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/ic_eye.xml (com.sad25kag:drawable/ic_eye).
+res/drawable/ic_eye.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/ic_eye.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/outline.xml (com.sad25kag:drawable/outline).
+res/drawable/outline.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/outline.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/save_icon.xml (com.sad25kag:drawable/save_icon).
+res/drawable/save_icon.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/save_icon.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/triangle.xml (com.sad25kag:drawable/triangle).
+res/drawable/triangle.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/drawable/triangle.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/app_settings_sync.xml (com.sad25kag:layout/app_settings_sync).
+res/layout/app_settings_sync.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/app_settings_sync.xml to archive.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/app_settings_sync.xml: note: auto-versioning resource from config '' -> 'v22'.
+res/layout-v22/app_settings_sync.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout-v22/app_settings_sync.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/app_settings_sync_creds.xml (com.sad25kag:layout/app_settings_sync_creds).
+res/layout/app_settings_sync_creds.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/app_settings_sync_creds.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/configure_extensions.xml (com.sad25kag:layout/configure_extensions).
+res/layout/configure_extensions.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/configure_extensions.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/configure_watch_sync.xml (com.sad25kag:layout/configure_watch_sync).
+res/layout/configure_watch_sync.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/configure_watch_sync.xml to archive.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/configure_watch_sync.xml: note: auto-versioning resource from config '' -> 'v22'.
+res/layout-v22/configure_watch_sync.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout-v22/configure_watch_sync.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_extension_item.xml (com.sad25kag:layout/list_extension_item).
+res/layout/list_extension_item.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/list_extension_item.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_media_provider_item.xml (com.sad25kag:layout/list_media_provider_item).
+res/layout/list_media_provider_item.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/list_media_provider_item.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_section_item.xml (com.sad25kag:layout/list_section_item).
+res/layout/list_section_item.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/list_section_item.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_section_reorder_item.xml (com.sad25kag:layout/list_section_reorder_item).
+res/layout/list_section_reorder_item.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/list_section_reorder_item.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/reorder.xml (com.sad25kag:layout/reorder).
+res/layout/reorder.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/reorder.xml to archive.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/reorder.xml: note: auto-versioning resource from config '' -> 'v22'.
+res/layout-v22/reorder.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout-v22/reorder.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/settings.xml (com.sad25kag:layout/settings).
+res/layout/settings.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/settings.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_creds.xml (com.sad25kag:layout/watch_sync_creds).
+res/layout/watch_sync_creds.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/watch_sync_creds.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml (com.sad25kag:layout/watch_sync_device).
+res/layout/watch_sync_device.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/watch_sync_device.xml to archive.
+note: writing resources.arsc to archive.
+
+> Task :UltimaBackup:generateDebugRFile
+> Task :UltimaBackup:compileDebugKotlin
+
+> Task :UltimaBackup:compileDex
+Compiled dex to /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/build/intermediates/classes.dex
+
+> Task :UltimaBackup:generateManifest
+
+> Task :UltimaBackup:make
+Made CloudStream package at /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/build/UltimaBackup.cs3
+
 [Incubating] Problems report is available at: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/build/reports/problems/problems-report.html
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-No matches
-  Cannot locate tasks that match ':Ultima:make' as project 'Ultima' not found in root project 'xr3ed'. Some candidates are: 'YLNime'.
-
-* Try:
-> Run gradlew projects to get a list of available projects.
-> For more on name expansion, please refer to https://docs.gradle.org/9.6.1/userguide/command_line_interface.html#sec:name_abbreviation in the Gradle documentation.
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights from a Build Scan (powered by Develocity).
-> Get more help at https://help.gradle.org.
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
 
@@ -37,4 +157,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD FAILED in 1m 14s
+BUILD SUCCESSFUL in 1m 57s
+12 actionable tasks: 12 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.1/userguide/configuration_cache_enabling.html

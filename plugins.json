@@ -44,6 +44,28 @@
         "fileHash": "sha256-68c7d594350be75258bb1cf642ac4ef6bb8558fd02b5f9b677aad2957a5e5d29"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AniDbBackup.cs3",
+        "status": 1,
+        "version": 5,
+        "name": "AniDbBackup",
+        "internalName": "AniDbBackup",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Animes",
+        "fileSize": 51440,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie",
+            "OVA"
+        ],
+        "iconUrl": "https://anidb.app/images/fav-512.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-aed56308b5dfecaf1cef5f06326d9e121f8710d25f5b05aa2e77897206e16c03"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Animasu.cs3",
         "status": 1,
         "version": 23,
@@ -137,7 +159,7 @@
         "name": "AnimeisMe",
         "internalName": "AnimeisMe",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "AnimeIsMe - Nonton anime subtitle Indonesia",
         "fileSize": 39098,
@@ -159,7 +181,7 @@
         "name": "AnimekhorBackup",
         "internalName": "AnimekhorBackup",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "Anime and Movies",
         "fileSize": 30291,
@@ -205,8 +227,7 @@
         "name": "AnimeSailProvider",
         "internalName": "AnimeSailProvider",
         "authors": [
-            "Miku",
-            "Grok Assisted"
+            "sad25kag"
         ],
         "description": "AnimeSail — Streaming Anime, Donghua Subtitle Indonesia (Improved WIP)",
         "fileSize": 46164,
@@ -220,6 +241,31 @@
         "iconUrl": "https://aghanim.xyz/wp-content/themes/animesail/assets/images/ico.png",
         "apiVersion": 1,
         "fileHash": "sha256-7d77128a398a6915e581c68362a045dab89f44def6dcb1d0bca79ce59e0ef330"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimesaltBackup.cs3",
+        "status": 1,
+        "version": 9,
+        "name": "AnimesaltBackup",
+        "internalName": "AnimesaltBackup",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Anime/Cartoon in Hindi",
+        "fileSize": 41525,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "Cartoon"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=animesalt.ac&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-e59e4deb8bf20f66ce2e334a8c58c99495c99481dae949f7bb17bcca5020a857",
+        "jarFileSize": 175358,
+        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimesaltBackup.jar",
+        "jarHash": "sha256-205a12463652ff1bcc8afaffe03db76cd1a718a91a433687edde0d05ce1350aa"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimexinProvider.cs3",
@@ -242,6 +288,31 @@
         "iconUrl": "https://animexin.dev/wp-content/uploads/2020/06/animexinv1.png",
         "apiVersion": 1,
         "fileHash": "sha256-43ca22e339ccf4bad1cf67bf248176e6859b561c31d762f6dc5ed00f45c14ce5"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AninekoBackup.cs3",
+        "status": 1,
+        "version": 2,
+        "name": "AninekoBackup",
+        "internalName": "AninekoBackup",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Anime from Anineko",
+        "fileSize": 31883,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie",
+            "OVA"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/Anineko.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-89c4e355a1b69f855a4b85c90f6455a8a04cfe4312e071fc25a9329f64393a08",
+        "jarFileSize": 128830,
+        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AninekoBackup.jar",
+        "jarHash": "sha256-a9e101db137c9f35032b2ad5e1fb59e97e8a8cb78f325b1729d5a1bdfc9d2c5c"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnineMovies.cs3",
@@ -271,7 +342,7 @@
         "name": "AnixCafeProvider",
         "internalName": "AnixCafeProvider",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "AnixCafe / Anixverse donghua provider with dynamic server-option playback resolver",
         "fileSize": 64417,
@@ -314,7 +385,7 @@
         "name": "AnoboyProvider",
         "internalName": "AnoboyProvider",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "AnoBoy — Streaming Anime Subtitle Indonesia",
         "fileSize": 49605,
@@ -394,13 +465,38 @@
         "fileHash": "sha256-54d357cabb2ef6447fa44d99b8eeffca2510f57ac508c7d10868f7966309b789"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CinefreakBackup.cs3",
+        "status": 1,
+        "version": 8,
+        "name": "CinefreakBackup",
+        "internalName": "CinefreakBackup",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Bangla/Hindi Movies/Series",
+        "fileSize": 68618,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/cinefreak.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-5992696279adfaa03e7fa4aeae4a08e29c37ce2963f37808c0af9330d95f440f",
+        "jarFileSize": 315174,
+        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CinefreakBackup.jar",
+        "jarHash": "sha256-69c69010b858e61590c6bec9d6aca18d15b753700a397df8565432fd3285e48d"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Cinemax21Provider.cs3",
         "status": 1,
         "version": 10,
         "name": "Cinemax21Provider",
         "internalName": "Cinemax21Provider",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "CineMax21 — Streaming Movie and TV Series",
         "fileSize": 241631,
@@ -472,7 +568,7 @@
         "name": "DonghuaID",
         "internalName": "DonghuaID",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "DonghuaID - Download dan streaming donghua subtitle Indonesia",
         "fileSize": 58595,
@@ -494,7 +590,7 @@
         "name": "DonghuastreamBackup",
         "internalName": "DonghuastreamBackup",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "Donghuastream untuk donghua / Chinese anime.",
         "fileSize": 40813,
@@ -515,7 +611,7 @@
         "name": "Donghub",
         "internalName": "Donghub",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "Donghub untuk donghua dan anime subtitle Indonesia.",
         "fileSize": 36533,
@@ -582,7 +678,7 @@
         "name": "DrakoridProvider",
         "internalName": "DrakoridProvider",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "Drakor.id - drama Asia subtitle Indonesia.",
         "fileSize": 41782,
@@ -765,7 +861,7 @@
         "name": "Filmkita",
         "internalName": "Filmkita",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "Filmkita",
         "fileSize": 31043,
@@ -800,6 +896,27 @@
         "iconUrl": "https://www.google.com/s2/favicons?domain=tv1.filmlokal.me&sz=256",
         "apiVersion": 1,
         "fileHash": "sha256-867ae8d1884265d26be301b526cbb53c4f9d6b8c5d7a599f776f82210d69937d"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FourKHDHubBackup.cs3",
+        "status": 1,
+        "version": 34,
+        "name": "FourKHDHubBackup",
+        "internalName": "FourKHDHubBackup",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "4K Movies Extension by HDHUB4U",
+        "fileSize": 65333,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/4KHDHUB-Bright-Logo.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-d8677c07de362e649471b5cdf18d77a14db14b51cb7c66a048ac16545e56b24f"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FreeReels.cs3",
@@ -846,14 +963,37 @@
         "fileHash": "sha256-fa6dd609cbd249dc3661338fefba79d8abdd06fd366b0831ed161da02ec6a9f9"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/GoojaraBackup.cs3",
+        "status": 1,
+        "version": 3,
+        "name": "GoojaraBackup",
+        "internalName": "GoojaraBackup",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Movies and Series (Mostly 720p)",
+        "fileSize": 43912,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=goojara.to/&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-244d7beb77ac67a50acdb9f53fff8928b1ee8d79c2b174cc775d5a1b38a1f82d",
+        "jarFileSize": 177724,
+        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/GoojaraBackup.jar",
+        "jarHash": "sha256-4c76bbcbf32a530fd0634827d2cefc32b9f55f0de788d00952bec997284568a3"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/GudangFilm.cs3",
         "status": 1,
         "version": 19,
         "name": "GudangFilm",
         "internalName": "GudangFilm",
         "authors": [
-            "sad25kag",
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "GudangFilm provider untuk domain aktif huazai6.com dengan detail movie/series valid dan resolver playback/download dari player sumber termasuk Upload18 dengan media header source-backed.",
         "fileSize": 54362,
@@ -1013,7 +1153,7 @@
         "name": "KikoNime",
         "internalName": "KikoNime",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "Nonton donghua dan anime subtitle Indonesia dari KikoNime",
         "fileSize": 41233,
@@ -1185,7 +1325,7 @@
         "name": "LayarWarna21",
         "internalName": "LayarWarna21",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "LayarWarna21 provider RC v4: source-backed Muvipro flow with CloudStream API-compatible card metadata and local extractors.",
         "fileSize": 34967,
@@ -1248,7 +1388,7 @@
         "name": "MovieOn21",
         "internalName": "MovieOn21",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "MovieOn21 provider v6 dengan kategori homepage dirapikan, metadata non-dewasa, dan resolver t21.press Utama/Hydra berbasis HAR.",
         "fileSize": 57334,
@@ -1401,7 +1541,7 @@
         "name": "Noxx",
         "internalName": "Noxx",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "Noxx",
         "fileSize": 50180,
@@ -1479,6 +1619,27 @@
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ww03.pencurimovie.bond&size=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-c9686d7299550a0ff7aa95e7ecef65316704789158df062625d5c0d132153daf"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/PmsmBackup.cs3",
+        "status": 1,
+        "version": 3,
+        "name": "PmsmBackup",
+        "internalName": "PmsmBackup",
+        "authors": [
+            "sad25kag,Duro92"
+        ],
+        "description": "PMSM (Pencuri Movie Sub Malay)",
+        "fileSize": 25326,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ww192.pencurimoviesubmalay.motorcycles&size=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-6adc5aa39c31e96a04aea0507f6a82c5f90dc161b7f16db9beae76f5076edcfc"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Pusatfilm.cs3",
@@ -1575,7 +1736,7 @@
         "name": "SarangFilm21",
         "internalName": "SarangFilm21",
         "authors": [
-            "BetbetMiro"
+            "sad25kag"
         ],
         "description": "Provider CloudStream untuk SarangFilm21.",
         "fileSize": 40803,
@@ -1705,6 +1866,76 @@
         "iconUrl": "https://www.google.com/s2/favicons?domain=162.244.95.227&sz=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-663964996a324282eb3964098494a71a6c39a869012fb914a1b149f240f53f57"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ToonHubBackup.cs3",
+        "status": 1,
+        "version": 10,
+        "name": "ToonHubBackup",
+        "internalName": "ToonHubBackup",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "ToonHub4u Multi Language",
+        "fileSize": 26433,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "Cartoon"
+        ],
+        "iconUrl": "https://toonhub4u.co/wp-content/uploads/2024/02/Untitled.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-56c46d2404296a9213eab1cd55ff178dd301f59d1ab17e7bed2e0b6787a89a7f",
+        "jarFileSize": 111834,
+        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ToonHubBackup.jar",
+        "jarHash": "sha256-6a38d240921e13962b191c822dd876a33fa207e1e956141ef550f37c4b4de41f"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ToonstreamBackup.cs3",
+        "status": 1,
+        "version": 5,
+        "name": "ToonstreamBackup",
+        "internalName": "ToonstreamBackup",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "ToonStream Multi Language",
+        "fileSize": 30901,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "Cartoon"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/toonstream.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-41c117734f6ad1e5ae65974259506e4d3d29328bf45828295e5c5d20a2112dd0",
+        "jarFileSize": 132634,
+        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ToonstreamBackup.jar",
+        "jarHash": "sha256-88b3055955ea8a417adfc8ba72090f5d951426aa8202b53f7d1c6df98d1e6e31"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/UltimaBackup.cs3",
+        "status": 2,
+        "version": 56,
+        "name": "UltimaBackup",
+        "internalName": "UltimaBackup",
+        "authors": [
+            "RowdyRushya,Phisher98"
+        ],
+        "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
+        "fileSize": 247426,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "en",
+        "tvTypes": [
+            "All"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
+        "apiVersion": 1,
+        "fileHash": "sha256-76ad0547919b9be030d099b829ea9e7924c6102ce317bdb3146c9e1971947ffc"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/YLNime.cs3",
@@ -1856,7 +2087,7 @@
             "AnimeMovie",
             "OVA"
         ],
-        "iconUrl": "https://anidb.app/images/fav-512.png",
+        "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/anidb.png",
         "apiVersion": 1,
         "fileHash": "sha256-73c4ce04c7aea934d0feac9d5f4f90e814b6b4dddb12004c7e1b0de9e07c0362"
     },
@@ -2125,14 +2356,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Aniworld.cs3",
         "status": 1,
-        "version": 10,
+        "version": 11,
         "name": "Aniworld",
         "internalName": "Aniworld",
         "authors": [
             "Phisher98,Hexated"
         ],
         "description": "Include: Serienstream (Login Required under Extension Settings)",
-        "fileSize": 54024,
+        "fileSize": 54002,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "de",
         "tvTypes": [
@@ -2142,7 +2373,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=aniworld.to&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-7ba5b927ebfc8a639af5a50b39ac1d89c44ec06be1007527744d34eba21a7f46"
+        "fileHash": "sha256-62d8da0e93f132a701efacc6ebf94ba6109aac75f9854c5a461bf963c766bf90"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anizone.cs3",
@@ -2216,14 +2447,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Cinemacity.cs3",
         "status": 1,
-        "version": 9,
+        "version": 11,
         "name": "Cinemacity",
         "internalName": "Cinemacity",
         "authors": [
             "Phisher98"
         ],
         "description": "Watch Movies & TvSeries (Multi-Lang/Audio)",
-        "fileSize": 45122,
+        "fileSize": 68228,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2232,7 +2463,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=cinemacity.cc&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-4e25507ec749df5a46f66d1f00d7f5aeff25edab15eaac3a6bfcc3f798b1e847"
+        "fileHash": "sha256-41d1f6cbc8bbbdb0cf99257017c5cb954681e97883775b8e414ee90e14e2b8cb"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/CloudPlay.cs3",
@@ -2620,13 +2851,13 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Kickassanime.cs3",
         "status": 1,
-        "version": 23,
+        "version": 24,
         "name": "Kickassanime",
         "internalName": "Kickassanime",
         "authors": [
             "Phisher98,Hexated"
         ],
-        "fileSize": 53835,
+        "fileSize": 56163,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2636,10 +2867,10 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/KAA.png",
         "apiVersion": 1,
-        "fileHash": "sha256-f49b3137d228396aca4998f4659fa97fb5a2461141ee10a7e0534caf3e8b29b2",
-        "jarFileSize": 252991,
+        "fileHash": "sha256-94acac0d8673f6a4e8df8a1c49effaf98b58bcdeb00c52c2e07fc6ad0f206c49",
+        "jarFileSize": 262968,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Kickassanime.jar",
-        "jarHash": "sha256-ade798270a6bce2a0a4e4947881fde9488afa4ceed0cbe1894b008669f23db70"
+        "jarHash": "sha256-a3a809a77775c37154df91b234c2b726f27d40af80395c9a3414402ae985dcee"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/KisskhProvider.cs3",
