@@ -15,16 +15,20 @@ def safe_rmtree(path):
     if not os.path.exists(path):
         return
     for root, dirs, files in os.walk(path):
-        for momo in files:
+        for d in dirs:
             try:
-                os.chmod(os.path.join(root, momo), stat.S_IWRITE)
+                os.chmod(os.path.join(root, d), 0o777)
             except Exception:
                 pass
-        for momo in dirs:
+        for f in files:
             try:
-                os.chmod(os.path.join(root, momo), stat.S_IWRITE)
+                os.chmod(os.path.join(root, f), 0o777)
             except Exception:
                 pass
+    try:
+        os.chmod(path, 0o777)
+    except Exception:
+        pass
     try:
         shutil.rmtree(path)
     except Exception:
