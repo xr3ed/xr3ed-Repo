@@ -19,10 +19,6 @@ Fetching JAR: cloudstream.jar
 w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Jellyfin/build.gradle.kts:44:24: 'fun <T : Any> NamedDomainObjectCollection<T>.provideDelegate(thisRef: Any?, property: KProperty<*>): NamedDomainObjectProvider<T>' is deprecated. Use 'val element = getByName(name)' instead. See the Gradle 9.6 upgrading guide.
 w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Jellyfin/build.gradle.kts:44:24: 'fun <T : Any, reified U : T> NamedDomainObjectProvider<out T>.getValue(thisRef: Any?, property: KProperty<*>): U' is deprecated. Use 'val value = provider.get()' instead. See the Gradle 9.6 upgrading guide.
 
-> Configure project :MovieBoxProviderBackup
-w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/MovieBoxProviderBackup/build.gradle.kts:11:24: 'fun <T : Any> NamedDomainObjectCollection<T>.provideDelegate(thisRef: Any?, property: KProperty<*>): NamedDomainObjectProvider<T>' is deprecated. Use 'val element = getByName(name)' instead. See the Gradle 9.6 upgrading guide.
-w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/MovieBoxProviderBackup/build.gradle.kts:11:24: 'fun <T : Any, reified U : T> NamedDomainObjectProvider<out T>.getValue(thisRef: Any?, property: KProperty<*>): U' is deprecated. Use 'val value = provider.get()' instead. See the Gradle 9.6 upgrading guide.
-
 > Configure project :ShowBox
 w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/ShowBox/build.gradle.kts:26:24: 'fun <T : Any> NamedDomainObjectCollection<T>.provideDelegate(thisRef: Any?, property: KProperty<*>): NamedDomainObjectProvider<T>' is deprecated. Use 'val element = getByName(name)' instead. See the Gradle 9.6 upgrading guide.
 w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/ShowBox/build.gradle.kts:26:24: 'fun <T : Any, reified U : T> NamedDomainObjectProvider<out T>.getValue(thisRef: Any?, property: KProperty<*>): U' is deprecated. Use 'val value = provider.get()' instead. See the Gradle 9.6 upgrading guide.
@@ -57,9 +53,8 @@ w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/build.gradle.kts:9:
 > Task :Ultima:generateDebugResources
 > Task :Ultima:packageDebugResources
 > Task :Ultima:processDebugNavigationResources
-> Task :Ultima:parseDebugLocalResources
 > Task :Ultima:processDebugManifest
-> Task :Ultima:generateDebugRFile
+> Task :Ultima:parseDebugLocalResources
 
 > Task :Ultima:compileResources
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/delete_icon.xml: note: compiling XML.
@@ -74,16 +69,20 @@ w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/build.gradle.kts:9:
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/configure_watch_sync.xml: note: compiling XML.
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_extension_item.xml: note: compiling XML.
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_media_provider_item.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_meta_provider_item.xml: note: compiling XML.
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_item.xml: note: compiling XML.
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_reorder_item.xml: note: compiling XML.
+/home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/meta_providers.xml: note: compiling XML.
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/reorder.xml: note: compiling XML.
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/settings.xml: note: compiling XML.
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/watch_sync_creds.xml: note: compiling XML.
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/watch_sync_device.xml: note: compiling XML.
 note: including /usr/local/lib/android/sdk/platforms/android-36/android.jar.
 note: linking package 'com.phisher98' using package ID 7f.
-note: merging archive /tmp/res99168128827712049.zip.
+note: merging archive /tmp/res10955789560514339747.zip.
 note: merging 'layout/watch_sync_device' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/watch_sync_device.xml.
+note: merging 'layout/list_meta_provider_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_meta_provider_item.xml.
+note: merging 'layout/meta_providers' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/meta_providers.xml.
 note: merging 'layout/list_media_provider_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_media_provider_item.xml.
 note: merging 'layout/list_section_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_item.xml.
 note: merging 'drawable/delete_icon' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/drawable/delete_icon.xml.
@@ -148,12 +147,18 @@ note: writing res/layout/list_extension_item.xml to archive.
 note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_media_provider_item.xml (com.phisher98:layout/list_media_provider_item).
 res/layout/list_media_provider_item.xml: note: writing to archive (keep_raw_values=false).
 note: writing res/layout/list_media_provider_item.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_meta_provider_item.xml (com.phisher98:layout/list_meta_provider_item).
+res/layout/list_meta_provider_item.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/list_meta_provider_item.xml to archive.
 note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_item.xml (com.phisher98:layout/list_section_item).
 res/layout/list_section_item.xml: note: writing to archive (keep_raw_values=false).
 note: writing res/layout/list_section_item.xml to archive.
 note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/list_section_reorder_item.xml (com.phisher98:layout/list_section_reorder_item).
 res/layout/list_section_reorder_item.xml: note: writing to archive (keep_raw_values=false).
 note: writing res/layout/list_section_reorder_item.xml to archive.
+note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/meta_providers.xml (com.phisher98:layout/meta_providers).
+res/layout/meta_providers.xml: note: writing to archive (keep_raw_values=false).
+note: writing res/layout/meta_providers.xml to archive.
 note: linking /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/res/layout/reorder.xml (com.phisher98:layout/reorder).
 res/layout/reorder.xml: note: writing to archive (keep_raw_values=false).
 note: writing res/layout/reorder.xml to archive.
@@ -171,17 +176,26 @@ res/layout/watch_sync_device.xml: note: writing to archive (keep_raw_values=fals
 note: writing res/layout/watch_sync_device.xml to archive.
 note: writing resources.arsc to archive.
 
-> Task :Ultima:compileDebugKotlin
+> Task :Ultima:generateDebugRFile
 
-> Task :Ultima:compileDex
-Compiled dex to /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/build/intermediates/classes.dex
-
-> Task :Ultima:generateManifest
-
-> Task :Ultima:make
-Made CloudStream package at /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/build/Ultima.cs3
+> Task :Ultima:compileDebugKotlin FAILED
+e: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/kotlin/com/phisher98/Utils/UltimaBackupUtils.kt:503:58 Argument type mismatch: actual type is 'String', but 'RepositoryData' was expected.
+e: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/Ultima/src/main/kotlin/com/phisher98/Utils/UltimaBackupUtils.kt:511:61 Argument type mismatch: actual type is 'List<PluginWrapper>', but 'Collection<Pair<String, SitePlugin>>' was expected.
 
 [Incubating] Problems report is available at: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':Ultima:compileDebugKotlin' (registered by plugin 'com.android.internal.library').
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
 
 Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
 
@@ -189,6 +203,5 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 2m 16s
-12 actionable tasks: 12 executed
-Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.1/userguide/configuration_cache_enabling.html
+BUILD FAILED in 2m 7s
+9 actionable tasks: 9 executed
