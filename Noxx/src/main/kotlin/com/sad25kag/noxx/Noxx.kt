@@ -8,6 +8,7 @@ import com.lagradost.cloudstream3.MainAPI
 import com.lagradost.cloudstream3.MainPageRequest
 import com.lagradost.cloudstream3.SearchResponse
 import com.lagradost.cloudstream3.SubtitleFile
+import com.lagradost.cloudstream3.newSubtitleFile
 import com.lagradost.cloudstream3.TvType
 import com.lagradost.cloudstream3.USER_AGENT
 import com.lagradost.cloudstream3.app
@@ -359,7 +360,6 @@ class Noxx : MainAPI() {
         val subtitleUrl = url.substringAfter("c1_file=", "").substringBefore("&").urlDecode()
         if (subtitleUrl.isBlank() || !subtitleUrl.contains(".vtt", true)) return null
         val label = url.substringAfter("c1_label=", "English").substringBefore("&").urlDecode()
-        @Suppress("DEPRECATION")
         return SubtitleFile(label.ifBlank { "English" }, subtitleUrl)
     }
 
