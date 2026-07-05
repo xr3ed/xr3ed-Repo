@@ -149,7 +149,7 @@ def _main():
         gradle_folder = os.path.join(repo_root, "gradle")
         if os.path.exists(gradle_folder):
             safe_rmtree(gradle_folder)
-        shutil.copytree(os.path.join(miro_dir, "gradle"), gradle_folder)
+        shutil.copytree(os.path.join(miro_dir, "gradle"), gradle_folder, dirs_exist_ok=True)
         
         # Update build.gradle.kts repository fallback URL, namespace dynamic check, and opt-in compiler option
         build_gradle_path = os.path.join(repo_root, "build.gradle.kts")
@@ -210,7 +210,7 @@ def _main():
         for p in miro_plugins:
             src = os.path.join(miro_dir, p)
             dst = os.path.join(repo_root, p)
-            shutil.copytree(src, dst)
+            shutil.copytree(src, dst, dirs_exist_ok=True)
             print(f"Copied Miro plugin: {p}")
         
     # 7. Copy Phisher plugins (Backup if conflict)
@@ -222,7 +222,7 @@ def _main():
                 # Conflict! Rename Phisher to Backup
                 dst_name = f"{p}Backup"
                 dst = os.path.join(repo_root, dst_name)
-                shutil.copytree(src, dst)
+                shutil.copytree(src, dst, dirs_exist_ok=True)
                 phisher_copied.append(dst_name)
                 print(f"Conflict: Copied Phisher plugin {p} as {dst_name}")
                 
@@ -230,7 +230,7 @@ def _main():
                 modify_kotlin_files(dst)
             else:
                 dst = os.path.join(repo_root, p)
-                shutil.copytree(src, dst)
+                shutil.copytree(src, dst, dirs_exist_ok=True)
                 phisher_copied.append(p)
                 print(f"Copied Phisher plugin (no conflict): {p}")
 
