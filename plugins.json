@@ -2,14 +2,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/4KHDHub.cs3",
         "status": 1,
-        "version": 35,
+        "version": 36,
         "name": "4KHDHub",
         "internalName": "4KHDHub",
         "authors": [
             "sad25kag"
         ],
         "description": "4K Movies Extension by HDHUB4U",
-        "fileSize": 66045,
+        "fileSize": 66026,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -18,7 +18,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/4KHDHUB-Bright-Logo.png",
         "apiVersion": 1,
-        "fileHash": "sha256-6d450c09ce1011243d64bd4ec7e5421757d25e2de6e188e1e1484ab0611a878e"
+        "fileHash": "sha256-0a7d5b30182fcc71d5d127ac396caf01506e3436fa6912374d8afb3524dd5ef5"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Alqanime.cs3",
