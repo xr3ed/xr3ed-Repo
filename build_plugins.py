@@ -48,15 +48,6 @@ def main():
     else:
         print(f"Warning: old plugins.json not found at {old_plugins_json_path}")
 
-    # 2. Run gradlew make --continue (compile all plugins, ignore failures)
-    gradlew = os.path.join(src_dir, "gradlew")
-    if os.name == 'nt':
-        gradlew = gradlew + ".bat"
-
-    print("\n=== Running: gradlew make --continue ===")
-    subprocess.run([gradlew, "make", "--continue"], cwd=src_dir)
-
-    # 3. Detect which plugins compiled successfully and which failed
     ignored_folders = {
         ".git", ".github", ".vscode", "gradle", "temp_repos",
         "buildSrc", "Miro-Temp", "Phisher-Temp", "_patches", "builds",
@@ -68,6 +59,16 @@ def main():
         if os.path.isdir(item_path) and item not in ignored_folders and not item.startswith('.'):
             if os.path.exists(os.path.join(item_path, "build.gradle.kts")):
                 plugins_in_src.append(item)
+
+    # 2. Run gradlew :<Plugin>:make individually to ensure resources package correctly
+    gradlew = os.path.join(src_dir, "gradlew")
+    if os.name == 'nt':
+        gradlew = gradlew + ".bat"
+
+    print("\n=== Running: gradlew make individually for each plugin ===")
+    for plugin in plugins_in_src:
+        print(f"Building plugin: {plugin}")
+        subprocess.run([gradlew, f":{plugin}:make"], cwd=src_dir)
 
     successful_cs3 = {}   # plugin_name -> cs3_path
     failed_plugins = []
