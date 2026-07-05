@@ -132,11 +132,10 @@ jobs:
           cd src
           chmod +x gradlew
           
+          # Debug: run compilation for Ultima and log it
+          ./gradlew :Ultima:make > $GITHUB_WORKSPACE/builds/ultima_build.log 2>&1 || true
+          
           # Run custom build python script:
-          # - Compiles all plugins (gradlew make --continue)
-          # - Disables failed plugins, runs makePluginsJson for successful ones
-          # - Copies all CS3 files and writes final plugins.json directly to builds_dir
-          # - Merges old entries for failed plugins back into plugins.json
           python build_plugins.py $GITHUB_WORKSPACE/builds
           
       - name: Push builds
