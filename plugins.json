@@ -2313,49 +2313,6 @@
         "fileHash": "sha256-58ddc62029e36638e415cb7fa4a3ef593f34ebbb793c55385b4691d37bf52389"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NanimeIndo.cs3",
-        "status": 1,
-        "version": 1,
-        "name": "NanimeIndo",
-        "internalName": "NanimeIndo",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "NanimeIndo provider with defensive homepage, search, detail, episode and playback parsing for the active nanimeindo.com source.",
-        "fileSize": 38835,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Anime",
-            "AnimeMovie",
-            "OVA"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=nanimeindo.com&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-29161a99eb8c9cdbda89374aa1949d33fbb12a42fd1c512f9773ea5109f11933"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NekokunProvider.cs3",
-        "status": 1,
-        "version": 1,
-        "name": "NekokunProvider",
-        "internalName": "NekokunProvider",
-        "authors": [
-            "sad25kag"
-        ],
-        "fileSize": 29549,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AnimeMovie",
-            "OVA",
-            "Anime"
-        ],
-        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://nekokun.my.id&size=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-ad0d0b7b2561c9b5fa97abaab3e66bed993f568baaa1330dafaca8f4141f203a"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Netcinez.cs3",
         "status": 1,
         "version": 3,
@@ -2399,27 +2356,6 @@
         "fileHash": "sha256-67de017dde366d25bdc75efbdd4491fa301bafdcbdba4dc43afc2709ca687bc1"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Nimegami.cs3",
-        "status": 1,
-        "version": 14,
-        "name": "Nimegami",
-        "internalName": "Nimegami",
-        "authors": [
-            "sad25kag"
-        ],
-        "fileSize": 26789,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AnimeMovie",
-            "Anime",
-            "OVA"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=nimegami.id&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-f03b32440ba096504503d0af3e715bf7358198cf345517ecf1197f0bbdfc470b"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NimeIndo.cs3",
         "status": 1,
         "version": 7,
@@ -2440,28 +2376,6 @@
         "iconUrl": "https://www.google.com/s2/favicons?domain=v1.nimeindo.org&sz=128",
         "apiVersion": 1,
         "fileHash": "sha256-8aabf2ad50676fd95ffc472d8b773e5c166a26cd8ecf0dbcc661d5aca60f9f57"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NoDrasia.cs3",
-        "status": 1,
-        "version": 2,
-        "name": "NoDrasia",
-        "internalName": "NoDrasia",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Provider CloudStream untuk NoDrasia - nonton drama BL/GL Asia subtitle Indonesia.",
-        "fileSize": 34149,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=nodrasia.cc&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-7e962ccbf9b6d4cc591a53b45bc80d8d56b2f13c5f0e21ce7689224c1f6582ab"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Nomat.cs3",
@@ -2527,28 +2441,6 @@
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://s11.nontonanimeid.boats&size=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-352925fc0af8640639736ed45645df80f2a911a56303d51234df342e281430c9"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NontonAnimeX.cs3",
-        "status": 1,
-        "version": 5,
-        "name": "NontonAnimeX",
-        "internalName": "NontonAnimeX",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Nonton Anime dan Donghua Subtitle Indonesia",
-        "fileSize": 33609,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Anime",
-            "AnimeMovie",
-            "OVA"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=nontonanimex.com&sz=128",
-        "apiVersion": 1,
-        "fileHash": "sha256-63e238e1dca2ab6e56e379ca0167a0caa83bd26860667200945c388e64374081"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NontonDrakor.cs3",
@@ -2655,27 +2547,6 @@
         "iconUrl": "https://www.google.com/s2/favicons?domain=onetouchtv.xyz/&sz=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-985dba2f09972cd08f8daad867b3df2668553e81b822d6ce70cc058e56f41fe5"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/OploverzProvider.cs3",
-        "status": 1,
-        "version": 33,
-        "name": "OploverzProvider",
-        "internalName": "OploverzProvider",
-        "authors": [
-            "sad25kag"
-        ],
-        "fileSize": 30469,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AnimeMovie",
-            "Anime",
-            "OVA"
-        ],
-        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://anime.oploverz.ac&size=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-dc69751b10a6c8100bc7888682755b54d853b98a444dee1b23ee98cab2f5f704"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Oppadrama.cs3",
@@ -2888,27 +2759,6 @@
         "iconUrl": "https://www.google.com/s2/favicons?domain=github.com&sz=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-86a2b52dc131e4d13849493a345f7677ca1a857f85083d6584af4aa07d3609e0"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Rebahin.cs3",
-        "status": 1,
-        "version": 10,
-        "name": "Rebahin",
-        "internalName": "Rebahin",
-        "authors": [
-            "sad25kag"
-        ],
-        "fileSize": 32791,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "Anime"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=rebahinxxi3.boats&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-190617e2bd98a5b13b20e4df5bc2f516f4a1fa5642504341f6fb3f361aa172c9"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ReynimeProvider.cs3",
@@ -3486,48 +3336,6 @@
         "fileHash": "sha256-5b4ff46dc10ae754b50d188178bccde287645ccc73eed712cebea24ec7c24f32"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/WatchWrestling.cs3",
-        "status": 1,
-        "version": 27,
-        "name": "WatchWrestling",
-        "internalName": "WatchWrestling",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Watch WWE | WWE Raw | Smackdown Live",
-        "fileSize": 26808,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Live"
-        ],
-        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://watchwrestling.ae/&size=32",
-        "apiVersion": 1,
-        "fileHash": "sha256-93c19693a180405309e14479a04808e2338d6d15f3ce3936994d674fd8462959"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/WinbuProvider.cs3",
-        "status": 1,
-        "version": 4,
-        "name": "WinbuProvider",
-        "internalName": "WinbuProvider",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Winbu — Streaming Anime, Movie and TV Series",
-        "fileSize": 41195,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Movie",
-            "Anime",
-            "TvSeries"
-        ],
-        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://winbu.net&size=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-98c34b9f0e715003228a2f149c851476ce1430f2b10cbb7d9fa2a4d73ec6382c"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/YLNime.cs3",
         "status": 1,
         "version": 1,
@@ -3631,6 +3439,198 @@
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://zoronime.online&size=%size%",
         "apiVersion": 1,
         "fileHash": "sha256-cc77befd080d7d460294babe44891518ae3cb91cdb90264b7e4805397bf4659c"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NanimeIndo.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "NanimeIndo",
+        "internalName": "NanimeIndo",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "NanimeIndo provider with defensive homepage, search, detail, episode and playback parsing for the active nanimeindo.com source.",
+        "fileSize": 38835,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie",
+            "OVA"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=nanimeindo.com&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-29161a99eb8c9cdbda89374aa1949d33fbb12a42fd1c512f9773ea5109f11933"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NekokunProvider.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "NekokunProvider",
+        "internalName": "NekokunProvider",
+        "authors": [
+            "sad25kag"
+        ],
+        "fileSize": 29549,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "OVA",
+            "Anime"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://nekokun.my.id&size=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-ad0d0b7b2561c9b5fa97abaab3e66bed993f568baaa1330dafaca8f4141f203a"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Nimegami.cs3",
+        "status": 1,
+        "version": 14,
+        "name": "Nimegami",
+        "internalName": "Nimegami",
+        "authors": [
+            "sad25kag"
+        ],
+        "fileSize": 26789,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=nimegami.id&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-f03b32440ba096504503d0af3e715bf7358198cf345517ecf1197f0bbdfc470b"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NoDrasia.cs3",
+        "status": 1,
+        "version": 2,
+        "name": "NoDrasia",
+        "internalName": "NoDrasia",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Provider CloudStream untuk NoDrasia - nonton drama BL/GL Asia subtitle Indonesia.",
+        "fileSize": 34149,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=nodrasia.cc&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-7e962ccbf9b6d4cc591a53b45bc80d8d56b2f13c5f0e21ce7689224c1f6582ab"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NontonAnimeX.cs3",
+        "status": 1,
+        "version": 5,
+        "name": "NontonAnimeX",
+        "internalName": "NontonAnimeX",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Nonton Anime dan Donghua Subtitle Indonesia",
+        "fileSize": 33609,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie",
+            "OVA"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=nontonanimex.com&sz=128",
+        "apiVersion": 1,
+        "fileHash": "sha256-63e238e1dca2ab6e56e379ca0167a0caa83bd26860667200945c388e64374081"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/OploverzProvider.cs3",
+        "status": 1,
+        "version": 33,
+        "name": "OploverzProvider",
+        "internalName": "OploverzProvider",
+        "authors": [
+            "sad25kag"
+        ],
+        "fileSize": 30469,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://anime.oploverz.ac&size=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-dc69751b10a6c8100bc7888682755b54d853b98a444dee1b23ee98cab2f5f704"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Rebahin.cs3",
+        "status": 1,
+        "version": 10,
+        "name": "Rebahin",
+        "internalName": "Rebahin",
+        "authors": [
+            "sad25kag"
+        ],
+        "fileSize": 32791,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=rebahinxxi3.boats&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-190617e2bd98a5b13b20e4df5bc2f516f4a1fa5642504341f6fb3f361aa172c9"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/WatchWrestling.cs3",
+        "status": 1,
+        "version": 27,
+        "name": "WatchWrestling",
+        "internalName": "WatchWrestling",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Watch WWE | WWE Raw | Smackdown Live",
+        "fileSize": 26808,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Live"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://watchwrestling.ae/&size=32",
+        "apiVersion": 1,
+        "fileHash": "sha256-93c19693a180405309e14479a04808e2338d6d15f3ce3936994d674fd8462959"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/WinbuProvider.cs3",
+        "status": 1,
+        "version": 4,
+        "name": "WinbuProvider",
+        "internalName": "WinbuProvider",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Winbu — Streaming Anime, Movie and TV Series",
+        "fileSize": 41195,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "Anime",
+            "TvSeries"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://winbu.net&size=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-98c34b9f0e715003228a2f149c851476ce1430f2b10cbb7d9fa2a4d73ec6382c"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DramaIdProvider.cs3",
