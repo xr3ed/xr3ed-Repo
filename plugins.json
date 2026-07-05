@@ -46,14 +46,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AniDbBackup.cs3",
         "status": 1,
-        "version": 5,
+        "version": 6,
         "name": "AniDbBackup",
         "internalName": "AniDbBackup",
         "authors": [
             "sad25kag"
         ],
         "description": "Animes",
-        "fileSize": 51461,
+        "fileSize": 51463,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -63,7 +63,7 @@
         ],
         "iconUrl": "https://anidb.app/images/fav-512.png",
         "apiVersion": 1,
-        "fileHash": "sha256-9d9b783e94dc66c4db14da0331ef1972b324c89310a3dd2e3270c82c9eff3d69"
+        "fileHash": "sha256-66f35e2f28bbc9966ea638f072f6aa178c43d04bd6b329f3c9a5ed75a4ede30e"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Animasu.cs3",
