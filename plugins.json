@@ -1,5 +1,26 @@
 [
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/4KHDHub.cs3",
+        "status": 1,
+        "version": 35,
+        "name": "4KHDHub",
+        "internalName": "4KHDHub",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "4K Movies Extension by HDHUB4U",
+        "fileSize": 66045,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/4KHDHUB-Bright-Logo.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-6d450c09ce1011243d64bd4ec7e5421757d25e2de6e188e1e1484ab0611a878e"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Alqanime.cs3",
         "status": 1,
         "version": 28,
@@ -74,7 +95,7 @@
         "authors": [
             "sad25kag"
         ],
-        "fileSize": 51473,
+        "fileSize": 51480,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -84,7 +105,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://v1.animasu.work&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-01640c00ae7d37dbc2d8bc490249391196a8a35ecf4da561d0c3862fc8a3f506"
+        "fileHash": "sha256-9c068577162e50a995fef114000982887a7c0109091d1d23004d86b1dc99c168"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeBagus.cs3",
@@ -896,27 +917,6 @@
         "iconUrl": "https://www.google.com/s2/favicons?domain=tv1.filmlokal.me&sz=256",
         "apiVersion": 1,
         "fileHash": "sha256-ac4936005dee3f75ff91934aca9fc13e9797be9ec2c0c458231b03b2bf990dfa"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FourKHDHubBackup.cs3",
-        "status": 1,
-        "version": 34,
-        "name": "FourKHDHubBackup",
-        "internalName": "FourKHDHubBackup",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "4K Movies Extension by HDHUB4U",
-        "fileSize": 65336,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Movie",
-            "TvSeries"
-        ],
-        "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/4KHDHUB-Bright-Logo.png",
-        "apiVersion": 1,
-        "fileHash": "sha256-1a48af8e72ed5fe321c5953d3a8f5cab2db691d81a228d568da2bb9d56519fe6"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FreeReels.cs3",
@@ -3799,6 +3799,27 @@
         "jarFileSize": 260088,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-a916cfc5d428641d068b7c8045304148c6bd7997d1966ded0e19183b6c271c8d"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FourKHDHubBackup.cs3",
+        "status": 1,
+        "version": 34,
+        "name": "FourKHDHubBackup",
+        "internalName": "FourKHDHubBackup",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "4K Movies Extension by HDHUB4U",
+        "fileSize": 65336,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/4KHDHUB-Bright-Logo.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-1a48af8e72ed5fe321c5953d3a8f5cab2db691d81a228d568da2bb9d56519fe6"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
