@@ -542,7 +542,7 @@
             "sad25kag"
         ],
         "description": "Dailymotion public video catalog with source-backed homepage, search, detail, and internal HLS playback resolver.",
-        "fileSize": 36514,
+        "fileSize": 36236,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "tvTypes": [
             "Movie",
@@ -555,10 +555,10 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=www.dailymotion.com&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-120acdc74e0413904e7b8afdd3d819d01f4a29cddceebca3617a5ca18e78610f",
-        "jarFileSize": 143116,
+        "fileHash": "sha256-e0e15fb7ec5bfa9044b4ca72ddb71494d0f9c44c88330f70e4f8c94716ca70ad",
+        "jarFileSize": 142872,
         "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DailymotionProvider.jar",
-        "jarHash": "sha256-61cb40a4484a319efb124512ec8aa1baf1f46813ce0b27d235507857e60421b1"
+        "jarHash": "sha256-c226cb7652553167f8bd83a8facfc1ed1069471d4bb309a56a910f2be953359d"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaFilm.cs3",
@@ -863,7 +863,7 @@
         "authors": [
             "sad25kag"
         ],
-        "fileSize": 40603,
+        "fileSize": 40592,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -873,7 +873,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://filmanime.id&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-f61747afc7a68f2b04eadafb99868983e755b47ca6d98dddf818b8db289644f2"
+        "fileHash": "sha256-bde563bb1f51eecc5fe0f0dc8bff3c41736e196317047975ec91d54892ef81ce"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Filmkita.cs3",
@@ -907,7 +907,7 @@
             "sad25kag"
         ],
         "description": "FilmLokal provider split-structure dengan search fallback dan DooPlay/AJAX loadLinks untuk tv1.filmlokal.me.",
-        "fileSize": 56027,
+        "fileSize": 56015,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -916,7 +916,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=tv1.filmlokal.me&sz=256",
         "apiVersion": 1,
-        "fileHash": "sha256-ac4936005dee3f75ff91934aca9fc13e9797be9ec2c0c458231b03b2bf990dfa"
+        "fileHash": "sha256-f36f23b68b9fd7309a362577658a35fa139b75387daa32d57e0aef1b973ea98f"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FreeReels.cs3",
@@ -985,28 +985,6 @@
         "jarFileSize": 177719,
         "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/GoojaraBackup.jar",
         "jarHash": "sha256-ee99e670f99867ffb219355bebd30315a4144f6ef5044a2e632ee0ef7c5a6a3d"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/GudangFilm.cs3",
-        "status": 1,
-        "version": 19,
-        "name": "GudangFilm",
-        "internalName": "GudangFilm",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "GudangFilm provider untuk domain aktif huazai6.com dengan detail movie/series valid dan resolver playback/download dari player sumber termasuk Upload18 dengan media header source-backed.",
-        "fileSize": 54347,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "AsianDrama"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=www.huazai6.com&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-4a3c0dbd6ae86ff051cd16af19506f6a746d22cfbf605dd0ddcfb5738b79b885"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/HidoriStreamProvider.cs3",
@@ -2072,14 +2050,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AniDb.cs3",
         "status": 1,
-        "version": 6,
+        "version": 7,
         "name": "AniDb",
         "internalName": "AniDb",
         "authors": [
             "Phisher98"
         ],
         "description": "Animes",
-        "fileSize": 53045,
+        "fileSize": 53238,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2089,7 +2067,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/anidb.png",
         "apiVersion": 1,
-        "fileHash": "sha256-0b9208f277db8c70f84e7f72f1a1e360f2d0477c335bf5317376fb748cb184d2"
+        "fileHash": "sha256-a24fe76a9d39d5c852ed0291f14e4652446d0b42d3a5f36e6867c1d2d0759159"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anikage.cs3",
@@ -2259,14 +2237,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AnimePahe.cs3",
         "status": 1,
-        "version": 28,
+        "version": 29,
         "name": "AnimePahe",
         "internalName": "AnimePahe",
         "authors": [
             "Cloudburst,Lorem Ipsum,Phisher98"
         ],
         "description": "Animes (SUB/DUB)",
-        "fileSize": 75148,
+        "fileSize": 76465,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2276,7 +2254,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/animepahe.png",
         "apiVersion": 1,
-        "fileHash": "sha256-e6809462c259ead152f8b2cfafff76f26c254633926f32ee3542f4e9a157a4c7"
+        "fileHash": "sha256-a9a5bfc05fc61cff8c1fed2e58ff43ad8453f36cc53b2bfcc313ffa9c84fc2af"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animesalt.cs3",
@@ -2447,14 +2425,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Cinemacity.cs3",
         "status": 1,
-        "version": 12,
+        "version": 13,
         "name": "Cinemacity",
         "internalName": "Cinemacity",
         "authors": [
             "Phisher98"
         ],
         "description": "Watch Movies & TvSeries (Multi-Lang/Audio)",
-        "fileSize": 68580,
+        "fileSize": 69599,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2463,7 +2441,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=cinemacity.cc&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-c4fa45bea19e96490621873a1d01bd6b3dee6e5b3a6a7e51f9b4795f8f49976c"
+        "fileHash": "sha256-f29572fb53154db129201e30a2e0b20723841175235681b882600ae55cddccda"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/CloudPlay.cs3",
@@ -3799,6 +3777,28 @@
         "jarFileSize": 260088,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-a916cfc5d428641d068b7c8045304148c6bd7997d1966ded0e19183b6c271c8d"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/GudangFilm.cs3",
+        "status": 1,
+        "version": 19,
+        "name": "GudangFilm",
+        "internalName": "GudangFilm",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "GudangFilm provider untuk domain aktif huazai6.com dengan detail movie/series valid dan resolver playback/download dari player sumber termasuk Upload18 dengan media header source-backed.",
+        "fileSize": 54347,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "AsianDrama"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.huazai6.com&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-4a3c0dbd6ae86ff051cd16af19506f6a746d22cfbf605dd0ddcfb5738b79b885"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FourKHDHubBackup.cs3",
