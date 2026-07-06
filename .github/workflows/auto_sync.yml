@@ -138,12 +138,16 @@ jobs:
           # Run custom build python script:
           python build_plugins.py $GITHUB_WORKSPACE/builds
           
-      - name: Push builds
+      - name: Push builds and Purge CDN Cache
         if: steps.source-changes.outputs.changed == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
         run: |
           cd $GITHUB_WORKSPACE/builds
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
+          
+          # Detect changed cs3 files before staging
+          changed_files=$(git status --porcelain | grep '\.cs3$' | awk '{print $NF}' || true)
+          
           git add -A
           
           plugins_list="${{ steps.source-changes.outputs.plugins }}"
@@ -156,3 +160,17 @@ jobs:
           git commit -m "$commit_msg" || true
           git pull --rebase origin builds || true
           git push origin builds
+          
+          # Purge main plugins.json cache
+          echo "Purging plugins.json cache..."
+          curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/plugins.json"
+          
+          # Purge each changed cs3 file cache
+          for file in $changed_files; do
+            if [ -n "$file" ]; then
+              # Strip any path prefix if present
+              clean_file=$(basename "$file")
+              echo "Purging CDN cache for: $clean_file"
+              curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/$clean_file"
+            fi
+          done
