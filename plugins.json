@@ -987,6 +987,28 @@
         "jarHash": "sha256-ee99e670f99867ffb219355bebd30315a4144f6ef5044a2e632ee0ef7c5a6a3d"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/GudangFilm.cs3",
+        "status": 1,
+        "version": 19,
+        "name": "GudangFilm",
+        "internalName": "GudangFilm",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "GudangFilm provider untuk domain aktif huazai6.com dengan detail movie/series valid dan resolver playback/download dari player sumber termasuk Upload18 dengan media header source-backed.",
+        "fileSize": 54347,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "AsianDrama"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.huazai6.com&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-4a3c0dbd6ae86ff051cd16af19506f6a746d22cfbf605dd0ddcfb5738b79b885"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/HidoriStreamProvider.cs3",
         "status": 1,
         "version": 10,
@@ -3777,28 +3799,6 @@
         "jarFileSize": 260088,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-a916cfc5d428641d068b7c8045304148c6bd7997d1966ded0e19183b6c271c8d"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/GudangFilm.cs3",
-        "status": 1,
-        "version": 19,
-        "name": "GudangFilm",
-        "internalName": "GudangFilm",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "GudangFilm provider untuk domain aktif huazai6.com dengan detail movie/series valid dan resolver playback/download dari player sumber termasuk Upload18 dengan media header source-backed.",
-        "fileSize": 54347,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "AsianDrama"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=www.huazai6.com&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-4a3c0dbd6ae86ff051cd16af19506f6a746d22cfbf605dd0ddcfb5738b79b885"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FourKHDHubBackup.cs3",
