@@ -21,28 +21,6 @@
         "fileHash": "sha256-1b0a62df6d3c8dd2f7f21a4ecd43f1ae2982994471934b2044533397c48697ca"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Alqanime.cs3",
-        "status": 1,
-        "version": 28,
-        "name": "Alqanime",
-        "internalName": "Alqanime",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Nonton & Download Anime Subtitle Indonesia",
-        "fileSize": 72804,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AnimeMovie",
-            "OVA",
-            "Anime"
-        ],
-        "iconUrl": "https://cloudstream.zvlz.my.id/icon/alqanime.png",
-        "apiVersion": 1,
-        "fileHash": "sha256-997ce107c21b7ac4bd914f8e9bedc61e66001104e9617a916ceabd3501f6052c"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnichinMoe.cs3",
         "status": 1,
         "version": 37,
@@ -3799,6 +3777,28 @@
         "jarFileSize": 260088,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-a916cfc5d428641d068b7c8045304148c6bd7997d1966ded0e19183b6c271c8d"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Alqanime.cs3",
+        "status": 1,
+        "version": 28,
+        "name": "Alqanime",
+        "internalName": "Alqanime",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Nonton & Download Anime Subtitle Indonesia",
+        "fileSize": 72804,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "OVA",
+            "Anime"
+        ],
+        "iconUrl": "https://cloudstream.zvlz.my.id/icon/alqanime.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-997ce107c21b7ac4bd914f8e9bedc61e66001104e9617a916ceabd3501f6052c"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FourKHDHubBackup.cs3",
