@@ -1,4 +1,4 @@
-version = 40
+version = 45
 
 cloudstream {
     description = "Anichin Moe"

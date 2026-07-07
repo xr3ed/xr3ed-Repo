@@ -78,11 +78,9 @@ class Anichin : MainAPI() {
             .select("div.listupd > article")
             .mapNotNull { it.toSearchResult() }
 
-        val hasNext = document.select(".pagination a.page-numbers").any {
-            it.text().toIntOrNull()?.let { number ->
-                number > page
-            } ?: false
-        }
+        val hasNext = document.selectFirst(
+            "a.next, a.next.page-numbers, .nav-links a.next, .pagination .next"
+        ) != null
 
         return results.toNewSearchResponseList(
             hasNext = hasNext
@@ -95,6 +93,17 @@ class Anichin : MainAPI() {
         var poster = document.select("div.ime > img").attr("src")
         val description = document.selectFirst("div.entry-content")?.text()?.trim()
         val type = document.selectFirst(".spe")?.text().orEmpty()
+
+        // Safe metadata only: no episode/extractor logic changes
+        val year = Regex("\\b(19|20)\\d{2}\\b")
+            .find(document.text())
+            ?.value
+            ?.toIntOrNull()
+
+        val tags = document.select(".genre a, .genres a, .genxed a")
+            .map { it.text().trim() }
+            .filter { it.isNotBlank() }
+
         val tvType = if (type.contains("Movie", true)) TvType.Movie else TvType.TvSeries
 
         if (poster.isEmpty()) {
@@ -125,6 +134,8 @@ class Anichin : MainAPI() {
             newTvSeriesLoadResponse(title, url, TvType.Anime, episodes) {
                 this.posterUrl = fixUrlNull(poster)
                 this.plot = description
+                this.year = year
+                this.tags = tags
             }
         } else {
             val movieHref = document.selectFirst(".eplister li > a")?.attr("href")?.let { fixUrl(it) } ?: url
@@ -132,6 +143,8 @@ class Anichin : MainAPI() {
             newMovieLoadResponse(title, movieHref, TvType.Movie, movieHref) {
                 this.posterUrl = fixUrlNull(poster)
                 this.plot = description
+                this.year = year
+                this.tags = tags
             }
         }
     }
@@ -498,7 +511,12 @@ class Anichin : MainAPI() {
             value.contains("geo.dailymotion.com") ||
             value.contains("dai.ly") ||
             value.contains("ok.ru") ||
-            value.contains("odnoklassniki.ru")
+            value.contains("odnoklassniki.ru") ||
+            value.contains("rumble.com") ||
+            value.contains("vidguard") ||
+            value.contains("vidhide") ||
+            value.contains("streamruby") ||
+            value.contains("streamruby.com")
     }
 
     private fun candidatePriority(url: String, label: String): Int {
@@ -506,6 +524,9 @@ class Anichin : MainAPI() {
         return when {
             value.contains("dailymotion.com") || value.contains("geo.dailymotion.com") || value.contains("dai.ly") -> 0
             value.contains("ok.ru") || value.contains("odnoklassniki.ru") -> 1
+            value.contains("streamruby") -> 2
+            value.contains("vidguard") || value.contains("vidhide") -> 3
+            value.contains("rumble.com") -> 4
             else -> 99
         }
     }
