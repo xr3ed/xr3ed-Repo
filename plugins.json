@@ -23,14 +23,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Alqanime.cs3",
         "status": 1,
-        "version": 30,
+        "version": 31,
         "name": "Alqanime",
         "internalName": "Alqanime",
         "authors": [
             "sad25kag"
         ],
         "description": "Nonton & Download Anime Subtitle Indonesia",
-        "fileSize": 73028,
+        "fileSize": 73264,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -40,19 +40,19 @@
         ],
         "iconUrl": "https://cloudstream.zvlz.my.id/icon/alqanime.png",
         "apiVersion": 1,
-        "fileHash": "sha256-354f023570c7b48969ecb7bf4186a684d72a75b5d604c6956c29cbdb6b484783"
+        "fileHash": "sha256-9eb1014f29387d50b375ed813f13e3d0eee671fbde9b5fbba556768f1c2ba42d"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnichinMoe.cs3",
         "status": 1,
-        "version": 37,
+        "version": 40,
         "name": "AnichinMoe",
         "internalName": "AnichinMoe",
         "authors": [
             "sad25kag"
         ],
         "description": "Anichin Moe",
-        "fileSize": 57048,
+        "fileSize": 57108,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -62,7 +62,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://anichin.club&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-e441cfa1cb0f9174a3dbfe097fb3d0311d5ec63d19eab63e9afa59c24801c6d6"
+        "fileHash": "sha256-08efcf65e08360aaabd4164095301b779886a88a1a8a09255db9b2c8075b4773"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AniDbBackup.cs3",
