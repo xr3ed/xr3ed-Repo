@@ -65,27 +65,6 @@
         "fileHash": "sha256-2971088d1b5b39072eef408f657372948b2ae271aeaf119afc6d0a4d2a9fe850"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Animasu.cs3",
-        "status": 1,
-        "version": 23,
-        "name": "Animasu",
-        "internalName": "Animasu",
-        "authors": [
-            "sad25kag"
-        ],
-        "fileSize": 51480,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AnimeMovie",
-            "OVA",
-            "Anime"
-        ],
-        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://v1.animasu.work&size=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-9c068577162e50a995fef114000982887a7c0109091d1d23004d86b1dc99c168"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeBagus.cs3",
         "status": 1,
         "version": 7,
@@ -3777,6 +3756,27 @@
         "jarFileSize": 260088,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-a916cfc5d428641d068b7c8045304148c6bd7997d1966ded0e19183b6c271c8d"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Animasu.cs3",
+        "status": 1,
+        "version": 23,
+        "name": "Animasu",
+        "internalName": "Animasu",
+        "authors": [
+            "sad25kag"
+        ],
+        "fileSize": 51480,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "OVA",
+            "Anime"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://v1.animasu.work&size=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-9c068577162e50a995fef114000982887a7c0109091d1d23004d86b1dc99c168"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AniDbBackup.cs3",
