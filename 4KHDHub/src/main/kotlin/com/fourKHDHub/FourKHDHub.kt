@@ -11,12 +11,11 @@ import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
 import kotlinx.coroutines.runBlocking
 import org.json.JSONObject
 import org.jsoup.nodes.Element
+import com.lagradost.cloudstream3.toNewSearchResponseList
 
 class FourKHDHub : MainAPI() {
     override var mainUrl: String = runBlocking {
-        (FourKHDHubProvider.getDomains()?.n4khdhub
-            ?: "https://4khdhub.dad")
-            .trimEnd('/')
+        FourKHDHubProvider.getDomains()?.n4khdhub ?: "https://4khdhub.dad"
     }
     override var name                 = "4K HDHUB"
     override val hasMainPage          = true
@@ -53,22 +52,32 @@ class FourKHDHub : MainAPI() {
     )
 
     private fun Element.toSearchResult(): SearchResponse? {
-        val href = this.attr("href")
-        if (href.isBlank()) return null
-
-        val title = this.attr("title").takeIf { it.isNotBlank() }
-            ?: this.selectFirst(".title, h2, h3")?.text()
-            ?: this.text()
+        val href = attr("href").takeIf { it.isNotBlank() } ?: return null
+        val title = attr("title")
+            .ifBlank { selectFirst(".title, h2, h3, .name")?.text() ?: text() }
+            .trim()
 
         if (title.isBlank()) return null
 
-        val posterUrl = this.selectFirst("img")?.let {
-            it.attr("data-src").takeIf { src -> src.isNotBlank() } ?: it.attr("src")
+        val posterUrl = selectFirst("img")?.let {
+            it.attr("data-src")
+                .ifBlank { it.attr("data-lazy-src") }
+                .ifBlank { it.attr("data-original") }
+                .ifBlank { it.attr("src") }
         }
 
-        return newMovieSearchResponse(title, href, TvType.Movie) {
-            this.posterUrl = posterUrl
+        return newMovieSearchResponse(title, fixUrl(href), TvType.Movie) {
+            this.posterUrl = posterUrl?.let { fixUrl(it) }
         }
+    }
+
+    private fun Element.toSearchPageResult(): SearchResponse? {
+        val link = selectFirst("a") ?: this
+        return link.toSearchResult()
+    }
+
+    private fun Element.toHomePageResult(): SearchResponse? {
+        return toSearchResult()
     }
 
 
@@ -78,23 +87,44 @@ class FourKHDHub : MainAPI() {
     ): HomePageResponse {
         val url = "$mainUrl${if (request.data.isNotBlank()) "/${request.data}" else ""}${if (page > 1) "/page/$page" else ""}"
         val document = app.get(url).document
-        val results = document.select("div.card-grid a").mapNotNull {
-                it.toSearchResult()
+        val results = document.select(
+            "div.card-grid a, div.movie-grid a, div.items a, article a, .film-item a"
+        ).mapNotNull {
+            it.toHomePageResult()
         }
         return newHomePageResponse(request.name, results, true)
     }
 
-override suspend fun search(query: String): List<SearchResponse> {
-    val results = mutableListOf<SearchResponse>()
-
+override suspend fun search(query: String, page: Int): SearchResponseList? {
     val encodedQuery = java.net.URLEncoder.encode(query, "UTF-8")
 
-    var page = 1
-    val maxPages = 20
+    val url = if (page <= 1) {
+        "$mainUrl/?s=$encodedQuery"
+    } else {
+        "$mainUrl/page/$page/?s=$encodedQuery"
+    }
 
-    val seen = HashSet<String>()
+    val document = try {
+        app.get(url).document
+    } catch (e: Exception) {
+        Log.e("Search", "error url=$url")
+        return emptyList<SearchResponse>().toNewSearchResponseList()
+    }
 
-    while (page <= maxPages) {
+    val results = document.select("article, .post-item, .result-item, div.card-grid a")
+        .mapNotNull { it.toSearchPageResult() }
+
+    return results.toNewSearchResponseList()
+}
+
+/*
+    Search pagination follows the website source.
+    No artificial page limit is applied.
+
+    Previous implementation fetched pages internally and stopped at maxPages.
+    CloudStream handles pagination through the page parameter.
+*/
+/*
 
         val url = if (page == 1) {
             "$mainUrl/?s=$encodedQuery"
@@ -126,8 +156,9 @@ override suspend fun search(query: String): List<SearchResponse> {
         page++
     }
 
-    return results
+    return results.toNewSearchResponseList()
 }
+*/
 
 @RequiresApi(Build.VERSION_CODES.N)
 override suspend fun load(url: String): LoadResponse {
@@ -402,7 +433,12 @@ override suspend fun load(url: String): LoadResponse {
         callback: (ExtractorLink) -> Unit
     ): Boolean {
 
-        val links = AppUtils.tryParseJson<List<String>>(data)?.asSequence()?.filter { it.isNotBlank() }?.distinct()?.toList()
+        val links = AppUtils.tryParseJson<List<String>>(data)
+            ?.asSequence()
+            ?.filter { it.isNotBlank() }
+            ?.distinct()
+            ?.toList()
+            ?: return false
             ?: return false
 
         links.amap { raw ->
