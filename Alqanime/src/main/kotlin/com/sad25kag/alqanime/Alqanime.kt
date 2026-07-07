@@ -68,7 +68,6 @@ class Alqanime : MainAPI() {
         "$mainUrl/tag/horror/page/%d/" to "Horror",
         "$mainUrl/tag/sci-fi/page/%d/" to "Sci-Fi",
         "$mainUrl/tag/seinen/page/%d/" to "Seinen",
-        "$mainUrl/tag/magic/page/%d/" to "Magic",
         "$mainUrl/tag/martial-arts/page/%d/" to "Martial Arts",
         "$mainUrl/tag/donghua/page/%d/" to "Donghua"
     )
@@ -333,7 +332,9 @@ class Alqanime : MainAPI() {
             return true
         }
 
-        for (linkData in links) {
+        for (linkData in links.sortedByDescending {
+            it.quality.fixQuality()
+        }) {
             val resolvedUrl = resolvePlaybackUrl(linkData.url)
             if (resolvedUrl.isBlank()) continue
 
