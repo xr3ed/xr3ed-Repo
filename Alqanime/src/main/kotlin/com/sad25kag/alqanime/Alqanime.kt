@@ -13,6 +13,7 @@ import org.json.JSONObject
 import org.jsoup.nodes.Element
 import java.net.URI
 import java.net.URLDecoder
+import com.lagradost.cloudstream3.toNewSearchResponseList
 
 class Alqanime : MainAPI() {
     override var mainUrl = "https://alqanime.net".trimEnd('/')
@@ -84,15 +85,7 @@ class Alqanime : MainAPI() {
                 .mapNotNull { it.toSearchResult() }
         }.getOrDefault(emptyList())
 
-        val hasNext = document.selectFirst(
-            "a.next, .pagination .next, .nav-previous a"
-        ) != null
-
-        return newHomePageResponse(
-            request.name,
-            home,
-            hasNext = hasNext
-        )
+        return newHomePageResponse(request.name, home)
     }
 
     private fun Element.toSearchResult(): AnimeSearchResponse? {
@@ -113,9 +106,26 @@ class Alqanime : MainAPI() {
         }
     }
 
-    override suspend fun search(query: String): List<SearchResponse> {
-        val document = app.get("$mainUrl/?s=$query", headers = commonHeaders).document
-        return document.select("article.bs").mapNotNull { it.toSearchResult() }
+    override suspend fun search(query: String, page: Int): SearchResponseList? {
+        val encodedQuery = query.trim().replace(" ", "+")
+
+        val url = if (page <= 1) {
+            "$mainUrl/?s=$encodedQuery"
+        } else {
+            "$mainUrl/page/$page/?s=$encodedQuery"
+        }
+
+        val document = app.get(url, headers = commonHeaders).document
+
+        val results = document
+            .select("article.bs")
+            .mapNotNull { it.toSearchResult() }
+
+        return results.toNewSearchResponseList(
+            hasNext = document.selectFirst(
+                "a.next, .pagination .next, .nav-previous a"
+            ) != null
+        )
     }
 
     override suspend fun load(url: String): LoadResponse? {
