@@ -15,7 +15,7 @@ import java.net.URI
 import java.net.URLDecoder
 
 class Alqanime : MainAPI() {
-    override var mainUrl = "https://alqanime.net"
+    override var mainUrl = "https://alqanime.net".trimEnd('/')
     override var name = "Alqanime"
     override val hasMainPage = true
     override var lang = "id"
@@ -84,7 +84,15 @@ class Alqanime : MainAPI() {
                 .mapNotNull { it.toSearchResult() }
         }.getOrDefault(emptyList())
 
-        return newHomePageResponse(request.name, home)
+        val hasNext = document.selectFirst(
+            "a.next, .pagination .next, .nav-previous a"
+        ) != null
+
+        return newHomePageResponse(
+            request.name,
+            home,
+            hasNext = hasNext
+        )
     }
 
     private fun Element.toSearchResult(): AnimeSearchResponse? {
