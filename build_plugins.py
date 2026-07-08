@@ -201,6 +201,11 @@ def main():
             else:
                 print(f"Discarded old entry (no CS3 file found): {internal_name}")
 
+    # Rename FreeReels display name in plugins.json
+    for p in new_plugins:
+        if p.get("internalName") == "FreeReels":
+            p["name"] = "#Dracin FreeReels"
+
     # 11. Write final plugins.json to builds_dir directly
     final_plugins_json = os.path.join(builds_dir, "plugins.json")
     with open(final_plugins_json, 'w', encoding='utf-8') as f:

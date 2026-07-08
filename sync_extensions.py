@@ -232,6 +232,9 @@ def _main():
     # Rename Ultima display name to 🏠HomePage
     rename_ultima_to_homepage(repo_root)
 
+    # Rename FreeReels to #Dracin FreeReels
+    rename_freereels_to_dracin(repo_root)
+
     # 8. Generate settings.gradle.kts
     # We dynamically include all folders with build.gradle.kts except ignored ones
     settings_content = """rootProject.name = "xr3ed"
@@ -368,6 +371,29 @@ def rename_ultima_to_homepage(repo_root):
                 print(f"[RENAME] Updated filter in {item}/StorageManager.kt")
             except Exception as e:
                 print(f"Error renaming filter in {item}/StorageManager.kt: {e}")
+
+def rename_freereels_to_dracin(repo_root):
+    for item in ["FreeReels", "FreeReelsBackup"]:
+        freereels_dir = os.path.join(repo_root, item)
+        if not os.path.exists(freereels_dir):
+            continue
+        
+        # Modify FreeReels.kt
+        freereels_kt = os.path.join(freereels_dir, "src", "main", "kotlin", "com", "sad25kag", "FreeReels", "FreeReels.kt")
+        if os.path.exists(freereels_kt):
+            try:
+                with open(freereels_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                
+                # Menggunakan regex untuk mengganti nama secara tangguh (baik dengan kutip tunggal/ganda atau spasi)
+                name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(FreeReels.*?)\2')
+                code = name_pattern.sub(r'\1\2#Dracin \3\2', code)
+                
+                with open(freereels_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/FreeReels.kt to #Dracin FreeReels")
+            except Exception as e:
+                print(f"Error renaming name in {item}/FreeReels.kt: {e}")
 
 if __name__ == "__main__":
     main()
