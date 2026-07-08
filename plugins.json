@@ -195,6 +195,27 @@
         "fileHash": "sha256-23d1b066c6672fd11245c9f0dee308764c805a033ee1bbd4ad594054a1d2173d"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeMovies.cs3",
+        "status": 1,
+        "version": 6,
+        "name": "AnimeMovies",
+        "internalName": "AnimeMovies",
+        "authors": [
+            "sad25kag"
+        ],
+        "fileSize": 43746,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie",
+            "OVA"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://animemovies.org&size=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-1b21fd1e280e605bdb1dc5a9bf29ef1cb046068d64a361167eebd1621e71fa49"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimePlay.cs3",
         "status": 1,
         "version": 5,
@@ -303,27 +324,6 @@
         "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/Anineko.png",
         "apiVersion": 1,
         "fileHash": "sha256-89c4e355a1b69f855a4b85c90f6455a8a04cfe4312e071fc25a9329f64393a08"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnineMovies.cs3",
-        "status": 1,
-        "version": 4,
-        "name": "AnineMovies",
-        "internalName": "AnineMovies",
-        "authors": [
-            "sad25kag"
-        ],
-        "fileSize": 43813,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Anime",
-            "AnimeMovie",
-            "OVA"
-        ],
-        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://animemovies.org&size=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-ac18f4d668ec6e6f49ccd4f52cec500e8bdf06eaa905b9f8a4ddca4cd6b75920"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnixCafeProvider.cs3",
@@ -3735,6 +3735,31 @@
         "fileHash": "sha256-4453f0dc3059b23cebcb0b2d6c8ebb637bb16975c03b1503c27ce4974a4462dd"
     },
     {
+        "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/XDMovies.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "XDMovies",
+        "internalName": "XDMovies",
+        "authors": [
+            "Phisher98"
+        ],
+        "description": "Watch Latest Movies",
+        "fileSize": 105552,
+        "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+        "language": "en",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Anime",
+            "Movie",
+            "Cartoon",
+            "AnimeMovie"
+        ],
+        "iconUrl": "https://top.xdmovies.wtf/assets/logo1.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-8aa7ceefd1020e2254a79a6503ddb44e8dfa165d29738277f3873ec99c1cdff1"
+    },
+    {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/YTS.cs3",
         "status": 1,
         "version": 9,
@@ -3781,6 +3806,27 @@
         "jarFileSize": 260088,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-a916cfc5d428641d068b7c8045304148c6bd7997d1966ded0e19183b6c271c8d"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnineMovies.cs3",
+        "status": 1,
+        "version": 4,
+        "name": "AnineMovies",
+        "internalName": "AnineMovies",
+        "authors": [
+            "sad25kag"
+        ],
+        "fileSize": 43813,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie",
+            "OVA"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://animemovies.org&size=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-ac18f4d668ec6e6f49ccd4f52cec500e8bdf06eaa905b9f8a4ddca4cd6b75920"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AniDbBackup.cs3",
