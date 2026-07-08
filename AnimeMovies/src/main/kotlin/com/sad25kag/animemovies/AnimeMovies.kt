@@ -42,13 +42,7 @@ class AnimeMovies : MainAPI() {
         "$mainUrl/anime?status=Ongoing" to "Anime Ongoing",
         "$mainUrl/anime?status=Completed" to "Anime Completed",
         "$mainUrl/anime?type=Movie" to "Anime Movie",
-        "$mainUrl/anime?sort=popular" to "Anime Populer",
-        "$mainUrl/genre/action" to "Action",
-        "$mainUrl/genre/romance" to "Romance",
-        "$mainUrl/genre/comedy" to "Comedy",
-        "$mainUrl/genre/fantasy" to "Fantasy",
-        "$mainUrl/genre/horror" to "Horror",
-        "$mainUrl/genre/sci-fi" to "Sci-Fi"
+        "$mainUrl/anime?sort=popular" to "Anime Populer"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -566,7 +560,11 @@ class AnimeMovies : MainAPI() {
     }
 
     private fun Document.hasNextPage(page: Int): Boolean {
-        return selectFirst("a[rel=next], .pagination a[href*='page=${page + 1}'], a[href*='page=${page + 1}']") != null
+        val nextPage = page + 1
+        return select("a[href]").any {
+            val href = it.attr("href")
+            href.contains("page=$nextPage")
+        }
     }
 
     private fun Document.bestTitle(): String? {
