@@ -56,7 +56,7 @@ class FreeReels : MainAPI() {
     private val nativeApiUrl = "https://apiv2.free-reels.com/frv2-api"
     private val fallbackApiUrl = "https://api.mydramawave.com/h5-api"
 
-    override var name = "FreeReels"
+    override var name = "#Dracin FreeReels"
     override var lang = "id"
     override val hasMainPage = true
     override val hasQuickSearch = true

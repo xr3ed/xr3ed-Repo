@@ -15,6 +15,7 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import java.net.URLEncoder
+import com.lagradost.cloudstream3.toNewSearchResponseList
 
 class AnimeIsMe : MainAPI() {
     override var mainUrl = "https://animeisme.net"
@@ -41,7 +42,10 @@ class AnimeIsMe : MainAPI() {
     )
 
     override val mainPage = mainPageOf(
-        "$mainUrl/" to "Update Terbaru"
+        "$mainUrl/anime/?status=&type=&order=update" to "Rilisan Terbaru",
+        "$mainUrl/anime/?status=&type=tv&sub=&order=" to "Semua Anime",
+        "$mainUrl/anime/?type=movie" to "Movie",
+        "$mainUrl/anime/?status=completed&type=&sub=&order=" to "Sudah Tamat"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -50,28 +54,38 @@ class AnimeIsMe : MainAPI() {
         return newHomePageResponse(request.name, items, hasNext = document.hasNextPage(page))
     }
 
-    override suspend fun search(query: String): List<SearchResponse> {
+    override suspend fun search(query: String, page: Int): SearchResponseList {
         val cleanQuery = query.trim()
-        if (cleanQuery.isBlank()) return emptyList()
-        val encoded = withContext(Dispatchers.IO) { URLEncoder.encode(cleanQuery, "UTF-8") }
-        val results = linkedMapOf<String, SearchResponse>()
-        val urls = listOf(
-            "$mainUrl/?s=$encoded",
-            "$mainUrl/search/$encoded/",
-            "$mainUrl/index.php?s=$encoded",
-            "$mainUrl/anime/?s=$encoded"
-        )
+        if (cleanQuery.isBlank()) return emptyList<SearchResponse>().toNewSearchResponseList()
 
-        for (url in urls) {
-            val document = runCatching { app.get(url, headers = siteHeaders, referer = "$mainUrl/").document }.getOrNull() ?: continue
-            val parsed = document.parseItems().filter { it.matchesQuery(cleanQuery) }
-            for (item in parsed) results[item.url] = item
-            if (results.isNotEmpty()) break
+        val encoded = withContext(Dispatchers.IO) {
+            URLEncoder.encode(cleanQuery, "UTF-8")
         }
-        return results.values.toList()
+
+        val url = if (page <= 1) {
+            "$mainUrl/?s=$encoded"
+        } else {
+            "$mainUrl/page/$page/?s=$encoded"
+        }
+
+        val document = runCatching {
+            app.get(url, headers = siteHeaders, referer = "$mainUrl/").document
+        }.getOrNull() ?: return emptyList<SearchResponse>().toNewSearchResponseList()
+
+        val results = document.parseItems()
+            .filter { it.matchesQuery(cleanQuery) }
+            .distinctBy { it.url }
+
+        val hasNext = document.selectFirst(
+            "a.next, a.next.page-numbers, .nav-links a.next, .pagination .next"
+        ) != null
+
+        return results.toNewSearchResponseList(
+            hasNext = hasNext
+        )
     }
 
-    override suspend fun quickSearch(query: String): List<SearchResponse> = search(query)
+    override suspend fun quickSearch(query: String): List<SearchResponse> = search(query, 1).items
 
     override suspend fun load(url: String): LoadResponse? {
         val fixedUrl = fixUrl(url)
@@ -402,7 +416,12 @@ class AnimeIsMe : MainAPI() {
     }
 
     private fun Document.hasNextPage(page: Int): Boolean {
-        return selectFirst("a[rel=next], .pagination a[href*='page=${page + 1}'], a[href*='p=${page + 1}']") != null
+        val nextPage = page + 1
+        return select("a[href]").any {
+            val href = it.attr("href")
+            href.contains("page=$nextPage") ||
+                href.contains("/page/$nextPage/")
+        }
     }
 
 
