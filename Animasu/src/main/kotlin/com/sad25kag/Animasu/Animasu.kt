@@ -567,7 +567,9 @@ class Animasu : MainAPI() {
             value.contains("archivd.net", true) ||
             value.contains("new.uservideo.xyz", true) ||
             value.contains("mirrored.to", true) ||
-            value.contains("apk.miuiku.com", true)
+            value.contains("apk.miuiku.com", true) ||
+            value.contains("berkasdrive.com", true) ||
+            value.contains("mitedrive.my.id", true)
     }
 
     private fun shouldSkipBodyRead(contentType: String, contentLength: Long?): Boolean {
@@ -661,6 +663,8 @@ class Animasu : MainAPI() {
         "pixeldrain.com",
         "mirrored.to",
         "apk.miuiku.com",
+        "berkasdrive.com",
+        "mitedrive.my.id",
     )
 
     private suspend fun emitBloggerVideo(
