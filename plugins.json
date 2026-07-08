@@ -154,14 +154,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeisMe.cs3",
         "status": 1,
-        "version": 6,
+        "version": 9,
         "name": "AnimeisMe",
         "internalName": "AnimeisMe",
         "authors": [
             "sad25kag"
         ],
         "description": "AnimeIsMe - Nonton anime subtitle Indonesia",
-        "fileSize": 39098,
+        "fileSize": 39632,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -171,7 +171,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=animeisme.net&sz=128",
         "apiVersion": 1,
-        "fileHash": "sha256-532e90a76554e64aaa5160836de751202aea35edbb2fce906b282a9aa5c6336c"
+        "fileHash": "sha256-a751b47d47b38b418a004942dbf45a105676d3f0fb0ab940ccf1bc47c0cbd226"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimekhorBackup.cs3",
@@ -899,13 +899,13 @@
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FreeReels.cs3",
         "status": 1,
         "version": 33,
-        "name": "FreeReels",
+        "name": "#Dracin FreeReels",
         "internalName": "FreeReels",
         "authors": [
             "sad25kag"
         ],
         "description": "FreeReels / DramaWave short drama provider",
-        "fileSize": 36394,
+        "fileSize": 36409,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -915,7 +915,7 @@
         ],
         "iconUrl": "https://free-reels.com/free-reels.png",
         "apiVersion": 1,
-        "fileHash": "sha256-979bc585e5fad6040ab7fa981b137ad97144defeb2157cef8280762d87f70d99"
+        "fileHash": "sha256-566916d44dc8e3f6fe5c17a8ba6c0a7ec3abb18b60d8153e5679ac9ca7e85b80"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Gomunime.cs3",
