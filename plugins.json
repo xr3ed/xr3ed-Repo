@@ -176,14 +176,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimekhorBackup.cs3",
         "status": 1,
-        "version": 22,
+        "version": 23,
         "name": "AnimekhorBackup",
         "internalName": "AnimekhorBackup",
         "authors": [
             "sad25kag"
         ],
         "description": "Anime and Movies",
-        "fileSize": 30291,
+        "fileSize": 28510,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -192,7 +192,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=animekhor.org&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-f4e506e60871e2c390f343b202f8a11a81513b52ec0b89f641ea524ab8086638"
+        "fileHash": "sha256-23d1b066c6672fd11245c9f0dee308764c805a033ee1bbd4ad594054a1d2173d"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimePlay.cs3",
