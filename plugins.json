@@ -110,14 +110,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeChina.cs3",
         "status": 1,
-        "version": 10,
+        "version": 11,
         "name": "AnimeChina",
         "internalName": "AnimeChina",
         "authors": [
             "sad25kag"
         ],
         "description": "AnimeChina - Nonton Anime China, Donghua Subtitle Indonesia",
-        "fileSize": 25679,
+        "fileSize": 25734,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -127,18 +127,18 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=animechina.my.id&sz=256",
         "apiVersion": 1,
-        "fileHash": "sha256-28092460255ba0fa2a46dcb50cdee3eacd1bbc9d60c27cd1ae454ff65cfbc05f"
+        "fileHash": "sha256-ad0b2fa7d163527c8e8d4902cd0f078d681845c5c81959b4c9781797a3218c81"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeIndo.cs3",
         "status": 1,
-        "version": 23,
+        "version": 25,
         "name": "AnimeIndo",
         "internalName": "AnimeIndo",
         "authors": [
             "sad25kag"
         ],
-        "fileSize": 64933,
+        "fileSize": 63521,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -149,7 +149,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=https://anime-indo.lol&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-3a85d2307037b2520a878bcd10a74711cf6d59e35911bdcbc408a5373f30b074"
+        "fileHash": "sha256-5cbcc9352444c7b6b0aeef6a899a072046feeb2339064a18fa1691de0a15f331"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeisMe.cs3",
