@@ -86,16 +86,38 @@
         "fileHash": "sha256-380d14f26f3771eaa7d969f631edac375e4295b77cd72c500673d942ecc73cc1"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeBagus.cs3",
+        "status": 1,
+        "version": 10,
+        "name": "AnimeBagus",
+        "internalName": "AnimeBagus",
+        "authors": [
+            "sad25kag"
+        ],
+        "fileSize": 46954,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "OVA",
+            "Anime",
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=https://tv2.animebagus.com&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-1337687af93be1e97e1bb807a7944f7185f0506bbd16e1acbb3308d97d180ab2"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeChina.cs3",
         "status": 1,
-        "version": 8,
+        "version": 9,
         "name": "AnimeChina",
         "internalName": "AnimeChina",
         "authors": [
             "sad25kag"
         ],
         "description": "AnimeChina - Nonton Anime China, Donghua Subtitle Indonesia",
-        "fileSize": 25512,
+        "fileSize": 25460,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -105,7 +127,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=animechina.my.id&sz=256",
         "apiVersion": 1,
-        "fileHash": "sha256-0e78af2315b2a4466cfcbfad510a32a7a02313b55dd95166f03629f0c56dd697"
+        "fileHash": "sha256-4ed75fa507aae054acbcf8caa16f510bd7e678ea55029faa62258fee5a6a06a6"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeIndo.cs3",
@@ -170,10 +192,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=animekhor.org&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-f4e506e60871e2c390f343b202f8a11a81513b52ec0b89f641ea524ab8086638",
-        "jarFileSize": 109350,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimekhorBackup.jar",
-        "jarHash": "sha256-1cba677db98674917b443b65c2d8ea4fd64d71d5cdf736f19d6360d4b0e052f0"
+        "fileHash": "sha256-f4e506e60871e2c390f343b202f8a11a81513b52ec0b89f641ea524ab8086638"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimePlay.cs3",
@@ -239,10 +258,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=animesalt.ac&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-da968eb13db400bdca372a198a1bfb872b9367bd1ebe010a37868f59b07c6b1e",
-        "jarFileSize": 175358,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimesaltBackup.jar",
-        "jarHash": "sha256-823c1d9c4add1894f3a775fedf9565128a644ab6ad4c4833206fc997558cdf0e"
+        "fileHash": "sha256-da968eb13db400bdca372a198a1bfb872b9367bd1ebe010a37868f59b07c6b1e"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimexinProvider.cs3",
@@ -286,10 +302,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/Anineko.png",
         "apiVersion": 1,
-        "fileHash": "sha256-89c4e355a1b69f855a4b85c90f6455a8a04cfe4312e071fc25a9329f64393a08",
-        "jarFileSize": 128830,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AninekoBackup.jar",
-        "jarHash": "sha256-a9e101db137c9f35032b2ad5e1fb59e97e8a8cb78f325b1729d5a1bdfc9d2c5c"
+        "fileHash": "sha256-89c4e355a1b69f855a4b85c90f6455a8a04cfe4312e071fc25a9329f64393a08"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnineMovies.cs3",
@@ -420,6 +433,26 @@
         "fileHash": "sha256-75299c3b95c541166b1550bfb9934f04c04dd0491540e18d93cd48426cd12a31"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
+        "status": 3,
+        "version": 8,
+        "name": "BetbetLiveTV",
+        "internalName": "BetbetLiveTV",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Live TV public-stream provider using a conservative IPTV-org whitelist. No login, account sharing, private token, DRM, proxy, or restreaming.",
+        "fileSize": 36869,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Live"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=globetv.app&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-602da32bb1be5f6ef90277aaba5e275f0272413683a9fb1f0c06617633c399b1"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BilibiliProvider.cs3",
         "status": 3,
         "version": 12,
@@ -461,10 +494,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/cinefreak.png",
         "apiVersion": 1,
-        "fileHash": "sha256-78d60258bca7562d3f8d95a35e304fcaee15d7a4b412367b86e9bdb7b9c590a4",
-        "jarFileSize": 315183,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CinefreakBackup.jar",
-        "jarHash": "sha256-ab3da9642810d19d2a8998b4d0b016cd51bc9d896f275112003fd833f8de89dd"
+        "fileHash": "sha256-78d60258bca7562d3f8d95a35e304fcaee15d7a4b412367b86e9bdb7b9c590a4"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Cinemax21Provider.cs3",
@@ -511,10 +541,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=www.dailymotion.com&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-e0e15fb7ec5bfa9044b4ca72ddb71494d0f9c44c88330f70e4f8c94716ca70ad",
-        "jarFileSize": 142872,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DailymotionProvider.jar",
-        "jarHash": "sha256-c226cb7652553167f8bd83a8facfc1ed1069471d4bb309a56a910f2be953359d"
+        "fileHash": "sha256-e0e15fb7ec5bfa9044b4ca72ddb71494d0f9c44c88330f70e4f8c94716ca70ad"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaFilm.cs3",
@@ -690,10 +717,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=drakor.kita.mobi&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-be87d809893616f6c952ef83f3daeb4f885c9506d4adc5800d0328c25bb60c68",
-        "jarFileSize": 197260,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DrakorKita.jar",
-        "jarHash": "sha256-06ed7b39313f0e9296ededa25edcc1f7a2d8663910d207cac2110dd6dcf25ba6"
+        "fileHash": "sha256-be87d809893616f6c952ef83f3daeb4f885c9506d4adc5800d0328c25bb60c68"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DubbindoProvider.cs3",
@@ -805,10 +829,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=tv13.filem21.net&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-33006bef420d7c14bdff4dc5998f5b66735717dac2f26888366345dfc2c13b06",
-        "jarFileSize": 130521,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Film21.jar",
-        "jarHash": "sha256-29366e9dc0b7d45f1da3606398c87e350567652f3520670900e822effb934c46"
+        "fileHash": "sha256-33006bef420d7c14bdff4dc5998f5b66735717dac2f26888366345dfc2c13b06"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/FilmAnine.cs3",
@@ -937,10 +958,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=goojara.to/&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-de5a33433573f1b8ffde7211434ead9ff20603668aee35256dc269402dc8254c",
-        "jarFileSize": 177719,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/GoojaraBackup.jar",
-        "jarHash": "sha256-ee99e670f99867ffb219355bebd30315a4144f6ef5044a2e632ee0ef7c5a6a3d"
+        "fileHash": "sha256-de5a33433573f1b8ffde7211434ead9ff20603668aee35256dc269402dc8254c"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/GudangFilm.cs3",
@@ -1029,10 +1047,27 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=archive.org&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-cc175cbfaf19a57244bb9674cdea9beca0cae5d81b651cdd8910762bc18fe351",
-        "jarFileSize": 198325,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/InternetArchiveProvider.jar",
-        "jarHash": "sha256-abebd785fb64a2cfcb2021da5b420aa40dce861d935bc3e8869906bb07953d55"
+        "fileHash": "sha256-cc175cbfaf19a57244bb9674cdea9beca0cae5d81b651cdd8910762bc18fe351"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/IPTV.cs3",
+        "status": 3,
+        "version": 2,
+        "name": "IPTV",
+        "internalName": "IPTV",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "IPTV-org public live TV provider using official generated country playlists. No login, account sharing, private token, DRM bypass, proxy, or restreaming.",
+        "fileSize": 29637,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Live"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=iptv-org.github.io&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-0fe769eae22d56054c20ad7449609addf2373f49cf1f5ac6e804db6965602f60"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/JuraganFilm.cs3",
@@ -1726,10 +1761,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=new13.savefilm21info.com&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-04e44e09b985d4f2b4fdafd76e5870bf650c2beb9e43617b1c309410ebb3be16",
-        "jarFileSize": 108784,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/SaveFilm21.jar",
-        "jarHash": "sha256-d8c784cece31987646338d89f949f46c4d190673433c144c1fb4307ed63a9e93"
+        "fileHash": "sha256-04e44e09b985d4f2b4fdafd76e5870bf650c2beb9e43617b1c309410ebb3be16"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/SontolFilmProvider.cs3",
@@ -1843,10 +1875,7 @@
         ],
         "iconUrl": "https://toonhub4u.co/wp-content/uploads/2024/02/Untitled.png",
         "apiVersion": 1,
-        "fileHash": "sha256-056622f7238f407ef717a215229e4fbe9e25789fa8658a86c1ab1952329b424d",
-        "jarFileSize": 111834,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ToonHubBackup.jar",
-        "jarHash": "sha256-11502de12f8c97d9418193153aec1684297efbb915f4b7ef2615a340c6d55937"
+        "fileHash": "sha256-056622f7238f407ef717a215229e4fbe9e25789fa8658a86c1ab1952329b424d"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ToonstreamBackup.cs3",
@@ -1868,10 +1897,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/toonstream.png",
         "apiVersion": 1,
-        "fileHash": "sha256-52d7840b171319c08196ca39b54a231bcecebdbc127ac1ede244021b288ae65b",
-        "jarFileSize": 132629,
-        "jarUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ToonstreamBackup.jar",
-        "jarHash": "sha256-60dfc2490ff8486a040284ab0f3a05a3f2b154a979d73a1028c243101c8e9b6a"
+        "fileHash": "sha256-52d7840b171319c08196ca39b54a231bcecebdbc127ac1ede244021b288ae65b"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/UltimaBackup.cs3",
@@ -3757,28 +3783,6 @@
         "jarHash": "sha256-a916cfc5d428641d068b7c8045304148c6bd7997d1966ded0e19183b6c271c8d"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeBagus.cs3",
-        "status": 1,
-        "version": 7,
-        "name": "AnimeBagus",
-        "internalName": "AnimeBagus",
-        "authors": [
-            "sad25kag"
-        ],
-        "fileSize": 47613,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AnimeMovie",
-            "OVA",
-            "Anime",
-            "Movie"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=https://tv2.animebagus.com&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-13de6d345be0332566f27a98087850094361f3b488628879f5df79ce31ee14ea"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AniDbBackup.cs3",
         "status": 1,
         "version": 6,
@@ -3820,46 +3824,6 @@
         "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/4KHDHUB-Bright-Logo.png",
         "apiVersion": 1,
         "fileHash": "sha256-1a48af8e72ed5fe321c5953d3a8f5cab2db691d81a228d568da2bb9d56519fe6"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
-        "status": 3,
-        "version": 8,
-        "name": "BetbetLiveTV",
-        "internalName": "BetbetLiveTV",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Live TV public-stream provider using a conservative IPTV-org whitelist. No login, account sharing, private token, DRM, proxy, or restreaming.",
-        "fileSize": 36874,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Live"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=globetv.app&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-573df3c21e0926463ed49da6fac2c9ad8ac8edf654a3bf177e9626867b5ea057"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/IPTV.cs3",
-        "status": 3,
-        "version": 2,
-        "name": "IPTV",
-        "internalName": "IPTV",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "IPTV-org public live TV provider using official generated country playlists. No login, account sharing, private token, DRM bypass, proxy, or restreaming.",
-        "fileSize": 29626,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Live"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=iptv-org.github.io&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-07297f5767cdd1df93a9f5155d2c90af3951a5aad8e265c8218bb598e334a8a8"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/NanimeIndo.cs3",
