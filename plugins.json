@@ -218,14 +218,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimePlay.cs3",
         "status": 1,
-        "version": 5,
+        "version": 6,
         "name": "AnimePlay",
         "internalName": "AnimePlay",
         "authors": [
             "sad25kag"
         ],
         "description": "Nonton anime subtitle Indonesia dari anime-play.id",
-        "fileSize": 27502,
+        "fileSize": 27494,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -235,7 +235,7 @@
         ],
         "iconUrl": "https://anime-play.id/uploads/branding/favicon-1771327092431-f45ad0ab.png",
         "apiVersion": 1,
-        "fileHash": "sha256-0b4dab6fa194d3981af532081757529f8c3717d3df406981def1fed7f8bde15a"
+        "fileHash": "sha256-23d8b6a0b8add08c54aaa822ea57682d459942399932919afee0439f09ed5aac"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeSailProvider.cs3",
