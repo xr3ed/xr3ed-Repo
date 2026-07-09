@@ -262,14 +262,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimesaltBackup.cs3",
         "status": 1,
-        "version": 9,
+        "version": 10,
         "name": "AnimesaltBackup",
         "internalName": "AnimesaltBackup",
         "authors": [
             "sad25kag"
         ],
         "description": "Anime/Cartoon in Hindi",
-        "fileSize": 41529,
+        "fileSize": 41638,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -279,7 +279,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=animesalt.ac&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-da968eb13db400bdca372a198a1bfb872b9367bd1ebe010a37868f59b07c6b1e"
+        "fileHash": "sha256-191194016f6c721fe80261b03b21539d5a91462cdd115edb9608f85af7ba128f"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimexinProvider.cs3",
