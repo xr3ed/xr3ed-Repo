@@ -4,7 +4,7 @@
     "iconUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/main/icon.png",
     "manifestVersion": 1,
     "pluginLists": [
-      "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/plugins-jsdelivr.json"
+      "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/plugins.json"
     ]
 }
 
