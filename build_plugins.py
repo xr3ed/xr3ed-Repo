@@ -212,6 +212,20 @@ def main():
         json.dump(new_plugins, f, indent=4, ensure_ascii=False)
     print(f"\nFinal plugins.json written with {len(new_plugins)} entries to: {final_plugins_json}")
 
+    # 12. Generate plugins-jsdelivr.json: same as plugins.json but cs3 URLs use jsDelivr CDN
+    RAW_PREFIX = "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/"
+    CDN_PREFIX = "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/"
+    import copy
+    jsdelivr_plugins = copy.deepcopy(new_plugins)
+    for p in jsdelivr_plugins:
+        url = p.get("url", "")
+        if url.startswith(RAW_PREFIX):
+            p["url"] = CDN_PREFIX + url[len(RAW_PREFIX):]
+    final_jsdelivr_json = os.path.join(builds_dir, "plugins-jsdelivr.json")
+    with open(final_jsdelivr_json, 'w', encoding='utf-8') as f:
+        json.dump(jsdelivr_plugins, f, indent=4, ensure_ascii=False)
+    print(f"Final plugins-jsdelivr.json written with {len(jsdelivr_plugins)} entries to: {final_jsdelivr_json}")
+
 
 if __name__ == "__main__":
     main()
