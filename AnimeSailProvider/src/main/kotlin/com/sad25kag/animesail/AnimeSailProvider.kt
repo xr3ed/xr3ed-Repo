@@ -15,6 +15,7 @@ import com.lagradost.cloudstream3.utils.INFER_TYPE
 import com.lagradost.cloudstream3.utils.Qualities
 import com.lagradost.cloudstream3.utils.loadExtractor
 import com.lagradost.cloudstream3.utils.newExtractorLink
+import com.lagradost.cloudstream3.utils.newSearchResponseList
 import com.lagradost.nicehttp.NiceResponse
 import kotlinx.coroutines.runBlocking
 import org.json.JSONObject
@@ -69,9 +70,9 @@ class AnimeSailProvider : MainAPI() {
     }
 
     override val mainPage = mainPageOf(
-        "$mainUrl/rilisan-anime-terbaru/page/" to "Ongoing Anime",
-        "$mainUrl/rilisan-donghua-terbaru/page/" to "Ongoing Donghua",
-        "$mainUrl/movie-terbaru/page/" to "Movie"
+        "$mainUrl/rilisan-anime-terbaru/page/" to "Anime Terbaru",
+        "$mainUrl/rilisan-donghua-terbaru/page/" to "Donghua Terbaru",
+        "$mainUrl/movie-terbaru/page/" to "Movie Terbaru"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -122,13 +123,21 @@ class AnimeSailProvider : MainAPI() {
         }
     }
 
-    override suspend fun search(query: String): List<SearchResponse> {
-        val link = "$mainUrl/?s=$query"
+    override suspend fun search(query: String, page: Int): SearchResponseList? {
+        val encodedQuery = query.replace(" ", "+")
+        val link = if (page <= 1) {
+            "$mainUrl/?s=$encodedQuery"
+        } else {
+            "$mainUrl/page/$page/?s=$encodedQuery"
+        }
+
         val document = request(link).document
 
-        return document.select("div.listupd article").map {
+        val results = document.select("div.listupd article").map {
             it.toSearchResult()
         }
+
+        return results.newSearchResponseList()
     }
 
     override suspend fun load(url: String): LoadResponse {

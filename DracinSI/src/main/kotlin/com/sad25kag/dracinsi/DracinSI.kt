@@ -33,7 +33,7 @@ import java.net.URLEncoder
 
 class DracinSI : MainAPI() {
     override var mainUrl = "https://dramacinasubindo.com"
-    override var name = "DracinSI"
+    override var name = "#Dracin DracinSI"
     override var lang = "id"
     override val hasMainPage = true
     override val hasQuickSearch = true

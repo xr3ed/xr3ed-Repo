@@ -232,8 +232,8 @@ def _main():
     # Rename Ultima display name to 🏠HomePage
     rename_ultima_to_homepage(repo_root)
 
-    # Rename FreeReels to #Dracin FreeReels
-    rename_freereels_to_dracin(repo_root)
+    # Rename FreeReels and DracinSI to #Dracin prefix
+    rename_to_dracin(repo_root)
 
     # 8. Generate settings.gradle.kts
     # We dynamically include all folders with build.gradle.kts except ignored ones
@@ -372,7 +372,8 @@ def rename_ultima_to_homepage(repo_root):
             except Exception as e:
                 print(f"Error renaming filter in {item}/StorageManager.kt: {e}")
 
-def rename_freereels_to_dracin(repo_root):
+def rename_to_dracin(repo_root):
+    # FreeReels
     for item in ["FreeReels", "FreeReelsBackup"]:
         freereels_dir = os.path.join(repo_root, item)
         if not os.path.exists(freereels_dir):
@@ -394,6 +395,29 @@ def rename_freereels_to_dracin(repo_root):
                 print(f"[RENAME] Updated name in {item}/FreeReels.kt to #Dracin FreeReels")
             except Exception as e:
                 print(f"Error renaming name in {item}/FreeReels.kt: {e}")
+
+    # DracinSI
+    for item in ["DracinSI", "DracinSIBackup"]:
+        dracinsi_dir = os.path.join(repo_root, item)
+        if not os.path.exists(dracinsi_dir):
+            continue
+        
+        # Modify DracinSI.kt
+        dracinsi_kt = os.path.join(dracinsi_dir, "src", "main", "kotlin", "com", "sad25kag", "dracinsi", "DracinSI.kt")
+        if os.path.exists(dracinsi_kt):
+            try:
+                with open(dracinsi_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                
+                # Menggunakan regex untuk mengganti nama secara tangguh (baik dengan kutip tunggal/ganda atau spasi)
+                name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(DracinSI.*?)\2')
+                code = name_pattern.sub(r'\1\2#Dracin \3\2', code)
+                
+                with open(dracinsi_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/DracinSI.kt to #Dracin DracinSI")
+            except Exception as e:
+                print(f"Error renaming name in {item}/DracinSI.kt: {e}")
 
 if __name__ == "__main__":
     main()
