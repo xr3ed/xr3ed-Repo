@@ -222,6 +222,32 @@ def main():
         json.dump(jsdelivr_plugins, f, indent=4, ensure_ascii=False)
     print(f"Final plugins-jsdelivr.json written with {len(jsdelivr_plugins)} entries to: {final_jsdelivr_json}")
 
+    # 13. Generate repo.json and repo-jsdelivr.json dynamically inside builds branch
+    repo_raw = {
+        "name": "xr3ed Cloudstream Extension",
+        "description": "Gabungan repositori ekstensi Cloudstream dari BetbetMiro (Utama) dan Phisher (Backup).",
+        "iconUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/main/icon.png",
+        "manifestVersion": 1,
+        "pluginLists": [
+            "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/plugins.json"
+        ]
+    }
+    with open(os.path.join(builds_dir, "repo.json"), 'w', encoding='utf-8') as f:
+        json.dump(repo_raw, f, indent=4, ensure_ascii=False)
+
+    repo_jsdelivr = {
+        "name": "xr3ed Cloudstream Extension (jsDelivr)",
+        "description": "Gabungan repositori ekstensi Cloudstream dari BetbetMiro (Utama) dan Phisher (Backup). Jalur CDN jsDelivr.",
+        "iconUrl": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/icon.png",
+        "manifestVersion": 1,
+        "pluginLists": [
+            "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/plugins-jsdelivr.json"
+        ]
+    }
+    with open(os.path.join(builds_dir, "repo-jsdelivr.json"), 'w', encoding='utf-8') as f:
+        json.dump(repo_jsdelivr, f, indent=4, ensure_ascii=False)
+    print("Dynamically generated repo.json and repo-jsdelivr.json in builds directory.")
+
 
 if __name__ == "__main__":
     main()

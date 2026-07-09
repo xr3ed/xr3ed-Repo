@@ -37,12 +37,12 @@ Repositori ini menggabungkan ekstensi Cloudstream dari dua sumber berbeda:
 
 **⭐ Jalur jsDelivr CDN (Direkomendasikan — bebas rate limit)**
 ```text
-cloudstreamrepo://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/repo-jsdelivr.json
+cloudstreamrepo://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/repo-jsdelivr.json
 ```
 
 **Jalur GitHub Raw (Alternatif jika CDN bermasalah)**
 ```text
-cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/main/repo.json
+cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo.json
 ```
 
 ### 2. Instalasi Manual
@@ -53,12 +53,12 @@ cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/main/repo.json
 
    **⭐ Jalur jsDelivr CDN (Direkomendasikan)**
    ```text
-   https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/repo-jsdelivr.json
+   https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/repo-jsdelivr.json
    ```
 
    **Jalur GitHub Raw (Alternatif)**
    ```text
-   https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/main/repo.json
+   https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo.json
    ```
 
 5. Beri nama repositori (misal: `xr3ed`) lalu simpan.

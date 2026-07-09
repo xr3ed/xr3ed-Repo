@@ -155,13 +155,26 @@ jobs:
           fi
           
           git commit -m "$commit_msg" || true
+          
+          # Dapatkan commit SHA baru yang akan di-push
+          COMMIT_SHA=$(git rev-parse HEAD)
+          echo "Generated Commit SHA: $COMMIT_SHA"
+          
+          # Ganti @builds dengan @$COMMIT_SHA pada manifest agar CDN jsDelivr selalu mengunduh biner segar tanpa cache
+          sed -i "s|@builds|@$COMMIT_SHA|g" plugins-jsdelivr.json
+          sed -i "s|@builds|@$COMMIT_SHA|g" repo-jsdelivr.json
+          
+          # Update komit dengan file manifest yang sudah diubah
+          git add plugins-jsdelivr.json repo-jsdelivr.json
+          git commit --amend --no-edit || true
+          
           git pull --rebase origin builds || true
           git push origin builds
           
-          # Purge semua file manifest/index
+          # Purge semua file manifest/index di branch builds
           echo "Purging manifest files..."
-          curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/repo.json"
-          curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/repo-jsdelivr.json"
+          curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/repo.json"
+          curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/repo-jsdelivr.json"
           curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/plugins.json"
           curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/plugins-jsdelivr.json"
           echo ""
@@ -176,4 +189,5 @@ jobs:
           done
           
           echo "All purges completed!"
+
 
