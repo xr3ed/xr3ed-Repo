@@ -103,7 +103,11 @@ class AnixCafeProvider : MainAPI() {
                 addEpisodes(DubStatus.Subbed, episodes)
             }
         } else {
-            newMovieLoadResponse(title, fixedUrl, type, fixedUrl) {
+            // Halaman "/anime/slug/" hanya berisi daftar episode (.eplister),
+            // player/iframe-nya ada di halaman episode itu sendiri.
+            // Jadi loadLinks harus dikasih URL episode, bukan fixedUrl.
+            val movieDataUrl = episodes.firstOrNull()?.data ?: fixedUrl
+            newMovieLoadResponse(title, fixedUrl, type, movieDataUrl) {
                 posterUrl = poster
                 this.year = year
                 plot?.let { this.plot = it }
@@ -182,13 +186,21 @@ class AnixCafeProvider : MainAPI() {
 
         for ((url, label) in normalizedCandidates) {
             val before = emittedUrls.size
-            runCatching { loadExtractor(url, episodeUrl, subtitleCallback, safeCallback) }
+            val extractorReferer = when {
+                url.contains("ok.ru", ignoreCase = true) ||
+                url.contains("odnoklassniki", ignoreCase = true) ||
+                url.contains("dailymotion.com", ignoreCase = true) ||
+                url.contains("dai.ly", ignoreCase = true) -> url
+                else -> episodeUrl
+            }
+
+            runCatching { loadExtractor(url, extractorReferer, subtitleCallback, safeCallback) }
 
             if (emittedUrls.size == before) {
                 AnixCafeExtractorHelper.resolveLink(
                     url = url,
                     label = label,
-                    referer = episodeUrl,
+                    referer = extractorReferer,
                     visited = visited,
                     subtitleCallback = subtitleCallback,
                     callback = safeCallback
