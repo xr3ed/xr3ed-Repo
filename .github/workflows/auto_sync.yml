@@ -181,7 +181,7 @@ jobs:
           echo "Purging manifest files..."
           curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/repo.json"
           curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/repo-jsdelivr.json"
-          curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/repo-hybrid.json"
+          curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/xr3ed-jsdelivr.json"
           curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/plugins.json"
           curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/plugins-jsdelivr.json"
           echo ""

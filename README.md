@@ -37,7 +37,7 @@ Repositori ini menggabungkan ekstensi Cloudstream dari dua sumber berbeda:
 
 **⭐ Jalur Hybrid (Sangat Direkomendasikan — update instan & bebas rate limit)**
 ```text
-cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo-hybrid.json
+cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/xr3ed-jsdelivr.json
 ```
 
 **Jalur CDN (Alternatif — cepat tetapi update tertunda hingga 24 jam)**
@@ -58,7 +58,7 @@ cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo.json
 
    **⭐ Jalur Hybrid (Sangat Direkomendasikan)**
    ```text
-   https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo-hybrid.json
+   https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/xr3ed-jsdelivr.json
    ```
 
    **Jalur CDN (Alternatif)**
