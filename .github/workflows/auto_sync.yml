@@ -156,18 +156,6 @@ jobs:
           
           git commit -m "$commit_msg" || true
           
-          # Dapatkan commit SHA baru yang akan di-push
-          COMMIT_SHA=$(git rev-parse HEAD)
-          echo "Generated Commit SHA: $COMMIT_SHA"
-          
-          # Ganti @builds dengan @$COMMIT_SHA pada manifest agar CDN jsDelivr selalu mengunduh biner segar tanpa cache
-          sed -i "s|@builds|@$COMMIT_SHA|g" plugins-jsdelivr.json
-          sed -i "s|@builds|@$COMMIT_SHA|g" repo-jsdelivr.json
-          
-          # Update komit dengan file manifest yang sudah diubah
-          git add plugins-jsdelivr.json repo-jsdelivr.json
-          git commit --amend --no-edit || true
-          
           git pull --rebase origin builds || true
           git push origin builds
           
