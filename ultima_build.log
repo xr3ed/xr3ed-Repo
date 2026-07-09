@@ -1,3 +1,5 @@
+Downloading https://services.gradle.org/distributions/gradle-9.6.1-bin.zip
+.............10%.............20%..............30%.............40%..............50%.............60%.............70%..............80%.............90%..............100%
 
 Welcome to Gradle 9.6.1!
 
@@ -9,6 +11,14 @@ Here are the highlights of this release:
 For more details see https://docs.gradle.org/9.6.1/release-notes.html
 
 Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Configure project :4KHDHub
+Fetching JAR: cloudstream.jar
+
+> Configure project :UltimaBackup
+w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/build.gradle.kts:9:24: 'fun <T : Any> NamedDomainObjectCollection<T>.provideDelegate(thisRef: Any?, property: KProperty<*>): NamedDomainObjectProvider<T>' is deprecated. Use 'val element = getByName(name)' instead. See the Gradle 9.6 upgrading guide.
+w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/build.gradle.kts:9:24: 'fun <T : Any, reified U : T> NamedDomainObjectProvider<out T>.getValue(thisRef: Any?, property: KProperty<*>): U' is deprecated. Use 'val value = provider.get()' instead. See the Gradle 9.6 upgrading guide.
+
 > Task :UltimaBackup:preBuild UP-TO-DATE
 > Task :UltimaBackup:preDebugBuild UP-TO-DATE
 > Task :UltimaBackup:generateDebugBuildConfig
@@ -39,7 +49,7 @@ Starting a Gradle Daemon (subsequent builds will be faster)
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml: note: compiling XML.
 note: including /usr/local/lib/android/sdk/platforms/android-36/android.jar.
 note: linking package 'com.sad25kag' using package ID 7f.
-note: merging archive /tmp/res17645294788916269756.zip.
+note: merging archive /tmp/res5697802848224496925.zip.
 note: merging 'layout/watch_sync_device' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml.
 note: merging 'layout/list_media_provider_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_media_provider_item.xml.
 note: merging 'layout/list_section_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_section_item.xml.
@@ -147,6 +157,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 32s
+BUILD SUCCESSFUL in 1m 58s
 12 actionable tasks: 12 executed
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.1/userguide/configuration_cache_enabling.html
