@@ -145,19 +145,37 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           
+          # Ganti @builds dengan @build-${{ github.run_number }} pada manifest agar CDN jsDelivr selalu mengunduh biner segar tanpa cache
+          sed -i "s|@builds|@build-${{ github.run_number }}|g" plugins-jsdelivr.json
+          sed -i "s|@builds|@build-${{ github.run_number }}|g" repo-jsdelivr.json
+          
           git add -A
           
           plugins_list="${{ steps.source-changes.outputs.plugins }}"
           if [ -n "$plugins_list" ]; then
-            commit_msg="Auto-build: Update plugins ($plugins_list) ($GITHUB_SHA)"
+            commit_msg="Auto-build: Update plugins ($plugins_list) (build-${{ github.run_number }})"
           else
-            commit_msg="Auto-build: Update plugins ($GITHUB_SHA)"
+            commit_msg="Auto-build: Update plugins (build-${{ github.run_number }})"
           fi
           
           git commit -m "$commit_msg" || true
           
           git pull --rebase origin builds || true
           git push origin builds
+          
+          # Buat dan push git tag untuk versi rilis ini
+          git tag "build-${{ github.run_number }}"
+          git push origin "build-${{ github.run_number }}"
+          
+          # Hubungkan ke remote dan bersihkan tag lama (sisakan 5 terbaru)
+          git fetch --tags
+          OLD_TAGS=$(git tag -l "build-*" --sort=creatordate | head -n -5)
+          for tag in $OLD_TAGS; do
+            echo "Deleting old tag: $tag"
+            git tag -d "$tag" || true
+            git push origin :refs/tags/$tag || true
+          done
+
           
           # Purge semua file manifest/index di branch builds
           echo "Purging manifest files..."
