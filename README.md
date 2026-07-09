@@ -36,6 +36,12 @@ Repositori ini menggabungkan ekstensi Cloudstream dari dua sumber berbeda:
 ### 1. One-click Install (Instalasi Sekali Klik)
 Klik tautan di bawah ini dari perangkat Android Anda yang sudah terinstal Cloudstream:
 
+**Jalur jsDelivr CDN (Direkomendasikan ⭐)**
+```text
+cloudstreamrepo://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/repo.json
+```
+
+**Jalur GitHub Raw (Alternatif jika CDN bermasalah)**
 ```text
 cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/main/repo.json
 ```
@@ -44,12 +50,22 @@ cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/main/repo.json
 1. Buka aplikasi **Cloudstream**.
 2. Masuk ke **Pengaturan (Settings)** -> **Ekstensi (Extensions)**.
 3. Pilih **Tambah Repositori (Add Repository)**.
-4. Masukkan URL repositori berikut:
+4. Masukkan salah satu URL repositori berikut:
+
+   **Jalur jsDelivr CDN (Direkomendasikan ⭐)**
+   ```text
+   https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/repo.json
+   ```
+
+   **Jalur GitHub Raw (Alternatif)**
    ```text
    https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/main/repo.json
    ```
+
 5. Beri nama repositori (misal: `xr3ed`) lalu simpan.
 6. Sekarang Anda bisa menginstal berbagai provider/ekstensi dari repositori ini!
+
+> **Catatan:** Jalur jsDelivr CDN direkomendasikan karena tidak terkena rate limit seperti GitHub Raw, dan lebih cepat karena menggunakan CDN global.
 
 ---
 

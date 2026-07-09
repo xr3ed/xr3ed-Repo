@@ -145,9 +145,6 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           
-          # Detect changed cs3 files before staging
-          changed_files=$(git status --porcelain | grep '\.cs3$' | awk '{print $NF}' || true)
-          
           git add -A
           
           plugins_list="${{ steps.source-changes.outputs.plugins }}"
@@ -161,17 +158,21 @@ jobs:
           git pull --rebase origin builds || true
           git push origin builds
           
-          # Purge main repo.json and plugins.json cache
-          echo "Purging repo.json and plugins.json cache..."
+          # Purge semua file manifest/index
+          echo "Purging manifest files..."
           curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/repo.json"
           curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/plugins.json"
+          curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/plugins-jsdelivr.json"
+          echo ""
           
-          # Purge each changed cs3 file cache
-          for file in $changed_files; do
-            if [ -n "$file" ]; then
-              # Strip any path prefix if present
-              clean_file=$(basename "$file")
-              echo "Purging CDN cache for: $clean_file"
-              curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/$clean_file"
-            fi
+          # Purge SEMUA file cs3 yang ada di builds branch agar tidak ada stale cache
+          echo "Purging all cs3 files..."
+          for cs3file in $(git ls-files "*.cs3"); do
+            clean=$(basename "$cs3file")
+            echo "Purging: $clean"
+            curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/$clean"
+            echo ""
           done
+          
+          echo "All purges completed!"
+
