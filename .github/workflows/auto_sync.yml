@@ -160,12 +160,12 @@ jobs:
           
           git commit -m "$commit_msg" || true
           
-          git pull --rebase origin builds || true
-          git push origin builds
+          # Force push ke branch builds untuk menghindari konflik merge akibat perubahan riwayat (diverged history)
+          git push origin HEAD:builds --force
           
-          # Buat dan push git tag untuk versi rilis ini
-          git tag "build-${{ github.run_number }}"
-          git push origin "build-${{ github.run_number }}"
+          # Buat dan push git tag untuk versi rilis ini (force push tag agar aman)
+          git tag "build-${{ github.run_number }}" --force
+          git push origin "build-${{ github.run_number }}" --force
           
           # Hubungkan ke remote dan bersihkan tag lama (sisakan 5 terbaru)
           git fetch --tags
