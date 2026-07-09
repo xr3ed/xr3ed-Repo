@@ -161,8 +161,9 @@ jobs:
           git pull --rebase origin builds || true
           git push origin builds
           
-          # Purge main plugins.json cache
-          echo "Purging plugins.json cache..."
+          # Purge main repo.json and plugins.json cache
+          echo "Purging repo.json and plugins.json cache..."
+          curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/repo.json"
           curl -s "https://purge.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/plugins.json"
           
           # Purge each changed cs3 file cache
