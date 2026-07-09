@@ -35,7 +35,12 @@ Repositori ini menggabungkan ekstensi Cloudstream dari dua sumber berbeda:
 
 ### 1. One-click Install (Instalasi Sekali Klik)
 
-**⭐ Jalur jsDelivr CDN (Direkomendasikan — bebas rate limit)**
+**⭐ Jalur Hybrid (Sangat Direkomendasikan — update instan & bebas rate limit)**
+```text
+cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo-hybrid.json
+```
+
+**Jalur CDN (Alternatif — cepat tetapi update tertunda hingga 24 jam)**
 ```text
 cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo-jsdelivr.json
 ```
@@ -51,7 +56,12 @@ cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo.json
 3. Pilih **Tambah Repositori (Add Repository)**.
 4. Masukkan salah satu URL repositori berikut:
 
-   **⭐ Jalur jsDelivr CDN (Direkomendasikan)**
+   **⭐ Jalur Hybrid (Sangat Direkomendasikan)**
+   ```text
+   https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo-hybrid.json
+   ```
+
+   **Jalur CDN (Alternatif)**
    ```text
    https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo-jsdelivr.json
    ```
@@ -64,7 +74,7 @@ cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo.json
 5. Beri nama repositori (misal: `xr3ed`) lalu simpan.
 6. Sekarang Anda bisa menginstal berbagai provider/ekstensi dari repositori ini!
 
-> **Catatan:** Jalur jsDelivr CDN direkomendasikan karena tidak terkena rate limit seperti GitHub Raw, dan lebih cepat karena menggunakan CDN global.
+> **Catatan:** Jalur Hybrid sangat direkomendasikan karena menggunakan raw GitHub untuk mengambil index (sehingga pembaruan plugin instan 5 menit) dan menggunakan CDN jsDelivr untuk mengunduh biner `.cs3` (sehingga proses instalasi cepat dan bebas batas limit rate limit 403 GitHub).
 
 ---
 

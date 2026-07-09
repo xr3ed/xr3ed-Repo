@@ -246,7 +246,19 @@ def main():
     }
     with open(os.path.join(builds_dir, "repo-jsdelivr.json"), 'w', encoding='utf-8') as f:
         json.dump(repo_jsdelivr, f, indent=4, ensure_ascii=False)
-    print("Dynamically generated repo.json and repo-jsdelivr.json in builds directory.")
+
+    repo_hybrid = {
+        "name": "xr3ed Cloudstream Extension (Hybrid)",
+        "description": "Gabungan repositori ekstensi Cloudstream dari BetbetMiro (Utama) dan Phisher (Backup). Jalur Hybrid.",
+        "iconUrl": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/main/icon.png",
+        "manifestVersion": 1,
+        "pluginLists": [
+            "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/plugins-jsdelivr.json"
+        ]
+    }
+    with open(os.path.join(builds_dir, "repo-hybrid.json"), 'w', encoding='utf-8') as f:
+        json.dump(repo_hybrid, f, indent=4, ensure_ascii=False)
+    print("Dynamically generated repo.json, repo-jsdelivr.json, and repo-hybrid.json in builds directory.")
 
 
 if __name__ == "__main__":
