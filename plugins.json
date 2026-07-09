@@ -238,6 +238,28 @@
         "fileHash": "sha256-23d8b6a0b8add08c54aaa822ea57682d459942399932919afee0439f09ed5aac"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeSailProvider.cs3",
+        "status": 1,
+        "version": 11,
+        "name": "AnimeSailProvider",
+        "internalName": "AnimeSailProvider",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "AnimeSail — Streaming Anime, Donghua Subtitle Indonesia (Improved WIP)",
+        "fileSize": 46468,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "iconUrl": "https://aghanim.xyz/wp-content/themes/animesail/assets/images/ico.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-5fc7bd6ba531ce813779f8d8851a5b597b44106f00340d6e58a86bf11512845c"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimesaltBackup.cs3",
         "status": 1,
         "version": 9,
@@ -3715,14 +3737,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/XDMovies.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "XDMovies",
         "internalName": "XDMovies",
         "authors": [
             "Phisher98"
         ],
         "description": "Watch Latest Movies",
-        "fileSize": 105552,
+        "fileSize": 108309,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -3735,7 +3757,7 @@
         ],
         "iconUrl": "https://top.xdmovies.wtf/assets/logo1.png",
         "apiVersion": 1,
-        "fileHash": "sha256-8aa7ceefd1020e2254a79a6503ddb44e8dfa165d29738277f3873ec99c1cdff1"
+        "fileHash": "sha256-65402e271220849164fbe918244dd2266b98ba84290dffa0059f710e07254864"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/YTS.cs3",
@@ -3784,28 +3806,6 @@
         "jarFileSize": 260088,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-a916cfc5d428641d068b7c8045304148c6bd7997d1966ded0e19183b6c271c8d"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeSailProvider.cs3",
-        "status": 1,
-        "version": 9,
-        "name": "AnimeSailProvider",
-        "internalName": "AnimeSailProvider",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "AnimeSail — Streaming Anime, Donghua Subtitle Indonesia (Improved WIP)",
-        "fileSize": 46162,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AnimeMovie",
-            "Anime",
-            "OVA"
-        ],
-        "iconUrl": "https://aghanim.xyz/wp-content/themes/animesail/assets/images/ico.png",
-        "apiVersion": 1,
-        "fileHash": "sha256-9a12477a344415bed39ee2381330b76708a39294708a2d5f4481e929bd5d13b9"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnineMovies.cs3",
