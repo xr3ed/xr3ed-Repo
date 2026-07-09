@@ -238,28 +238,6 @@
         "fileHash": "sha256-23d8b6a0b8add08c54aaa822ea57682d459942399932919afee0439f09ed5aac"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeSailProvider.cs3",
-        "status": 1,
-        "version": 9,
-        "name": "AnimeSailProvider",
-        "internalName": "AnimeSailProvider",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "AnimeSail — Streaming Anime, Donghua Subtitle Indonesia (Improved WIP)",
-        "fileSize": 46162,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AnimeMovie",
-            "Anime",
-            "OVA"
-        ],
-        "iconUrl": "https://aghanim.xyz/wp-content/themes/animesail/assets/images/ico.png",
-        "apiVersion": 1,
-        "fileHash": "sha256-9a12477a344415bed39ee2381330b76708a39294708a2d5f4481e929bd5d13b9"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimesaltBackup.cs3",
         "status": 1,
         "version": 9,
@@ -640,7 +618,7 @@
             "sad25kag"
         ],
         "description": "Provider CloudStream untuk Dracin Sub Indo - drama China subtitle Indonesia.",
-        "fileSize": 25135,
+        "fileSize": 25154,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -650,7 +628,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=dramacinasubindo.com&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-f38e317d3886f9ae80ba93acd72aae4c6bf78171ebfe927eaaf70b4d1aeb7bad"
+        "fileHash": "sha256-86c80434e9d3bef9923f8c79be2ffb43a096f65180b6d0a91844b72248b8b3da"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Drakor.cs3",
@@ -3806,6 +3784,28 @@
         "jarFileSize": 260088,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-a916cfc5d428641d068b7c8045304148c6bd7997d1966ded0e19183b6c271c8d"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeSailProvider.cs3",
+        "status": 1,
+        "version": 9,
+        "name": "AnimeSailProvider",
+        "internalName": "AnimeSailProvider",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "AnimeSail — Streaming Anime, Donghua Subtitle Indonesia (Improved WIP)",
+        "fileSize": 46162,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "iconUrl": "https://aghanim.xyz/wp-content/themes/animesail/assets/images/ico.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-9a12477a344415bed39ee2381330b76708a39294708a2d5f4481e929bd5d13b9"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnineMovies.cs3",
