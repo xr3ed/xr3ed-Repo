@@ -37,7 +37,7 @@ Repositori ini menggabungkan ekstensi Cloudstream dari dua sumber berbeda:
 
 **⭐ Jalur jsDelivr CDN (Direkomendasikan — bebas rate limit)**
 ```text
-cloudstreamrepo://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/repo-jsdelivr.json
+cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo-jsdelivr.json
 ```
 
 **Jalur GitHub Raw (Alternatif jika CDN bermasalah)**
@@ -53,7 +53,7 @@ cloudstreamrepo://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo.json
 
    **⭐ Jalur jsDelivr CDN (Direkomendasikan)**
    ```text
-   https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@builds/repo-jsdelivr.json
+   https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/repo-jsdelivr.json
    ```
 
    **Jalur GitHub Raw (Alternatif)**
