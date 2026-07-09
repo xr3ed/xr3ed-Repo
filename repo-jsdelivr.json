@@ -1,0 +1,9 @@
+{
+    "name": "xr3ed Cloudstream Extension (jsDelivr)",
+    "description": "Gabungan repositori ekstensi Cloudstream dari BetbetMiro (Utama) dan Phisher (Backup). Jalur CDN jsDelivr.",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/icon.png",
+    "manifestVersion": 1,
+    "pluginLists": [
+        "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@33ab9ae86e6f0292c188a8cc2bf8e1fae89069e6/plugins-jsdelivr.json"
+    ]
+}
