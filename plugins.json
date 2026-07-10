@@ -371,14 +371,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnoboyProvider.cs3",
         "status": 1,
-        "version": 36,
+        "version": 38,
         "name": "AnoboyProvider",
         "internalName": "AnoboyProvider",
         "authors": [
             "sad25kag"
         ],
         "description": "AnoBoy — Streaming Anime Subtitle Indonesia",
-        "fileSize": 49650,
+        "fileSize": 49221,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -388,7 +388,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://anoboy.be&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-cf5310e1561a41575228f13f45107214e8eb142b0431cb3bbab4b24eb7823ecc"
+        "fileHash": "sha256-cc69f47f2d5e2441670fce494707cba8b787f550a0ca607d89255520131dfd78"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Astronime.cs3",
@@ -2429,14 +2429,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Cinemacity.cs3",
         "status": 1,
-        "version": 14,
+        "version": 15,
         "name": "Cinemacity",
         "internalName": "Cinemacity",
         "authors": [
             "Phisher98"
         ],
         "description": "Watch Movies & TvSeries (Multi-Lang/Audio)",
-        "fileSize": 70204,
+        "fileSize": 70811,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2445,7 +2445,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=cinemacity.cc&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-c39771a2dd92498acf1d42e49742f1f34b346d8fc8311e81a86e4292e12fdab0"
+        "fileHash": "sha256-262499b51dc425c257656a820a7b5035ca7af5b1938c62cb28bc3850d6af9a5b"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/CloudPlay.cs3",
