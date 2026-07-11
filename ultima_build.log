@@ -25,9 +25,8 @@ w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/build.gradle.
 > Task :UltimaBackup:generateDebugResources
 > Task :UltimaBackup:packageDebugResources
 > Task :UltimaBackup:processDebugNavigationResources
-> Task :UltimaBackup:parseDebugLocalResources
 > Task :UltimaBackup:processDebugManifest
-> Task :UltimaBackup:generateDebugRFile
+> Task :UltimaBackup:parseDebugLocalResources
 
 > Task :UltimaBackup:compileResources
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/drawable/delete_icon.xml: note: compiling XML.
@@ -50,7 +49,7 @@ w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/build.gradle.
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml: note: compiling XML.
 note: including /usr/local/lib/android/sdk/platforms/android-36/android.jar.
 note: linking package 'com.sad25kag' using package ID 7f.
-note: merging archive /tmp/res11600716190747853599.zip.
+note: merging archive /tmp/res2871749057465618446.zip.
 note: merging 'layout/watch_sync_device' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml.
 note: merging 'layout/list_media_provider_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_media_provider_item.xml.
 note: merging 'layout/list_section_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_section_item.xml.
@@ -139,6 +138,7 @@ res/layout/watch_sync_device.xml: note: writing to archive (keep_raw_values=fals
 note: writing res/layout/watch_sync_device.xml to archive.
 note: writing resources.arsc to archive.
 
+> Task :UltimaBackup:generateDebugRFile
 > Task :UltimaBackup:compileDebugKotlin
 
 > Task :UltimaBackup:compileDex
