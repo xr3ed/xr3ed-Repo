@@ -77,7 +77,7 @@ class Anoboy : MainAPI() {
         val url = if (page <= 1) {
             "$mainUrl/?s=$encodedQuery"
         } else {
-            "$mainUrl/?page=$page&s=$encodedQuery"
+            "$mainUrl/page/$page/?s=$encodedQuery"
         }
 
         val document = runCatching {
@@ -142,9 +142,19 @@ class Anoboy : MainAPI() {
             .map { it.toSearchResponse() }
 
         val type = detectType(fixedUrl, rawPageTitle, pageTitle)
+
+        // If the loaded page is itself already a watch/episode page (e.g. a movie whose
+        // detail page and player page are the same "-subtitle-indonesia" URL), use it
+        // directly instead of scanning the document for another link. Scanning would
+        // otherwise skip this exact URL (it's the referer) and can latch onto an unrelated
+        // "subtitle-indonesia" link from the Recommendation/related section, sending
+        // loadLinks to the wrong title entirely.
+        val selfPlaybackUrl = fixedUrl.takeIf { isEpisodeLikeUrl(it) }
+
         val moviePlaybackData = when {
-            type == TvType.AnimeMovie -> episodes.firstOrNull()?.data ?: findMoviePlaybackData(document, fixedUrl)
-            episodes.isEmpty() -> findMoviePlaybackData(document, fixedUrl)
+            type == TvType.AnimeMovie ->
+                episodes.firstOrNull()?.data ?: selfPlaybackUrl ?: findMoviePlaybackData(document, fixedUrl)
+            episodes.isEmpty() -> selfPlaybackUrl ?: findMoviePlaybackData(document, fixedUrl)
             else -> null
         }
 
