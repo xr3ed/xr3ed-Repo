@@ -1,6 +1,6 @@
 [
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/4KHDHub.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/4KHDHub.cs3",
         "status": 1,
         "version": 40,
         "name": "4KHDHub",
@@ -21,7 +21,7 @@
         "fileHash": "sha256-1b0a62df6d3c8dd2f7f21a4ecd43f1ae2982994471934b2044533397c48697ca"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Alqanime.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Alqanime.cs3",
         "status": 1,
         "version": 31,
         "name": "Alqanime",
@@ -43,7 +43,7 @@
         "fileHash": "sha256-9eb1014f29387d50b375ed813f13e3d0eee671fbde9b5fbba556768f1c2ba42d"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnichinMoe.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnichinMoe.cs3",
         "status": 1,
         "version": 45,
         "name": "AnichinMoe",
@@ -65,7 +65,7 @@
         "fileHash": "sha256-2971088d1b5b39072eef408f657372948b2ae271aeaf119afc6d0a4d2a9fe850"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Animasu.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Animasu.cs3",
         "status": 1,
         "version": 27,
         "name": "Animasu",
@@ -86,7 +86,7 @@
         "fileHash": "sha256-380d14f26f3771eaa7d969f631edac375e4295b77cd72c500673d942ecc73cc1"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnimeBagus.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnimeBagus.cs3",
         "status": 1,
         "version": 10,
         "name": "AnimeBagus",
@@ -108,7 +108,7 @@
         "fileHash": "sha256-1337687af93be1e97e1bb807a7944f7185f0506bbd16e1acbb3308d97d180ab2"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnimeChina.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnimeChina.cs3",
         "status": 1,
         "version": 11,
         "name": "AnimeChina",
@@ -130,7 +130,7 @@
         "fileHash": "sha256-ad0b2fa7d163527c8e8d4902cd0f078d681845c5c81959b4c9781797a3218c81"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnimeIndo.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnimeIndo.cs3",
         "status": 1,
         "version": 25,
         "name": "AnimeIndo",
@@ -152,7 +152,7 @@
         "fileHash": "sha256-5cbcc9352444c7b6b0aeef6a899a072046feeb2339064a18fa1691de0a15f331"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnimeisMe.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnimeisMe.cs3",
         "status": 1,
         "version": 9,
         "name": "AnimeisMe",
@@ -174,7 +174,7 @@
         "fileHash": "sha256-a751b47d47b38b418a004942dbf45a105676d3f0fb0ab940ccf1bc47c0cbd226"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnimekhorBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnimekhorBackup.cs3",
         "status": 1,
         "version": 23,
         "name": "AnimekhorBackup",
@@ -195,7 +195,7 @@
         "fileHash": "sha256-23d1b066c6672fd11245c9f0dee308764c805a033ee1bbd4ad594054a1d2173d"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnimeMovies.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnimeMovies.cs3",
         "status": 1,
         "version": 6,
         "name": "AnimeMovies",
@@ -216,7 +216,7 @@
         "fileHash": "sha256-1b21fd1e280e605bdb1dc5a9bf29ef1cb046068d64a361167eebd1621e71fa49"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnimePlay.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnimePlay.cs3",
         "status": 1,
         "version": 6,
         "name": "AnimePlay",
@@ -238,7 +238,7 @@
         "fileHash": "sha256-23d8b6a0b8add08c54aaa822ea57682d459942399932919afee0439f09ed5aac"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnimeSailProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnimeSailProvider.cs3",
         "status": 1,
         "version": 11,
         "name": "AnimeSailProvider",
@@ -260,7 +260,7 @@
         "fileHash": "sha256-5fc7bd6ba531ce813779f8d8851a5b597b44106f00340d6e58a86bf11512845c"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnimesaltBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnimesaltBackup.cs3",
         "status": 1,
         "version": 10,
         "name": "AnimesaltBackup",
@@ -282,7 +282,7 @@
         "fileHash": "sha256-191194016f6c721fe80261b03b21539d5a91462cdd115edb9608f85af7ba128f"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnimexinProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnimexinProvider.cs3",
         "status": 1,
         "version": 19,
         "name": "AnimexinProvider",
@@ -304,7 +304,7 @@
         "fileHash": "sha256-57be5f65eff129425b3c714457e57dc8d552ed1effa28c2e45f10e84694e2597"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AninekoBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AninekoBackup.cs3",
         "status": 1,
         "version": 6,
         "name": "AninekoBackup",
@@ -326,7 +326,7 @@
         "fileHash": "sha256-d650bda07c302de61e8b51cc81fcdd83e4a2f3da4eac56ceead26a99b1e071df"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnixCafeProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnixCafeProvider.cs3",
         "status": 1,
         "version": 14,
         "name": "AnixCafeProvider",
@@ -348,7 +348,7 @@
         "fileHash": "sha256-545859cac22de2afdc932ba635da8592b8cd033631294cfc8e9fa964c713c86d"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnizoneProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnizoneProvider.cs3",
         "status": 1,
         "version": 18,
         "name": "AnizoneProvider",
@@ -369,7 +369,7 @@
         "fileHash": "sha256-7d56d40c3204d1e8f4d7f4af2b0dffa63fb48bbc96d8146126400897b052c801"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnoboyProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnoboyProvider.cs3",
         "status": 1,
         "version": 34,
         "name": "AnoboyProvider",
@@ -378,7 +378,7 @@
             "sad25kag"
         ],
         "description": "AnoBoy — Streaming Anime Subtitle Indonesia",
-        "fileSize": 50163,
+        "fileSize": 50595,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -388,10 +388,10 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://anoboy.be&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-b0534757a0f89ddf39aa27967bab95f56cdd68c0826f02640d74ee4e24526817"
+        "fileHash": "sha256-884bb83688d8d95965a24848531eb3751dfdcf7f79930ca7d5f269085fb2481a"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Astronime.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Astronime.cs3",
         "status": 1,
         "version": 6,
         "name": "Astronime",
@@ -412,7 +412,7 @@
         "fileHash": "sha256-909c3dfdcc59b4a5a7b1e248439b3ec6721461d4ee3eadc06c4e093d665e6610"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AyoNonton.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AyoNonton.cs3",
         "status": 1,
         "version": 11,
         "name": "AyoNonton",
@@ -433,7 +433,7 @@
         "fileHash": "sha256-75299c3b95c541166b1550bfb9934f04c04dd0491540e18d93cd48426cd12a31"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/BetbetLiveTV.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/BetbetLiveTV.cs3",
         "status": 3,
         "version": 8,
         "name": "BetbetLiveTV",
@@ -453,7 +453,7 @@
         "fileHash": "sha256-602da32bb1be5f6ef90277aaba5e275f0272413683a9fb1f0c06617633c399b1"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/BilibiliProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/BilibiliProvider.cs3",
         "status": 3,
         "version": 12,
         "name": "BilibiliProvider",
@@ -475,7 +475,7 @@
         "fileHash": "sha256-54d357cabb2ef6447fa44d99b8eeffca2510f57ac508c7d10868f7966309b789"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/CinefreakBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/CinefreakBackup.cs3",
         "status": 1,
         "version": 8,
         "name": "CinefreakBackup",
@@ -497,7 +497,7 @@
         "fileHash": "sha256-78d60258bca7562d3f8d95a35e304fcaee15d7a4b412367b86e9bdb7b9c590a4"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Cinemax21Provider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Cinemax21Provider.cs3",
         "status": 1,
         "version": 10,
         "name": "Cinemax21Provider",
@@ -519,7 +519,7 @@
         "fileHash": "sha256-86483a9d7177c336ded03f0ecb4bae1410c7e0b8a0e5da69602b693f66643963"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/DailymotionProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/DailymotionProvider.cs3",
         "status": 1,
         "version": 12,
         "name": "DailymotionProvider",
@@ -544,7 +544,7 @@
         "fileHash": "sha256-e0e15fb7ec5bfa9044b4ca72ddb71494d0f9c44c88330f70e4f8c94716ca70ad"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/DonghuaFilm.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/DonghuaFilm.cs3",
         "status": 1,
         "version": 12,
         "name": "DonghuaFilm",
@@ -566,7 +566,7 @@
         "fileHash": "sha256-8eae1f02db4d526458d6b178b1eedc918754eafba9e940aeceaab505da9fa3ad"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/DonghuaID.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/DonghuaID.cs3",
         "status": 1,
         "version": 15,
         "name": "DonghuaID",
@@ -588,7 +588,7 @@
         "fileHash": "sha256-8dd64775aa0f8b6176b88b8218dd971fea3d0fc101643cedb8f4d4f2d66b3fa7"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/DonghuastreamBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/DonghuastreamBackup.cs3",
         "status": 1,
         "version": 15,
         "name": "DonghuastreamBackup",
@@ -609,7 +609,7 @@
         "fileHash": "sha256-6a368905d97527c689117e0f5730100b468a42acafb4d71c90d10b594a311ac4"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Donghub.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Donghub.cs3",
         "status": 1,
         "version": 14,
         "name": "Donghub",
@@ -631,7 +631,7 @@
         "fileHash": "sha256-1bbedd2563082cbad69644ab443a72eb1a9f6cbd7e9806c79fd28334aa8bffb9"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/DracinSI.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/DracinSI.cs3",
         "status": 1,
         "version": 3,
         "name": "DracinSI",
@@ -653,7 +653,7 @@
         "fileHash": "sha256-86c80434e9d3bef9923f8c79be2ffb43a096f65180b6d0a91844b72248b8b3da"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Drakor.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Drakor.cs3",
         "status": 1,
         "version": 8,
         "name": "Drakor",
@@ -676,7 +676,7 @@
         "fileHash": "sha256-d1b658748eccd737b4d1a10eb71114cd02efb09b4f714c13e89d4c448bc726df"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/DrakoridProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/DrakoridProvider.cs3",
         "status": 1,
         "version": 13,
         "name": "DrakoridProvider",
@@ -698,7 +698,7 @@
         "fileHash": "sha256-2251dfdc89e802b2a17a8d071c2b604cdd6772a8266c645944cefa40c8353d39"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/DrakorKita.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/DrakorKita.cs3",
         "status": 3,
         "version": 8,
         "name": "DrakorKita",
@@ -720,7 +720,7 @@
         "fileHash": "sha256-be87d809893616f6c952ef83f3daeb4f885c9506d4adc5800d0328c25bb60c68"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/DubbindoProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/DubbindoProvider.cs3",
         "status": 1,
         "version": 6,
         "name": "DubbindoProvider",
@@ -744,7 +744,7 @@
         "fileHash": "sha256-d522da93a5b35fc4f038cc08238485b8e988b1fa20d3de80690301a7bd15e0fa"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/DuniaFilm21.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/DuniaFilm21.cs3",
         "status": 1,
         "version": 6,
         "name": "DuniaFilm21",
@@ -766,7 +766,7 @@
         "fileHash": "sha256-1921feae4d67a1531c19768c8d3cafcc65eaa02a1dafb8ca39c38eac97a08b66"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Dutamovie.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Dutamovie.cs3",
         "status": 1,
         "version": 30,
         "name": "Dutamovie",
@@ -790,7 +790,7 @@
         "fileHash": "sha256-df5a1adfbe6cd5ca48862d0fb8e401f18faa2bc9d4f3d686f9c55f585f2b3367"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Extractors.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Extractors.cs3",
         "status": 1,
         "version": 17,
         "name": "Extractors",
@@ -810,7 +810,7 @@
         "fileHash": "sha256-7d169c76d42506aaaf65f98e3bf95cb76ac18f2b5b8c70cc8318ff9e8e99cd3b"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Film21.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Film21.cs3",
         "status": 1,
         "version": 5,
         "name": "Film21",
@@ -832,7 +832,7 @@
         "fileHash": "sha256-33006bef420d7c14bdff4dc5998f5b66735717dac2f26888366345dfc2c13b06"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/FilmAnine.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/FilmAnine.cs3",
         "status": 1,
         "version": 6,
         "name": "FilmAnine",
@@ -853,7 +853,7 @@
         "fileHash": "sha256-bde563bb1f51eecc5fe0f0dc8bff3c41736e196317047975ec91d54892ef81ce"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Filmkita.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Filmkita.cs3",
         "status": 1,
         "version": 6,
         "name": "Filmkita",
@@ -875,7 +875,7 @@
         "fileHash": "sha256-8260966c2a691ec14d8a6d63929d73221380fca8bc5f042710394c9684cf2d8b"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/FilmLokal.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/FilmLokal.cs3",
         "status": 1,
         "version": 10,
         "name": "FilmLokal",
@@ -896,7 +896,7 @@
         "fileHash": "sha256-f36f23b68b9fd7309a362577658a35fa139b75387daa32d57e0aef1b973ea98f"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/FreeReels.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/FreeReels.cs3",
         "status": 1,
         "version": 33,
         "name": "FreeReels",
@@ -918,7 +918,7 @@
         "fileHash": "sha256-566916d44dc8e3f6fe5c17a8ba6c0a7ec3abb18b60d8153e5679ac9ca7e85b80"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Gomunime.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Gomunime.cs3",
         "status": 1,
         "version": 2,
         "name": "Gomunime",
@@ -940,7 +940,7 @@
         "fileHash": "sha256-fa6dd609cbd249dc3661338fefba79d8abdd06fd366b0831ed161da02ec6a9f9"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/GoojaraBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/GoojaraBackup.cs3",
         "status": 1,
         "version": 3,
         "name": "GoojaraBackup",
@@ -961,7 +961,7 @@
         "fileHash": "sha256-de5a33433573f1b8ffde7211434ead9ff20603668aee35256dc269402dc8254c"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/GudangFilm.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/GudangFilm.cs3",
         "status": 1,
         "version": 19,
         "name": "GudangFilm",
@@ -983,7 +983,7 @@
         "fileHash": "sha256-4a3c0dbd6ae86ff051cd16af19506f6a746d22cfbf605dd0ddcfb5738b79b885"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/HidoriStreamProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/HidoriStreamProvider.cs3",
         "status": 1,
         "version": 10,
         "name": "HidoriStreamProvider",
@@ -1005,7 +1005,7 @@
         "fileHash": "sha256-2552f830129c2f23d528da0e3c375bac71e410e8204bfec5e469b96410a99b36"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/IdlixProviderBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/IdlixProviderBackup.cs3",
         "status": 1,
         "version": 49,
         "name": "IdlixProviderBackup",
@@ -1028,7 +1028,7 @@
         "fileHash": "sha256-d0a23a053033bdbe6d347d5513e1d7c296569ab3650f035548e5a4fae20f41dc"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/InternetArchiveProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/InternetArchiveProvider.cs3",
         "status": 1,
         "version": 5,
         "name": "InternetArchiveProvider",
@@ -1050,7 +1050,7 @@
         "fileHash": "sha256-cc175cbfaf19a57244bb9674cdea9beca0cae5d81b651cdd8910762bc18fe351"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/IPTV.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/IPTV.cs3",
         "status": 3,
         "version": 2,
         "name": "IPTV",
@@ -1070,7 +1070,7 @@
         "fileHash": "sha256-0fe769eae22d56054c20ad7449609addf2373f49cf1f5ac6e804db6965602f60"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/JuraganFilm.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/JuraganFilm.cs3",
         "status": 1,
         "version": 19,
         "name": "JuraganFilm",
@@ -1093,7 +1093,7 @@
         "fileHash": "sha256-4f294d9987c5f222c104518581209704a5bd7b0a29689f86bdc716c8f0354cd5"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Kawanfilm.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Kawanfilm.cs3",
         "status": 3,
         "version": 7,
         "name": "Kawanfilm",
@@ -1116,7 +1116,7 @@
         "fileHash": "sha256-bbc2cc6d95838bf41f68ae004c211d8a4e6a7cdf42492cf61d73072339d98cb2"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/KazefuriProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/KazefuriProvider.cs3",
         "status": 1,
         "version": 11,
         "name": "KazefuriProvider",
@@ -1138,7 +1138,7 @@
         "fileHash": "sha256-8311ee96ca8b42d42849713032c771a8e392daa4eb4345e3bcf42fd8f10d0b9e"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/KikoNime.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/KikoNime.cs3",
         "status": 1,
         "version": 4,
         "name": "KikoNime",
@@ -1160,7 +1160,7 @@
         "fileHash": "sha256-02e7212169bd010b1d9fcb6c078b87b01218be8971c18b1b35a4566b9614eaac"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Kissasian.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Kissasian.cs3",
         "status": 1,
         "version": 4,
         "name": "Kissasian",
@@ -1182,7 +1182,7 @@
         "fileHash": "sha256-22283f6250d5d45aa4dbb94224cb39550bfddcea4c649a2185ba530fb4bf1fa1"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/KissKH.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/KissKH.cs3",
         "status": 1,
         "version": 5,
         "name": "KissKH",
@@ -1202,7 +1202,7 @@
         "fileHash": "sha256-e8f467e932f951b2b90876fe31ca3a6ad6ee8e5ffa6d62fc6f13213f6d1f7817"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Klikxxi.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Klikxxi.cs3",
         "status": 1,
         "version": 9,
         "name": "Klikxxi",
@@ -1223,7 +1223,7 @@
         "fileHash": "sha256-b5ef760cd0cdd684f35bfc71ebe2d23b38633ed0acdfd1db4d3d8bea77cd22cf"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/KuramanimeProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/KuramanimeProvider.cs3",
         "status": 1,
         "version": 50,
         "name": "KuramanimeProvider",
@@ -1244,7 +1244,7 @@
         "fileHash": "sha256-949218cd4f1c1f0e51c1ea8d09cd1aefe07f031a56500b9c3fdd0d50b236f418"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/KuronimeProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/KuronimeProvider.cs3",
         "status": 1,
         "version": 3,
         "name": "KuronimeProvider",
@@ -1266,7 +1266,7 @@
         "fileHash": "sha256-3dd02365736fe45b72cdce98bd165129c97c71f0b29df8135c675bfcd784d98b"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/LayarAsiaProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/LayarAsiaProvider.cs3",
         "status": 1,
         "version": 3,
         "name": "LayarAsiaProvider",
@@ -1288,7 +1288,7 @@
         "fileHash": "sha256-3c47bcb1450a811ba499d8b601a2b22a859238c1044cc26105c041a766cb42c8"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/LayarKacaProviderBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/LayarKacaProviderBackup.cs3",
         "status": 1,
         "version": 5,
         "name": "LayarKacaProviderBackup",
@@ -1310,7 +1310,7 @@
         "fileHash": "sha256-38934b9847e241b9dfa804dcabc46de136c17606ec19cb5ab81b125d791abea2"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/LayarWarna21.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/LayarWarna21.cs3",
         "status": 1,
         "version": 4,
         "name": "LayarWarna21",
@@ -1330,7 +1330,7 @@
         "fileHash": "sha256-1bd81415df2f9534c17971ea2462fbcc16a4dba1c402edc3dd4b4743a26d40f5"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Maonime.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Maonime.cs3",
         "status": 1,
         "version": 12,
         "name": "Maonime",
@@ -1352,7 +1352,7 @@
         "fileHash": "sha256-7752c8923c003b37d7c508516ab5f25297e620551e21e8cd7f0a16f838674c18"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/MovieBoxProviderBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/MovieBoxProviderBackup.cs3",
         "status": 1,
         "version": 18,
         "name": "MovieBoxProviderBackup",
@@ -1373,7 +1373,7 @@
         "fileHash": "sha256-f7d968a5a387c45f3c5ac45f9d4044fea25983f82f8c13adc95c9f12ebb6b4f5"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/MovieOn21.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/MovieOn21.cs3",
         "status": 1,
         "version": 6,
         "name": "MovieOn21",
@@ -1395,7 +1395,7 @@
         "fileHash": "sha256-8d8a5bb39164820d6dac5ca389f762d56b65b03c242bfc73eab6ebdacebbb6d0"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/NgeFilm21Provider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/NgeFilm21Provider.cs3",
         "status": 1,
         "version": 1,
         "name": "NgeFilm21Provider",
@@ -1417,7 +1417,7 @@
         "fileHash": "sha256-67de017dde366d25bdc75efbdd4491fa301bafdcbdba4dc43afc2709ca687bc1"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/NimeIndo.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/NimeIndo.cs3",
         "status": 1,
         "version": 7,
         "name": "NimeIndo",
@@ -1439,7 +1439,7 @@
         "fileHash": "sha256-8aabf2ad50676fd95ffc472d8b773e5c166a26cd8ecf0dbcc661d5aca60f9f57"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Nomat.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Nomat.cs3",
         "status": 1,
         "version": 8,
         "name": "Nomat",
@@ -1461,7 +1461,7 @@
         "fileHash": "sha256-338c4f3425ee5fde19e3d051129e08bd410ccdc0dfadbfdefd3cfe357d666078"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Nonton01.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Nonton01.cs3",
         "status": 1,
         "version": 16,
         "name": "Nonton01",
@@ -1482,7 +1482,7 @@
         "fileHash": "sha256-f81e883f12e4272c5f3e49b7cfaf6d9a2571de70d3809ee9de9429f0f7bfaab6"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/NontonAnimeIDProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/NontonAnimeIDProvider.cs3",
         "status": 1,
         "version": 3,
         "name": "NontonAnimeIDProvider",
@@ -1504,7 +1504,7 @@
         "fileHash": "sha256-777c4e60dbee51132fd8ae9e09ed258607149b9d5140f131d218de5d0b19ec9e"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/NontonDrakor.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/NontonDrakor.cs3",
         "status": 1,
         "version": 6,
         "name": "NontonDrakor",
@@ -1526,7 +1526,7 @@
         "fileHash": "sha256-9fe4383f103d4da794b86a875255059640e4cd8b221124990ba0eb15dccb77a1"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Noxx.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Noxx.cs3",
         "status": 3,
         "version": 9,
         "name": "Noxx",
@@ -1547,7 +1547,7 @@
         "fileHash": "sha256-cba359f5dd4735cda00901ca995e7f17e2148ac521b58788b631cedde23cb353"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Oppadrama.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Oppadrama.cs3",
         "status": 1,
         "version": 19,
         "name": "Oppadrama",
@@ -1569,7 +1569,7 @@
         "fileHash": "sha256-57f5844160636965531c0e623ac8d0a51d9a9ed9c1ecd13bf044d2135a94d0a7"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/OtakudesuProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/OtakudesuProvider.cs3",
         "status": 1,
         "version": 14,
         "name": "OtakudesuProvider",
@@ -1591,7 +1591,7 @@
         "fileHash": "sha256-15fd2b6a132edf0122c18283b3d1fc5991581c01f3a5282203269bbfa0f42518"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/PencuriMovieProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/PencuriMovieProvider.cs3",
         "status": 1,
         "version": 2,
         "name": "PencuriMovieProvider",
@@ -1612,7 +1612,7 @@
         "fileHash": "sha256-9de3a856ead0e357583cdcd6ba1e2ebe6f2dc89837ab97d4dbe9fdf3e6cede39"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/PmsmBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/PmsmBackup.cs3",
         "status": 1,
         "version": 3,
         "name": "PmsmBackup",
@@ -1633,7 +1633,7 @@
         "fileHash": "sha256-6e51d6696c60464b215306429cb94f168d992b02320e50387be84e2001aaef26"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Pusatfilm.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Pusatfilm.cs3",
         "status": 3,
         "version": 8,
         "name": "Pusatfilm",
@@ -1655,7 +1655,7 @@
         "fileHash": "sha256-033dbb19f715ed5e97f4fecbe856b96072ec6dba7933eafbf420e29610132a21"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/ReynimeProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/ReynimeProvider.cs3",
         "status": 1,
         "version": 27,
         "name": "ReynimeProvider",
@@ -1677,7 +1677,7 @@
         "fileHash": "sha256-220361e87b4bdc5c500258640d3e4a4f2abe230264c051ffb49481bfd54e1d83"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/SaikoNime.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/SaikoNime.cs3",
         "status": 1,
         "version": 2,
         "name": "SaikoNime",
@@ -1699,7 +1699,7 @@
         "fileHash": "sha256-d9c82cf63b62bc6f95566ed5dfac155c56beecce830f2409c33b013b227cc8ed"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Samehadaku.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Samehadaku.cs3",
         "status": 1,
         "version": 35,
         "name": "Samehadaku",
@@ -1721,7 +1721,7 @@
         "fileHash": "sha256-6b7456c81f0cdfd4c6032650e18e2d2deeabd93b57fc1a310bd65603d2cc856d"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/SarangFilm21.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/SarangFilm21.cs3",
         "status": 1,
         "version": 2,
         "name": "SarangFilm21",
@@ -1742,7 +1742,7 @@
         "fileHash": "sha256-266572f883e3174e106deeaf9021cb8d434114616ac0be984823756b152b1e1c"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/SaveFilm21.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/SaveFilm21.cs3",
         "status": 1,
         "version": 4,
         "name": "SaveFilm21",
@@ -1764,7 +1764,7 @@
         "fileHash": "sha256-04e44e09b985d4f2b4fdafd76e5870bf650c2beb9e43617b1c309410ebb3be16"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/SontolFilmProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/SontolFilmProvider.cs3",
         "status": 1,
         "version": 2,
         "name": "SontolFilmProvider",
@@ -1787,7 +1787,7 @@
         "fileHash": "sha256-92f5fa2128dd7c3062fd98ab4b8a45f0919e3539da15157bf2c92be74e02ad51"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/SoraStream.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/SoraStream.cs3",
         "status": 1,
         "version": 237,
         "name": "SoraStream",
@@ -1810,7 +1810,7 @@
         "fileHash": "sha256-8bb6cd2f1e9375fb720e30f9b6c07306322b2afd33f042741f0b04c6df7088f6"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/StreamPlayBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/StreamPlayBackup.cs3",
         "status": 1,
         "version": 2,
         "name": "StreamPlayBackup",
@@ -1835,7 +1835,7 @@
         "fileHash": "sha256-308e7554dcc48843d8929b5f0271a435aef27139979f2d5d65c648edeacd7a34"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Terbit21.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Terbit21.cs3",
         "status": 1,
         "version": 6,
         "name": "Terbit21",
@@ -1856,7 +1856,7 @@
         "fileHash": "sha256-663964996a324282eb3964098494a71a6c39a869012fb914a1b149f240f53f57"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/ToonHubBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/ToonHubBackup.cs3",
         "status": 1,
         "version": 10,
         "name": "ToonHubBackup",
@@ -1878,7 +1878,7 @@
         "fileHash": "sha256-056622f7238f407ef717a215229e4fbe9e25789fa8658a86c1ab1952329b424d"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/ToonstreamBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/ToonstreamBackup.cs3",
         "status": 1,
         "version": 5,
         "name": "ToonstreamBackup",
@@ -1900,7 +1900,7 @@
         "fileHash": "sha256-52d7840b171319c08196ca39b54a231bcecebdbc127ac1ede244021b288ae65b"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/UltimaBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/UltimaBackup.cs3",
         "status": 2,
         "version": 56,
         "name": "UltimaBackup",
@@ -1920,7 +1920,7 @@
         "fileHash": "sha256-0e7fe1239df473210b0a436aa575e704c0bb82fca66abdb802edee8eec185598"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/YLNime.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/YLNime.cs3",
         "status": 1,
         "version": 1,
         "name": "YLNime",
@@ -1941,7 +1941,7 @@
         "fileHash": "sha256-07f9d6715a9c971f4adcf2961978b05b71ee32e1d26740c37eb71c41eb8df89b"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/YouTube.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/YouTube.cs3",
         "status": 1,
         "version": 5,
         "name": "YouTube",
@@ -1961,7 +1961,7 @@
         "fileHash": "sha256-6b7a25a5cf537682ba62e9a86a3909257dbec97a7d261d42dd461931e535c390"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/ZoronimeProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/ZoronimeProvider.cs3",
         "status": 1,
         "version": 2,
         "name": "ZoronimeProvider",
@@ -3808,7 +3808,7 @@
         "jarHash": "sha256-a916cfc5d428641d068b7c8045304148c6bd7997d1966ded0e19183b6c271c8d"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AnineMovies.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AnineMovies.cs3",
         "status": 1,
         "version": 4,
         "name": "AnineMovies",
@@ -3829,7 +3829,7 @@
         "fileHash": "sha256-ac18f4d668ec6e6f49ccd4f52cec500e8bdf06eaa905b9f8a4ddca4cd6b75920"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/AniDbBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/AniDbBackup.cs3",
         "status": 1,
         "version": 6,
         "name": "AniDbBackup",
@@ -3851,7 +3851,7 @@
         "fileHash": "sha256-66f35e2f28bbc9966ea638f072f6aa178c43d04bd6b329f3c9a5ed75a4ede30e"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/FourKHDHubBackup.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/FourKHDHubBackup.cs3",
         "status": 1,
         "version": 34,
         "name": "FourKHDHubBackup",
@@ -3872,7 +3872,7 @@
         "fileHash": "sha256-1a48af8e72ed5fe321c5953d3a8f5cab2db691d81a228d568da2bb9d56519fe6"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/NanimeIndo.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/NanimeIndo.cs3",
         "status": 1,
         "version": 1,
         "name": "NanimeIndo",
@@ -3894,7 +3894,7 @@
         "fileHash": "sha256-29161a99eb8c9cdbda89374aa1949d33fbb12a42fd1c512f9773ea5109f11933"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/NekokunProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/NekokunProvider.cs3",
         "status": 1,
         "version": 1,
         "name": "NekokunProvider",
@@ -3915,7 +3915,7 @@
         "fileHash": "sha256-ad0d0b7b2561c9b5fa97abaab3e66bed993f568baaa1330dafaca8f4141f203a"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Nimegami.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Nimegami.cs3",
         "status": 1,
         "version": 14,
         "name": "Nimegami",
@@ -3936,7 +3936,7 @@
         "fileHash": "sha256-f03b32440ba096504503d0af3e715bf7358198cf345517ecf1197f0bbdfc470b"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/NoDrasia.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/NoDrasia.cs3",
         "status": 1,
         "version": 2,
         "name": "NoDrasia",
@@ -3958,7 +3958,7 @@
         "fileHash": "sha256-7e962ccbf9b6d4cc591a53b45bc80d8d56b2f13c5f0e21ce7689224c1f6582ab"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/NontonAnimeX.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/NontonAnimeX.cs3",
         "status": 1,
         "version": 5,
         "name": "NontonAnimeX",
@@ -3980,7 +3980,7 @@
         "fileHash": "sha256-63e238e1dca2ab6e56e379ca0167a0caa83bd26860667200945c388e64374081"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/OploverzProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/OploverzProvider.cs3",
         "status": 1,
         "version": 33,
         "name": "OploverzProvider",
@@ -4001,7 +4001,7 @@
         "fileHash": "sha256-dc69751b10a6c8100bc7888682755b54d853b98a444dee1b23ee98cab2f5f704"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/Rebahin.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/Rebahin.cs3",
         "status": 1,
         "version": 10,
         "name": "Rebahin",
@@ -4022,7 +4022,7 @@
         "fileHash": "sha256-190617e2bd98a5b13b20e4df5bc2f516f4a1fa5642504341f6fb3f361aa172c9"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/WatchWrestling.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/WatchWrestling.cs3",
         "status": 1,
         "version": 27,
         "name": "WatchWrestling",
@@ -4042,7 +4042,7 @@
         "fileHash": "sha256-93c19693a180405309e14479a04808e2338d6d15f3ce3936994d674fd8462959"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/WinbuProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/WinbuProvider.cs3",
         "status": 1,
         "version": 4,
         "name": "WinbuProvider",
@@ -4064,7 +4064,7 @@
         "fileHash": "sha256-98c34b9f0e715003228a2f149c851476ce1430f2b10cbb7d9fa2a4d73ec6382c"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/DramaIdProvider.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/DramaIdProvider.cs3",
         "status": 1,
         "version": 15,
         "name": "DramaIdProvider",
@@ -4086,7 +4086,7 @@
         "fileHash": "sha256-5d64b5ba02b45208a3ee49285aa995c3aa2032a85a6a70c774ba8e16abb6780e"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/CNCVerse.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/CNCVerse.cs3",
         "status": 1,
         "version": 61,
         "name": "CNCVerse",
@@ -4107,7 +4107,7 @@
         "fileHash": "sha256-020e4b137c509a80bde71e789e6603ec02fa874a1d456255653d01defd148f08"
     },
     {
-        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-157/SpankBang.cs3",
+        "url": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-162/SpankBang.cs3",
         "status": 3,
         "version": 6,
         "name": "SpankBang",

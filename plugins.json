@@ -378,7 +378,7 @@
             "sad25kag"
         ],
         "description": "AnoBoy — Streaming Anime Subtitle Indonesia",
-        "fileSize": 50163,
+        "fileSize": 50595,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -388,7 +388,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://anoboy.be&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-b0534757a0f89ddf39aa27967bab95f56cdd68c0826f02640d74ee4e24526817"
+        "fileHash": "sha256-884bb83688d8d95965a24848531eb3751dfdcf7f79930ca7d5f269085fb2481a"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Astronime.cs3",
