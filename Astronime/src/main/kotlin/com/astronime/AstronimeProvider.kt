@@ -8,6 +8,8 @@ import com.lagradost.cloudstream3.LoadResponse
 import com.lagradost.cloudstream3.MainAPI
 import com.lagradost.cloudstream3.MainPageRequest
 import com.lagradost.cloudstream3.SearchResponse
+import com.lagradost.cloudstream3.SearchResponseList
+import com.lagradost.cloudstream3.newSearchResponseList
 import com.lagradost.cloudstream3.ShowStatus
 import com.lagradost.cloudstream3.SubtitleFile
 import com.lagradost.cloudstream3.newSubtitleFile
@@ -59,15 +61,15 @@ class AstronimeProvider : MainAPI() {
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        if (page > 1) {
-            return newHomePageResponse(
-                HomePageList(request.name, emptyList(), request.horizontalImages),
-                hasNext = false
-            )
+        val basePath = fixUrl(request.data).trimEnd('/')
+        val url = if (page <= 1) {
+            "$basePath/"
+        } else {
+            "$basePath/page/$page/"
         }
 
-        val document = app.get(fixUrl(request.data), referer = mainUrl, timeout = 30).document
-        document.setBaseUri(fixUrl(request.data))
+        val document = app.get(url, referer = mainUrl, timeout = 30).document
+        document.setBaseUri(url)
         val cards = document.parseHomeSection(request.name)
 
         return newHomePageResponse(
@@ -76,15 +78,24 @@ class AstronimeProvider : MainAPI() {
                 list = cards,
                 isHorizontalImages = request.horizontalImages
             ),
-            hasNext = false
+            hasNext = cards.isNotEmpty()
         )
     }
 
-    override suspend fun search(query: String): List<SearchResponse> {
+    override suspend fun search(query: String, page: Int): SearchResponseList? {
         val encodedQuery = URLEncoder.encode(query, "UTF-8")
-        val document = app.get("$mainUrl/?s=$encodedQuery", referer = mainUrl, timeout = 30).document
-        document.setBaseUri("$mainUrl/?s=$encodedQuery")
-        return document.parseSearchResults(query)
+        val url = if (page == 1) {
+            "$mainUrl/?s=$encodedQuery"
+        } else {
+            "$mainUrl/page/$page/?s=$encodedQuery"
+        }
+
+        val document = app.get(url, referer = mainUrl, timeout = 30).document
+        document.setBaseUri(url)
+        return newSearchResponseList(
+            document.parseSearchResults(query),
+            hasNext = document.parseSearchResults(query).isNotEmpty()
+        )
     }
 
     override suspend fun load(url: String): LoadResponse {
@@ -320,7 +331,7 @@ class AstronimeProvider : MainAPI() {
 
         return candidates.mapNotNull { it.toSearchResult(sectionName, requirePoster = true) }
             .distinctBy { it.url }
-            .take(30)
+            
     }
 
     private fun Document.findSectionCandidates(sectionName: String, selector: String): List<Element> {
@@ -348,7 +359,7 @@ class AstronimeProvider : MainAPI() {
             .mapNotNull { it.toSearchResult(requirePoster = false) }
             .filter { it.matchesSearchQuery(searchTokens) }
             .distinctBy { it.url }
-            .take(30)
+            
     }
 
     private fun Document.searchResultCandidates(): List<Element> {
