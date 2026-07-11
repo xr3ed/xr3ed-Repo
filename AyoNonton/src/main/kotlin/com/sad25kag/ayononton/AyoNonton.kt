@@ -15,6 +15,7 @@ import com.lagradost.cloudstream3.SearchResponse
 import com.lagradost.cloudstream3.SubtitleFile
 import com.lagradost.cloudstream3.TvType
 import com.lagradost.cloudstream3.app
+import com.lagradost.cloudstream3.fixUrl
 import com.lagradost.cloudstream3.newEpisode
 import com.lagradost.cloudstream3.newHomePageResponse
 import com.lagradost.cloudstream3.newMovieLoadResponse
@@ -75,12 +76,6 @@ class AyoNonton : MainAPI() {
     override val mainPage = mainPageOf(
         "$mainUrl/tag/featured/" to "Featured",
         "$mainUrl/latest/" to "Terbaru",
-        "$mainUrl/genre/action/" to "Action",
-        "$mainUrl/genre/animation/" to "Animation",
-        "$mainUrl/genre/horror/" to "Horror",
-        "$mainUrl/genre/sci-fi/" to "Sci-Fi",
-        "$mainUrl/genre/comedy/" to "Comedy",
-        "$mainUrl/genre/romance/" to "Romance",
         "$mainUrl/country/china/" to "China",
         "$mainUrl/country/india/" to "India",
         "$mainUrl/country/japan/" to "Japan",
@@ -286,7 +281,7 @@ class AyoNonton : MainAPI() {
     private fun parseListingPage(document: Document): List<SearchResponse> {
         return document.select("article.item, article.item-infinite, .gmr-box-content").mapNotNull { item ->
             val anchor = item.selectFirst("a[itemprop=url], .entry-title a, a[href]") ?: return@mapNotNull null
-            val href = anchor.absUrl("href").takeIf { it.startsWith(mainUrl) } ?: return@mapNotNull null
+            val href = fixUrl(anchor.attr("href")).takeIf { it.startsWith(mainUrl) } ?: return@mapNotNull null
             val rawTitle = anchor.attr("title")
                 .ifBlank { item.selectFirst(".entry-title a, h2 a, h3 a")?.text().orEmpty() }
                 .ifBlank { anchor.text() }
