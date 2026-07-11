@@ -371,14 +371,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnoboyProvider.cs3",
         "status": 1,
-        "version": 37,
+        "version": 38,
         "name": "AnoboyProvider",
         "internalName": "AnoboyProvider",
         "authors": [
             "sad25kag"
         ],
         "description": "AnoBoy — Streaming Anime Subtitle Indonesia",
-        "fileSize": 47837,
+        "fileSize": 48079,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -388,7 +388,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://anoboy.be&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-f592c49134da38ff27ca2171a863b48507a53d13f327f8dd92d9ee7a3f68de01"
+        "fileHash": "sha256-ac94e0186ad1d333688fd419fa80f96ea1804c79eef9982dcb194d69f0f48812"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Astronime.cs3",
@@ -1796,7 +1796,7 @@
             "sad25kag"
         ],
         "description": "#1 best extention based on MultiAPI",
-        "fileSize": 183617,
+        "fileSize": 183470,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1807,7 +1807,7 @@
         ],
         "iconUrl": "https://github.com/duro92/ExtCloud/blob/main/SoraStream/Icon.png",
         "apiVersion": 1,
-        "fileHash": "sha256-823691321e863ce614125411d878a68534d754ff632132fd2e12d8941c0d4ebf"
+        "fileHash": "sha256-8bb6cd2f1e9375fb720e30f9b6c07306322b2afd33f042741f0b04c6df7088f6"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StreamPlayBackup.cs3",
@@ -1819,7 +1819,7 @@
             "sad25kag"
         ],
         "description": "#1 best extention based on MultiAPI",
-        "fileSize": 958956,
+        "fileSize": 958454,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1832,7 +1832,7 @@
         ],
         "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
         "apiVersion": 1,
-        "fileHash": "sha256-40c31fa2d2da02111b649fd3a3a34e2dc9ee4a6172c5a1f859b5952afdd5f1ae"
+        "fileHash": "sha256-308e7554dcc48843d8929b5f0271a435aef27139979f2d5d65c648edeacd7a34"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Terbit21.cs3",
