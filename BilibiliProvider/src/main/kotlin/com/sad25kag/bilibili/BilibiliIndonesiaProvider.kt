@@ -54,7 +54,7 @@ class BilibiliIndonesiaProvider : MainAPI() {
         page: Int,
         request: MainPageRequest
     ): HomePageResponse {
-        val results = source.search(request.data, page)
+        val results = source.search(request.data, page)?.items ?: emptyList()
         return newHomePageResponse(
             arrayListOf(HomePageList(request.name, results, isHorizontalImages = true)),
             hasNext = results.isNotEmpty()
@@ -63,7 +63,9 @@ class BilibiliIndonesiaProvider : MainAPI() {
 
     override suspend fun quickSearch(query: String): List<SearchResponse> = source.quickSearch(query)
 
-    override suspend fun search(query: String): List<SearchResponse> = source.search(query, 1)
+    override suspend fun search(query: String, page: Int): SearchResponseList? {
+        return source.search(query, page)
+    }
 
     override suspend fun load(url: String): LoadResponse? = source.load(url)
 
