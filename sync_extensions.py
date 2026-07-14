@@ -14,28 +14,31 @@ def run_cmd(args, cwd=None):
 def safe_rmtree(path):
     if not os.path.exists(path):
         return
-    for root, dirs, files in os.walk(path):
-        for d in dirs:
-            try:
-                os.chmod(os.path.join(root, d), 0o777)
-            except Exception:
-                pass
+    try:
+        os.chmod(path, 0o777)
+    except Exception:
+        pass
+    for root, dirs, files in os.walk(path, topdown=False):
         for f in files:
             try:
                 os.chmod(os.path.join(root, f), 0o777)
             except Exception:
                 pass
-    try:
-        os.chmod(path, 0o777)
-    except Exception:
-        pass
+        for d in dirs:
+            try:
+                os.chmod(os.path.join(root, d), 0o777)
+            except Exception:
+                pass
     try:
         shutil.rmtree(path)
-    except Exception:
+    except Exception as e:
+        print(f"shutil.rmtree failed on {path}: {e}")
         if os.name == 'nt':
-            subprocess.run(['cmd', '/c', 'rmdir', '/s', '/q', path])
+            res = subprocess.run(['cmd', '/c', 'rmdir', '/s', '/q', path], capture_output=True, text=True)
+            print(f"rmdir exit: {res.returncode}, stderr: {res.stderr}")
         else:
-            subprocess.run(['rm', '-rf', path])
+            res = subprocess.run(['rm', '-rf', path], capture_output=True, text=True)
+            print(f"rm -rf exit: {res.returncode}, stderr: {res.stderr}")
 
 def main():
     try:
