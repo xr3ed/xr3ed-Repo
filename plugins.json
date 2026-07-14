@@ -433,6 +433,28 @@
         "fileHash": "sha256-e98b4b7327f2c2de7759f54e632c8abc8b67359563b78c7300d3073068f10c8c"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BilibiliProvider.cs3",
+        "status": 3,
+        "version": 15,
+        "name": "BilibiliProvider",
+        "internalName": "BilibiliProvider",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Bilibili TV - Anime, film, serial, dan konten Asia dari bilibili.tv",
+        "fileSize": 81636,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Anime",
+            "Movie",
+            "TvSeries"
+        ],
+        "iconUrl": "https://play-lh.googleusercontent.com/G9s84Cm1TDnKDX2P8nipS_s60cuCnYtjBRRLespF8nivjXmbV9tF1fY37clZhXMLaA",
+        "apiVersion": 1,
+        "fileHash": "sha256-e2fb6c0d3365c16ea59ea0a94d1f5e928ecdfd00ba59b8e9f66d882141f24e84"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CinefreakBackup.cs3",
         "status": 1,
         "version": 8,
@@ -1968,14 +1990,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AllWish.cs3",
         "status": 1,
-        "version": 12,
+        "version": 14,
         "name": "AllWish",
         "internalName": "AllWish",
         "authors": [
             "Phisher98"
         ],
         "description": "Anime from all-wish.me",
-        "fileSize": 42620,
+        "fileSize": 42602,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -1983,10 +2005,10 @@
         ],
         "iconUrl": "https://all-wish.me/assets/logo.png",
         "apiVersion": 1,
-        "fileHash": "sha256-7edbc1db9eea4d03a50e4149e57713b5decae30d242b457041384f87cd5f604c",
-        "jarFileSize": 167822,
+        "fileHash": "sha256-a261d5d6ce4fc99e4b50219b7c0666b2256fe8745d6c818dd97e33f838e4ad6b",
+        "jarFileSize": 167666,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AllWish.jar",
-        "jarHash": "sha256-b9f8e1976bba95236f508a7c263da1611920a5348dd6539bb66138c7268ae5e7"
+        "jarHash": "sha256-998934aa223c756ca2ac9be75806db38f8933fb8438d273592c34326598f8405"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anichi.cs3",
@@ -3764,28 +3786,6 @@
         "jarFileSize": 270699,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-3498f579309dd648da5c305d8556de6a8cef2559165cea10d0f8b6527a60568c"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BilibiliProvider.cs3",
-        "status": 3,
-        "version": 13,
-        "name": "BilibiliProvider",
-        "internalName": "BilibiliProvider",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Bilibili TV - Anime, film, serial, dan konten Asia dari bilibili.tv",
-        "fileSize": 81293,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Anime",
-            "Movie",
-            "TvSeries"
-        ],
-        "iconUrl": "https://play-lh.googleusercontent.com/G9s84Cm1TDnKDX2P8nipS_s60cuCnYtjBRRLespF8nivjXmbV9tF1fY37clZhXMLaA",
-        "apiVersion": 1,
-        "fileHash": "sha256-31e61ac37ca863c02fa78f5c789b5370292b79b55f403b8ddaf0e38563b61f9b"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
