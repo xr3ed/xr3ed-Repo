@@ -4,6 +4,6 @@
     "iconUrl": "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@main/icon.png",
     "manifestVersion": 1,
     "pluginLists": [
-        "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-206/plugins-jsdelivr.json"
+        "https://cdn.jsdelivr.net/gh/xr3ed/xr3ed-Repo@build-234/plugins-jsdelivr.json"
     ]
 }

@@ -533,7 +533,7 @@
             "sad25kag"
         ],
         "description": "DonghuaFilm - Nonton Donghua Gratis Sub Indonesia.",
-        "fileSize": 52825,
+        "fileSize": 52842,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -543,7 +543,7 @@
         ],
         "iconUrl": "https://donghuafilm.com/favicon.ico",
         "apiVersion": 1,
-        "fileHash": "sha256-8eae1f02db4d526458d6b178b1eedc918754eafba9e940aeceaab505da9fa3ad"
+        "fileHash": "sha256-7de4f434bc4e419b884702410ebbe8df56d8e8dd3ec5c5b5c7476753dca3c438"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaID.cs3",
@@ -577,7 +577,7 @@
             "sad25kag"
         ],
         "description": "Donghuastream untuk donghua / Chinese anime.",
-        "fileSize": 40813,
+        "fileSize": 40825,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -586,7 +586,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/Kohi-den/extensions-source/927f9c68fd64ce52f6212ae633d0f0585eca3545/src/en/donghuastream/res/mipmap-xxxhdpi/ic_launcher.png",
         "apiVersion": 1,
-        "fileHash": "sha256-6a368905d97527c689117e0f5730100b468a42acafb4d71c90d10b594a311ac4"
+        "fileHash": "sha256-e00ef8d1fb710f07aff5dc71bb2a3021e549241845ea705970aec9f7551b1148"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Donghub.cs3",
@@ -2041,7 +2041,7 @@
             "Phisher98"
         ],
         "description": "Animes",
-        "fileSize": 56270,
+        "fileSize": 56557,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2051,7 +2051,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/anidb.png",
         "apiVersion": 1,
-        "fileHash": "sha256-c44f3d31395a88ac6117a29e6ddf95281c7af5b413ae81dc3039bfa83ef3bd1d"
+        "fileHash": "sha256-edeb8b199f2e7aaa723696499a87d3c1d6e03d7456e438f8c293d1925ded9015"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anikage.cs3",
@@ -2409,14 +2409,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Cinemacity.cs3",
         "status": 1,
-        "version": 17,
+        "version": 18,
         "name": "Cinemacity",
         "internalName": "Cinemacity",
         "authors": [
             "Phisher98"
         ],
         "description": "Watch Movies & TvSeries (Multi-Lang/Audio)",
-        "fileSize": 72959,
+        "fileSize": 73029,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2425,7 +2425,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=cinemacity.cc&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-e8dfd2cdb738b2174d95400c4679d570bf80240e413869c8937571a762ef8d26"
+        "fileHash": "sha256-0165bf3a7e06ced81dfa3ac86a10353a91579c1f46283b36823a0b80c45c460e"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/CloudPlay.cs3",
@@ -2457,7 +2457,7 @@
             "Phisher98"
         ],
         "description": "Movies,Series and Anime French Extension ",
-        "fileSize": 29922,
+        "fileSize": 28011,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "fr",
         "tvTypes": [
@@ -2466,10 +2466,10 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Coflix.png",
         "apiVersion": 1,
-        "fileHash": "sha256-e1c84cf9dc6aa2485711d21501f3a44c0a1aaac090d1a775b49acffe808a89e0",
-        "jarFileSize": 129724,
+        "fileHash": "sha256-bf1e59e2058463953105284632d89274c57e42d92ed920deef45d1de82e04921",
+        "jarFileSize": 122082,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Coflix.jar",
-        "jarHash": "sha256-34008a6ed67cfd3cf5eb58cf596eb21fddbf08499668eaf1b9d547d47ec85520"
+        "jarHash": "sha256-850f1b7491263bf3d2430c4808965dd88838d2b773da8a50f93b0933cbc4fa93"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Desicinemas.cs3",
