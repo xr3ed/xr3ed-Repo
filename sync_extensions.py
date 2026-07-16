@@ -238,6 +238,9 @@ def _main():
     # Rename FreeReels and DracinSI to #Dracin prefix
     rename_to_dracin(repo_root)
 
+    # Rename DonghuaFilm and Donghuastream to #Donghua prefix (and remove backup from Donghuastream name)
+    rename_to_donghua(repo_root)
+
     # 8. Generate settings.gradle.kts
     # We dynamically include all folders with build.gradle.kts except ignored ones
     settings_content = """rootProject.name = "xr3ed"
@@ -421,6 +424,54 @@ def rename_to_dracin(repo_root):
                 print(f"[RENAME] Updated name in {item}/DracinSI.kt to #Dracin DracinSI")
             except Exception as e:
                 print(f"Error renaming name in {item}/DracinSI.kt: {e}")
+
+def rename_to_donghua(repo_root):
+    # DonghuaFilm
+    for item in ["DonghuaFilm", "DonghuaFilmBackup"]:
+        df_dir = os.path.join(repo_root, item)
+        if not os.path.exists(df_dir):
+            continue
+        
+        # Modify DonghuaFilm.kt and DonghuaFilmCosmetic.kt
+        for filename in ["DonghuaFilm.kt", "DonghuaFilmCosmetic.kt"]:
+            df_kt = os.path.join(df_dir, "src", "main", "kotlin", "com", "sad25kag", "donghuafilm", filename)
+            if os.path.exists(df_kt):
+                try:
+                    with open(df_kt, "r", encoding="utf-8") as f:
+                        code = f.read()
+                    
+                    # Regex matching DonghuaFilm with optional [Backup]
+                    name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(DonghuaFilm)(?:\s*\[Backup\])?\2')
+                    code = name_pattern.sub(r'\1\2#Donghua \3\2', code)
+                    
+                    with open(df_kt, "w", encoding="utf-8") as f:
+                        f.write(code)
+                    print(f"[RENAME] Updated name in {item}/{filename} to #Donghua DonghuaFilm")
+                except Exception as e:
+                    print(f"Error renaming name in {item}/{filename}: {e}")
+
+    # Donghuastream
+    for item in ["Donghuastream", "DonghuastreamBackup"]:
+        ds_dir = os.path.join(repo_root, item)
+        if not os.path.exists(ds_dir):
+            continue
+        
+        # Modify Donghuastream.kt
+        ds_kt = os.path.join(ds_dir, "src", "main", "kotlin", "com", "sad25kag", "Donghuastream", "Donghuastream.kt")
+        if os.path.exists(ds_kt):
+            try:
+                with open(ds_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                
+                # Regex matching Donghuastream with optional [Backup]
+                name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(Donghuastream)(?:\s*\[Backup\])?\2')
+                code = name_pattern.sub(r'\1\2#Donghua \3\2', code)
+                
+                with open(ds_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/Donghuastream.kt to #Donghua Donghuastream")
+            except Exception as e:
+                print(f"Error renaming name in {item}/Donghuastream.kt: {e}")
 
 if __name__ == "__main__":
     main()

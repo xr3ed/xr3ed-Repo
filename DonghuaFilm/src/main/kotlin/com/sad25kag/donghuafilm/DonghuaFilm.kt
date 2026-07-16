@@ -12,7 +12,7 @@ import java.util.Locale
 
 class DonghuaFilm : MainAPI() {
     override var mainUrl = "https://donghuafilm.com"
-    override var name = "DonghuaFilm"
+    override var name = "#Donghua DonghuaFilm"
     override val hasMainPage = true
     override val hasQuickSearch = true
     override val hasDownloadSupport = true

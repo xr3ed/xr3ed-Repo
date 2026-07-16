@@ -13,7 +13,7 @@ open class Donghuastream : MainAPI() {
     }
 
     override var mainUrl = "https://donghuastream.org"
-    override var name = "Donghuastream [Backup]"
+    override var name = "#Donghua Donghuastream"
     override val hasMainPage = true
     override val hasQuickSearch = true
     override var lang = "id"
