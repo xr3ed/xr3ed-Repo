@@ -455,28 +455,6 @@
         "fileHash": "sha256-e2fb6c0d3365c16ea59ea0a94d1f5e928ecdfd00ba59b8e9f66d882141f24e84"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CinefreakBackup.cs3",
-        "status": 1,
-        "version": 8,
-        "name": "CinefreakBackup",
-        "internalName": "CinefreakBackup",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Bangla/Hindi Movies/Series",
-        "fileSize": 68620,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "Anime"
-        ],
-        "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/cinefreak.png",
-        "apiVersion": 1,
-        "fileHash": "sha256-78d60258bca7562d3f8d95a35e304fcaee15d7a4b412367b86e9bdb7b9c590a4"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Cinemax21Provider.cs3",
         "status": 1,
         "version": 10,
@@ -3786,6 +3764,28 @@
         "jarFileSize": 270699,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-3498f579309dd648da5c305d8556de6a8cef2559165cea10d0f8b6527a60568c"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/CinefreakBackup.cs3",
+        "status": 1,
+        "version": 8,
+        "name": "CinefreakBackup",
+        "internalName": "CinefreakBackup",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Bangla/Hindi Movies/Series",
+        "fileSize": 68620,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Anime"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/sad25kag/TVVVV/refs/heads/main/Icons/cinefreak.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-78d60258bca7562d3f8d95a35e304fcaee15d7a4b412367b86e9bdb7b9c590a4"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
