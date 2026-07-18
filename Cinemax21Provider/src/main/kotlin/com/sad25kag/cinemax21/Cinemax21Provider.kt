@@ -46,6 +46,11 @@ open class Cinemax21Provider : TmdbProvider() {
 
     val wpRedisInterceptor by lazy { CloudflareKiller() }
 
+    private val apiHeaders = mapOf(
+        "User-Agent" to USER_AGENT,
+        "Accept" to "application/json",
+    )
+
     companion object {
         private const val tmdbAPI = "https://api.themoviedb.org/3"
         const val gdbot = "https://gdtot.pro"
@@ -135,30 +140,6 @@ open class Cinemax21Provider : TmdbProvider() {
         "$tmdbAPI/discover/tv?api_key=$apiKey&with_watch_providers=386|387&watch_region=US&sort_by=popularity.desc&first_air_date.gte=2020-01-01&without_genres=16" to "Peacock Series",
         "$tmdbAPI/discover/movie?api_key=$apiKey&with_watch_providers=386|387&watch_region=US&sort_by=popularity.desc&primary_release_date.gte=2020-01-01&without_genres=16" to "Peacock Movies",
 
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=28&sort_by=popularity.desc&without_genres=16" to "Action Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=12&sort_by=popularity.desc&without_genres=16" to "Adventure Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=35&sort_by=popularity.desc&without_genres=16" to "Comedy Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=80&sort_by=popularity.desc&without_genres=16" to "Crime Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=99&sort_by=popularity.desc&without_genres=16" to "Documentary Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=18&sort_by=popularity.desc&without_genres=16" to "Drama Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=14&sort_by=popularity.desc&without_genres=16" to "Fantasy Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=27&sort_by=popularity.desc&without_genres=16" to "Horror Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=9648&sort_by=popularity.desc&without_genres=16" to "Mystery Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=10749&sort_by=popularity.desc&without_genres=16" to "Romance Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=878&sort_by=popularity.desc&without_genres=16" to "Sci-Fi Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=53&sort_by=popularity.desc&without_genres=16" to "Thriller Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=10752&sort_by=popularity.desc&without_genres=16" to "War Movies",
-        "$tmdbAPI/discover/movie?api_key=$apiKey&with_genres=37&sort_by=popularity.desc&without_genres=16" to "Western Movies",
-
-        "$tmdbAPI/discover/tv?api_key=$apiKey&with_genres=10759&sort_by=popularity.desc&without_genres=16" to "Action & Adventure TV",
-        "$tmdbAPI/discover/tv?api_key=$apiKey&with_genres=35&sort_by=popularity.desc&without_genres=16" to "Comedy TV",
-        "$tmdbAPI/discover/tv?api_key=$apiKey&with_genres=80&sort_by=popularity.desc&without_genres=16" to "Crime TV",
-        "$tmdbAPI/discover/tv?api_key=$apiKey&with_genres=99&sort_by=popularity.desc&without_genres=16" to "Documentary TV",
-        "$tmdbAPI/discover/tv?api_key=$apiKey&with_genres=18&sort_by=popularity.desc&without_genres=16" to "Drama TV",
-        "$tmdbAPI/discover/tv?api_key=$apiKey&with_genres=10751&sort_by=popularity.desc&without_genres=16" to "Family TV",
-        "$tmdbAPI/discover/tv?api_key=$apiKey&with_genres=9648&sort_by=popularity.desc&without_genres=16" to "Mystery TV",
-        "$tmdbAPI/discover/tv?api_key=$apiKey&with_genres=10765&sort_by=popularity.desc&without_genres=16" to "Sci-Fi & Fantasy TV",
-        "$tmdbAPI/discover/tv?api_key=$apiKey&with_genres=10768&sort_by=popularity.desc&without_genres=16" to "War & Politics TV",
     )
 
     private fun getImageUrl(link: String?): String? {
@@ -264,7 +245,7 @@ open class Cinemax21Provider : TmdbProvider() {
         val type = if (request.data.contains("/movie", ignoreCase = true)) "movie" else "tv"
         val pageUrl = "${request.data}$adultQuery&page=$page"
 
-        val home = app.get(pageUrl)
+        val home = app.get(pageUrl, headers = apiHeaders)
             .parsedSafe<Results>()
             ?.results
             ?.mapNotNull { media -> media.toSearchResponse(type) }
@@ -300,7 +281,7 @@ open class Cinemax21Provider : TmdbProvider() {
 
     override suspend fun search(query: String): List<SearchResponse>? {
         val encodedQuery = URLEncoder.encode(query, "UTF-8")
-        return app.get("$tmdbAPI/search/multi?api_key=$apiKey&language=en-US&query=$encodedQuery&page=1&include_adult=${settingsForProvider.enableAdult}")
+        return app.get("$tmdbAPI/search/multi?api_key=$apiKey&language=en-US&query=$encodedQuery&page=1&include_adult=${settingsForProvider.enableAdult}", headers = apiHeaders)
             .parsedSafe<Results>()
             ?.results
             ?.mapNotNull { media -> media.toSearchResponse() }
@@ -331,7 +312,7 @@ open class Cinemax21Provider : TmdbProvider() {
         } else {
             "$tmdbAPI/tv/${data.id}?api_key=$apiKey&append_to_response=$append&include_video_language=id,en"
         }
-        val res = app.get(resUrl).parsedSafe<MediaDetail>()
+        val res = app.get(resUrl, headers = apiHeaders).parsedSafe<MediaDetail>()
             ?: throw ErrorLoadingException("Invalid Json Response")
 
         val title = res.title ?: res.name ?: return null
@@ -370,7 +351,7 @@ open class Cinemax21Provider : TmdbProvider() {
         return if (type == TvType.TvSeries) {
             val lastSeason = res.lastEpisodeToAir?.seasonNumber
             val episodes = res.seasons?.mapNotNull { season ->
-                app.get("$tmdbAPI/${data.type}/${data.id}/season/${season.seasonNumber}?api_key=$apiKey")
+                app.get("$tmdbAPI/${data.type}/${data.id}/season/${season.seasonNumber}?api_key=$apiKey", headers = apiHeaders)
                     .parsedSafe<MediaDetailEpisodes>()?.episodes?.map { eps ->
                         newEpisode(
                             data = LinkData(
