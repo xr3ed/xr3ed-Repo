@@ -499,31 +499,6 @@
         "fileHash": "sha256-7461defedc54efe1188a6a9732369b2b59185505f7e534c14a7aa5606d3fa6f2"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DailymotionProvider.cs3",
-        "status": 1,
-        "version": 12,
-        "name": "DailymotionProvider",
-        "internalName": "DailymotionProvider",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Dailymotion public video catalog with source-backed homepage, search, detail, and internal HLS playback resolver.",
-        "fileSize": 36236,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "tvTypes": [
-            "Movie",
-            "TvSeries",
-            "AsianDrama",
-            "Anime",
-            "AnimeMovie",
-            "Cartoon",
-            "Others"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dailymotion.com&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-e0e15fb7ec5bfa9044b4ca72ddb71494d0f9c44c88330f70e4f8c94716ca70ad"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaFilm.cs3",
         "status": 1,
         "version": 12,
@@ -3786,6 +3761,31 @@
         "jarFileSize": 270699,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-3498f579309dd648da5c305d8556de6a8cef2559165cea10d0f8b6527a60568c"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DailymotionProvider.cs3",
+        "status": 1,
+        "version": 12,
+        "name": "DailymotionProvider",
+        "internalName": "DailymotionProvider",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Dailymotion public video catalog with source-backed homepage, search, detail, and internal HLS playback resolver.",
+        "fileSize": 36236,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "AsianDrama",
+            "Anime",
+            "AnimeMovie",
+            "Cartoon",
+            "Others"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dailymotion.com&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-e0e15fb7ec5bfa9044b4ca72ddb71494d0f9c44c88330f70e4f8c94716ca70ad"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
