@@ -524,6 +524,28 @@
         "fileHash": "sha256-6ca430fb78857092bb5f626f388caa2562bbb653b942bebf22d0a057597435ad"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaFilm.cs3",
+        "status": 1,
+        "version": 13,
+        "name": "DonghuaFilm",
+        "internalName": "DonghuaFilm",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "DonghuaFilm - Nonton Donghua Gratis Sub Indonesia.",
+        "fileSize": 52765,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie",
+            "OVA"
+        ],
+        "iconUrl": "https://donghuafilm.com/favicon.ico",
+        "apiVersion": 1,
+        "fileHash": "sha256-d5e40da3d0d65fb63ddd5f7aea85839b76f2084c8f676b9dfac4757819171c96"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaID.cs3",
         "status": 1,
         "version": 15,
@@ -3764,28 +3786,6 @@
         "jarFileSize": 270699,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-3498f579309dd648da5c305d8556de6a8cef2559165cea10d0f8b6527a60568c"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaFilm.cs3",
-        "status": 1,
-        "version": 12,
-        "name": "DonghuaFilm",
-        "internalName": "DonghuaFilm",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "DonghuaFilm - Nonton Donghua Gratis Sub Indonesia.",
-        "fileSize": 52842,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Anime",
-            "AnimeMovie",
-            "OVA"
-        ],
-        "iconUrl": "https://donghuafilm.com/favicon.ico",
-        "apiVersion": 1,
-        "fileHash": "sha256-7de4f434bc4e419b884702410ebbe8df56d8e8dd3ec5c5b5c7476753dca3c438"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
