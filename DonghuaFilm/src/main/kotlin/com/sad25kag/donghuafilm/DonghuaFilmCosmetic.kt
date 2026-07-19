@@ -31,9 +31,16 @@ class DonghuaFilmCosmetic : MainAPI() {
     )
 
     override val mainPage = mainPageOf(
-        "anime/?order=update&status=&type=" to "Baru Rilis",
-        "anime/?order=update&status=completed&type=" to "Udah Selesai",
-        "anime/?order=popular&status=&type=" to "Terkenal",
+        "anime/?order=update&status=&type=" to "New Donghua",
+        "anime/?order=update&status=completed&type=" to "Completed",
+        "anime/?order=popular&status=&type=" to "Popular",
+        "genres/action/" to "Action",
+        "genres/adventure/" to "Adventure",
+        "genres/fanstasy/" to "Fantasy",
+        "genres/historical/" to "Historical",
+        "genres/martial-arts/" to "Martial Arts",
+        "genres/romance/" to "Romance",
+        "genres/sci-fi/" to "Sci-Fi",
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -62,21 +69,17 @@ class DonghuaFilmCosmetic : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit,
     ): Boolean = delegate.loadLinks(data, isCasting, subtitleCallback, callback)
-    }
 
     private fun buildPageUrl(path: String, page: Int): String {
-        val base = if (path.startsWith("http")) path else "$mainUrl/${path.trimStart('/')}"
-        if (page <= 1) return base
-
-        val clean = base.substringBefore("?").trimEnd('/')
-        val query = base.substringAfter("?", "")
-
-        return if (query.isNotBlank()) {
-            "$clean/page/$page/?$query"
-        } else {
-            "$clean/page/$page/"
+        val cleanPath = path.trim().trimStart('/')
+        val base = if (cleanPath.startsWith("http", true)) cleanPath.trimEnd('/')
+        else "$mainUrl/$cleanPath".trimEnd('/')
+        if (page <= 1) return if (base.contains("?")) base else "$base/"
+        return when {
+            base.contains("page=") -> base.replace(Regex("""page=\d+"""), "page=$page")
+            base.contains("?") -> "$base&page=$page"
+            else -> "$base/page/$page/"
         }
-    }
     }
 
     private fun Element.toCleanCard(): SearchResponse? {
