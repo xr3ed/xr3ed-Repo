@@ -49,7 +49,7 @@ w: file:///home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/build.gradle.
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml: note: compiling XML.
 note: including /usr/local/lib/android/sdk/platforms/android-36/android.jar.
 note: linking package 'com.sad25kag' using package ID 7f.
-note: merging archive /tmp/res12926081669589141589.zip.
+note: merging archive /tmp/res16452368180023257512.zip.
 note: merging 'layout/watch_sync_device' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml.
 note: merging 'layout/list_media_provider_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_media_provider_item.xml.
 note: merging 'layout/list_section_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_section_item.xml.
