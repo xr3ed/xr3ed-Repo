@@ -31,16 +31,16 @@ class DonghuaFilmCosmetic : MainAPI() {
     )
 
     override val mainPage = mainPageOf(
-        "anime/?order=update&status=&type=" to "New Donghua",
-        "anime/?order=update&status=completed&type=" to "Completed",
-        "anime/?order=popular&status=&type=" to "Popular",
-        "genres/action/" to "Action",
-        "genres/adventure/" to "Adventure",
-        "genres/fanstasy/" to "Fantasy",
-        "genres/historical/" to "Historical",
-        "genres/martial-arts/" to "Martial Arts",
-        "genres/romance/" to "Romance",
-        "genres/sci-fi/" to "Sci-Fi",
+        "anime/?order=update&status=&type=" to "Baru Rilis",
+        "anime/?order=update&status=completed&type=" to "Udah Selesai",
+        "anime/?order=popular&status=&type=" to "Terkenal",
+        "genres/action/" to 
+        "genres/adventure/" to 
+        "genres/fanstasy/" to 
+        "genres/historical/" to 
+        "genres/martial-arts/" to 
+        "genres/romance/" to 
+        "genres/sci-fi/" to 
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
