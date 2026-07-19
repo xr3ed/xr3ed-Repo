@@ -231,6 +231,8 @@ class DonghuaFilm : MainAPI() {
                 )
             }
         )
+    }
+
     private fun buildPageUrl(path: String, page: Int): String {
         val base = if (path.startsWith("http")) path else "$mainUrl/${path.trimStart('/')}"
         if (page <= 1) return base

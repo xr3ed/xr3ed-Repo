@@ -62,6 +62,7 @@ class DonghuaFilmCosmetic : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit,
     ): Boolean = delegate.loadLinks(data, isCasting, subtitleCallback, callback)
+    }
 
     private fun buildPageUrl(path: String, page: Int): String {
         val base = if (path.startsWith("http")) path else "$mainUrl/${path.trimStart('/')}"
