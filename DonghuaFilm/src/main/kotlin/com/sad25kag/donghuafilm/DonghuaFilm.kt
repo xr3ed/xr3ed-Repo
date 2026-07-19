@@ -234,16 +234,18 @@ class DonghuaFilm : MainAPI() {
     }
 
     private fun buildPageUrl(path: String, page: Int): String {
-        val cleanPath = path.trim().trimStart('/')
-        if (cleanPath.isBlank()) return if (page <= 1) "$mainUrl/" else "$mainUrl/page/$page/"
-        val base = if (cleanPath.startsWith("http", true)) cleanPath.trimEnd('/')
-        else "$mainUrl/$cleanPath".trimEnd('/')
-        if (page <= 1) return if (base.contains("?")) base else "$base/"
-        return when {
-            base.contains("page=") -> base.replace(Regex("""page=\d+"""), "page=$page")
-            base.contains("?") -> "$base&page=$page"
-            else -> "$base/page/$page/"
+        val base = if (path.startsWith("http")) path else "$mainUrl/${path.trimStart('/')}"
+        if (page <= 1) return base
+
+        val clean = base.substringBefore("?").trimEnd('/')
+        val query = base.substringAfter("?", "")
+
+        return if (query.isNotBlank()) {
+            "$clean/page/$page/?$query"
+        } else {
+            "$clean/page/$page/"
         }
+    }
     }
 
     private fun parseCards(document: Document, pagePath: String = ""): List<SearchResponse> {

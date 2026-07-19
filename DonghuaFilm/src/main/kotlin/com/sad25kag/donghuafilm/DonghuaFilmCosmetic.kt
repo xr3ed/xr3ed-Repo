@@ -34,13 +34,6 @@ class DonghuaFilmCosmetic : MainAPI() {
         "anime/?order=update&status=&type=" to "Baru Rilis",
         "anime/?order=update&status=completed&type=" to "Udah Selesai",
         "anime/?order=popular&status=&type=" to "Terkenal",
-        "genres/action/" to 
-        "genres/adventure/" to 
-        "genres/fanstasy/" to 
-        "genres/historical/" to 
-        "genres/martial-arts/" to 
-        "genres/romance/" to 
-        "genres/sci-fi/" to 
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -71,15 +64,18 @@ class DonghuaFilmCosmetic : MainAPI() {
     ): Boolean = delegate.loadLinks(data, isCasting, subtitleCallback, callback)
 
     private fun buildPageUrl(path: String, page: Int): String {
-        val cleanPath = path.trim().trimStart('/')
-        val base = if (cleanPath.startsWith("http", true)) cleanPath.trimEnd('/')
-        else "$mainUrl/$cleanPath".trimEnd('/')
-        if (page <= 1) return if (base.contains("?")) base else "$base/"
-        return when {
-            base.contains("page=") -> base.replace(Regex("""page=\d+"""), "page=$page")
-            base.contains("?") -> "$base&page=$page"
-            else -> "$base/page/$page/"
+        val base = if (path.startsWith("http")) path else "$mainUrl/${path.trimStart('/')}"
+        if (page <= 1) return base
+
+        val clean = base.substringBefore("?").trimEnd('/')
+        val query = base.substringAfter("?", "")
+
+        return if (query.isNotBlank()) {
+            "$clean/page/$page/?$query"
+        } else {
+            "$clean/page/$page/"
         }
+    }
     }
 
     private fun Element.toCleanCard(): SearchResponse? {
