@@ -533,7 +533,7 @@
             "sad25kag"
         ],
         "description": "DonghuaFilm - Nonton Donghua Gratis Sub Indonesia.",
-        "fileSize": 52733,
+        "fileSize": 52772,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -543,7 +543,7 @@
         ],
         "iconUrl": "https://donghuafilm.com/favicon.ico",
         "apiVersion": 1,
-        "fileHash": "sha256-e4d49897dabd3efa6d4893e59bc3ae56327ea81af4cb4a585785e2833c1e764f"
+        "fileHash": "sha256-b0aa316fce5e0972fd10389aa37db42e68f1ac9182d9b2898ee00d682b6bc9f0"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaID.cs3",
