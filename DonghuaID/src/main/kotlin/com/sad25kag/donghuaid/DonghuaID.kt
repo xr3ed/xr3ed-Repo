@@ -47,9 +47,9 @@ class DonghuaID : MainAPI() {
 
     override val mainPage = mainPageOf(
         "$mainUrl/" to "Latest Release",
-        "$mainUrl/anime/?status=ongoing&type=&sub=&order=&page={page}" to "Ongoing",
-        "$mainUrl/anime/?status=completed&type=&sub=&order=&page={page}" to "Completed",
-        "$mainUrl/movie/?page={page}" to "Movie",
+        "$mainUrl/anime/page/{page}/?status=ongoing&type=&sub=&order=" to "Ongoing",
+        "$mainUrl/anime/page/{page}/?status=completed&type=&sub=&order=" to "Completed",
+        "$mainUrl/movie/page/{page}/" to "Movie",
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -338,22 +338,24 @@ class DonghuaID : MainAPI() {
     }
 
     private fun buildPagedUrl(rawUrl: String, page: Int): String {
-        if (rawUrl.contains("{page}")) {
-            return if (page <= 1) {
-                rawUrl
-                    .replace("/page/{page}/", "/")
-                    .replace("/page/{page}", "/")
-                    .replace("page={page}", "page=1")
-            } else {
-                rawUrl.replace("{page}", page.toString())
-            }
+        if (page <= 1) {
+            return rawUrl.replace("/page/{page}/", "/")
+                .replace("/page/{page}", "/")
+                .replace("{page}", "1")
         }
-        if (page <= 1) return rawUrl
-        val clean = rawUrl.trimEnd('/')
-        return when {
-            clean.contains("page=") -> clean.replace(Regex("""page=\d+"""), "page=$page")
-            clean.contains("?") -> "$clean&page=$page"
-            else -> "$clean/page/$page/"
+
+        if (rawUrl.contains("{page}")) {
+            return rawUrl.replace("{page}", page.toString())
+        }
+
+        val parts = rawUrl.split("?", limit = 2)
+        val path = parts[0].removeSuffix("/")
+        val query = parts.getOrNull(1)
+
+        return if (query != null) {
+            "$path/page/$page/?$query"
+        } else {
+            "$path/page/$page/"
         }
     }
 
