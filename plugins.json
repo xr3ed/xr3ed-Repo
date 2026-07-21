@@ -546,28 +546,6 @@
         "fileHash": "sha256-b0aa316fce5e0972fd10389aa37db42e68f1ac9182d9b2898ee00d682b6bc9f0"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaID.cs3",
-        "status": 1,
-        "version": 18,
-        "name": "DonghuaID",
-        "internalName": "DonghuaID",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "DonghuaID - Download dan streaming donghua subtitle Indonesia",
-        "fileSize": 58783,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "Anime",
-            "AnimeMovie",
-            "OVA"
-        ],
-        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://donghuaid.live/&size=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-48622615e39bf9f62045b919d0c0ef59c98a38257aa037a72c47073219ba22ba"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuastreamBackup.cs3",
         "status": 1,
         "version": 15,
@@ -3786,6 +3764,28 @@
         "jarFileSize": 270699,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-3498f579309dd648da5c305d8556de6a8cef2559165cea10d0f8b6527a60568c"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuaID.cs3",
+        "status": 1,
+        "version": 18,
+        "name": "DonghuaID",
+        "internalName": "DonghuaID",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "DonghuaID - Download dan streaming donghua subtitle Indonesia",
+        "fileSize": 58783,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "Anime",
+            "AnimeMovie",
+            "OVA"
+        ],
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://donghuaid.live/&size=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-48622615e39bf9f62045b919d0c0ef59c98a38257aa037a72c47073219ba22ba"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
