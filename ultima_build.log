@@ -39,7 +39,7 @@ Starting a Gradle Daemon (subsequent builds will be faster)
 /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml: note: compiling XML.
 note: including /usr/local/lib/android/sdk/platforms/android-36/android.jar.
 note: linking package 'com.sad25kag' using package ID 7f.
-note: merging archive /tmp/res5889738013080410909.zip.
+note: merging archive /tmp/res14931066837875637491.zip.
 note: merging 'layout/watch_sync_device' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/watch_sync_device.xml.
 note: merging 'layout/list_media_provider_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_media_provider_item.xml.
 note: merging 'layout/list_section_item' from compiled file /home/runner/work/xr3ed-Repo/xr3ed-Repo/src/UltimaBackup/src/main/res/layout/list_section_item.xml.
@@ -147,6 +147,6 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 31s
+BUILD SUCCESSFUL in 39s
 12 actionable tasks: 12 executed
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.1/userguide/configuration_cache_enabling.html
