@@ -591,14 +591,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Donghub.cs3",
         "status": 1,
-        "version": 14,
+        "version": 15,
         "name": "Donghub",
         "internalName": "Donghub",
         "authors": [
             "sad25kag"
         ],
         "description": "Donghub untuk donghua dan anime subtitle Indonesia.",
-        "fileSize": 36533,
+        "fileSize": 36538,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -608,7 +608,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://donghub.vip&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-1bbedd2563082cbad69644ab443a72eb1a9f6cbd7e9806c79fd28334aa8bffb9"
+        "fileHash": "sha256-8c1b78462e170dc5536873fada63b1084cebe491a9f16b88ff596397bab0604f"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DracinSI.cs3",
@@ -1965,14 +1965,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AllMovieLandProvider.cs3",
         "status": 1,
-        "version": 22,
+        "version": 23,
         "name": "AllMovieLandProvider",
         "internalName": "AllMovieLandProvider",
         "authors": [
             "Phisher98"
         ],
         "description": "Indian MultiLanguage Provider (Mostly Hindi)",
-        "fileSize": 36817,
+        "fileSize": 57618,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "hi",
         "tvTypes": [
@@ -1982,10 +1982,10 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/LikDev-256/likdev256-tamil-providers/master/AllMovieLandProvider/icon.png",
         "apiVersion": 1,
-        "fileHash": "sha256-e21dbe950eefb6bafbcb4c96d3e6854a0521d2682f22e8fab92a960f58df70ca",
-        "jarFileSize": 155934,
+        "fileHash": "sha256-938e5d6b1a41f3f625384a9cd559811b63528da0c3cc26c8adca2efbf0cc65c9",
+        "jarFileSize": 297020,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AllMovieLandProvider.jar",
-        "jarHash": "sha256-0247bd84b721b619d3f62fb7db0a51c107fe74ff2af3bd67055251cf3e88957d"
+        "jarHash": "sha256-c75e73bd21d30fa6a2edff462c91c3884e475c16b866261a52c2cc1b98a7f609"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AllWish.cs3",
@@ -3712,14 +3712,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Ultima.cs3",
         "status": 2,
-        "version": 57,
+        "version": 58,
         "name": "Ultima",
         "internalName": "Ultima",
         "authors": [
             "RowdyRushya,Phisher98"
         ],
         "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
-        "fileSize": 170661,
+        "fileSize": 171562,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -3727,7 +3727,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
         "apiVersion": 1,
-        "fileHash": "sha256-80c1dd702004bc0bb4448be795edf29b537b1a2032996418188b082ed5a5be43"
+        "fileHash": "sha256-41d669011c58bcc9875913302cb09e1516c253b64df4a5628dbb8dc20d2a39e8"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/XDMovies.cs3",
