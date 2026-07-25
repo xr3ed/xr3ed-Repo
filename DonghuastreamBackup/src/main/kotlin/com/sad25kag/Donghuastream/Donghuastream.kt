@@ -24,11 +24,6 @@ open class Donghuastream : MainAPI() {
         "$mainUrl/anime/?status=&type=&order=update&page={page}" to "Update Terbaru",
         "$mainUrl/anime/?status=completed&type=&order=update&page={page}" to "Completed",
         "$mainUrl/anime/?status=&type=special&order=update&page={page}" to "Special",
-        "$mainUrl/genres/adventure/page/{page}/" to "Adventure",
-        "$mainUrl/genres/another-world/page/{page}/" to "Another World",
-        "$mainUrl/genres/reincarnated/page/{page}/" to "Reincarnated",
-        "$mainUrl/genres/romance/page/{page}/" to "Romance",
-        "$mainUrl/genres/swords-fight/page/{page}/" to "Sword Fight"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
