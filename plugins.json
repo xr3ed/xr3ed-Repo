@@ -611,28 +611,6 @@
         "fileHash": "sha256-47131c0c37716bdcfc0d422ba7865df6caeadf082d336600f81e66a56fb9ce8c"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DracinSI.cs3",
-        "status": 1,
-        "version": 3,
-        "name": "DracinSI",
-        "internalName": "DracinSI",
-        "authors": [
-            "sad25kag"
-        ],
-        "description": "Provider CloudStream untuk Dracin Sub Indo - drama China subtitle Indonesia.",
-        "fileSize": 25154,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
-        "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
-        ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=dramacinasubindo.com&sz=%size%",
-        "apiVersion": 1,
-        "fileHash": "sha256-86c80434e9d3bef9923f8c79be2ffb43a096f65180b6d0a91844b72248b8b3da"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Drakor.cs3",
         "status": 1,
         "version": 8,
@@ -3801,6 +3779,28 @@
         "jarFileSize": 270701,
         "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.jar",
         "jarHash": "sha256-3c3a4735e2c26ebf6761cd1f95bea30d543e304424028cd334520131d3a0f6c8"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DracinSI.cs3",
+        "status": 1,
+        "version": 3,
+        "name": "DracinSI",
+        "internalName": "DracinSI",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Provider CloudStream untuk Dracin Sub Indo - drama China subtitle Indonesia.",
+        "fileSize": 25154,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=dramacinasubindo.com&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-86c80434e9d3bef9923f8c79be2ffb43a096f65180b6d0a91844b72248b8b3da"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
