@@ -611,6 +611,28 @@
         "fileHash": "sha256-47131c0c37716bdcfc0d422ba7865df6caeadf082d336600f81e66a56fb9ce8c"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DracinSI.cs3",
+        "status": 1,
+        "version": 4,
+        "name": "DracinSI",
+        "internalName": "DracinSI",
+        "authors": [
+            "sad25kag"
+        ],
+        "description": "Provider CloudStream untuk Dracin Sub Indo - drama China subtitle Indonesia.",
+        "fileSize": 25154,
+        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
+        "language": "id",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=dramacinasubindo.com&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-84c5350379353590207e3f3c36cb2bbafb4b95262b17686ad6d4687214173457"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Drakor.cs3",
         "status": 1,
         "version": 8,
@@ -636,14 +658,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DrakoridProvider.cs3",
         "status": 1,
-        "version": 13,
+        "version": 14,
         "name": "DrakoridProvider",
         "internalName": "DrakoridProvider",
         "authors": [
             "sad25kag"
         ],
         "description": "Drakor.id - drama Asia subtitle Indonesia.",
-        "fileSize": 41801,
+        "fileSize": 41768,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -653,7 +675,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://drakorid.cam&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-2251dfdc89e802b2a17a8d071c2b604cdd6772a8266c645944cefa40c8353d39"
+        "fileHash": "sha256-f2914ffa59d4e591c090435e5b22b3fb885e93c9ffc699be7131955f43d16d8e"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DrakorKita.cs3",
@@ -2663,6 +2685,30 @@
         "fileHash": "sha256-b27a093c5c68c59f6ecf0ef734656a6f4861bf1080c67e5fb3fb3ce790d9d6e3"
     },
     {
+        "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Hdmovie2.cs3",
+        "status": 1,
+        "version": 1,
+        "name": "Hdmovie2",
+        "internalName": "Hdmovie2",
+        "authors": [
+            "Phisher98"
+        ],
+        "description": "Hdmovie2",
+        "fileSize": 42518,
+        "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+        "language": "hi",
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/hdmovie2.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-bca11656fa004048e7ef2d3a15eb9ccd87382cd4ddd8881008087769bdfdefbb",
+        "jarFileSize": 179205,
+        "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Hdmovie2.jar",
+        "jarHash": "sha256-199e56bdcea44e8e1bb565adf3b6cfd1e71b1d6b2d396a105a325d671caaf67a"
+    },
+    {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Hindmoviez.cs3",
         "status": 1,
         "version": 13,
@@ -2986,30 +3032,6 @@
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/moviebox.png",
         "apiVersion": 1,
         "fileHash": "sha256-43e4593be338e8c1ebe10ab9043e19cb2c9b79e64dea2c40b5e38d6f84a344e9"
-    },
-    {
-        "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Movierulzhd.cs3",
-        "status": 1,
-        "version": 155,
-        "name": "Movierulzhd",
-        "internalName": "Movierulzhd",
-        "authors": [
-            "Phisher98,hexated"
-        ],
-        "description": "Includes: Hdmovie2,hdmovie6",
-        "fileSize": 59244,
-        "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
-        "language": "hi",
-        "tvTypes": [
-            "TvSeries",
-            "Movie"
-        ],
-        "iconUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/refs/heads/master/Movierulzhd/faviconV2.png",
-        "apiVersion": 1,
-        "fileHash": "sha256-622d5b579857d19541e368dc20147f525c30c904c980a46215ee3470e0cb806d",
-        "jarFileSize": 303847,
-        "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Movierulzhd.jar",
-        "jarHash": "sha256-9962f40d3c14e87f0b0a1cdb021263b84e1fd84152919d9802c20bb8796da439"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Movies4u.cs3",
@@ -3366,7 +3388,7 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/StreamPlay.cs3",
         "status": 1,
-        "version": 654,
+        "version": 656,
         "name": "StreamPlay",
         "internalName": "StreamPlay",
         "authors": [
@@ -3374,7 +3396,7 @@
             "Hexated"
         ],
         "description": "#1 best extention based on MultiAPI",
-        "fileSize": 967243,
+        "fileSize": 1000740,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -3387,7 +3409,7 @@
         ],
         "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
         "apiVersion": 1,
-        "fileHash": "sha256-c9dddbd935d713aa05264aeb6b004ffcabc122c99ba6b237e5296b927114a1dc"
+        "fileHash": "sha256-c451f5d9aeba261c3ad2d2703596d27deaf11ac757685026caa8635d5b8216a9"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/StremioAddon.cs3",
@@ -3781,26 +3803,28 @@
         "jarHash": "sha256-3c3a4735e2c26ebf6761cd1f95bea30d543e304424028cd334520131d3a0f6c8"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DracinSI.cs3",
+        "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Movierulzhd.cs3",
         "status": 1,
-        "version": 3,
-        "name": "DracinSI",
-        "internalName": "DracinSI",
+        "version": 155,
+        "name": "Movierulzhd",
+        "internalName": "Movierulzhd",
         "authors": [
-            "sad25kag"
+            "Phisher98,hexated"
         ],
-        "description": "Provider CloudStream untuk Dracin Sub Indo - drama China subtitle Indonesia.",
-        "fileSize": 25154,
-        "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
-        "language": "id",
+        "description": "Includes: Hdmovie2,hdmovie6",
+        "fileSize": 59244,
+        "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+        "language": "hi",
         "tvTypes": [
-            "AsianDrama",
             "TvSeries",
             "Movie"
         ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=dramacinasubindo.com&sz=%size%",
+        "iconUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/refs/heads/master/Movierulzhd/faviconV2.png",
         "apiVersion": 1,
-        "fileHash": "sha256-86c80434e9d3bef9923f8c79be2ffb43a096f65180b6d0a91844b72248b8b3da"
+        "fileHash": "sha256-622d5b579857d19541e368dc20147f525c30c904c980a46215ee3470e0cb806d",
+        "jarFileSize": 303847,
+        "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Movierulzhd.jar",
+        "jarHash": "sha256-9962f40d3c14e87f0b0a1cdb021263b84e1fd84152919d9802c20bb8796da439"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/BetbetLiveTV.cs3",
