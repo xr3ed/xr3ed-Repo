@@ -102,6 +102,14 @@ def _main():
             if res_pull.returncode == 0:
                 phisher_success = True
 
+    if phisher_success:
+        commit_res = run_cmd(["git", "rev-parse", "HEAD"], cwd=phisher_dir)
+        if commit_res.returncode == 0:
+            phisher_commit = commit_res.stdout.strip()
+            with open(os.path.join(repo_root, "phisher_commit.txt"), "w", encoding="utf-8") as f:
+                f.write(phisher_commit + "\n")
+            print(f"Recorded Phisher commit: {phisher_commit}")
+
     ignored_folders = {".git", ".github", ".vscode", "gradle", "temp_repos", "buildSrc", "Miro-Temp", "Phisher-Temp", "_patches", "builds"}
 
     # Define get_plugins

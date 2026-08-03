@@ -48,7 +48,7 @@ jobs:
           git config --local user.name "GitHub Actions"
           
           # Get list of changed plugins before staging
-          changed_plugins=$(git status --porcelain | awk '{print $2}' | cut -d'/' -f1 | grep -v -E "^\." | grep -v -E "^(sync_extensions\.py|phisher_plugins\.txt|build\.gradle\.kts|settings\.gradle\.kts|gradle\.properties|gradlew|gradlew\.bat|repo\.json|README\.md)$" | sort -u | tr '\n' ',' | sed 's/,$//')
+          changed_plugins=$(git status --porcelain | awk '{print $2}' | cut -d'/' -f1 | grep -v -E "^\." | grep -v -E "^(sync_extensions\.py|phisher_plugins\.txt|phisher_commit\.txt|build\.gradle\.kts|settings\.gradle\.kts|gradle\.properties|gradlew|gradlew\.bat|repo\.json|README\.md)$" | sort -u | tr '\n' ',' | sed 's/,$//')
           
           git add -A
           
