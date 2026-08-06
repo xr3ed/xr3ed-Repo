@@ -30,7 +30,7 @@
             "sad25kag"
         ],
         "description": "Nonton & Download Anime Subtitle Indonesia",
-        "fileSize": 73264,
+        "fileSize": 73271,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -40,7 +40,7 @@
         ],
         "iconUrl": "https://cloudstream.zvlz.my.id/icon/alqanime.png",
         "apiVersion": 1,
-        "fileHash": "sha256-9eb1014f29387d50b375ed813f13e3d0eee671fbde9b5fbba556768f1c2ba42d"
+        "fileHash": "sha256-4f03768a8678f451114c3f7522e19168c4119de2b0822d455c832d8bfa6e68d5"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnichinMoe.cs3",
@@ -291,7 +291,7 @@
             "sad25kag"
         ],
         "description": "Animexin — Streaming Donghua Subtitle Indonesia",
-        "fileSize": 42818,
+        "fileSize": 42819,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -301,7 +301,7 @@
         ],
         "iconUrl": "https://animexin.dev/wp-content/uploads/2020/06/animexinv1.png",
         "apiVersion": 1,
-        "fileHash": "sha256-57be5f65eff129425b3c714457e57dc8d552ed1effa28c2e45f10e84694e2597"
+        "fileHash": "sha256-d474bf03fc118e0520fc153672f3fe7260c42720cd6228f2792cf0a146306134"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AninekoBackup.cs3",
@@ -555,7 +555,7 @@
             "sad25kag"
         ],
         "description": "DonghuaID - Download dan streaming donghua subtitle Indonesia",
-        "fileSize": 58459,
+        "fileSize": 58485,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -565,7 +565,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://donghuaid.live/&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-1b564544eb791357b82ae90b62130c55758beb94830bc1a2e7887a4dbbff8201"
+        "fileHash": "sha256-648f89aec1cfebb468ffe097aeb6ca648c931676cf41df16709ce89cd3abf080"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DonghuastreamBackup.cs3",
@@ -642,7 +642,7 @@
             "sad25kag"
         ],
         "description": "Drakor — Streaming Drama Korean, Movie and TV Series",
-        "fileSize": 236522,
+        "fileSize": 236519,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -653,7 +653,7 @@
         ],
         "iconUrl": "https://klikxxi.me/wp-content/uploads/2024/02/cropped-site-icon.png",
         "apiVersion": 1,
-        "fileHash": "sha256-d1b658748eccd737b4d1a10eb71114cd02efb09b4f714c13e89d4c448bc726df"
+        "fileHash": "sha256-3f916153781e975e21e26342f5cc531291044e22b6e5bb4673f837cee5a5f591"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/DrakoridProvider.cs3",
@@ -1536,7 +1536,7 @@
             "sad25kag"
         ],
         "description": "Oppadrama",
-        "fileSize": 21703,
+        "fileSize": 21702,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1546,7 +1546,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://45.11.57.192&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-57f5844160636965531c0e623ac8d0a51d9a9ed9c1ecd13bf044d2135a94d0a7"
+        "fileHash": "sha256-be2c096d6563e36753f2f20bbe172846616858491f335f057d1fbd45134a5cf2"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/OtakudesuProvider.cs3",
@@ -1688,7 +1688,7 @@
             "sad25kag"
         ],
         "description": "Samehadaku provider with split structure, official-domain fallback, website-matched categories, resilient detail parser, and playback resolver.",
-        "fileSize": 60408,
+        "fileSize": 60421,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1698,7 +1698,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=samehadaku.care&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-6b7456c81f0cdfd4c6032650e18e2d2deeabd93b57fc1a310bd65603d2cc856d"
+        "fileHash": "sha256-ed60b4009221b7f0e7544ddd2d02f41f7885b206b56627ef5cb25faf7721a751"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/SarangFilm21.cs3",
@@ -1908,7 +1908,7 @@
         "authors": [
             "sad25kag"
         ],
-        "fileSize": 30878,
+        "fileSize": 30882,
         "repositoryUrl": "https://github.com/xr3ed/xr3ed-Repo",
         "language": "id",
         "tvTypes": [
@@ -1918,7 +1918,7 @@
         ],
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ylnime.com&size=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-07f9d6715a9c971f4adcf2961978b05b71ee32e1d26740c37eb71c41eb8df89b"
+        "fileHash": "sha256-7eebcb768fd60c196e984a6ffcaec1fe8e3317c5935b987c3ae96aa474f80098"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/YouTube.cs3",
