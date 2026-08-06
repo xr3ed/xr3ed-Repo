@@ -249,6 +249,12 @@ def _main():
     # Rename DonghuaFilm and Donghuastream to #Donghua prefix (and remove backup from Donghuastream name)
     rename_to_donghua(repo_root)
 
+    # Rename Alqanime, Animexin, Samehadaku, and YLNime to #anime prefix
+    rename_to_anime(repo_root)
+
+    # Rename Oppadrama and Drakor to #Drakor prefix
+    rename_to_drakor(repo_root)
+
     # 8. Generate settings.gradle.kts
     # We dynamically include all folders with build.gradle.kts except ignored ones
     settings_content = """rootProject.name = "xr3ed"
@@ -480,6 +486,134 @@ def rename_to_donghua(repo_root):
                 print(f"[RENAME] Updated name in {item}/Donghuastream.kt to #Donghua Donghuastream")
             except Exception as e:
                 print(f"Error renaming name in {item}/Donghuastream.kt: {e}")
+
+    # Animexin (masuk donghua)
+    for item in ["AnimexinProvider", "AnimexinProviderBackup"]:
+        dir_path = os.path.join(repo_root, item)
+        if not os.path.exists(dir_path):
+            continue
+        file_kt = os.path.join(dir_path, "src", "main", "kotlin", "com", "sad25kag", "Animexin", "Animexin.kt")
+        if os.path.exists(file_kt):
+            try:
+                with open(file_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(Animexin)(?:\s*\[Backup\])?\2')
+                code = name_pattern.sub(r'\1\2#Donghua \3\2', code)
+                with open(file_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/Animexin.kt to #Donghua Animexin")
+            except Exception as e:
+                print(f"Error renaming name in {item}/Animexin.kt: {e}")
+
+    # DonghuaID
+    for item in ["DonghuaID", "DonghuaIDBackup"]:
+        dir_path = os.path.join(repo_root, item)
+        if not os.path.exists(dir_path):
+            continue
+        file_kt = os.path.join(dir_path, "src", "main", "kotlin", "com", "sad25kag", "donghuaid", "DonghuaID.kt")
+        if os.path.exists(file_kt):
+            try:
+                with open(file_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(DonghuaID)(?:\s*\[Backup\])?\2')
+                code = name_pattern.sub(r'\1\2#Donghua \3\2', code)
+                with open(file_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/DonghuaID.kt to #Donghua DonghuaID")
+            except Exception as e:
+                print(f"Error renaming name in {item}/DonghuaID.kt: {e}")
+
+def rename_to_anime(repo_root):
+    # Alqanime
+    for item in ["Alqanime", "AlqanimeBackup"]:
+        dir_path = os.path.join(repo_root, item)
+        if not os.path.exists(dir_path):
+            continue
+        file_kt = os.path.join(dir_path, "src", "main", "kotlin", "com", "sad25kag", "alqanime", "Alqanime.kt")
+        if os.path.exists(file_kt):
+            try:
+                with open(file_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(Alqanime)(?:\s*\[Backup\])?\2')
+                code = name_pattern.sub(r'\1\2#Anime \3\2', code)
+                with open(file_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/Alqanime.kt to #Anime Alqanime")
+            except Exception as e:
+                print(f"Error renaming name in {item}/Alqanime.kt: {e}")
+
+    # Samehadaku
+    for item in ["Samehadaku", "SamehadakuBackup"]:
+        dir_path = os.path.join(repo_root, item)
+        if not os.path.exists(dir_path):
+            continue
+        file_kt = os.path.join(dir_path, "src", "main", "kotlin", "com", "samehadaku", "SamehadakuProvider.kt")
+        if os.path.exists(file_kt):
+            try:
+                with open(file_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(Samehadaku)(?:\s*\[Backup\])?\2')
+                code = name_pattern.sub(r'\1\2#Anime \3\2', code)
+                with open(file_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/SamehadakuProvider.kt to #Anime Samehadaku")
+            except Exception as e:
+                print(f"Error renaming name in {item}/SamehadakuProvider.kt: {e}")
+
+    # YLNime
+    for item in ["YLNime", "YLNimeBackup"]:
+        dir_path = os.path.join(repo_root, item)
+        if not os.path.exists(dir_path):
+            continue
+        file_kt = os.path.join(dir_path, "src", "main", "kotlin", "com", "sad25kag", "ylnime", "YLNime.kt")
+        if os.path.exists(file_kt):
+            try:
+                with open(file_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(YLNime)(?:\s*\[Backup\])?\2')
+                code = name_pattern.sub(r'\1\2#Anime \3\2', code)
+                with open(file_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/YLNime.kt to #Anime YLNime")
+            except Exception as e:
+                print(f"Error renaming name in {item}/YLNime.kt: {e}")
+
+def rename_to_drakor(repo_root):
+    # Oppadrama
+    for item in ["Oppadrama", "OppadramaBackup"]:
+        dir_path = os.path.join(repo_root, item)
+        if not os.path.exists(dir_path):
+            continue
+        file_kt = os.path.join(dir_path, "src", "main", "kotlin", "com", "oppadrama", "Oppadrama.kt")
+        if os.path.exists(file_kt):
+            try:
+                with open(file_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(Oppadrama)(?:\s*\[Backup\])?\2')
+                code = name_pattern.sub(r'\1\2#Drakor \3\2', code)
+                with open(file_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/Oppadrama.kt to #Drakor Oppadrama")
+            except Exception as e:
+                print(f"Error renaming name in {item}/Oppadrama.kt: {e}")
+
+    # Drakor
+    for item in ["Drakor", "DrakorBackup"]:
+        dir_path = os.path.join(repo_root, item)
+        if not os.path.exists(dir_path):
+            continue
+        file_kt = os.path.join(dir_path, "src", "main", "kotlin", "com", "sad25kag", "drakor", "DrakorProvider.kt")
+        if os.path.exists(file_kt):
+            try:
+                with open(file_kt, "r", encoding="utf-8") as f:
+                    code = f.read()
+                name_pattern = re.compile(r'(override\s+(?:var|val)\s+name\s*(?::\s*String)?\s*=\s*)(["\'])(Drakor)(?:\s*\[Backup\])?\2')
+                code = name_pattern.sub(r'\1\2#Drakor \3\2', code)
+                with open(file_kt, "w", encoding="utf-8") as f:
+                    f.write(code)
+                print(f"[RENAME] Updated name in {item}/DrakorProvider.kt to #Drakor Drakor")
+            except Exception as e:
+                print(f"Error renaming name in {item}/DrakorProvider.kt: {e}")
 
 if __name__ == "__main__":
     main()
