@@ -27,7 +27,7 @@ import com.samehadaku.SamehadakuUtils.originOf
 
 class SamehadakuProvider : MainAPI() {
     override var mainUrl = SamehadakuSeeds.MAIN_URL
-    override var name = "Samehadaku"
+    override var name = "#Anime Samehadaku"
     override val hasMainPage = true
     override var lang = "id"
     override val hasDownloadSupport = true

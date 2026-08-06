@@ -17,7 +17,7 @@ import com.lagradost.cloudstream3.toNewSearchResponseList
 
 class Alqanime : MainAPI() {
     override var mainUrl = "https://alqanime.net".trimEnd('/')
-    override var name = "Alqanime"
+    override var name = "#Anime Alqanime"
     override val hasMainPage = true
     override var lang = "id"
     override val hasDownloadSupport = true

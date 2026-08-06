@@ -18,7 +18,7 @@ import java.net.URLEncoder
 
 class YLNime : MainAPI() {
     override var mainUrl = "https://ylnime.com"
-    override var name = "YLNime"
+    override var name = "#Anime YLNime"
     override var lang = "id"
     override val hasMainPage = true
     override val hasQuickSearch = true

@@ -31,7 +31,7 @@ import java.util.Locale
 
 class DonghuaID : MainAPI() {
     override var mainUrl = "https://donghuaid.live"
-    override var name = "DonghuaID"
+    override var name = "#Donghua DonghuaID"
     override val hasMainPage = true
     override val hasQuickSearch = true
     override val hasDownloadSupport = true

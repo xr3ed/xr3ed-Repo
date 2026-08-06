@@ -32,7 +32,7 @@ import com.lagradost.cloudstream3.utils.ExtractorLink
 import java.net.URLEncoder
 
 open class DrakorProvider : TmdbProvider() {
-    override var name = "Drakor"
+    override var name = "#Drakor Drakor"
     override val hasMainPage = true
     override var lang = "id"
     override val instantLinkLoading = true

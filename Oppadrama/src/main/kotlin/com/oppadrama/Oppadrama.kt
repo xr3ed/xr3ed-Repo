@@ -21,7 +21,7 @@ import org.jsoup.Jsoup
 
 class Oppadrama : MainAPI() {
     override var mainUrl = "http://45.11.57.192"
-    override var name = "Oppadrama"
+    override var name = "#Drakor Oppadrama"
     override val hasMainPage = true
     override var lang = "id"
     override val supportedTypes = setOf(TvType.AsianDrama, TvType.Movie, TvType.TvSeries)
