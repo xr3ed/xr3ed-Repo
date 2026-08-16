@@ -200,6 +200,7 @@ object UltimaBackupUtils {
             lowerKey.contains("plugins_repositories") ||
             lowerKey.contains("repositories") ||
             lowerKey.contains("ultima_extensions_list") ||
+            lowerKey.contains("live_event_") ||
             lowerKey.contains("ultima_current_meta_providers") ||
             lowerKey.contains("ultima_current_media_providers") ||
             key.equals(REPOSITORIES_KEY, ignoreCase = true)) {
