@@ -3037,14 +3037,14 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/MovieBoxProvider.cs3",
         "status": 1,
-        "version": 30,
+        "version": 31,
         "name": "MovieBoxProvider",
         "internalName": "MovieBoxProvider",
         "authors": [
             "NivinCNC,Phisher98"
         ],
         "description": "Multi Language Movies and Series Provider",
-        "fileSize": 112750,
+        "fileSize": 121456,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "hi",
         "tvTypes": [
@@ -3053,7 +3053,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/moviebox.png",
         "apiVersion": 1,
-        "fileHash": "sha256-35b0b0e027fdc2cde8b00012302531d7731976c90ca8c16b5fdb7faf0302020f"
+        "fileHash": "sha256-84e8ce43b6a3e40af2c8d13bbeb68c643d8af5aaf9f0ecc5dc878f5f9e3346de"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Movies4u.cs3",
@@ -3332,13 +3332,13 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Reanime.cs3",
         "status": 1,
-        "version": 1,
+        "version": 2,
         "name": "Reanime",
         "internalName": "Reanime",
         "authors": [
             "Phisher98"
         ],
-        "fileSize": 113302,
+        "fileSize": 113211,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -3348,7 +3348,7 @@
         ],
         "iconUrl": "https://reanime.to/favicon.ico",
         "apiVersion": 1,
-        "fileHash": "sha256-cc1ad4ca1e249548b29f0faad47cef8239c9dbda55e330252b23413db66e0707"
+        "fileHash": "sha256-e9bf46381e931b2ab85cff9fad04270a27ebfb8b29a3f11b2342df4fb72c48b1"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/RingZ.cs3",
@@ -3729,13 +3729,13 @@
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.cs3",
         "status": 1,
-        "version": 8,
+        "version": 9,
         "name": "Zinkmovies",
         "internalName": "Zinkmovies",
         "authors": [
             "Phisher98"
         ],
-        "fileSize": 103536,
+        "fileSize": 128334,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "hi",
         "tvTypes": [
@@ -3745,7 +3745,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/zing.jpg",
         "apiVersion": 1,
-        "fileHash": "sha256-710b22ce89736a82e2a96e0b28aceabe346e9b61f76b1224e15f7c819eed6cc2"
+        "fileHash": "sha256-3a8230c5c899c41ecb65c159694df2c62eebdc0f3dd67655d46126ee7ed9bc6e"
     },
     {
         "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/KayiFamilyTv.cs3",
