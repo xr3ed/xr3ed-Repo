@@ -14,6 +14,12 @@ def run_cmd(args, cwd=None):
 def safe_rmtree(path):
     if not os.path.exists(path):
         return
+    def _onerror(func, p, exc_info):
+        try:
+            os.chmod(p, stat.S_IWRITE | stat.S_IREAD)
+            func(p)
+        except Exception:
+            pass
     try:
         os.chmod(path, 0o777)
     except Exception:
@@ -30,7 +36,7 @@ def safe_rmtree(path):
             except Exception:
                 pass
     try:
-        shutil.rmtree(path)
+        shutil.rmtree(path, onerror=_onerror)
     except Exception as e:
         print(f"shutil.rmtree failed on {path}: {e}")
         if os.name == 'nt':
@@ -359,8 +365,14 @@ def rename_ultima_to_homepage(repo_root):
             continue
         
         # 1. Modify Ultima.kt
-        ultima_kt = os.path.join(ultima_dir, "src", "main", "kotlin", "com", "phisher98", "Ultima.kt")
-        if os.path.exists(ultima_kt):
+        ultima_kt = None
+        for pkg in ["com/sad25kag", "com/phisher98"]:
+            candidate = os.path.join(ultima_dir, "src", "main", "kotlin", *pkg.split("/"), "Ultima.kt")
+            if os.path.exists(candidate):
+                ultima_kt = candidate
+                break
+
+        if ultima_kt and os.path.exists(ultima_kt):
             try:
                 with open(ultima_kt, "r", encoding="utf-8") as f:
                     code = f.read()
@@ -375,8 +387,14 @@ def rename_ultima_to_homepage(repo_root):
                 print(f"Error renaming name in {item}/Ultima.kt: {e}")
             
         # 2. Modify StorageManager.kt
-        storage_mgr = os.path.join(ultima_dir, "src", "main", "kotlin", "com", "phisher98", "Utils", "StorageManager.kt")
-        if os.path.exists(storage_mgr):
+        storage_mgr = None
+        for pkg in ["com/sad25kag/Utils", "com/phisher98/Utils"]:
+            candidate = os.path.join(ultima_dir, "src", "main", "kotlin", *pkg.split("/"), "StorageManager.kt")
+            if os.path.exists(candidate):
+                storage_mgr = candidate
+                break
+
+        if storage_mgr and os.path.exists(storage_mgr):
             try:
                 with open(storage_mgr, "r", encoding="utf-8") as f:
                     code = f.read()

@@ -15,3 +15,8 @@ temp_repos/
 # Compiled extensions (in root)
 *.cs3
 plugins.json
+
+# Python
+__pycache__/
+*.pyc
+

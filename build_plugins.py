@@ -130,18 +130,18 @@ def main():
         shutil.copy2(cs3_path, dest)
         print(f"Copied: {os.path.basename(cs3_path)}")
 
-    # 8b. Copy Phisher precompiled CS3 files from temp_repos/Phisher to builds_dir
+    # 8b. Copy Phisher precompiled CS3 & JAR files from temp_repos/Phisher to builds_dir
     phisher_temp_dir = os.path.join(repo_root, "temp_repos", "Phisher")
     phisher_entries = []
     if os.path.exists(phisher_temp_dir):
         print("\n=== Copying Phisher precompiled plugins ===")
         for fname in os.listdir(phisher_temp_dir):
-            if fname.endswith(".cs3"):
-                src_cs3 = os.path.join(phisher_temp_dir, fname)
-                dst_cs3 = os.path.join(builds_dir, fname)
-                if os.path.exists(dst_cs3):
-                    os.remove(dst_cs3)
-                shutil.copy2(src_cs3, dst_cs3)
+            if fname.endswith(".cs3") or fname.endswith(".jar"):
+                src_file = os.path.join(phisher_temp_dir, fname)
+                dst_file = os.path.join(builds_dir, fname)
+                if os.path.exists(dst_file):
+                    os.remove(dst_file)
+                shutil.copy2(src_file, dst_file)
                 print(f"Copied Phisher precompiled: {fname}")
                 
         # Load Phisher's plugins.json
@@ -153,6 +153,11 @@ def main():
                 print(f"Loaded {len(phisher_entries)} entries from Phisher plugins.json")
             except Exception as e:
                 print(f"Error loading Phisher plugins.json: {e}")
+
+    # Copy phisher_commit.txt to builds_dir to track builds branch sync status
+    phisher_commit_src = os.path.join(repo_root, "phisher_commit.txt")
+    if os.path.exists(phisher_commit_src):
+        shutil.copy2(phisher_commit_src, os.path.join(builds_dir, "phisher_commit.txt"))
 
     # 9. Update fileSize and fileHash in new_plugins to match the ACTUAL files in builds_dir
     new_plugins_map = {p["internalName"]: p for p in new_plugins}
@@ -174,6 +179,13 @@ def main():
         if os.path.exists(cs3_dest):
             entry["fileSize"] = os.path.getsize(cs3_dest)
             entry["fileHash"] = f"sha256-{get_sha256(cs3_dest)}"
+            entry["url"] = f"https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/{internal_name}.cs3"
+            if entry.get("jarUrl"):
+                jar_dest = os.path.join(builds_dir, f"{internal_name}.jar")
+                if os.path.exists(jar_dest):
+                    entry["jarUrl"] = f"https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/{internal_name}.jar"
+                    entry["jarFileSize"] = os.path.getsize(jar_dest)
+                    entry["jarHash"] = f"sha256-{get_sha256(jar_dest)}"
             
             if internal_name not in new_plugins_map:
                 new_plugins.append(entry)
@@ -195,6 +207,8 @@ def main():
             if os.path.exists(cs3_dest):
                 old_entry["fileSize"] = os.path.getsize(cs3_dest)
                 old_entry["fileHash"] = f"sha256-{get_sha256(cs3_dest)}"
+                if old_entry.get("url", "").startswith("https://raw.githubusercontent.com/phisher98/"):
+                    old_entry["url"] = f"https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/{internal_name}.cs3"
                 new_plugins.append(old_entry)
                 new_plugins_map[internal_name] = old_entry
                 print(f"Merged old entry (preserved): {internal_name} (size={old_entry['fileSize']})")
