@@ -2266,14 +2266,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Animesalt.cs3",
         "status": 1,
-        "version": 15,
+        "version": 16,
         "name": "Animesalt",
         "internalName": "Animesalt",
         "authors": [
             "Phisher98"
         ],
         "description": "Anime/Cartoon in Hindi",
-        "fileSize": 77740,
+        "fileSize": 80556,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "hi",
         "tvTypes": [
@@ -2283,7 +2283,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=animesalt.ac&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-0f37ac640ed0a09333cd968b8e0412da4986a7de4de0e4ddebc0d330a5364286"
+        "fileHash": "sha256-4641792527acafc78b873fade0f966555c159cec52580cd1e7cb58e9a265749f"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Animexin.cs3",
@@ -3081,14 +3081,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/MovieBoxProvider.cs3",
         "status": 1,
-        "version": 33,
+        "version": 34,
         "name": "MovieBoxProvider",
         "internalName": "MovieBoxProvider",
         "authors": [
             "NivinCNC,Phisher98"
         ],
         "description": "Multi Language Movies and Series Provider",
-        "fileSize": 123865,
+        "fileSize": 169312,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "hi",
         "tvTypes": [
@@ -3097,7 +3097,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/moviebox.png",
         "apiVersion": 1,
-        "fileHash": "sha256-b51b74a70ae669f81304cc1a41fb2a1f09e220226bc3b69c73e6067f69b14956"
+        "fileHash": "sha256-e39c109e73c5486b23d22ae7a8e4cc66ade1621c9a5ab1e866cc728d3df404dd"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Movies4u.cs3",
@@ -3463,7 +3463,7 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StreamPlay.cs3",
         "status": 1,
-        "version": 678,
+        "version": 679,
         "name": "StreamPlay",
         "internalName": "StreamPlay",
         "authors": [
@@ -3471,7 +3471,7 @@
             "Hexated"
         ],
         "description": "#1 best extention based on MultiAPI",
-        "fileSize": 1725266,
+        "fileSize": 1745926,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -3484,7 +3484,7 @@
         ],
         "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
         "apiVersion": 1,
-        "fileHash": "sha256-01c6f397e8ef1b881c30798b58670789824eaade2e34cff8d2e6557112f77468"
+        "fileHash": "sha256-21795b27498c642d1da779e321703ea3a7e23d04c0251b4bb28d53d98bd8cb08"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StremioAddon.cs3",
