@@ -43,7 +43,7 @@ class Anineko : MainAPI() {
         }
     }
     override var mainUrl = "https://anineko.to"
-    override var name = "Anineko [Backup]"
+    override var name = "Anineko"
     override val hasMainPage = true
     override var lang = "id"
     override val hasDownloadSupport = true
