@@ -1994,7 +1994,7 @@
             "Phisher98"
         ],
         "description": "Anime from all-wish.me",
-        "fileSize": 79857,
+        "fileSize": 79835,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2002,7 +2002,7 @@
         ],
         "iconUrl": "https://all-wish.me/assets/logo.png",
         "apiVersion": 1,
-        "fileHash": "sha256-25c33e79ecbf27b205cb51fa0316f8bed7986ab67eae4ccd7714fabcc84cc4fb"
+        "fileHash": "sha256-a073ad5852e456ff61f044087bd9cac79ce87d8c5f2a88fa3ee5c5feb0ec11a9"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Anichi.cs3",
@@ -2043,21 +2043,21 @@
             "Anime",
             "OVA"
         ],
-        "iconUrl": "https://www.google.com/s2/favicons?sz=64&domain=https://anikage.cc/",
+        "iconUrl": "https://a.favicon.im/anikage.cc?larger=true",
         "apiVersion": 1,
         "fileHash": "sha256-d4662e1c8ee1d2322b79c52b4fc62ecab2500a84a9cba5a1eb115cfbbb7cda37"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AniKoto.cs3",
         "status": 1,
-        "version": 5,
+        "version": 6,
         "name": "AniKoto",
         "internalName": "AniKoto",
         "authors": [
             "phisher98"
         ],
         "description": "AniKoto",
-        "fileSize": 79358,
+        "fileSize": 88550,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2066,7 +2066,7 @@
         ],
         "iconUrl": "https://anikototv.to/AnikotoTheme/assets/images/favicon.png",
         "apiVersion": 1,
-        "fileHash": "sha256-40aea343908c59ee3881dd26cf25f91f0494baec179a07efe7755b9c17c9c1a8"
+        "fileHash": "sha256-2cf269b57a3c150e30ce8f78c67d3ff54c80162b41bcf9a35b49ab58edf50945"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Anilight.cs3",
@@ -3023,7 +3023,7 @@
             "Phisher98"
         ],
         "description": "Watch short vertical dramas & reels from multiple Indian short platforms",
-        "fileSize": 72648,
+        "fileSize": 72813,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "hi",
         "tvTypes": [
@@ -3032,7 +3032,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/MicroTV.png",
         "apiVersion": 1,
-        "fileHash": "sha256-9cfdf213ad157287b5512eb6a5a5f0fde1f8440d41696c0872b5dc80b546d1a9"
+        "fileHash": "sha256-17982751e73a25742cbbf15bc9838763310041d4e97cec3104f3a36f40fdff33"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/MovieBoxProvider.cs3",
@@ -3214,7 +3214,7 @@
             "Phisher98"
         ],
         "description": "Asian Dramas",
-        "fileSize": 96450,
+        "fileSize": 96538,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -3223,7 +3223,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=onetouchtv.xyz/&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-6677b81774975380bf4cbe8d25cb580288b329df44b962fd01ef2b0a823eea8a"
+        "fileHash": "sha256-365a4c37da69c45339b411d2e24e4e6167d27e22319d45d213799238c914c823"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Pencurimovie.cs3",
@@ -3419,7 +3419,7 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StreamPlay.cs3",
         "status": 1,
-        "version": 683,
+        "version": 684,
         "name": "StreamPlay",
         "internalName": "StreamPlay",
         "authors": [
@@ -3427,7 +3427,7 @@
             "Hexated"
         ],
         "description": "#1 best extention based on MultiAPI",
-        "fileSize": 1875681,
+        "fileSize": 1882620,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -3440,7 +3440,7 @@
         ],
         "iconUrl": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1",
         "apiVersion": 1,
-        "fileHash": "sha256-bf5cc3d451cdce2fad3a23d426d6f0fecad36cea2dc98e85e009698fb24592fe"
+        "fileHash": "sha256-6170dce9615dfadfb8ab26bfddc7f1edde6f92bc198a7dbaeb2fea8a866550e5"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/StremioAddon.cs3",
