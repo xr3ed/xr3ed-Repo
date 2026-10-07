@@ -2135,14 +2135,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AnimeDekhoProvider.cs3",
         "status": 1,
-        "version": 70,
+        "version": 71,
         "name": "AnimeDekhoProvider",
         "internalName": "AnimeDekhoProvider",
         "authors": [
             "Phisher98"
         ],
         "description": "Includes AnimeDekho,OnePace(DUB,SUB) and HindiSubAnime",
-        "fileSize": 107624,
+        "fileSize": 123407,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "hi",
         "tvTypes": [
@@ -2152,7 +2152,7 @@
         ],
         "iconUrl": "https://animedekho.app/wp-content/uploads/2023/07/AnimeDekho-Logo-300x-1.png",
         "apiVersion": 1,
-        "fileHash": "sha256-504d0f45339eea5ebd944fd5e37f3d0d6a44fffc1a1b3903cad411c13b2c6014"
+        "fileHash": "sha256-6e9b9bf288f82d30c33eadcc09c4f68895cdc88abb2e635c3fe6aec30fea969c"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Animedubhindi.cs3",
@@ -2587,22 +2587,22 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Fibwatch.cs3",
         "status": 1,
-        "version": 11,
+        "version": 12,
         "name": "Fibwatch",
         "internalName": "Fibwatch",
         "authors": [
             "Phisher98"
         ],
-        "fileSize": 77894,
+        "fileSize": 80253,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
-        "language": "hi",
+        "language": "bn",
         "tvTypes": [
             "Movie",
             "TvSeries"
         ],
         "iconUrl": "https://f.pondit.xyz/fibwatch-logo.png",
         "apiVersion": 1,
-        "fileHash": "sha256-7d5a5a824f897d955f3ff4a344218ead2bb56b972cebf29d65e9880552705de7"
+        "fileHash": "sha256-9fc3e9bc05ae8292fbadc2b2a95688efe216b0735d211f377ced0feeccdfe9f7"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Fivemovierulz.cs3",
