@@ -3691,7 +3691,7 @@
             "RowdyRushya,Phisher98"
         ],
         "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
-        "fileSize": 365379,
+        "fileSize": 354833,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -3699,7 +3699,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
         "apiVersion": 1,
-        "fileHash": "sha256-8e031f32fe438049db0291f4cbafd7ccd7cfa0a262e49dee54c32204f1dbd594"
+        "fileHash": "sha256-b14e5249d08bee7d6946090149603a20171c820a331127a925c50d96086a6509"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/WatchParty.cs3",
