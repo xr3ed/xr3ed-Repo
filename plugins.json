@@ -2150,7 +2150,7 @@
             "Anime",
             "Cartoon"
         ],
-        "iconUrl": "https://animedekho.app/wp-content/uploads/2023/07/AnimeDekho-Logo-300x-1.png",
+        "iconUrl": "https://animedekho.tv/wp-content/uploads/2026/10/AnimeDekho-Logo.png",
         "apiVersion": 1,
         "fileHash": "sha256-4d418aaf48fc722ebd6f3ed7acff2d259ee1ba468b71b5424f795beda09f0677"
     },
@@ -2910,13 +2910,13 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/KisskhProvider.cs3",
         "status": 1,
-        "version": 22,
+        "version": 24,
         "name": "KisskhProvider",
         "internalName": "KisskhProvider",
         "authors": [
             "Phisher98,Hexated,Peerless"
         ],
-        "fileSize": 66635,
+        "fileSize": 70144,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2927,7 +2927,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=kisskh.co&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-9b1eff1235e3b6a7f531671af700c735db4d6423002ff5f3d8cb51f597e20857"
+        "fileHash": "sha256-596cda263feeef775548970606bfbc4f61c49fe08025e19588551989c61cc86c"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Latanime.cs3",
@@ -3556,24 +3556,26 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Toonstream.cs3",
         "status": 1,
-        "version": 10,
+        "version": 11,
         "name": "Toonstream",
         "internalName": "Toonstream",
         "authors": [
             "Phisher98"
         ],
         "description": "ToonStream Multi Language",
-        "fileSize": 70110,
+        "fileSize": 83162,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "hi",
         "tvTypes": [
             "AnimeMovie",
             "Anime",
-            "Cartoon"
+            "Cartoon",
+            "TvSeries",
+            "Movie"
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/toonstream.png",
         "apiVersion": 1,
-        "fileHash": "sha256-b16ae39a74bb97f7bd02bf3abe115943a7e1b5a3d45dad3a4e1e2fd79f03f089"
+        "fileHash": "sha256-a766690cd47b5b2e9f96be8371b5af5419cdf3a966267473d0ac688f2d56b474"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/ToonTales.cs3",
