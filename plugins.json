@@ -1985,26 +1985,6 @@
         "fileHash": "sha256-ef5a86023a81298534f3423bdae56f296a8a1945738df8c7855d5a765bd1f8cc"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AllWish.cs3",
-        "status": 1,
-        "version": 18,
-        "name": "AllWish",
-        "internalName": "AllWish",
-        "authors": [
-            "Phisher98"
-        ],
-        "description": "Anime from all-wish.me",
-        "fileSize": 73200,
-        "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
-        "language": "en",
-        "tvTypes": [
-            "All"
-        ],
-        "iconUrl": "https://all-wish.me/assets/logo.png",
-        "apiVersion": 1,
-        "fileHash": "sha256-bd139c832fd67dac10abd23fdea6f7d0dcea6d2886ef407e1deb170fce8d207c"
-    },
-    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Anichi.cs3",
         "status": 1,
         "version": 29,
@@ -3097,6 +3077,28 @@
         "fileHash": "sha256-aa8676e2dd50eaf0f3107ad5f8c562a86425251cbcede3606876403db1af2396"
     },
     {
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/MPlayerProvider.cs3",
+        "status": 1,
+        "version": 9,
+        "name": "MPlayerProvider",
+        "internalName": "MPlayerProvider",
+        "authors": [
+            "Phisher98"
+        ],
+        "description": "Indian Movies/Series/Kdrama(Hindi Dubbed)",
+        "fileSize": 123651,
+        "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+        "language": "hi",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Movie"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.mxplayer.in&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-f2c5c94df93bc7d1556d2a621c17fb7c015c2ec30544f6998c703c45ddc423ae"
+    },
+    {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/MultiMoviesProvider.cs3",
         "status": 1,
         "version": 55,
@@ -3830,26 +3832,24 @@
         "fileHash": "sha256-52eb7038beb7d0723426e2bbd88f488653c4d393d986ec6e2fb5ced57473dda0"
     },
     {
-        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/MPlayerProvider.cs3",
+        "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AllWish.cs3",
         "status": 1,
-        "version": 9,
-        "name": "MPlayerProvider",
-        "internalName": "MPlayerProvider",
+        "version": 18,
+        "name": "AllWish",
+        "internalName": "AllWish",
         "authors": [
             "Phisher98"
         ],
-        "description": "Indian Movies/Series/Kdrama(Hindi Dubbed)",
-        "fileSize": 121939,
+        "description": "Anime from all-wish.me",
+        "fileSize": 73200,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
-        "language": "hi",
+        "language": "en",
         "tvTypes": [
-            "AsianDrama",
-            "TvSeries",
-            "Movie"
+            "All"
         ],
-        "iconUrl": "https://www.google.com/s2/favicons?domain=www.mxplayer.in&sz=%size%",
+        "iconUrl": "https://all-wish.me/assets/logo.png",
         "apiVersion": 1,
-        "fileHash": "sha256-5a928bcb46883cbe4cd66714e47d156b362fb534b401632efe8202211cc9c8d4"
+        "fileHash": "sha256-bd139c832fd67dac10abd23fdea6f7d0dcea6d2886ef407e1deb170fce8d207c"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/AninekoBackup.cs3",
