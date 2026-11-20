@@ -2694,14 +2694,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Gotaku.cs3",
         "status": 1,
-        "version": 2,
+        "version": 3,
         "name": "Gotaku",
         "internalName": "Gotaku",
         "authors": [
-            "manavchaudhary1 (original Aniyomi ext)"
+            "phisher98"
         ],
-        "description": "Gotaku (gotaku.to) - anime with soft sub, hard sub and dub. Ported from the Aniyomi extension.",
-        "fileSize": 169558,
+        "description": "Gotaku Anime with Soft sub, Hard sub and Dub",
+        "fileSize": 173087,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -2711,7 +2711,7 @@
         ],
         "iconUrl": "https://www.google.com/s2/favicons?domain=gotaku.to&sz=%size%",
         "apiVersion": 1,
-        "fileHash": "sha256-6e800e1598dc012e1710a940541f57aa94d06ec2fab2d548abfea93008d45915"
+        "fileHash": "sha256-cf07b59d41bd80a45c9db0f1f08f78b99e8a3b54d61fe19fd70b9c05559b4d73"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/HDhub4u.cs3",
@@ -3708,14 +3708,14 @@
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/Ultima.cs3",
         "status": 2,
-        "version": 72,
+        "version": 73,
         "name": "Ultima",
         "internalName": "Ultima",
         "authors": [
             "RowdyRushya,Phisher98"
         ],
         "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
-        "fileSize": 427096,
+        "fileSize": 427933,
         "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
         "language": "en",
         "tvTypes": [
@@ -3723,7 +3723,7 @@
         ],
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg",
         "apiVersion": 1,
-        "fileHash": "sha256-6dc2ecb716913860e103493cd25bbbd17105f6367e5a118507946462e0d1b9ce"
+        "fileHash": "sha256-011c713ee48dcfe94349376ef54fdf0da7f26202b00cab4c39078134665188d9"
     },
     {
         "url": "https://raw.githubusercontent.com/xr3ed/xr3ed-Repo/builds/WatchParty.cs3",
